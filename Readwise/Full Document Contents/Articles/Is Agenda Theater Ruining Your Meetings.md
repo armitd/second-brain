@@ -1,0 +1,47 @@
+# Is Agenda Theater Ruining Your Meetings?
+
+![rw-book-cover](https://hbr.org/resources/images/article_assets/2022/10/Oct22_14_sb10065879f-001.jpg)
+
+## Metadata
+- Author: [[Harvard Business Review]]
+- Full Title: Is Agenda Theater Ruining Your Meetings?
+- Category: #articles
+- Summary: Many meetings are ineffective because people focus too much on creating detailed agendas, which can lead to a false sense of productivity. Instead, meetings should be centered around clear outcomes and goals rather than rigid processes. By prioritizing what you want to achieve, you can run more effective and engaging meetings without getting caught up in "agenda theater."
+- URL: https://hbr.org/2022/10/is-agenda-theater-ruining-your-meetings
+
+## Full Document
+![](https://hbr.org/resources/images/article_assets/2022/10/Oct22_14_sb10065879f-001.jpg) Nicholas Rigg/Getty Images 
+
+>  Summary. Like triaging our inboxes, clearing our Slack messages, or managing our to-do lists, preparing an agenda can make us feel like we’ve accomplished something. And when we go through our detailed, bulleted agendas with our colleagues before or during a meeting,... 
+
+It’s no secret: [most meetings are terrible](https://hbr.org/2021/11/the-psychology-behind-meeting-overload). As a behavioral scientist and two founders of a startup devoted to improving meetings, that’s the easy part of our pitch. But fixing them? Not so easy.
+
+We’ve surveyed employees across industries and roles, we’ve read books and articles, we’ve looked at countless tools and techniques, and we’ve learned two things: First, many experts seem to think that the key ingredient of a good meeting is its agenda. It’s [hard to find](https://www.stevenrogelberg.com/alternative-approach-that-could-be-a-game-changer) a book on meetings that doesn’t start with the importance of agendas, and most of the product managers we’ve talked to have indicated that they believed agendas were central to holding better meetings. And second, there is a wide body of research that suggests agendas alone are not enough to run effective meetings.
+
+Indeed, while you might assume that detailed agendas improve your meetings, they may have exactly the opposite effect. This is because many employees unwittingly engage in a practice we call *agenda theater*: They sink time and effort into agendas that create the appearance of effective meetings, without actually improving how meetings are run. What drives this counterproductive behavior — and what should meeting-leaders do instead?
+
+#### **The Hidden Costs of Agenda Theater**
+
+In 2003, security expert [Bruce Schneier](https://www.popularmechanics.com/military/a6205/tsa-scans-security-theater-interview/) coined the term [*security theater*](https://www.schneier.com/essays/archives/2009/11/beyond_security_thea.html) to describe “security measures that make people feel more secure without doing anything to actually improve their security.” He argued that security theater is not only ineffective, but it can decrease actual security in two critical ways: First, even theatrical security measures expend the resources of both the organization implementing the security and the people subjected to it, leaving fewer resources for real security. And second, it can generate a false sense of security that causes people to become less vigilant, further decreasing real security.
+
+Through our research, we’ve found that meeting agendas can fall into a similar trap. Putting together a detailed agenda for every meeting can take a lot of work (costing resources that could be spent elsewhere), and it can make us feel prepared and accomplished even if it doesn’t lead to more effective meetings. For example, in one preliminary study, we asked 200 full-time employees to imagine preparing for a meeting. We then told half of them to imagine they had also put together an agenda for the meeting, and we found that this group felt 21% more prepared, and assumed their meetings would be 11-12% more efficient and productive, than those who imagined undertaking exactly the same preparations but without making an agenda.
+
+Once we’ve put our time and effort into crafting an agenda, we’re likely to assume that the agenda is adding value. But overall, [research suggests](https://www.amazon.com/Surprising-Science-Meetings-Lead-Performance/dp/0190689218) that agendas are extremely hit-or-miss when it comes to improving meetings, with [one study](https://www.jstor.org/stable/40605716) finding that a written agenda had no positive impact on attendees’ evaluation of meeting quality, while [another](https://digitalcommons.unomaha.edu/cgi/viewcontent.cgi?article=1098&context=psychfacpub) concluded that a formal agenda was less important than starting and ending the meeting on time, and about as impactful as offering free food. And just like security theater, agenda theater comes at a cost: The employees in our study reported spending more than three hours every week working on agendas, suggesting that agendas don’t just provide a false sense of accomplishment — they can actively harm teams by taking up resources that could have been better spent elsewhere.
+
+#### Focus Your Meetings on Outcomes — Not Agendas
+
+So, if agendas often don’t work (and may even backfire), what can we do instead? Our research shows that effective meetings are [outcome-centric](https://blog.miter.co/great-meetings-start-with-an-outcome-d10d57cdfa46), not process-centric. Rather than starting with an agenda that attempts to define exactly how the meeting will be run, outcome-centric meetings are instead driven by at least one clearly articulated goal.
+
+If you’re not sure where to start, just ask yourself, “What do I hope to achieve in this meeting?” In [one study](https://blog.miter.co/want-effective-meetings-dont-mistake-process-for-purpose-5ece36e11769), we found that simply prompting people to think about a meeting’s desired outcome led them to set significantly clearer goals for that meeting. Once you know the outcome you hope to achieve, it can then guide every other aspect of planning and running the meeting. Specifically, we’ve identified five steps that can help you prepare for an outcome-driven meeting — without falling into the agenda theater trap:
+
+1. **Start with the *why*.** What’s the *specific* purpose of having this meeting? What do you hope to accomplish? Your answer to this question will inform how you approach the remaining four steps, so it’s worth putting some thought into it.
+2. **Move on to the *what*.** To achieve the goal you’ve defined, will a simple freeform discussion be enough? If yes, then your preparation is done. If not, list out the topics or themes you’ll need to cover.
+3. **Think about the *who*.** Once you know why you’re meeting and what you hope to talk about, you can determine who you need in the room to reach that goal — and who doesn’t need to be there. Consider whether you can check in with certain stakeholders in advance, both to save them time and keep the meeting more focused.
+4. **Don’t overdo the *how***. Some goals benefit from structured, facilitated conversations. For example, design brainstorms, retrospectives, and go-around-the-room-and-answer-a-question meetings certainly have their place. But don’t be afraid to figure out a structure in real time based on where the conversation goes naturally. In our own work, we’ve often found that when we plan a structure in advance, we end up abandoning those plans during the meeting anyway, whereas structuring in real time as a team can bring the group together and keep everyone present and engaged.
+5. **Be careful with the *when.*** It’s tempting to put time limits on everything: ten minutes for the first topic, five minutes for the second, and so on. But in our experience, it’s very difficult to stick to these schedules, and they can create counterproductive meeting dynamics. For example, [research suggests](https://hbr.org/2021/01/your-best-ideas-are-often-your-last-ideas) that especially for creative projects, sticking to a rigid plan may keep you from talking long enough for the best idea to emerge. While rough timelines can be useful for particularly complex meetings, they’re often less necessary than you might think, and they may be more useful as personal guidelines for you to keep in mind yourself than as a structure that’s formally announced to the group.
+
+#### More Usually Isn’t Better
+
+Like triaging our inboxes, clearing our Slack messages, or managing our to-do lists, preparing an agenda can make us feel like we’re in control and we’ve accomplished something. And when we go through our detailed, bulleted agendas with our colleagues before or during a meeting, it sure feels like productivity is *happening*. But the research shows that these feelings may in fact be leading us astray.
+
+At its best, agenda theater means a lot of work with no payoff. At its worst, it drains resources from more-productive work and leads to ineffective, overly structured meetings. The reality is that many meetings simply don’t benefit from an agenda — and for those that do, it’s important to define only the details that matter, without limiting yourself and your team unnecessarily. So instead of locking down an in-depth agenda for every meeting on your calendar, just make sure you know why you’re meeting in the first place. As long as you have a clear, outcome-oriented goal for the conversation, the rest will follow.

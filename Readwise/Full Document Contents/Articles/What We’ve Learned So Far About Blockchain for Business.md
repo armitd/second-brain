@@ -1,0 +1,18 @@
+# What We’ve Learned So Far About Blockchain for Business
+
+![rw-book-cover](https://sloanreview.mit.edu/wp-content/uploads/2021/01/MAG-Lacity-2400x1260-1-1200x630.jpg)
+
+## Metadata
+- Author: [[Mary Lacity and Remko Van Hoek]]
+- Full Title: What We’ve Learned So Far About Blockchain for Business
+- Category: #articles
+- Summary: Businesses have been hesitant to invest in blockchain due to conflicting information about its potential to disrupt and its hidden vulnerabilities. Doubts are diminishing as a Deloitte survey revealed that over half of senior executives now consider blockchain a top strategic priority. Blockchain enables secure transaction records through shared software applications, allowing for programmable rules for value exchange and shared record-keeping. While Bitcoin initially deterred enterprises due to its association with cryptocurrencies, pioneering companies are now benefiting from blockchain applications across various industries, such as tracking shipping containers and authenticating pharmaceuticals.
+- URL: https://sloanreview.mit.edu/article/what-weve-learned-so-far-about-blockchain-for-business/
+
+## Full Document
+![](https://sloanreview.mit.edu/wp-content/uploads/2021/01/MAG-Lacity-1290x860-1.jpg)Image courtesy of Dan Page/theispot.com 
+It’s understandable why many businesses have been slow to invest in blockchain. For the past few years, the C-suite has been showered with suggestions about navigating the next wave of blockchain innovation, identifying potential use cases across industries, and preparing for a blockchain future.[1](https://sloanreview.mit.edu/article/what-weve-learned-so-far-about-blockchain-for-business/#ref1) On the one hand, executives have been warned about blockchain’s potential to disrupt business models, disintermediate trusted third parties, and “change the very nature of economic, social, and political systems.”[2](https://sloanreview.mit.edu/article/what-weve-learned-so-far-about-blockchain-for-business/#ref2) On the other hand, leaders have been cautioned about blockchain’s hype and hidden vulnerabilities.[3](https://sloanreview.mit.edu/article/what-weve-learned-so-far-about-blockchain-for-business/#ref3) But doubts about blockchain are fading, according to a Deloitte survey, which found that more than half of senior executives place blockchain among their top five strategic priorities.[4](https://sloanreview.mit.edu/article/what-weve-learned-so-far-about-blockchain-for-business/#ref4)
+
+Blockchains are shared software applications that validate and create tamper-resistant records of transactions among participants in the network. At their core, blockchain applications enable programmable rules for value exchange and shared record-keeping. Everyone in the network agrees on what has happened because they’re all working from the same record. Bitcoin, released as the first live blockchain application in 2009, was a powerful proof of concept, but its use as a cryptocurrency initially deterred many enterprises from adopting it. Executives did not see the relevance to their businesses: They feared that cryptocurrencies’ anonymity would limit compliance with anti-money-laundering and know-your-customer laws, or they believed that the technology was too immature and unstable to meet enterprise requirements. Now, with pioneering enterprises reaping business benefits, more companies are ready to explore what blockchain can do for them.
+
+We’ve studied over a dozen live solutions in use across a range of industries and a variety of companies, including solutions to track shipping containers, trace food from farm to fork, authenticate pharmaceuticals, and compensate content creators. (See “The Research.�
