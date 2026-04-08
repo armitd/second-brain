@@ -27,7 +27,8 @@ Edit any of these files anytime — COG reads them when you use skills.
 7. **auto-research** — Multi-agent parallel research for technology evaluations and vendor comparisons.
 8. **url-dump** — Save a URL and get auto-extracted insights filed into your vault.
 9. **team-brief** — Cross-reference GitHub and other active tools for a unified picture of what's happening.
-10. **update-cog** — Keep your COG framework current with the latest skills and improvements.
+10. **update-cog** — Keep your COG framework current with the latest skills and improvements.   test
+
 
 ## Quick Start — Your First 3 Actions
 
