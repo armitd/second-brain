@@ -3,8 +3,8 @@ type: "braindump"
 domain: "professional"
 date: "2026-04-09"
 created: "2026-04-09 11:36"
-themes: ["market-scan", "machine-vision", "AI", "front-end-development", "vendor-research", "build-vs-buy"]
-tags: ["#braindump", "#professional", "#market-scan", "#machine-vision", "#AI", "#vendor-research"]
+themes: ["market-scan", "machine-vision", "AI", "front-end-development", "vendor-research", "build-vs-buy", "damage-assessment", "custom-build"]
+tags: ["#braindump", "#professional", "#market-scan", "#machine-vision", "#AI", "#vendor-research", "#damage-assessment", "#custom-build"]
 status: "captured"
 energy_level: "medium"
 emotional_tone: "investigative"
@@ -17,6 +17,12 @@ confidence: "medium"
 Need to do a market scan of AI machine vision + front-end development companies. Two distinct categories:
 1. Companies that can build **customer-facing front-end applications**
 2. Companies that can build **machine vision solutions**
+
+**Clarification (captured same session):**
+- Use case = **damage assessment** — customer photographs damage, AI assesses it
+- **Not** interested in buying an off-the-shelf glass damage product (e.g. Tractable, Ravin.ai)
+- Interested in **building a solution from scratch** — understanding all vendor types that could contribute
+- Scope: all types of vendor that could help build a custom AI damage assessment solution, not glass-specific
 
 ---
 
@@ -33,6 +39,136 @@ Need to do a market scan of AI machine vision + front-end development companies.
 - Geographic scope of the scan — UK, Europe, global?
 - Build vs. buy: are we looking for a company to build something bespoke, or a product/platform to configure?
 - What budget range / scale of engagement is anticipated?
+
+---
+
+## Building From Scratch — The Full Vendor Ecosystem
+
+When building a custom AI damage assessment solution rather than buying a pre-built product, you need to think in **layers**. Each layer has its own vendor market. Most vendors specialise in one or two layers; very few cover all of them.
+
+```
+┌─────────────────────────────────────────────┐
+│  Layer 6: Customer-Facing App (web/mobile)  │  ← Front-end development companies
+├─────────────────────────────────────────────┤
+│  Layer 5: API / Integration Layer           │  ← Backend engineering + API design
+├─────────────────────────────────────────────┤
+│  Layer 4: AI/CV Model (inference)           │  ← Model deployment + MLOps
+├─────────────────────────────────────────────┤
+│  Layer 3: AI/CV Model (training)            │  ← ML engineering consultancies / platforms
+├─────────────────────────────────────────────┤
+│  Layer 2: Training Data (labelled images)   │  ← Data annotation companies
+├─────────────────────────────────────────────┤
+│  Layer 1: Cloud Infrastructure              │  ← AWS / Azure / GCP
+└─────────────────────────────────────────────┘
+```
+
+The **unique challenge of building from scratch:** Most of the cost and risk is in Layers 2–4 — getting high-quality labelled training data, training a model that actually works on real-world damage photos taken by customers on varied devices, and deploying it reliably at scale. Layers 5–6 are comparatively standard engineering.
+
+---
+
+## Layer 1: Cloud Infrastructure
+
+**Who:** AWS, Microsoft Azure, Google Cloud Platform (GCP)
+
+**What they provide:** The compute, storage, and ML infrastructure to train and serve the model. All three offer managed computer vision services that reduce the infrastructure burden significantly.
+
+| Provider | Key CV Services | Notes |
+|---|---|---|
+| **Azure** | Azure Custom Vision, Azure AI Vision, Azure Machine Learning | Best choice if Belron is Microsoft-stack; integrates with Copilot ecosystem |
+| **AWS** | Rekognition Custom Labels, SageMaker, Bedrock | Mature, flexible MLOps tooling |
+| **GCP** | Vertex AI, Vision AI, AutoML | Google's vision AI heritage is strong; best foundation models for image tasks |
+
+**Decision point:** The right cloud is the one Belron already uses for other workloads — avoid multi-cloud for a first AI build.
+
+---
+
+## Layer 2: Training Data — Labelled Image Datasets
+
+**The most underestimated part of the build.** A damage assessment model needs thousands of labelled images — photos of damage across different severities, lighting conditions, angles, devices, and glass types. Without high-quality training data, no model works.
+
+**Options:**
+
+### Data Annotation Companies (label your own collected images)
+- **Scale AI** — Market leader in data labelling for AI. Works with major tech companies and automotive OEMs. High quality, scalable, expensive.
+- **Labelbox** — Platform for managing labelling workflows; can use their labeller network or your own team.
+- **Roboflow** — Developer-friendly annotation + dataset management platform. Good for computer vision specifically. Includes a model training pipeline.
+- **Encord** (formerly Cord) — UK-based data annotation platform, strong in medical and visual inspection use cases. Good fit for UK-headquartered Belron.
+- **Appen** — Large-scale data labelling workforce. Established, used by big tech.
+- **Surge AI** — High-quality, US-based annotators. More expensive than offshore options.
+- **Dataloop** — End-to-end data management + annotation platform. Particularly strong for video and image tasks.
+
+### Synthetic Data (generate labelled data without collecting real images)
+A growing option: use AI to generate synthetic images of damage (controlled lighting, angles, severity) to supplement real data.
+- **Synthesis AI** — Synthetic data generation for computer vision. Reduces data collection cost significantly.
+- **Rendered.ai** — Synthetic dataset generation platform.
+- **CVAT (open source)** — Self-hosted annotation tool if you want to label data internally.
+
+**Strategic note:** For a damage assessment use case, you will likely need a hybrid — some real-world images (collected from actual jobs) labelled by an annotation company, supplemented by synthetic data to cover edge cases and rare damage types.
+
+---
+
+## Layer 3 & 4: AI/CV Model Development and Deployment
+
+### AI/ML Consultancies (they build the model for you)
+These companies take your data and build, train, and deploy a custom CV model. They own the ML engineering and hand you a working model API.
+
+**Global / large scale:**
+- **Faculty AI** (UK) — British AI consultancy, works with enterprise clients. Strong track record in computer vision for industrial and commercial use cases.
+- **Roke** (UK) — Defence and commercial AI/ML consultancy. Strong in computer vision.
+- **Cog Systems** — AI engineering consultancy.
+- **Weights & Biases** — MLOps platform (not a consultancy, but used by all ML teams for experiment tracking and model management).
+- **DataRobot** — AutoML platform with managed ML services. Reduces need for deep ML expertise in-house.
+- **Modzy** — Enterprise ML model deployment platform. Useful if you want to deploy a model built elsewhere.
+
+**Specialist computer vision consultancies:**
+- **Voxel51** — Computer vision platform + consultancy. Strong in video and image analysis.
+- **Xnor.ai** (now part of Apple) — Edge computer vision (relevant if you want on-device inference rather than cloud).
+- **Neurala** — Custom AI vision for inspection use cases. Relevant for quality control / damage detection.
+- **Chooch AI** — Real-time CV platform. Can train on custom data for specific detection tasks.
+
+**European / UK-relevant options:**
+- **Prowler.io** (Cambridge, UK) — AI platform company, decision-making under uncertainty.
+- **Graphcore** (Bristol, UK) — AI chip + ML platform company. More infrastructure than consultancy.
+- **Tessella** (UK, now Axelera AI) — Engineering consultancy with strong ML/AI practice.
+
+### Foundation Models (use a large pre-trained model, fine-tune for damage)
+Rather than training from scratch, fine-tune an existing large vision model on your damage dataset. This dramatically reduces the training data needed and the time to a working model.
+
+- **OpenAI GPT-4o** — Multimodal model that can analyse images. Could assess damage from a photo without traditional CV model training. Worth prototyping.
+- **Google Gemini** — Strong multimodal capability. Could describe and classify damage from photos.
+- **Anthropic Claude** — Multimodal; can analyse images. Less optimised for structured classification tasks than GPT-4o/Gemini.
+- **Meta LLaMA 3 Vision** — Open source multimodal model. Can be self-hosted (important for data privacy / cost at scale).
+- **Microsoft Florence** — Microsoft's vision foundation model. Integrates natively with Azure.
+
+**Strategic note for 2026:** The fastest and cheapest route to a working damage assessment prototype is probably a multimodal foundation model (GPT-4o or Gemini) with a well-designed prompt + a structured output schema, rather than training a custom CV model. A custom model will outperform this at scale and with domain-specific tuning — but the prototype should prove the concept first.
+
+---
+
+## Layer 5: API / Backend Engineering
+
+**What it is:** The backend that receives the customer's photo, passes it to the CV model, processes the result, and returns a decision (repair / replace / insufficient image quality) to the front-end.
+
+**Who builds this:** Most mid-to-large digital engineering consultancies can build a backend API. The choice is usually made alongside the front-end partner. Key considerations:
+- Must integrate with the CV model API (Layer 4) and the booking/CRM system (Salesforce/EBS)
+- Must handle image storage, security, and data privacy (customer photos of vehicles may contain personal data)
+- Should include a confidence scoring mechanism — low-confidence assessments should route to human review, not auto-approve
+
+**Relevant vendors:** Same as Layer 6 (front-end companies) — most full-service studios build both front and backend.
+
+---
+
+## Layer 6: Customer-Facing App (Front-End)
+
+*(As captured earlier — full vendor list in Category 1 section below)*
+
+The customer-facing interface for a damage assessment flow has specific requirements:
+- **Mobile-first** — most customers will photograph damage on a phone
+- **Camera integration** — guiding the customer to take usable photos (correct angle, distance, lighting)
+- **Real-time feedback** — telling the customer if the photo is good enough before submitting
+- **Progressive disclosure** — asking for more images only if needed
+- **Accessibility** — broad device and OS support
+
+This is a **product design problem as much as an engineering problem.** The studios with the strongest UX capability (ustwo, Futurice, AKQA) are better suited than pure development houses for this customer-facing layer.
 
 ---
 
@@ -106,41 +242,45 @@ Some companies can bridge both disciplines — building the CV model and the cus
 
 ### Key Insights
 
-1. **The use case drives everything.** "Customer-facing + machine vision" in a windscreen context most likely means one of three things — and the vendor list looks different for each:
-   - **Customer self-service damage assessment** (customer photographs their windscreen via an app → AI assesses repair vs. replace → instant quote/booking): Tractable, Ravin.ai, Azure Custom Vision + a digital product studio
-   - **Technician inspection tool** (tech photographs job on completion → AI verifies quality/calibration): Roboflow, Clarifai, Landing AI + internal or nearshore development
-   - **Insurance claim automation** (photos fed into claims workflow → AI extracts damage data): Audatex/Solera, Tractable — these already sell to insurers, so the question is whether Belron would use them as a vendor or compete with them
+1. **Building from scratch means owning the problem in layers.** The vendor market for a custom AI damage assessment build is not one vendor — it's a supply chain: cloud infrastructure + training data + model development + backend API + front-end app. Each layer has its own market, its own risks, and its own quality gates. EA's job is to design how these layers connect and who owns what.
 
-2. **Tractable is the most strategically relevant vendor to investigate first.** They sit at the intersection of automotive damage assessment AI and the insurance claims ecosystem — exactly Belron's market. Understanding what Tractable does, who they sell to, and how they integrate is essential context for any machine vision use case at Belron.
+2. **The fastest route to proof of concept is a multimodal foundation model, not a custom-trained CV model.** In 2026, GPT-4o and Gemini can analyse a photo of windscreen damage and provide a structured assessment with no training data required. This won't be production-grade at scale, but it's a working prototype in days, not months. **Prove the concept with a foundation model first. Custom model only if the prototype validates the use case.**
 
-3. **The front-end and vision companies rarely overlap.** Most machine vision specialists don't build great customer-facing UX — and most digital product studios don't build AI vision models. The likely architecture is: *one vendor for the CV model* (Tractable, Azure Custom Vision, Ravin.ai) + *one vendor for the front-end application* (ustwo, Futurice, EPAM). The EA role is to design the integration between them.
+3. **Training data is the hardest part, not the model.** Most organisations underestimate this. A custom damage assessment model needs thousands of high-quality, consistently labelled images across damage types, severities, lighting conditions, and devices. Getting this data takes months and significant investment. Scale AI, Encord, or Roboflow are the right tools for this — not an afterthought.
 
-4. **This scan connects directly to the Wardley Map.** Customer-facing front-end development is a Product-stage capability (buy or partner). Machine vision for vehicle damage assessment is Custom → Product stage (still differentiating, but Tractable and Ravin.ai are moving it toward commodity). The Wardley lens helps decide which to buy vs. build.
+4. **The camera UX is underrated.** The quality of the AI output is only as good as the quality of the input image. Poor photos (wrong angle, bad lighting, too far away) will defeat even a well-trained model. A guided camera experience — showing the customer exactly how to photograph their damage — is a critical product design challenge, not a technical one. Studios like ustwo or Futurice are better suited to this than engineering-first shops.
+
+5. **There is a strategic question underneath all of this.** Why build from scratch rather than partner with Tractable, Ravin.ai, or Audatex/Solera? The answer shapes the vendor list entirely. If the answer is "we want to own the IP and data" — build. If it's "we want to move fast and own the customer experience but not the AI" — API into an existing model. If it's "we want to differentiate on the full experience" — build front-end, buy or fine-tune the CV model. Clarifying this first prevents wasted effort.
+
+6. **This connects directly to the Wardley Map.** Customer-facing front-end development is Product-stage (buy or partner). Training a custom damage assessment CV model is Custom-stage (differentiating, worth building if you own the use case). Foundation model APIs (GPT-4o, Gemini) are moving toward commodity fast — use them for speed now, plan to own a fine-tuned model later.
 
 ### Connection to Competitive Watchlist
 No COMPETITIVE-WATCHLIST.md exists yet — this scan surfaces several companies worth tracking:
-- **Tractable** — direct intersection with Belron's market
+- **Tractable** — direct intersection with Belron's market; understand what they sell and to whom
 - **Ravin.ai** — vehicle inspection AI, potential competitive or partner
 - **Audatex/Solera** — already embedded in insurer workflows that touch Belron
+- **Scale AI** — if data annotation is a strategic bottleneck, Scale is the market leader
+- **Faculty AI** — UK-based ML consultancy most likely to understand the Belron context
 
 ---
 
 ## Action Items
 
 ### Immediate (24–48 hours)
-- [ ] Clarify the specific use case driving this scan — what problem is being solved, for which user (customer, technician, insurer)? 📅 2026-04-10
-- [ ] Do a first-pass research pass on Tractable — what do they sell, who are their customers, and how do they integrate? 📅 2026-04-10
-- [ ] Check whether Ravin.ai and Audatex/Solera are already vendors or known to Belron 📅 2026-04-10
+- [ ] Answer the strategic question first: own the IP and data → build from scratch; own the UX but not the AI → buy/API; differentiate end-to-end → hybrid. This single answer drives all vendor decisions 📅 2026-04-10
+- [ ] Run a GPT-4o or Gemini prototype: take 5 real photos of windscreen damage and see if a foundation model can classify repair vs. replace reliably — this costs nothing and proves/disproves the concept in an afternoon 📅 2026-04-11
 
 ### Short-term (1–2 weeks)
-- [ ] Structure the scan into a one-page market map: Platform providers / Specialist AI vendors / Digital product studios — with a column for "relevant to Belron because..." 📅 2026-04-17
-- [ ] Add Tractable, Ravin.ai, and Audatex/Solera to a COMPETITIVE-WATCHLIST.md file 📅 2026-04-14
-- [ ] Run the Wardley lens: where does customer-facing machine vision sit on the evolution axis for Belron? (Informs build vs. buy) 📅 2026-04-17
+- [ ] Structure the scan into a one-page layered market map (cloud → data → model → API → front-end) with vendor options per layer 📅 2026-04-17
+- [ ] Create `03-professional/COMPETITIVE-WATCHLIST.md` — add Tractable, Ravin.ai, Audatex/Solera, Scale AI, Faculty AI 📅 2026-04-14
+- [ ] Research Encord (UK-based annotation platform) — most likely to be a practical fit for a Belron data labelling programme 📅 2026-04-17
+- [ ] Run the Wardley lens: where does each layer (data, model, front-end) sit on the evolution axis? 📅 2026-04-17
 
 ### Strategic Considerations
-- If this scan is for a specific project: define the make-or-buy decision before engaging vendors. The right question is "what is differentiating here?" — the CV model, the UX, or the integration between them?
-- If Tractable or Ravin.ai already sell to Belron's insurance partners, there may be a data/API relationship available without building from scratch
-- Create `03-professional/COMPETITIVE-WATCHLIST.md` — this scan has surfaced the first set of companies worth tracking
+- **Foundation model first, custom model second.** The prototype using GPT-4o/Gemini should precede any decision to invest in custom model training. If it doesn't work well enough, you need custom training. If it works well, you may only need fine-tuning.
+- **Camera UX is a product design problem.** Whichever front-end studio is chosen must have strong mobile camera UX experience — guiding customers to take usable photos is the highest-leverage UX challenge in this product.
+- **Data strategy is a long-term asset.** The labelled image dataset built during this project becomes proprietary IP — images of real Belron customer damage, in real conditions. This is valuable beyond the first use case. Design the data strategy with future use cases in mind.
+- **Privacy and data residency.** Customer vehicle photos may contain licence plates and other identifying information. UK/EU GDPR implications need to be scoped before any external annotation partner handles the data.
 
 ---
 
