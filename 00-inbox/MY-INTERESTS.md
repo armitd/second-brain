@@ -14,7 +14,13 @@ tags: ["#interests", "#daily-brief", "#config"]
 - Automotive industry news
 - Enterprise architecture trends
 - Windscreen / auto glass industry
-- Enterprise Architecture 
+- Enterprise Architecture
+- AI development agencies and consultancies
+- Computer vision and machine vision AI
+- Foundation models (OpenAI, Anthropic, Google DeepMind, Meta AI, Mistral)
+- AI damage assessment technology
+- LeanIX and enterprise architecture tooling
+- Agentic AI platforms and protocols (MCP, A2A)
 
 ## Preferred News Sources
 
