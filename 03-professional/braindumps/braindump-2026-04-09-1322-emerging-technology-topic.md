@@ -99,6 +99,7 @@ Based on everything captured this week, there are three strong candidates. All a
 
 ### Immediate (this week)
 - [ ] Decide on the topic — Option A (Agentic AI), B (Damage Assessment), or C (LeanIX). Confirm with manager if there's a preferred theme 📅 2026-04-11
+- [ ] Run a patent sweep on the chosen topic 📅 2026-04-11
 
 ### Short-term (1–2 weeks)
 - [ ] Once topic confirmed: outline the three deliverables (presentation, paper, briefing) — audience, key message, format, and length for each 📅 2026-04-16
