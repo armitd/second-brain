@@ -5,7 +5,9 @@ date: "2026-04-08"
 created: "2026-04-08 14:36"
 themes: ["Belron", "software development", "systems delivery", "operating model", "EA artefact", "build vs buy"]
 tags: ["#braindump", "#professional", "#Belron", "#software-delivery", "#systems", "#EA-artefact"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-09]]"
+consolidated_date: "2026-04-09"
 energy_level: "high"
 emotional_tone: "purposeful"
 confidence: "medium"

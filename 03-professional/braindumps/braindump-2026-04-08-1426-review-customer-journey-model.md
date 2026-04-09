@@ -5,7 +5,9 @@ date: "2026-04-08"
 created: "2026-04-08 14:26"
 themes: ["customer journey", "CX", "Belron", "service model", "enterprise architecture"]
 tags: ["#braindump", "#professional", "#customer-journey", "#CX", "#Belron"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-09]]"
+consolidated_date: "2026-04-09"
 energy_level: "medium"
 emotional_tone: "investigative"
 confidence: "medium"

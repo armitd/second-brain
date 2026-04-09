@@ -5,7 +5,9 @@ date: "2026-04-08"
 created: "2026-04-08 13:52"
 themes: ["EBS", "Oracle E-Business Suite", "Salesforce", "ERP", "CRM", "integration", "enterprise architecture"]
 tags: ["#braindump", "#professional", "#EBS", "#Oracle", "#Salesforce", "#ERP", "#integration", "#EA"]
-status: "researched"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-09]]"
+consolidated_date: "2026-04-09"
 energy_level: "medium"
 emotional_tone: "investigative"
 confidence: "high"

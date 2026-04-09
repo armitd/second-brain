@@ -5,7 +5,9 @@ date: "2026-04-08"
 created: "2026-04-08 09:37"
 themes: ["stakeholder management", "visibility", "routine-building", "EA effectiveness", "proactive leadership"]
 tags: ["#braindump", "#professional", "#stakeholders", "#visibility", "#routines"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-09]]"
+consolidated_date: "2026-04-09"
 energy_level: "medium"
 emotional_tone: "self-critical/motivated"
 confidence: "high"

@@ -5,7 +5,9 @@ date: "2026-04-08"
 created: "2026-04-08 11:55"
 themes: ["5-year plan", "personal development", "career strategy", "review"]
 tags: ["#braindump", "#professional", "#5-year-plan", "#career", "#review"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-09]]"
+consolidated_date: "2026-04-09"
 energy_level: "medium"
 emotional_tone: "reflective"
 confidence: "medium"

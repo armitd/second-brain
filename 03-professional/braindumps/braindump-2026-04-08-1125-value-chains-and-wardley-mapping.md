@@ -5,7 +5,9 @@ date: "2026-04-08"
 created: "2026-04-08 11:25"
 themes: ["value chains", "Wardley mapping", "Porter", "enterprise architecture", "strategic tools", "business understanding"]
 tags: ["#braindump", "#professional", "#value-chain", "#Wardley", "#Porter", "#EA-tools"]
-status: "researched"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-09]]"
+consolidated_date: "2026-04-09"
 energy_level: "high"
 emotional_tone: "curious/learning"
 confidence: "high"

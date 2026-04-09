@@ -5,7 +5,9 @@ date: "2026-04-08"
 created: "2026-04-08 12:07"
 themes: ["capability mapping", "Contact Centre of the Future", "front-office", "overlap", "enterprise architecture", "capability design"]
 tags: ["#braindump", "#professional", "#capabilities", "#CCOTF", "#contact-centre", "#front-office", "#EA"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-09]]"
+consolidated_date: "2026-04-09"
 energy_level: "medium"
 emotional_tone: "analytical"
 confidence: "medium"

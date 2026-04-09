@@ -5,7 +5,9 @@ date: "2026-04-08"
 created: "2026-04-08 11:23"
 themes: ["business understanding", "Belron", "stakeholder proximity", "EA effectiveness", "learning"]
 tags: ["#braindump", "#professional", "#Belron", "#business-acumen", "#EA-effectiveness"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-09]]"
+consolidated_date: "2026-04-09"
 energy_level: "medium"
 emotional_tone: "curious/motivated"
 confidence: "high"

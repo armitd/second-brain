@@ -5,7 +5,9 @@ date: "2026-04-07"
 created: "2026-04-07 15:20"
 themes: ["business-capability-modelling", "internal-enablement", "EA-communication", "change-management"]
 tags: ["#braindump", "#raw-thoughts", "#enterprise-architecture", "#capability-modelling", "#communication"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-09]]"
+consolidated_date: "2026-04-09"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"
