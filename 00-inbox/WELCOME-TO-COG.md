@@ -3,7 +3,7 @@ type: guide
 created: 2026-04-06
 tags: ["#welcome", "#getting-started", "#cog"]
 ---
-
+0
 # Welcome to Your COG Second Brain, Armo!
 
 Your COG is now personalised and ready to use. Here's how to get started:
