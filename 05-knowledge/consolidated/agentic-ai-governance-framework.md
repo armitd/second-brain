@@ -1,0 +1,222 @@
+---
+type: "consolidated-knowledge"
+domain: "professional"
+framework: "agentic-ai-governance"
+created: "2026-04-10"
+last_updated: "2026-04-10"
+consolidation_id: "consolidation-2026-04-10"
+source_documents: 6
+status: "working"
+tags: ["#framework", "#consolidated", "#agentic-AI", "#MCP", "#A2A", "#EA-governance", "#protocols"]
+---
+
+# Agentic AI Governance Framework
+
+## Framework Overview
+A working model for how an Enterprise Architect takes ownership of agentic AI infrastructure — specifically the MCP and A2A protocol layer — and turns it into governed, enterprise-grade capability before the business builds ad hoc.
+
+**Status:** Working (solid research base; application to Belron context is the next phase)
+**Last Updated:** 2026-04-10
+**Source Insights:** 6 documents — MCP/A2A research braindump (Apr 8), emerging tech topic braindump (Apr 9), daily briefs Apr 8–10, competitive watchlist
+
+---
+
+## Why This Matters Now
+
+In April 2026, agentic AI crossed from research into production:
+- **MCP:** 97 million installs, Linux Foundation governance, enterprise auth (SAML/OIDC) shipping Q2 2026
+- **A2A:** 150+ organisations, Microsoft Agent Framework 1.0 live, active production deployments
+- **Gartner signal:** 40% of enterprise applications will embed AI agents by end of 2026, up from <5% in 2025
+
+The critical window is **now to Q4 2026.** Business units and IT teams will start building agent integrations without a governance framework — as happened with SaaS adoption in the 2010s. EA's job is to own this space before it becomes ungovernable.
+
+---
+
+## The Architecture (What These Protocols Are)
+
+| | MCP | A2A |
+|---|---|---|
+| **Governs** | Agent ↔ Tool/Data | Agent ↔ Agent |
+| **Created by** | Anthropic (now Linux Foundation / AAIF) | Google (now Linux Foundation / AAIF) |
+| **Analogy** | How an agent accesses the world | How agents coordinate with each other |
+| **Layer** | Foundation (data + tools) | Orchestration (workflows + delegation) |
+| **Enterprise status** | 97M installs, industry standard (Q1 2026) | 150+ orgs, production-ready (April 2026) |
+| **Build order** | First — establish which systems get wrapped | Second — design which agents coordinate |
+
+Together they form a complete governance architecture for multi-agent systems: MCP controls what each agent can access; A2A controls how agents hand work to each other. Without both layers, you get capable but ungovernable agents.
+
+---
+
+## Core Principles
+
+### Principle 1: MCP Is Now Infrastructure — The Decision Is How, Not Whether
+
+**Statement:** At 97M installs and Linux Foundation governance, MCP is not a vendor bet — it is industry infrastructure comparable to Kubernetes or HTTP. The decision is not whether to adopt MCP; it is which systems to wrap first, in what order, with what governance.
+
+**Evidence:**
+- [[braindump-2026-04-08-0942-a2a-mcp-research-strategy]] — "MCP is not a vendor product — it's an industry standard. CIOs and EAs can now build long-term integration roadmaps around it without vendor lock-in risk"
+- [[daily-brief-2026-04-10]] — A2A 1-year milestone: 150+ orgs, Microsoft Agent Framework 1.0 ships with full MCP support — "the MCP-plus-A2A architecture is becoming the production-ready default for enterprise agentic systems"
+- [[daily-brief-2026-04-09]] — MCP enterprise auth (SAML/OIDC) shipping Q2 2026 — the enterprise deployment unlock
+
+**How to apply:** Frame MCP decisions as integration architecture decisions — which business systems get an MCP server, in what priority order, with what data classification. This is standard EA remit.
+
+**Confidence:** High
+
+---
+
+### Principle 2: A2A Is Where Competitive Advantage Will Be Built
+
+**Statement:** MCP will be table stakes within 12–18 months. The organisations that design thoughtful multi-agent architectures using A2A now will have a structural head start on workflow automation. The EA who designs these architectures becomes strategically irreplaceable.
+
+**Evidence:**
+- [[braindump-2026-04-08-0942-a2a-mcp-research-strategy]] — "The organisations that design thoughtful multi-agent architectures using A2A *now* will have a structural head start"
+- [[braindump-2026-04-09-1322-emerging-technology-topic]] — Option A assessed as the strongest emerging tech topic: "positions EA as the function that owns the governance of the next major technology wave"
+- [[daily-brief-2026-04-10]] — A2A surpasses 150 orgs including AWS, Cisco, Google, IBM, Microsoft, Salesforce, SAP, ServiceNow — the ecosystem is now too large to ignore
+
+**How to apply:** Identify Belron's first multi-agent workflow candidate. The booking → dispatch → calibration → claims chain is a natural sequence. Design the A2A handoffs before the business builds them without governance.
+
+**Confidence:** High
+
+---
+
+### Principle 3: EA Is the Natural Owner of Both Protocols
+
+**Statement:** MCP and A2A decisions (which systems are wrapped, which agents are authorised to delegate to which other agents, what data flows between agents) are quintessential EA decisions — capability, integration, governance, and security all in one. No other function has the mandate or the vantage point.
+
+**Evidence:**
+- [[braindump-2026-04-08-0942-a2a-mcp-research-strategy]] — "The EA role is the natural owner of both. MCP decisions... and A2A decisions... are quintessential enterprise architecture decisions"
+- [[daily-brief-2026-04-10]] — "Integration is the new enterprise architecture... agentic AI governance falling to EA teams"
+- [[braindump-2026-04-09-1322-emerging-technology-topic]] — The MCP/A2A paper-presentation-briefing set positions EA as "the function that owns the governance of the next major technology wave"
+
+**How to apply:** Propose an "Agentic AI Architecture Review" as a standing EA agenda item — this creates formal ownership of the space before business units start building ad hoc.
+
+**Confidence:** High
+
+---
+
+### Principle 4: Governance Must Precede Proliferation
+
+**Statement:** AI agents will proliferate inside enterprise systems in 2026 regardless of whether governance exists. The EA function's job is to establish the governance framework before proliferation makes it retrospective.
+
+**Evidence:**
+- [[daily-brief-2026-04-09-pm]] — OpenAI, NVIDIA, Okta all launched agent platforms in the same week — supply-side pressure is building fast
+- [[braindump-2026-04-08-0942-a2a-mcp-research-strategy]] — "40% of enterprise applications will feature task-specific AI agents by 2026, up from <5% in 2025" (Gartner)
+- [[daily-brief-2026-04-10]] — EU AI Act auditability requirements mean "AI Act compliance requires end-to-end lineage and explainability baked into the integration layer — this is an EA design concern, not a data team bolt-on"
+
+**How to apply:** Use the A2A 1-year milestone announcement as the trigger to bring a governance brief to EA leadership. Frame it: "Here's what just standardised. Here's what Belron needs to decide before this lands in our systems."
+
+**Confidence:** High
+
+---
+
+## The Belron Application Map
+
+For a windscreen repair/replace business, the natural multi-agent workflow is end-to-end job lifecycle:
+
+| Business Area | MCP Server (what the agent accesses) | A2A Handoff (agent → agent) |
+|---|---|---|
+| Customer booking | CRM / booking system | Booking agent → Dispatch agent |
+| Parts & inventory | Parts database | Parts agent → Supplier portal agent |
+| Insurance claims | Claims system | Claims agent → Insurer portal agent |
+| ADAS calibration | Calibration records | Calibration agent → Documentation agent |
+| Technician scheduling | Scheduling system | Dispatch agent → Routing agent |
+
+The booking → dispatch → calibration → claims chain is the most valuable first target: it spans the primary customer value chain and would reduce manual handoffs at each stage.
+
+---
+
+## Applications & Use Cases
+
+### Use Case 1: MCP Governance Register
+**When to Apply:** Before any business unit or IT team deploys an MCP-connected tool
+
+**How to Apply:**
+1. Define a classification scheme for data types that can be exposed via MCP servers (public, internal, confidential, restricted)
+2. Create a registry of all MCP servers deployed in the enterprise — system, owner, data classification, approved AI clients
+3. Apply the same process that governs API access to MCP server access
+4. Publish the governance policy; make it easy to comply, hard to bypass
+
+**Expected Outcomes:** Prevents data leakage through unmanaged MCP connections; creates visibility into what AI models can access
+
+---
+
+### Use Case 2: A2A Workflow Design — First Multi-Agent Pilot
+**When to Apply:** Once MCP servers are in place for 2+ systems that are part of the same business process
+
+**How to Apply:**
+1. Map the workflow end-to-end — what is the trigger, what are the steps, what is the output?
+2. Identify which steps could be handled by an AI agent vs. require human decision
+3. Design the Agent Cards for each agent — what capabilities do they advertise?
+4. Define delegation rules — which agents are authorised to hand tasks to which other agents?
+5. Build a prototype on the lowest-risk workflow first (e.g., internal scheduling optimisation before customer-facing)
+
+---
+
+### Use Case 3: Agentic AI Briefing for Leadership
+**When to Apply:** Now — the A2A 1-year milestone is the hook
+
+**Format:**
+- One-page briefing: "What just standardised, what it means for Belron, what decisions we need to make"
+- Full paper: MCP + A2A protocol primer, Belron application map, governance recommendation
+- Presentation: "The Agent Economy — What It Means for Belron's Architecture"
+
+**Audience:** EA leadership, CTO, opco technology leads
+
+---
+
+## Boundaries & Limitations
+
+**This framework works when:**
+- Building multi-agent workflows where steps can be clearly defined and delegated
+- Systems have APIs or can be wrapped in MCP servers
+- Governance appetite exists for a formal AI integration policy
+
+**This framework does NOT work when:**
+- The use case requires fully custom AI interactions not following standard protocol shapes
+- Infrastructure does not support MCP-compatible tool interfaces
+- Governance maturity is too low for formal agent policy (build awareness first)
+
+---
+
+## Evolution & History
+
+### April 8, 2026: Research Phase
+MCP and A2A researched in depth. Key finding: these are not competing standards — they are complementary layers. MCP is foundation; A2A is orchestration. Both now have Linux Foundation governance.
+
+**Source:** [[braindump-2026-04-08-0942-a2a-mcp-research-strategy]]
+
+### April 9, 2026: Strategic Positioning
+The emerging tech topic planning explicitly assesses MCP/A2A as the strongest topic for a three-part deliverable set. The external environment validates this: OpenAI, NVIDIA, and Okta all launched agent platforms the same week.
+
+**Source:** [[braindump-2026-04-09-1322-emerging-technology-topic]]
+
+### April 10, 2026: Production Confirmation
+A2A 1-year milestone confirms 150+ organisations and Microsoft Agent Framework 1.0 — the protocol has crossed from experimental to enterprise-production. The EA governance window is now.
+
+**Source:** [[daily-brief-2026-04-10]]
+
+---
+
+## Related Frameworks
+
+- [[ea-effectiveness-framework]] — Principle 2: The MCP/A2A briefing is a dual-purpose artefact (governance tool + visibility instrument)
+- [[belron-business-understanding-framework]] — Layer 4 (Systems Landscape) identifies which systems are MCP server candidates
+- [[ai-damage-assessment-strategy-framework]] — The damage assessment workflow is a candidate A2A multi-agent pipeline
+
+---
+
+## Future Development
+
+**Next Steps:**
+- [ ] Scan Belron's current AI tool landscape: which tools already support MCP? 📅 2026-04-17
+- [ ] Map the 3–5 highest-value internal systems for MCP server wrapping 📅 2026-04-18
+- [ ] Draft the Agentic AI briefing for leadership (use A2A 1-year milestone as hook) 📅 2026-04-10
+
+**Questions to Resolve:**
+- Does Belron have a formal AI governance policy that MCP/A2A decisions should connect to?
+- Which cloud platform does Belron run on? (Azure/GCP/AWS) — this determines the Microsoft Agent Framework vs. Vertex AI vs. Bedrock path
+- Is there an existing agent or automation programme where EA governance ownership would be welcomed vs. seen as overhead?
+
+---
+
+*Consolidated from 6 sources | First version: April 10, 2026 | Status: Working*

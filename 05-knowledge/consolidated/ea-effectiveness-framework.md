@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "ea-effectiveness"
 created: "2026-04-09"
-last_updated: "2026-04-09"
-consolidation_id: "consolidation-2026-04-09"
-source_documents: 7
+last_updated: "2026-04-10"
+consolidation_id: "consolidation-2026-04-10"
+source_documents: 10
 status: "working"
 tags: ["#framework", "#consolidated", "#enterprise-architecture", "#visibility", "#effectiveness"]
 ---
@@ -128,6 +128,30 @@ Enterprise architects are structurally at risk of invisibility. The discipline s
 2. Share it with a stakeholder and ask for their reaction: "Does this match your understanding?"
 3. The conversation that follows is the visibility moment — the document is the opener
 
+### Use Case 4: Owning Emerging Technology Governance
+**When to apply:** When a new technology wave is forming (currently: agentic AI / MCP / A2A) and business units will start building without governance
+**How to apply:**
+1. Research the technology deeply — build genuine expertise, not summary knowledge
+2. Create a briefing that explains it in business language: "What this means for Belron"
+3. Use an external trigger (milestone, industry announcement) as the hook to go to leadership: "Here's what just happened. Here's what we need to decide."
+4. Propose a formal governance mechanism (e.g. Agentic AI Architecture Review) — this creates ongoing EA ownership, not a one-time briefing
+
+**Why this works:** Emerging technology governance is inherently EA territory — capability, integration, risk, and governance all in one. Most business units welcome governance on unfamiliar territory. Arriving early with clarity is more influential than arriving late with rules.
+
+**Evidence:** [[braindump-2026-04-09-1322-emerging-technology-topic]] — the three-part deliverable (paper, presentation, briefing) is exactly this playbook. [[daily-brief-2026-04-10]] — A2A 1-year milestone is the external trigger for the MCP/A2A briefing.
+
+### Use Case 5: Connecting Artefact Work to Budget Cycles
+**When to apply:** When a budget cycle is approaching and EA work needs to be funded
+**How to apply:**
+1. Identify the budget deadline and work backwards — roadmaps must be ready 4–6 weeks before budget submission
+2. Frame roadmap initiatives in capability language, not technology language ("enable AI-assisted damage assessment" not "implement a machine vision API")
+3. Use the capability map as the spine — initiatives that can't be connected to a capability don't get funded
+4. Present the roadmap to a sponsor before budget review begins — use it as a proactive stakeholder touchpoint, not just a document to submit
+
+**Hard deadline:** Belron budgeting starts July 2026. Roadmaps needed by mid-June. That's the forcing function for completing Phase 1 of the Belron Business Understanding Framework by end of April.
+
+**Evidence:** [[braindump-2026-04-09-1418-budgeting-roadmaps]]
+
 ---
 
 ## Boundaries & Limitations
@@ -151,21 +175,29 @@ Enterprise architects are structurally at risk of invisibility. The discipline s
 
 ## Evolution & History
 
-### April 2026: Initial Development (this consolidation)
-**What Emerged:** The EA visibility problem crystallised as structural (role design) rather than personal (character). The dual-purpose artefact principle emerged from noticing that the most impactful EA work this week was always framed as both a thinking tool and a stakeholder opportunity.
+### April 6–9, 2026: Initial Development
+**What Emerged:** The EA visibility problem crystallised as structural (role design) rather than personal (character). The dual-purpose artefact principle emerged from noticing that the most impactful EA work was always framed as both a thinking tool and a stakeholder opportunity.
 
 **Catalysts:**
 - [[braindump-2026-04-08-0937-passive-to-active-stakeholder-visibility]] — explicit self-diagnosis
 - [[weekly-checkin-2026-04-08]] — honest assessment of a fragmented, depleted week
 - [[braindump-2026-04-08-1436-belron-software-development-model]] — recognition that the artefact building process IS the stakeholder engagement
 
-**Status at April 2026:** Working. Principles articulated, routine drafted, one week of application ahead.
+### April 10, 2026: Second Consolidation — Two New Use Cases Added
+**What Emerged:** Two new use cases from the week's subsequent work: owning emerging technology governance (MCP/A2A as the concrete instance) and connecting artefact work to budget cycles (July 2026 budgeting deadline as the forcing function).
+
+**New evidence:**
+- [[braindump-2026-04-09-1322-emerging-technology-topic]] — the three-part deliverable set (paper, presentation, briefing) as the EA's playbook for emerging tech ownership
+- [[braindump-2026-04-09-1418-budgeting-roadmaps]] — budgeting starts July 2026; roadmaps needed by mid-June; capability map is the spine
+
+**Status at April 10, 2026:** Working. Framework is holding up across a second week of application. Budget deadline creates concrete pressure to complete the Belron Business Understanding Framework Phase 1 by end of April.
 
 ---
 
 ## Related Frameworks
-- [[belron-business-understanding-framework]] — business proximity is a core input into this effectiveness framework
-- [[agentic-ai-protocols-knowledge]] — MCP/A2A briefing artefact is a concrete example of Principle 2 (dual-purpose artefact)
+- [[belron-business-understanding-framework]] — business proximity is a core input into this effectiveness framework; Phase 1 completion by end of April is a hard prerequisite for June roadmaps
+- [[agentic-ai-governance-framework]] — MCP/A2A briefing is a concrete example of Principle 2 (dual-purpose artefact) and Use Case 4 (emerging tech governance ownership)
+- [[ai-damage-assessment-strategy-framework]] — damage assessment paper/presentation is the Use Case 4 playbook applied to Option B emerging technology topic
 
 ---
 
@@ -180,4 +212,4 @@ Enterprise architects are structurally at risk of invisibility. The discipline s
 
 ---
 
-*Consolidated from 7 sources | Confidence: High | Status: Working — first week of evidence, 4–6 weeks to validate*
+*Consolidated from 10 sources | Confidence: High | Status: Working — second week of evidence; two new use cases added April 10*

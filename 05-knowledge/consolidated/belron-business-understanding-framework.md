@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "belron-business-understanding"
 created: "2026-04-09"
-last_updated: "2026-04-09"
-consolidation_id: "consolidation-2026-04-09"
-source_documents: 8
+last_updated: "2026-04-10"
+consolidation_id: "consolidation-2026-04-10"
+source_documents: 10
 status: "emerging"
 tags: ["#framework", "#consolidated", "#Belron", "#business-understanding", "#EA", "#value-chain", "#Wardley"]
 ---
@@ -137,6 +137,35 @@ Build these layers in sequence. Each layer informs the next.
 
 ---
 
+### Layer 4b: LeanIX — The Living Architecture Repository
+
+**Purpose:** LeanIX is not a separate layer of understanding — it is the tooling that makes Layers 1–5 *maintainable and shareable*. Without a tool like LeanIX, the capability map, systems landscape, and integration map live in PowerPoint and decay fast.
+
+**What LeanIX Is:**
+A SaaS-based Enterprise Architecture Management (EAM) platform that stores architecture data as connected "Fact Sheets" — records for applications, capabilities, technologies, interfaces, and their relationships. The power is in the connections: link an application to the capabilities it supports and LeanIX can answer "if we retire this system, which capabilities are affected?"
+
+**Belron Use Cases (priority order):**
+
+| Use Case | What It Gives You | LeanIX Fact Sheet Types |
+|---|---|---|
+| Application Portfolio Management | Complete inventory of all systems, lifecycle status, owners | Application, IT Component, Provider |
+| Business Capability Map | Live capability map connected to supporting applications | Business Capability, Application |
+| Integration Map | All system integrations — what connects to what | Interface (connects two Applications) |
+| Initiative Impact Tracking | What does CCOTF touch? Does it conflict with Nordics? | Initiative → Application/Capability |
+| Technology Risk Register | Which systems are running end-of-life technology? | IT Component + lifecycle dates |
+
+**Data structuring principles:**
+1. **Start with questions, not inventory** — "Which applications support ADAS Calibration?" → create those Fact Sheets first
+2. **Relationships are the value** — a Fact Sheet with no connections is a list entry
+3. **Own the data quality** — assign an owner to each Fact Sheet type; without ownership, data degrades
+4. **Minimum viable architecture first** — 10 well-connected Fact Sheets > 200 incomplete ones
+
+**LeanIX and the budget cycle:** LeanIX roadmap views are designed for budget conversations. A well-populated LeanIX instance shows investment in terms of capability outcomes — exactly what is needed for the July 2026 budgeting round.
+
+**Source:** [[braindump-2026-04-09-1022-leanix-learning-use-cases]]
+
+---
+
 ### Layer 5: Capability Map
 
 **Purpose:** The culminating layer — a structured view of *what the business does* (independent of who or how), showing ownership, maturity, and strategic importance.
@@ -168,7 +197,9 @@ Top-level Belron capabilities (draft):
 
 ## How to Build This Understanding
 
-### Phase 1 — Document Research (April 2026)
+### Phase 1 — Document Research (April 2026) — **DEADLINE: End of April**
+Phase 1 completion by end of April 2026 is a hard prerequisite for June roadmaps, which feed July budgeting.
+
 - [ ] Find and read Belron strategy / operating model documents on the intranet 📅 2026-04-10
 - [ ] Review John Prodgers' DLD presentations 📅 2026-04-11
 - [ ] Find the existing customer journey model 📅 2026-04-10
@@ -176,6 +207,7 @@ Top-level Belron capabilities (draft):
 - [ ] Confirm: Salesforce deployment model (change sets / unlocked packages) 📅 2026-04-10
 - [ ] Get CCOTF programme documentation 📅 2026-04-09
 - [ ] Find existing architecture or systems landscape diagrams 📅 2026-04-15
+- [ ] Confirm: Does Belron have a LeanIX instance? If yes, get access; if no, start free trial 📅 2026-04-10
 
 ### Phase 2 — Stakeholder Conversations (April–May 2026)
 - [ ] Book informal conversations with 4–5 people who know how Belron builds and operates (start with operational stakeholders) 📅 2026-04-18
@@ -221,10 +253,23 @@ Capability Map
 
 ---
 
-## Related Frameworks
-- [[ea-effectiveness-framework]] — building this framework is itself a stakeholder engagement exercise; each gap-filling conversation is a touchpoint
-- The MCP/A2A knowledge doc — MCP servers can sit in front of EBS and Salesforce; Layer 4 informs where to build the first MCP integrations
+## Budget Timing Context
+
+Roadmaps needed by mid-June 2026 → Budgeting starts July 2026. The sequencing is:
+- **End of April:** Phase 1 complete (landscape understood)
+- **May:** Identify and scope initiatives
+- **May–June:** Build and validate roadmaps
+- **June:** Present roadmaps for budget input
+
+Every week of delay in Phase 1 compresses the roadmap phase. Use the July deadline as the forcing function to prioritise this work.
 
 ---
 
-*Consolidated from 8 sources | Confidence: Medium-High (approach strong; Belron-specific content needs validation) | Status: Emerging — Phase 1 underway April 2026*
+## Related Frameworks
+- [[ea-effectiveness-framework]] — building this framework is itself a stakeholder engagement exercise; Phase 1 completion by end of April is tied to the July budgeting deadline
+- [[agentic-ai-governance-framework]] — Layer 4 (Systems Landscape) identifies which systems are MCP server candidates; MCP/A2A governance work should appear on the roadmap
+- [[ai-damage-assessment-strategy-framework]] — Stage 2 of the customer journey (booking/assessment) is the entry point for the damage assessment use case
+
+---
+
+*Consolidated from 10 sources | Confidence: Medium-High (approach strong; Belron-specific content needs validation) | Status: Emerging — Phase 1 underway, hard deadline end of April 2026*
