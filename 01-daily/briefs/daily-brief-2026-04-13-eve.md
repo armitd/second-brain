@@ -54,6 +54,7 @@ OpenAI's newly appointed Chief Revenue Officer, Denise Dresser, sent an internal
 **Recommended action:** Before committing the damage assessment PoC to Azure OpenAI specifically, confirm whether Belron has a stronger relationship with AWS or Azure, and whether Bedrock gives access to the same GPT-5.4 endpoint with similar compliance posture.
 
 **Sources:**
+- [AlignedNews — "OpenAI Just Called Microsoft a Constraint"](https://x.com/Techmeme/status/2043673458442481718) (Tier 2, via AlignedNews ten-things) — 13 April 2026
 - [CNBC — OpenAI touts Amazon alliance, says Microsoft "limited our ability"](https://www.cnbc.com/2026/04/13/openai-touts-amazon-alliance-in-memo-microsoft-limited-our-ability.html) (Tier 1) — 13 April 2026
 - [GeekWire — How Amazon's $50B OpenAI deal actually works](https://www.geekwire.com/2026/filings-how-amazons-50b-openai-deal-actually-works-and-what-theyre-keeping-secret/) (Tier 1) — April 2026
 - [FinancialContent — The Great Re-Alignment: Amazon's $50B OpenAI Coup](https://www.financialcontent.com/article/marketminute-2026-4-10-the-great-re-alignment-amazons-50-billion-openai-coup-shatters-the-microsoft-monopoly) (Tier 2) — 10 April 2026
@@ -130,6 +131,7 @@ BMW's AEON humanoid robot (developed with Hexagon Robotics) entered its April 20
 - The gap isn't capability — it's deployment readiness, training data, and organisational change management. These are the constraints worth planning against.
 
 **Sources:**
+- [AlignedNews — "BMW Just Put a Humanoid Robot on a German Factory Floor"](https://x.com/SciTechera/status/2043631731530752096) (Tier 2, via AlignedNews ten-things) — 13 April 2026
 - [BMW Group — First humanoid robot introduced in Plant Leipzig](https://www.bmwgroup.com/en/news/general/2026/humanoid-robot-in-leipzig.html) (Tier 1) — April 2026
 - [Automotive Manufacturing Solutions — BMW brings humanoid robots to European production](https://www.automotivemanufacturingsolutions.com/smart-factory/bmw-brings-humanoid-robots-to-european-production/2616584) (Tier 2) — April 2026
 - [Assembly Magazine — Humanoid Robots Complete Trial at BMW](https://www.assemblymag.com/articles/99678-humanoid-robots-complete-trial-project-at-bmw-assembly-plant) (Tier 2) — April 2026
@@ -159,6 +161,7 @@ Crunchbase Q1 2026 data (published early April):
 - **a16z raised $15B** in new funds — the largest haul in the firm's history, with explicit focus on backing companies that advance US interests. This shapes which AI development agencies and startups will get funded next
 
 **Sources:**
+- [AlignedNews — "AI Companies Raised More in Q1 2026 Than All of 2025"](https://x.com/a16z/status/2042621659581157675) (Tier 2, via AlignedNews ten-things) — 13 April 2026
 - [Crunchbase — Q1 2026 Shatters Venture Funding Records](https://news.crunchbase.com/venture/record-breaking-funding-ai-global-q1-2026/) (Tier 2) — April 2026
 - [Crunchbase — North America Q1 Funding Surges](https://news.crunchbase.com/venture/funding-surges-all-stages-ai-north-america-q1-2026/) (Tier 2) — April 2026
 - [Crunchbase — a16z Raises $15B](https://news.crunchbase.com/venture/a16z-15b-new-funds-american-american-dynamism-ben-horowitz/) (Tier 2) — April 2026
@@ -217,6 +220,7 @@ Tomorrow (April 14) is the earliest date in the prediction market window. Polyma
 ## Verification Report
 
 ### Source Analysis
+- **AlignedNews (ten-things feed):** 3 stories surfaced — OpenAI/Microsoft constraint, BMW humanoid, AI VC Q1 record — all verified against primary sources
 - **Tier 1 Sources:** 5 — CNBC, Google Cloud Blog, Linux Foundation, BMW Group press release, GeekWire
 - **Tier 2 Sources:** 5 — Crunchbase (×3), Automotive Manufacturing Solutions, Assembly Magazine, PR Newswire
 - **Cross-References Performed:** 8
