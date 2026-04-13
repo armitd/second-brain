@@ -2,7 +2,7 @@
 name: daily-brief
 description: Generate personalized news intelligence with verified sources (7-day freshness requirement)
 roles: [all]
-integrations: [web-search]
+integrations: [web-search, aligned-news]
 ---
 
 # COG Daily Brief Skill
@@ -86,8 +86,22 @@ During news research (Step 2), apply dedup rules:
 
 Apply comprehensive news research methodology:
 
-#### Interest-Based Research
-- Search based on user's current interest profile
+#### AlignedNews Feed (Primary Source)
+
+Check `00-inbox/MY-INTEGRATIONS.md` — if AlignedNews is listed under **Active**:
+
+1. Call the `news-feed` MCP resource (`aligned://news-feed`) to retrieve the full feed grouped by section
+2. Filter stories by relevance to topics in `MY-INTERESTS.md` — match against titles, summaries, tags, and sections
+3. For each relevant story, note:
+   - `id`, `title`, `summary`, `published_at`, `url`, `section`, `tags`
+4. Also call `get_signals` to pull early-pattern signals (bullish, caution, critical) — these map well to Opportunities & Threats
+5. Apply the same dedup rules as web search — skip stories already covered in recent briefs unless there is a material update
+6. Tag all AlignedNews-sourced items as **Tier 2** sources (industry publication, curated AI feed)
+
+If AlignedNews is not active or the call fails, skip silently and fall back to web search only.
+
+#### Interest-Based Research (Web Search)
+- Search based on user's current interest profile to supplement AlignedNews
 - Focus on strategic relevance to user's role and projects
 - Identify emerging patterns and developments
 - Diversify sources for balanced perspective

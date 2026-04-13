@@ -10,7 +10,7 @@ tags: ["#integrations", "#config", "#cog"]
 
 ## Active
 
-**GitHub**
+**GitHub**1
 
 **AlignedNews**
 - API endpoint: `https://alignednews.com/v1`
