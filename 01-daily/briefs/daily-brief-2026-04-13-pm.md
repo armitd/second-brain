@@ -18,6 +18,7 @@ dedup_urls:
   - "https://www.globenewswire.com/news-release/2026/04/08/3269912/0/en/Lucidworks-Launches-Model-Context-Protocol-to-Reduce-AI-Agent-Integration-Timelines-by-Up-to-10x.html"
 ---
 
+
 # Daily Brief (PM Supplement) — 13 April 2026
 
 **Afternoon, Armo.** Three stories that didn't make this morning's brief. They cluster around the same theme: agentic AI is moving from strategy to production infrastructure, and MCP is the connective tissue. One of these has direct EA precedent value.
