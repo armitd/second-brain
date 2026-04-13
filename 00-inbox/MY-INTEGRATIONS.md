@@ -13,7 +13,7 @@ tags: ["#integrations", "#config", "#cog"]
 **GitHub**
 
 **AlignedNews**
-- API endpoint: `https://alignednews.com`
+- API endpoint: `https://alignednews.com/v1`
 - Auth: Bearer token via env var `ALIGNEDNEWS_API_KEY`
 
 
