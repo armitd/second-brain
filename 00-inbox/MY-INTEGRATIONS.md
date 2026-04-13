@@ -10,8 +10,11 @@ tags: ["#integrations", "#config", "#cog"]
 
 ## Active
 
-
 **GitHub**
+
+**AlignedNews**
+- API endpoint: `https://api.alignednews.com` (confirm exact endpoint from their docs)
+- Auth: Bearer token via env var `ALIGNEDNEWS_API_KEY`
 
 
 ## Disabled
