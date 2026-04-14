@@ -21,6 +21,10 @@ tags: ["#interests", "#daily-brief", "#config"]
 - AI damage assessment technology
 - LeanIX and enterprise architecture tooling
 - Agentic AI platforms and protocols (MCP, A2A)
+- Sparklehorse
+- World Party
+- Pink Floyd
+-
 
 ## Preferred News Sources
 
