@@ -5,7 +5,8 @@ date: "2026-04-09"
 created: "2026-04-09 11:36"
 themes: ["market-scan", "machine-vision", "AI", "front-end-development", "vendor-research", "build-vs-buy", "damage-assessment", "custom-build"]
 tags: ["#braindump", "#professional", "#market-scan", "#machine-vision", "#AI", "#vendor-research", "#damage-assessment", "#custom-build"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "consolidation-2026-04-15"
 energy_level: "medium"
 emotional_tone: "investigative"
 confidence: "medium"

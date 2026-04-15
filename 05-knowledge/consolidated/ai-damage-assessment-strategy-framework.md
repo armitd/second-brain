@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "ai-damage-assessment-strategy"
 created: "2026-04-10"
-last_updated: "2026-04-10"
-consolidation_id: "consolidation-2026-04-10"
-source_documents: 5
+last_updated: "2026-04-15"
+consolidation_id: "consolidation-2026-04-15"
+source_documents: 8
 status: "emerging"
 tags: ["#framework", "#consolidated", "#damage-assessment", "#computer-vision", "#AI", "#build-vs-buy", "#Belron"]
 ---
@@ -241,6 +241,22 @@ Tractable reached $1B; Ravin AI entering US collision market with hardware-agnos
 Ravin AI confirmed piloting with US MSO; IAG-backed; 2B images processed. Anti-China AI coalition tightening frontier model API access — strengthens case for open-source/EU model (LLaMA, Mistral) for data-sensitive use cases.
 
 **Source:** [[daily-brief-2026-04-10]]
+
+### April 14–15, 2026: Edge Deployment Now Practical + Gemma 4 as Privacy-Safe Option
+
+**Two new signals that materially update the foundation model strategy:**
+
+**1. Gemma 4 ships — runs on-device on low-power hardware.**
+Google's Gemma 4 is confirmed with a "runs locally on low-power devices" capability. For the damage assessment use case, this means a technician's tablet in a van is no longer an aspirational edge deployment — it is technically feasible today. On-device inference eliminates the cloud round-trip latency and, critically, means customer vehicle photos (which contain personal data — licence plates, location context) are assessed locally without leaving the device. This directly addresses the GDPR data residency concern in Principle 2.
+
+**2. Local AI has crossed the practicality threshold.**
+Multiple sources confirm that autonomous agents are running on consumer hardware (Mac M-series, mid-range PCs) with performance matching frontier API calls. The enabling factor: open-weights models at frontier capability. For Belron, the "technician using their own device in a van" scenario is no longer speculative.
+
+**Updated Principle 1 implication:** The prototype sequence is now: (1) cloud foundation model (GPT-4o / Gemini) to validate the use case → (2) Gemma 4 local prototype to validate on-device performance and privacy compliance → (3) custom fine-tuned model only if Gemma 4 performance is insufficient. This adds an intermediate step that may eliminate the need for a custom model entirely.
+
+**ARC-AGI-3 context:** All frontier AI models scored below 1% on the new ARC-AGI-3 benchmark, which tests novel reasoning. For damage assessment (a well-defined, repetitive classification task within training distribution), this is not a concern — the task does not require novel reasoning. It is reassuring confirmation that the use case is appropriate for current AI capability.
+
+**Sources:** [[daily-brief-2026-04-14-post]], [[daily-brief-2026-04-15]]
 
 ---
 
