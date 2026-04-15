@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "ea-effectiveness"
 created: "2026-04-09"
-last_updated: "2026-04-10"
-consolidation_id: "consolidation-2026-04-10"
-source_documents: 10
+last_updated: "2026-04-15"
+consolidation_id: "consolidation-2026-04-15"
+source_documents: 12
 status: "working"
 tags: ["#framework", "#consolidated", "#enterprise-architecture", "#visibility", "#effectiveness"]
 ---
@@ -170,6 +170,7 @@ Enterprise architects are structurally at risk of invisibility. The discipline s
 - Over-investing in artefacts at the expense of conversations — a perfect diagram that no one has seen is worthless
 - Treating the stakeholder routine as optional when energy is low — this is exactly when it matters most
 - Using framework language in materials intended for a business audience
+- Assuming structural clarity is a prerequisite for EA contribution — the April 13 check-in confirmed that personal reputation builds independently of team remit ambiguity. Don't wait for the structure to be resolved; keep building relationships and producing artefacts while the structural conversation is initiated in parallel.
 
 ---
 
@@ -191,6 +192,24 @@ Enterprise architects are structurally at risk of invisibility. The discipline s
 - [[braindump-2026-04-09-1418-budgeting-roadmaps]] — budgeting starts July 2026; roadmaps needed by mid-June; capability map is the spine
 
 **Status at April 10, 2026:** Working. Framework is holding up across a second week of application. Budget deadline creates concrete pressure to complete the Belron Business Understanding Framework Phase 1 by end of April.
+
+### April 13, 2026: Third Consolidation — Three New Evidence Points
+
+**What Emerged:** The week of April 7–13 produced three new, significant observations that strengthen and extend the framework:
+
+**1. Meeting drain as a recurring structural pattern (not a one-off).**
+Two consecutive weekly check-ins both cited meetings as the primary energy drain and focus-disrupter. Week of April 8: "work focus fragmented by team meetings." Week of April 13 (rated 1/5): three-day team meeting, "content and dynamic both draining." This is no longer a personal observation — it is a structural diagnosis. The EA effectiveness routine (protected deep-work blocks, stakeholder coffee rotation) is the structural counter-pattern. It must be defended most actively when calendar pressure is highest.
+
+**2. Personal reputation compounds independently of structural clarity.**
+The April 13 check-in surfaced something important: Armo's individual standing with colleagues is strong ("personal reputation landing — both in how colleagues engaged and things they said directly") even though the team's collective remit is unresolved. This decoupling is strategically significant. EA effectiveness does not require structural clarity as a prerequisite — individual relationship-building and artefact delivery build credibility that persists and survives structural ambiguity. Build the reputation while the structural conversation is in progress.
+
+**3. Team remit ambiguity as an active structural risk — distinct from personal effectiveness.**
+The team's scope, ownership, and deliverables are "all unclear, and it hasn't been named openly yet." This is not a personal effectiveness failure — it is a structural gap that requires a managed conversation with the manager. The framing that works: collaborative, not accusatory — "I want to make sure I understand what success looks like for us as a team." Naming it early converts latent tension into a resolvable problem.
+
+**New evidence:**
+- [[weekly-checkin-2026-04-13]] — team remit as unspoken shared problem; personal reputation as decoupled asset; meeting drain second week running; individual conversations as the highest-energy channel
+
+**Status at April 15, 2026:** Working. Three evidence points strengthen the framework without requiring new principles. The structural risk section is updated to reflect that "EA mandate" ambiguity can be specific to *team* remit, not just organisational appetite.
 
 ---
 

@@ -5,7 +5,8 @@ date: "2026-04-09"
 created: "2026-04-09 10:22"
 themes: ["LeanIX", "enterprise-architecture-tooling", "EA-repository", "use-cases", "learning"]
 tags: ["#braindump", "#professional", "#LeanIX", "#EA-tools", "#architecture-repository"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "consolidation-2026-04-15"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"
