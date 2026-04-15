@@ -5,7 +5,8 @@ date: "2026-04-13"
 created: "2026-04-13 21:54"
 themes: ["salesforce", "learning", "professional-development"]
 tags: ["#braindump", "#learning", "#salesforce"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "consolidation-2026-04-15"
 energy_level: "medium"
 emotional_tone: "neutral"
 confidence: "high"

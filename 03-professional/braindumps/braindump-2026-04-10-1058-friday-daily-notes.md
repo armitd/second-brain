@@ -5,7 +5,8 @@ date: "2026-04-10"
 created: "2026-04-10 10:58"
 themes: ["health-asthma-management", "work-prep-nordics", "work-prep-drivex"]
 tags: ["#braindump", "#daily-notes", "#personal", "#professional", "#health", "#work-prep"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "consolidation-2026-04-15"
 energy_level: "medium"
 emotional_tone: "neutral"
 confidence: "high"
