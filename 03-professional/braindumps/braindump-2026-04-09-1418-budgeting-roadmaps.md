@@ -5,7 +5,8 @@ date: "2026-04-09"
 created: "2026-04-09 14:18"
 themes: ["budgeting", "roadmaps", "planning", "EA-deliverables", "deadline"]
 tags: ["#braindump", "#professional", "#budgeting", "#roadmaps", "#planning"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "consolidation-2026-04-15"
 energy_level: "medium"
 emotional_tone: "purposeful"
 confidence: "high"

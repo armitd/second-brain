@@ -5,7 +5,8 @@ date: "2026-04-09"
 created: "2026-04-09 13:03"
 themes: ["OKRs", "Workday", "performance", "reminder"]
 tags: ["#braindump", "#professional", "#OKRs", "#Workday", "#reminder"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "consolidation-2026-04-15"
 energy_level: "low"
 emotional_tone: "neutral"
 confidence: "high"
