@@ -9,6 +9,10 @@ tags: ["#interests", "#daily-brief", "#config"]
 *These topics guide my daily intelligence briefings.*
 
 ## Topics I'm Interested In
+- Belron
+- Autoglass
+- Carglass
+- Safelite
 - AI literacy and education
 - AI in the workforce / future of work
 - Automotive industry news
@@ -24,7 +28,10 @@ tags: ["#interests", "#daily-brief", "#config"]
 - Sparklehorse
 - World Party
 - Pink Floyd
--
+- Gardening
+- BBQ
+- Cooking
+- Thermomix
 
 ## Preferred News Sources
 
