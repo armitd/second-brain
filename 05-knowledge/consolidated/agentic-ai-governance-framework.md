@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "agentic-ai-governance"
 created: "2026-04-10"
-last_updated: "2026-04-15"
-consolidation_id: "consolidation-2026-04-15"
-source_documents: 12
+last_updated: "2026-04-20"
+consolidation_id: "consolidation-2026-04-20"
+source_documents: 16
 status: "working"
 tags: ["#framework", "#consolidated", "#agentic-AI", "#MCP", "#A2A", "#EA-governance", "#protocols"]
 ---
@@ -57,8 +57,9 @@ Together they form a complete governance architecture for multi-agent systems: M
 - [[braindump-2026-04-08-0942-a2a-mcp-research-strategy]] — "MCP is not a vendor product — it's an industry standard. CIOs and EAs can now build long-term integration roadmaps around it without vendor lock-in risk"
 - [[daily-brief-2026-04-10]] — A2A 1-year milestone: 150+ orgs, Microsoft Agent Framework 1.0 ships with full MCP support — "the MCP-plus-A2A architecture is becoming the production-ready default for enterprise agentic systems"
 - [[daily-brief-2026-04-09]] — MCP enterprise auth (SAML/OIDC) shipping Q2 2026 — the enterprise deployment unlock
+- [[daily-brief-2026-04-17]] — **Zapier MCP goes GA with 9,000+ apps, 30,000+ actions, all plans, no extra cost.** This is the moment MCP stopped being a developer experiment and became a default expectation. The barrier to MCP adoption just dropped to near-zero for anyone who already uses Zapier. The same dynamic as when Zapier made webhooks accessible to non-developers in the early 2010s — a complex integration pattern pulled into the mainstream overnight.
 
-**How to apply:** Frame MCP decisions as integration architecture decisions — which business systems get an MCP server, in what priority order, with what data classification. This is standard EA remit.
+**How to apply:** Frame MCP decisions as integration architecture decisions — which business systems get an MCP server, in what priority order, with what data classification. This is standard EA remit. **Zapier MCP GA is the trigger to start governing MCP-connected actions, not just allowing them** — an AI agent that can send emails, create calendar events, update CRM records, and file documents across 9,000 apps is a privilege escalation requiring access review.
 
 **Confidence:** High
 
@@ -109,9 +110,13 @@ Together they form a complete governance architecture for multi-agent systems: M
 
 **How to apply:** 
 - Use the A2A 1-year milestone as the trigger to bring a governance brief to EA leadership
-- Use the two April 2026 incidents as the opening examples: "This happened at a security firm and at Bain last week. Here is how we prevent it at Belron."
+- Use the confirmed incidents as the opening examples: "This happened at a security firm, at Bain, and at Vercel. Here is how we prevent it at Belron."
 - The Qlik "12%" stat is the strongest governance gap number available: "We want to be in the 12%, not the 88%."
-- Frame the Gateway+Registry architecture pattern (MCP access control + MCP server registry) as the structural answer to both incidents
+- Frame the Gateway+Registry architecture pattern (MCP access control + MCP server registry) as the structural answer to the data leakage and credential breach incidents
+- **EY deployment (130K auditors on multi-agent Microsoft Azure+Foundry+Fabric platform embedded in EY Canvas)** is the enterprise reference architecture for large-scale agentic AI deployment. Use it to demonstrate scale and provide a credibility anchor in governance briefs.
+
+**New incident (April 2026): Vercel/Context.ai OAuth breach.**
+An AI tool's Google Workspace OAuth application was compromised. The attacker pivoted through the OAuth grant into Vercel's internal systems. No sophisticated exploit — the AI tool's authentication pathway became the attack vector. This is a new and important failure mode: not the agent itself acting unpredictably, but the *authentication infrastructure* of the agent's integration. Governance of AI tool OAuth grants must be part of any MCP governance policy.
 
 **Confidence:** High
 
@@ -203,6 +208,23 @@ A2A 1-year milestone confirms 150+ organisations and Microsoft Agent Framework 1
 
 **Source:** [[daily-brief-2026-04-10]]
 
+### April 16–20, 2026: MCP Becomes Mainstream + New Attack Vector Confirmed
+
+**What Changed:** Three developments that materially advance the governance case:
+
+**1. Zapier MCP GA — MCP is now mainstream infrastructure.**
+9,000+ apps, 30,000+ actions, all Zapier plans, no extra cost. MCP crossed from protocol to default expectation overnight. For enterprise architecture: the question is no longer "will business units adopt MCP?" but "which actions do we want to enable and what governance do we need *before* agents start connecting to everything by default?" This is the SaaS-in-the-2010s moment — governance after the fact is painful; governance before proliferation is protective.
+
+**2. Vercel/Context.ai OAuth attack — new attack vector class confirmed.**
+An AI tool's Google Workspace OAuth app was compromised, with the attacker pivoting through the OAuth grant into Vercel's internal systems. No sophisticated exploit. The attack vector was the *authentication infrastructure of the AI tool's integration*, not the AI behaviour itself. This extends the governance scope beyond data access (what can the agent read?) to include authentication governance (what OAuth grants have AI tools been given, and are those grants auditable and revocable?).
+
+**3. EY 130K auditors on agentic AI — enterprise reference architecture exists.**
+EY has deployed a multi-agent platform (Microsoft Azure + Foundry + Fabric) to 130,000 auditors embedded in EY Canvas, their core audit platform. This is the largest enterprise agentic AI deployment confirmed to date. It provides a credible reference point for enterprise governance discussions: "EY ran a governance programme before deploying this to 130K employees. What is Belron's equivalent?" 
+
+**Sources:** [[daily-brief-2026-04-17]], [[daily-brief-2026-04-20]]
+
+---
+
 ### April 14–15, 2026: The Governance Gap Quantified + First Confirmed Incidents
 
 The week produced the sharpest evidence yet that the governance gap is real and underestimated:
@@ -244,4 +266,4 @@ The week produced the sharpest evidence yet that the governance gap is real and 
 
 ---
 
-*Consolidated from 6 sources | First version: April 10, 2026 | Status: Working*
+*Consolidated from 16 sources | First version: April 10, 2026 | Last updated: April 20, 2026 | Status: Working*
