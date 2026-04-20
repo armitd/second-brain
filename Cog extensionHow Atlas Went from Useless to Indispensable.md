@@ -1,0 +1,1 @@
+[How Atlas Went from Useless to Indispensable](https://www.alvaro-os.xyz/blog/ai-assistant-compound-effect)
