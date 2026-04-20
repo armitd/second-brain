@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "leanix-ea-repository"
 created: "2026-04-15"
-last_updated: "2026-04-15"
-consolidation_id: "consolidation-2026-04-15"
-source_documents: 1
+last_updated: "2026-04-20"
+consolidation_id: "consolidation-2026-04-20"
+source_documents: 2
 status: "working"
 tags: ["#framework", "#consolidated", "#LeanIX", "#EA-tools", "#architecture-repository", "#APM"]
 ---
@@ -244,9 +244,12 @@ Key insight: "LeanIX is the tooling layer for everything being built this week" 
 - If no: what EAM tools (if any) are currently in use? This shapes the TCO argument for LeanIX
 
 **Immediate actions:**
-- [ ] Confirm whether Belron has LeanIX — ask manager or check with IT procurement 📅 2026-04-18
-- [ ] If no instance: access LeanIX free trial and complete the introductory Academy path 📅 2026-04-22
-- [ ] If instance exists: request access and audit the APM completeness 📅 2026-04-22
+- [ ] Confirm whether Belron has LeanIX — ask manager or check with IT procurement 📅 2026-04-24
+- [ ] If no instance: access LeanIX free trial and complete the introductory Academy path 📅 2026-04-27
+- [ ] If instance exists: request access and audit the APM completeness 📅 2026-04-27
+
+**Engagement opportunity:**
+- **SAP LeanIX London Tour — April 30, 2026.** In-person SAP LeanIX event in London. Valuable for: (1) seeing the current product roadmap (LeanIX has been integrating with SAP Signavio for process + architecture combined views — relevant to Belron's business understanding work), (2) networking with other EA practitioners using LeanIX in regulated or complex businesses, (3) demonstrating to Belron leadership that the EA function is actively investing in the tooling conversation. If Belron is evaluating LeanIX, attending this event strengthens the internal business case.
 
 ---
 
