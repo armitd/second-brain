@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "belron-business-understanding"
 created: "2026-04-09"
-last_updated: "2026-04-10"
-consolidation_id: "consolidation-2026-04-10"
-source_documents: 10
+last_updated: "2026-04-20"
+consolidation_id: "consolidation-2026-04-20"
+source_documents: 13
 status: "emerging"
 tags: ["#framework", "#consolidated", "#Belron", "#business-understanding", "#EA", "#value-chain", "#Wardley"]
 ---
@@ -197,8 +197,8 @@ Top-level Belron capabilities (draft):
 
 ## How to Build This Understanding
 
-### Phase 1 — Document Research (April 2026) — **DEADLINE: End of April**
-Phase 1 completion by end of April 2026 is a hard prerequisite for June roadmaps, which feed July budgeting.
+### Phase 1 — Document Research (April 2026) — **DEADLINE: End of April (in progress)**
+Phase 1 completion by end of April 2026 is a hard prerequisite for June roadmaps, which feed July budgeting. As of April 20 this is the final week of the Phase 1 window. Nordics delivery has taken priority; the remaining Phase 1 items need acceleration this week.
 
 - [ ] Find and read Belron strategy / operating model documents on the intranet 📅 2026-04-10
 - [ ] Review John Prodgers' DLD presentations 📅 2026-04-11
@@ -272,4 +272,17 @@ Every week of delay in Phase 1 compresses the roadmap phase. Use the July deadli
 
 ---
 
-*Consolidated from 10 sources | Confidence: Medium-High (approach strong; Belron-specific content needs validation) | Status: Emerging — Phase 1 underway, hard deadline end of April 2026*
+---
+
+## April 2026 Context Notes
+
+**Infrastructure considerations for AI projects:**
+- **Nebius** (backed by former Yandex team) has confirmed a $10B AI compute factory in Finland — EU-based GPU compute for AI workloads with inherent EU data residency compliance. For any Belron AI project (damage assessment, agentic workflows) that requires GDPR-compliant training or inference infrastructure outside hyperscalers, Nebius EU is a procurement option worth tracking alongside Azure/GCP/AWS.
+
+**Automotive industry signals:**
+- **Stellantis-Microsoft 5-year AI partnership (April 2026):** Automotive OEMs are committing multi-year AI infrastructure investments. This shapes the competitive context — Belron's insurance and fleet partners are likely to face pressure from OEM-native AI damage assessment in the medium term.
+- **VW Group Media Night (April 21, 2026):** Automotive industry news event — monitor for any connected vehicle / AI damage assessment announcements from OEM suppliers that would affect the competitive landscape.
+
+---
+
+*Consolidated from 13 sources | Confidence: Medium-High (approach strong; Belron-specific content needs validation) | Status: Emerging — Phase 1 final week April 20-30 2026*

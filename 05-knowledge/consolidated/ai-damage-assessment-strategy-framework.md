@@ -3,11 +3,11 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "ai-damage-assessment-strategy"
 created: "2026-04-10"
-last_updated: "2026-04-15"
-consolidation_id: "consolidation-2026-04-15"
-source_documents: 8
-status: "emerging"
-tags: ["#framework", "#consolidated", "#damage-assessment", "#computer-vision", "#AI", "#build-vs-buy", "#Belron"]
+last_updated: "2026-04-20"
+consolidation_id: "consolidation-2026-04-20"
+source_documents: 12
+status: "working"
+tags: ["#framework", "#consolidated", "#damage-assessment", "#computer-vision", "#AI", "#build-vs-buy", "#Belron", "#RFI"]
 ---
 
 # AI Damage Assessment Strategy Framework
@@ -15,7 +15,7 @@ tags: ["#framework", "#consolidated", "#damage-assessment", "#computer-vision", 
 ## Framework Overview
 A decision framework for how Belron should approach AI-powered damage assessment — covering the strategic question (build/buy/partner), the vendor landscape by layer, the prototype path, and the build window argument.
 
-**Status:** Emerging (market intelligence gathered; strategic decision point not yet reached)
+**Status:** Working (RFI deck now in progress — formal vendor engagement stage reached; market intelligence confirmed by market sizing data)
 **Last Updated:** 2026-04-10
 **Source Insights:** 5 documents — market scan braindump (Apr 9), competitive watchlist, daily briefs Apr 9–10
 
@@ -26,8 +26,9 @@ A decision framework for how Belron should approach AI-powered damage assessment
 A customer photographs windscreen damage → AI assesses it → instant repair/replace recommendation → seamless booking. This is the AI damage assessment use case. In 2026:
 
 - **The market is real and moving fast.** Tractable reached $1B valuation. Ravin AI expanded to the US. Audatex/Solera are embedded in insurer workflows. The competitive landscape is forming now.
-- **The technology is ready for prototyping today.** Foundation models (GPT-4o, Gemini) can analyse damage photos without training data — a working prototype is an afternoon's work.
+- **The technology is ready for prototyping today.** Foundation models (GPT-4o, Gemini, Opus 4.7) can analyse damage photos without training data — a working prototype is an afternoon's work.
 - **The build window is open but closing.** Custom models will commoditise by 2028–2029. The advantage accrues to organisations that build first and own their training data. Waiting means buying someone else's solution.
+- **Market sizing confirmed:** The in-cabin automotive AI market (which includes damage assessment as a component) is valued at **$242M in 2024 growing to $4.5B by 2032 at a CAGR of 35%**. The Stellantis-Microsoft 5-year AI partnership (announced April 2026) is a reference signal for automotive OEM investment in this space. Belron sits adjacent to this market and has a unique angle: the damage event itself, not the in-vehicle experience.
 
 ---
 
@@ -82,6 +83,8 @@ Building a custom AI damage assessment solution requires thinking in layers. Eac
 - [[daily-brief-2026-04-10]] — Anthropic compute backed by Google/Broadcom 3.5GW commitment; API availability improving
 
 **Prototype test:** Take 5 real photos of windscreen damage. Submit to Gemini 3.1 Pro and GPT-5.4 with a prompt asking for structured JSON output (damage type, severity, recommendation: repair/replace, confidence score). If the output is useful, the use case is validated.
+
+**April 2026 update — Opus 4.7 vision resolution (3× improvement):** Claude Opus 4.7 ships with approximately 3× improvement in visual resolution and spatial reasoning over its predecessor. For damage assessment, where crack geometry and chip location are critical details, higher resolution directly translates to better assessment accuracy. The model comparison set for the prototype should now include Opus 4.7 alongside Gemini and GPT-5.4.
 
 **Confidence:** High
 
@@ -143,6 +146,7 @@ Building a custom AI damage assessment solution requires thinking in layers. Eac
 | **Tractable** | AI for accident/vehicle damage assessment. $1B valuation. Used by insurers globally | Very high — adjacent market | Already in insurer ecosystem that touches Belron customers |
 | **Ravin AI** | AI vehicle inspection platform. 2B images processed. Hardware-agnostic | High — direct reference architecture | US MSO pilot underway; IAG-backed; no proprietary hardware |
 | **Audatex / Solera** | Automotive claims AI embedded in insurer workflows | High — may already be in Belron's value chain | Most important to check: do Belron insurance partners already use this? |
+| **NVIDIA Lyra 2.0** | Synthetic data generation platform for automotive AI training | High — training data supply | Generates photorealistic synthetic damage/vehicle images for model training. Directly addresses the "Layers 2–3 are hardest" problem — synthetic data can supplement real labelled images, reducing time and cost to reach training data volume thresholds |
 
 **The key question before committing to custom build:** Do any of Belron's major insurance referral partners already use Tractable, Ravin, or Audatex/Solera for their own damage assessment? If yes, the argument becomes partnership + integration, not build.
 
@@ -200,6 +204,25 @@ The build window for a differentiating custom model is **2026–2027.** After th
 **Format:** One-page briefing — opportunity, three paths (build/partner/buy), recommendation, decision needed
 **Audience:** Senior sponsor / CTO equivalent
 
+### Use Case 4: Damage Assessment RFI Deck — First Formal Vendor Engagement
+**Objective:** Transition the damage assessment work from research and competitive watchlist to formal vendor engagement. The RFI deck is the artefact that does this.
+
+**What this milestone represents:** The RFI deck is the point at which a concept becomes a project. It signals to the organisation and to vendors that Belron is entering a formal selection process, not just exploring. The framing of the RFI sets the scope and vendor landscape for what follows — it is the most consequential document in the early phase.
+
+**Framing principles for the RFI:**
+1. **Define what you're assessing, not just what you want:** Are you assessing vendors for a build partner (Layer 3 model training), a buy/integrate option (Tractable/Ravin), or a data annotation platform (Encord/Scale AI)? A muddled RFI attracts muddled responses.
+2. **Include the strategic question, not just technical specs:** "Our current position is [X]. We are evaluating [build/buy/partner]. We want to understand how your solution addresses [specific use case] at [Belron's scale]."
+3. **Ask about data residency and GDPR upfront:** Any vendor handling customer vehicle images must demonstrate UK/EU data residency and GDPR compliance. Include this as a required question.
+4. **Require confidence scoring evidence:** Ask vendors to demonstrate their confidence scoring approach — how do they handle low-confidence assessments? How is the human review handoff designed?
+
+**Target audience:** The RFI deck likely has two audiences — the vendor response (external) and an internal approval/sponsor brief (internal). Design for both: vendor-facing for the RFI itself, executive summary slide for internal stakeholders.
+
+**Status as of April 20:** In progress. Target delivery: April 24.
+
+**Evidence:** [[weekly-checkin-2026-04-20]] — "Slide for RFI for the Damage Assessment deck" named as week's priority; "The Damage Assessment RFI is the most strategically interesting active thread. Moving from research and competitive watchlist to a formal RFI deck is the moment a concept becomes a project."
+
+---
+
 ### Use Case 3: Data Strategy Design
 **Objective:** Define how training data will be collected, labelled, stored, and governed
 
@@ -242,6 +265,23 @@ Ravin AI confirmed piloting with US MSO; IAG-backed; 2B images processed. Anti-C
 
 **Source:** [[daily-brief-2026-04-10]]
 
+### April 16–20, 2026: Market Validated + RFI Milestone + NVIDIA Synthetic Data
+
+**Three material developments:**
+
+**1. RFI deck now in progress — concept becomes project.**
+The damage assessment work has moved from research to formal vendor engagement. The RFI deck (target: April 24) is the milestone that signals Belron's intent to the vendor market. This is the most significant single development in this framework — it converts analysis into action. Use Case 4 added.
+
+**2. NVIDIA Lyra 2.0 — synthetic training data now an option.**
+NVIDIA's Lyra 2.0 platform generates photorealistic synthetic automotive images for AI model training. For damage assessment, this directly addresses the hardest problem in the build path (Layers 2–3: labelled training data). Synthetic data can supplement real customer images, reducing the time and cost required to reach training volume thresholds before a custom model is viable. Added to the competitive landscape as a training data supply option.
+
+**3. Market sizing confirmed: in-cabin automotive AI $242M → $4.5B at 35% CAGR.**
+Independent market data confirms the automotive AI market is growing at 35% CAGR. The Stellantis-Microsoft 5-year AI partnership (announced April 2026) is a reference signal: automotive OEMs are making multi-year AI infrastructure commitments. Belron sits at a unique intersection — the damage event itself, not the in-vehicle experience — which is underserved by OEM-focused solutions.
+
+**Sources:** [[weekly-checkin-2026-04-20]], [[daily-brief-2026-04-17-pm]], [[daily-brief-2026-04-20]]
+
+---
+
 ### April 14–15, 2026: Edge Deployment Now Practical + Gemma 4 as Privacy-Safe Option
 
 **Two new signals that materially update the foundation model strategy:**
@@ -282,4 +322,4 @@ Multiple sources confirm that autonomous agents are running on consumer hardware
 
 ---
 
-*Consolidated from 5 sources | First version: April 10, 2026 | Status: Emerging*
+*Consolidated from 12 sources | First version: April 10, 2026 | Last updated: April 20, 2026 | Status: Working — RFI deck in progress, formal vendor engagement underway*

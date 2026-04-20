@@ -3,11 +3,11 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "ea-effectiveness"
 created: "2026-04-09"
-last_updated: "2026-04-15"
-consolidation_id: "consolidation-2026-04-15"
-source_documents: 12
+last_updated: "2026-04-20"
+consolidation_id: "consolidation-2026-04-20"
+source_documents: 17
 status: "working"
-tags: ["#framework", "#consolidated", "#enterprise-architecture", "#visibility", "#effectiveness"]
+tags: ["#framework", "#consolidated", "#enterprise-architecture", "#visibility", "#effectiveness", "#transition"]
 ---
 
 # EA Effectiveness Framework
@@ -140,6 +140,23 @@ Enterprise architects are structurally at risk of invisibility. The discipline s
 
 **Evidence:** [[braindump-2026-04-09-1322-emerging-technology-topic]] — the three-part deliverable (paper, presentation, briefing) is exactly this playbook. [[daily-brief-2026-04-10]] — A2A 1-year milestone is the external trigger for the MCP/A2A briefing.
 
+### Use Case 6: Shaping a Leadership Transition
+**When to apply:** When a leadership vacuum opens — a manager leaves, a function restructures, a new remit is forming
+**How to apply:**
+1. Recognise the shift: watching a transition is fundamentally different from shaping it. Move from observer to contributor by having a point of view, not just observations
+2. Be visible where decisions are forming — existing meetings, office presence, the spaces where transition conversations happen informally
+3. Have a deliverable in flight that demonstrates strategic intent: an exam booked, a document in progress, a briefing prepared. These signal "this person is positioning themselves" to the people watching
+4. The question to answer privately: if you were designing the EA team's remit from scratch, what would you want it to be? Having a clear internal answer prepares you for the moment you're asked
+5. Make one contribution in the relevant meetings that signals intent rather than presence — not just "I was there" but "I had a point of view"
+
+**Why timing matters:** Leadership vacuums create a brief window during which the future structure is genuinely uncertain. Visibility and clear positioning during this window carries disproportionate weight. Miss the window and the structure solidifies without you.
+
+**Evidence:** [[weekly-checkin-2026-04-20]] — "currently watching, need to move to shaping." Head of EA retiring + departmental change in motion = transition moment live. Nordics delivery, Steve Paisley collaboration, CIO-level document are exactly the visible outputs that build the case for someone who should be shaping the transition.
+
+**Confidence:** Medium-High — principle is well-established in career development literature; personal application is emerging
+
+---
+
 ### Use Case 5: Connecting Artefact Work to Budget Cycles
 **When to apply:** When a budget cycle is approaching and EA work needs to be funded
 **How to apply:**
@@ -171,6 +188,7 @@ Enterprise architects are structurally at risk of invisibility. The discipline s
 - Treating the stakeholder routine as optional when energy is low — this is exactly when it matters most
 - Using framework language in materials intended for a business audience
 - Assuming structural clarity is a prerequisite for EA contribution — the April 13 check-in confirmed that personal reputation builds independently of team remit ambiguity. Don't wait for the structure to be resolved; keep building relationships and producing artefacts while the structural conversation is initiated in parallel.
+- Trusting the internal read over the external evidence — three consecutive check-ins have now confirmed that the internal critic runs hotter than the evidence warrants. The Nordics work landed well despite anticipated resistance. Personal reputation was strong despite structural uncertainty. The external read is consistently better than the internal one. Treat this as a known calibration error and adjust accordingly.
 
 ---
 
@@ -192,6 +210,33 @@ Enterprise architects are structurally at risk of invisibility. The discipline s
 - [[braindump-2026-04-09-1418-budgeting-roadmaps]] — budgeting starts July 2026; roadmaps needed by mid-June; capability map is the spine
 
 **Status at April 10, 2026:** Working. Framework is holding up across a second week of application. Budget deadline creates concrete pressure to complete the Belron Business Understanding Framework Phase 1 by end of April.
+
+### April 20, 2026: Fourth Consolidation — Transition Moment Live
+
+**What Emerged:** The week of April 14–20 produced a significant shift in the professional context and three new framework-relevant observations:
+
+**1. The transition moment is live — watching must become shaping.**
+The Head of EA is retiring. Departmental change is in motion. The team remit ambiguity that was an unresolved structural question is now likely to get resolved *through* the transition rather than as a standalone conversation. This context shifts the framework's focus from "building presence while the structure is unclear" to "actively positioning during a live restructure." Use Case 6 (Shaping a Leadership Transition) added in response.
+
+**2. Collaboration as a visible amplifier — the Steve Paisley model.**
+The Nordics delivery this week was collaborative (Steve Paisley partnership), not solo. The outcome — a document taken to the global CIO — is a higher-visibility output than solo EA work would have produced. Pattern: the best EA outputs this period have consistently come from partnerships, not individual effort. The collaboration *is* the visibility mechanism. Find the next opportunity to activate a similar partnership rather than defaulting to solo work.
+
+**3. External reception consistently better than internal expectation — now a confirmed pattern (third data point).**
+- April 8: Personal reputation building despite a fragmented, depleted week
+- April 13: Personal reputation landing well despite structural ambiguity  
+- April 20: Nordics work landing well with global CIO despite internal resistance anticipated
+
+This is no longer an observation — it is a calibration pattern. The internal critic consistently underestimates external reception. Treat it as a known systematic error and give the external read more weight in decisions about whether to proceed or hold back.
+
+**4. TOGAF exam as a professional intent signal — timing matters.**
+Booking the TOGAF exam during a live transition moment is not just about certification. It is a signal of professional intent at exactly the moment a leadership vacuum is opening. The *timing* of visible professional investment (exams, high-profile deliverables) carries weight in transition contexts. TOGAF completion signals "this person is investing in their capability at the moment others are deciding what comes next."
+
+**New evidence:**
+- [[weekly-checkin-2026-04-20]] — transition moment recognition; Steve Paisley collaboration; external reception pattern; watching→shaping shift; TOGAF as intent signal
+
+**Status at April 20, 2026:** Working. New use case (Transition Shaping) added. Common pitfall updated with calibration error insight. Framework now spans five principles and six use cases.
+
+---
 
 ### April 13, 2026: Third Consolidation — Three New Evidence Points
 
@@ -231,4 +276,4 @@ The team's scope, ownership, and deliverables are "all unclear, and it hasn't be
 
 ---
 
-*Consolidated from 10 sources | Confidence: High | Status: Working — second week of evidence; two new use cases added April 10*
+*Consolidated from 17 sources | Confidence: High | Status: Working — fourth consolidation April 20; six use cases; transition moment live*
