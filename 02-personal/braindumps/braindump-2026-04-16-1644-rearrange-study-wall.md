@@ -5,7 +5,9 @@ date: "2026-04-16"
 created: "2026-04-16 16:44"
 themes: ["home environment", "space curation", "personal organisation"]
 tags: ["#braindump", "#personal", "#home", "#todo"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-20]]"
+consolidated_date: "2026-04-20"
 energy_level: "low"
 emotional_tone: "neutral"
 confidence: "high"

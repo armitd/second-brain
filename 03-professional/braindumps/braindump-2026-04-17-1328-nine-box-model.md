@@ -5,7 +5,9 @@ date: "2026-04-17"
 created: "2026-04-17 13:28"
 themes: ["talent management", "organisational design", "professional development"]
 tags: ["#braindump", "#professional", "#talent", "#frameworks", "#9-box"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-20]]"
+consolidated_date: "2026-04-20"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"
