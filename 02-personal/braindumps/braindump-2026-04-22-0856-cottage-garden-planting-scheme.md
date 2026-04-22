@@ -37,11 +37,29 @@ Planning a cottage garden planting scheme. Reference: Old Castle Cottage guide (
 
 ### Plant List (layered by height)
 
-| Layer | Plants |
-|---|---|
-| **Front / Low** | Nepeta 'Cat's Pajamas', Phlox Candy Stripe, Geranium Dragon Heart |
-| **Mid-height** | Salvia Rose Marvel, Veronica Perfectly Picasso, Echinacea PowWow Wild Berry |
-| **Back / Tall** | Sarah Bernhardt Peony, Earth Angel Rose, Kiss Me Kate Arbor Rose (climber) |
+#### Front / Low-Growing
+
+| Plant | Type | Colour | Notes |
+|---|---|---|---|
+| Nepeta 'Cat's Pajamas' | Hardy perennial (Catmint) | Purple-blue | Long flowering, drought-tolerant, soft mounding habit; great edge spiller |
+| Phlox Candy Stripe | Hardy perennial (Border Phlox) | Pink/white striped | Fragrant, upright but compact; good front-of-border |
+| Geranium Dragon Heart | Hardy perennial (Cranesbill) | Deep magenta-pink | Ground-covering, long season; very reliable UK performer |
+
+#### Mid-Height
+
+| Plant | Type | Colour | Notes |
+|---|---|---|---|
+| Salvia Rose Marvel | Hardy perennial (Ornamental Sage) | Pink | Repeat-flowering, attracts pollinators; UK-hardy in most conditions |
+| Veronica Perfectly Picasso | Hardy perennial (Speedwell) | Pink/purple bicolour | Upright spikes, long-blooming; also sold as Veronicastrum in some UK nurseries |
+| Echinacea PowWow Wild Berry | Hardy perennial (Coneflower) | Deep rose-pink | Compact habit for an Echinacea; good UK availability; seed heads useful in winter |
+
+#### Back / Tall
+
+| Plant | Type | Colour | Notes |
+|---|---|---|---|
+| Sarah Bernhardt Peony | Hardy perennial (Herbaceous Peony) | Soft pink | Classic cottage peony, very fragrant; dies back in winter, slow to establish |
+| Earth Angel Rose | Shrub rose | Blush pink | Repeat-flowering; check for UK availability — may be sold under a different name |
+| Kiss Me Kate Arbor Rose | Climbing rose | Pink | Climber for structures; vigorous; check UK name equivalents |
 
 ## Content Analysis
 
