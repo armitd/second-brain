@@ -20,7 +20,9 @@ tags: ["#profile", "#config", "#cog"]
 
 ## Active Projects
 
-*No active projects yet. Add them anytime by editing this file or running onboarding again.*
+- [[04-projects/ai-damage-assessment-poc/PROJECT-OVERVIEW|AI Damage Assessment PoC]]
+- [[04-projects/mcp-governance/PROJECT-OVERVIEW|MCP Governance]]
+- [[04-projects/contact-centre-future/PROJECT-OVERVIEW|Contact Centre of the Future]]
 
 ## Related
 - [[MY-INTERESTS|My Interests & News Sources]]
