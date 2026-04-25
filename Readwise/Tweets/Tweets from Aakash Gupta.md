@@ -66,3 +66,8 @@
   The default workflow for anything visual: generate a slide, screenshot it, give feedback, screenshot again, give more feedback. Five rounds of you https://t.co/WF2VEyVTUT https://t.co/tlqjrHp3Td ([View Tweet](https://x.com/aakashgupta/status/2039442140405895546))
 - Karpathy just turned every note-taking app into a legacy product in a single thread.
   The workflow: dump raw sources into a folder, let the LLM compile a markdown wiki, maintain all the links, run data quality checks, and answer complex questions across 400K words. The human https://t.co/vdHIDvLgtm ([View Tweet](https://x.com/aakashgupta/status/2039893404356939968))
+## New highlights added April 25, 2026 at 8:06 AM
+- One research task adds 10% to your Claude Code context window. Or 0.5%. The difference is whether you used a sub-agent.
+  Carl Vellotti showed the receipts live. Same research query. Without a sub-agent, context jumped from 16% to 25%. With a sub-agent, 16% to 16.5%. The sub-agent https://t.co/tlqjrHp3Td ([View Tweet](https://x.com/aakashgupta/status/2041666842411069729))
+- Evernote had 250 million users in 2018. They sold for $185 million in 2023. That's 74 cents per user.
+  Notion hit $10 billion in valuation. Roam Research raised $9 million on the promise of bidirectional linking. Obsidian has 5 million users. Tiago Forte sold 100,000 copies of https://t.co/FB1djZ3puX ([View Tweet](https://x.com/aakashgupta/status/2045027487101657344))

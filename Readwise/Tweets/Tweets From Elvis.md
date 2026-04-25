@@ -14,3 +14,6 @@
 - Building a personal knowledge base for my agents is increasingly where I spend my time these days. 
   Like @karpathy, I also use Obsidian for my MD vaults. 
   What's different in my approach is that I curate research papers on a daily basis and have actually tuned a Skill for https://t.co/YI5cWUhqT3 https://t.co/4AQSFOv4PV ([View Tweet](https://x.com/omarsar0/status/2039844072748204246))
+- LLM Artifacts
+  Connected to @karpathy's LLM Knowledge base idea, I've been building out a fun way to generate dynamic artifacts from these knowledge bases with the goal of discovering and revealing meaningful and deeper insights.
+  LLM KBs are hard to consume for humans, as I https://t.co/BiPHkc4Ad3 ([View Tweet](https://x.com/omarsar0/status/2045949517921652855))

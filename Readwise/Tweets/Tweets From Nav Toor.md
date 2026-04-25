@@ -20,3 +20,7 @@
   Here are 12 insane Claude Opus 4.6 prompts they don't want you to know (Save for later) https://t.co/olZxWPrgXf
   ![](https://pbs.twimg.com/media/HBXvcB_bcAMjAmu.jpg) ([View Tweet](https://twitter.com/heynavtoor/status/2023786876667302114))
 - https://t.co/GJk8E3P8Z5 ([View Tweet](https://x.com/heynavtoor/status/2034679349157536233))
+- Claude can now meal prep your entire week and hit your exact nutrition goals like a $200/hour registered dietitian from the Mayo Clinic. For free.
+  Here are 12 prompts that plan meals, calculate macros, and save you $500/month on groceries:
+  (Save this before it disappears) https://t.co/M6dWc2sdwH
+  ![](https://pbs.twimg.com/media/HGQ8DRMbMAAUZYy.jpg) ([View Tweet](https://x.com/heynavtoor/status/2045826159636824423))
