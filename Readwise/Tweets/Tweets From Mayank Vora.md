@@ -17,3 +17,8 @@
   Anthropic just released the real playbook for building AI agents that actually work.
   It’s a 30+ page deep dive called The Complete Guide to Building Skills for Claude and it quietly shifts the conversation from “prompt engineering” https://t.co/T5haLJMpLH
   ![](https://pbs.twimg.com/media/HBHiccraoAAthF2.jpg) ([View Tweet](https://twitter.com/aiwithmayank/status/2022646689648251382))
+- Top Stanford students have a secret NotebookLM workflow.
+  They never re-read a book.
+  They upload the PDF in NotebookLM, run 6 prompts, and extract more insight in 20 minutes than most readers get from finishing it twice.
+  It took me 3 weeks to figure out exactly what they were https://t.co/KmvMgD3p8f
+  ![](https://pbs.twimg.com/media/HFnDPryasAA6VF-.png) ([View Tweet](https://x.com/aiwithmayank/status/2042878582108889265))

@@ -19,3 +19,4 @@
 - What's the best way to vibe-code a website right now for someone completely non-technical?
   I want a simple site with a few pages, with a modern, clean, but polished UI and nice interactive effects
   Should I just use Claude Code for this, or is it worth using a more specialized ([View Tweet](https://x.com/fortelabs/status/2026341049031897103))
+- Claude Code: Master PARA Method with Code https://t.co/oSQc4CGP93 ([View Tweet](https://x.com/fortelabs/status/2041909174678823198))
