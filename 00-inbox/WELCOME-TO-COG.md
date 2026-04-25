@@ -22,7 +22,7 @@ Edit any of these files anytime — COG reads them when you use skills.
 2. **braindump** — Capture ideas, observations, and decisions on the fly. Auto-files into personal/professional/project buckets.
 3. **daily-brief** — Personalised briefing on AI tools, productivity tech, field service automation, and staff knowledge systems.
 4. **comprehensive-analysis** — Deep 7-day analysis for architecture reviews, technology evaluations, and strategic planning.
-5. **meeting-transcript** — Drop in a transcript and get structured decisions, action items, and owners extracted.
+5. **meeting-transcript** — Drop in a transcript and get structured decisions, action items, and owners extracted.1
 6. **weekly-checkin** — Spot patterns across your week — recurring problems, emerging ideas, momentum on initiatives.
 7. **auto-research** — Multi-agent parallel research for technology evaluations and vendor comparisons.
 8. **url-dump** — Save a URL and get auto-extracted insights filed into your vault.
