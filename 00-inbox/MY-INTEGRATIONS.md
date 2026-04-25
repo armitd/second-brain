@@ -10,6 +10,11 @@ tags: ["#integrations", "#config", "#cog"]
 
 ## Active
 
+**Canva**
+- Connected via Claude MCP integration
+- Use for: generating presentations, posters, reports, social posts, and other branded collateral
+- Brand kit ID: kAGGs2XOG3E (your Canva brand kit)
+
 **GitHub**1
 
 **AlignedNews**
