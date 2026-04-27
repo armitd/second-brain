@@ -53,13 +53,14 @@ Role packs live in `.claude/roles/`. New roles can be added by dropping a file f
 
 ## Raw Sources Convention
 
-The vault has two raw sources layers (per Karpathy's LLM Wiki pattern). Both hold immutable originals — never auto-process either.
+**Readwise is the primary raw sources layer** (per Karpathy's LLM Wiki pattern). All external content — articles, PDFs, tweets, books, web pages — should flow through Readwise first, then be processed by COG from there.
 
-### `00-inbox/raw/` — Documents
-PDFs, Word files, reports, specs received externally (e.g. brand guidelines, vendor documents, internal reports).
+### Intended flow
+```
+External content → Readwise (save via app/extension) → Readwise/ vault → COG processes on demand
+```
 
-### `Readwise/` — External content
-Tweets, articles, books, and web content saved via the Readwise app or browser extension. Subfolders:
+### `Readwise/` — Primary raw vault
 - `Readwise/Tweets/` — saved tweets by author
 - `Readwise/Full Document Contents/Tweets/` — full thread captures by topic (75 threads)
 - `Readwise/Articles/` — saved articles with highlights
@@ -67,9 +68,12 @@ Tweets, articles, books, and web content saved via the Readwise app or browser e
 - `Readwise/Full Document Contents/Articles/` — full-text article exports
 - `Readwise/Full Document Contents/Books/` — full-text book exports
 
-### Rules for both
-- **Never auto-process.** Wait for the user to reference content in a session.
-- **Check here first** before asking the user to re-upload or re-paste anything.
-- **When processing raw content** in a session, note the source in the output file's frontmatter: `source_file: "00-inbox/raw/filename"` or `source_readwise: "Readwise/..."`.
-- **Suggest filing to `00-inbox/raw/`** whenever a user drops a PDF or document into a session that isn't already stored there.
-- **Suggest saving to Readwise** when a user pastes a long article or tweet thread they want to keep.
+### `00-inbox/raw/` — Fallback only
+For documents that cannot go through Readwise: internal/confidential files, Belron-internal reports, documents with data residency concerns. Not the default path.
+
+### Rules
+- **Never auto-process** either location. Wait for the user to reference content in a session.
+- **Check `Readwise/` first** before asking the user to re-paste or re-upload anything.
+- **When a user drops a PDF or article into a session**, suggest saving it to Readwise so it flows through the standard path in future. Only suggest `00-inbox/raw/` for confidential/internal documents.
+- **When processing raw content**, note the source in the output file's frontmatter: `source_readwise: "Readwise/..."` or `source_file: "00-inbox/raw/filename"`.
+- **Suggest Readwise** when a user pastes a long article, tweet thread, or shares a public PDF they want to keep.
