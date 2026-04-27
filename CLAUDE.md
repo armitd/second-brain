@@ -44,8 +44,19 @@ Role packs live in `.claude/roles/`. New roles can be added by dropping a file f
 
 ### Content directories (never touched by updates)
 - `00-inbox/` — Profiles, interests, integrations
+- `00-inbox/raw/` — Raw source documents (PDFs, Word docs, reports received externally). Immutable originals. Do not process automatically — wait for user to reference them in a session.
 - `01-daily/` — Briefs and check-ins
 - `02-personal/` — Personal braindumps (private)
 - `03-professional/` — Professional braindumps and strategy
 - `04-projects/` — Per-project tracking
 - `05-knowledge/` — Consolidated insights and patterns
+
+## Raw Sources Convention
+
+`00-inbox/raw/` is the vault's raw sources layer (per Karpathy's LLM Wiki pattern). It holds unprocessed external documents — PDFs, Word files, reports, specs sent by others.
+
+Rules:
+- **Never auto-process** files in `00-inbox/raw/`. They are immutable originals.
+- **When a user references a document** (e.g. "the brand guidelines PDF"), check `00-inbox/raw/` first before asking them to re-upload.
+- **When processing a raw document** in a session, note the source path in the output file's frontmatter as `source_file: "00-inbox/raw/filename"`.
+- **Suggest filing here** whenever a user drops a PDF or document into a session that isn't already stored in the vault.
