@@ -53,10 +53,23 @@ Role packs live in `.claude/roles/`. New roles can be added by dropping a file f
 
 ## Raw Sources Convention
 
-`00-inbox/raw/` is the vault's raw sources layer (per Karpathy's LLM Wiki pattern). It holds unprocessed external documents — PDFs, Word files, reports, specs sent by others.
+The vault has two raw sources layers (per Karpathy's LLM Wiki pattern). Both hold immutable originals — never auto-process either.
 
-Rules:
-- **Never auto-process** files in `00-inbox/raw/`. They are immutable originals.
-- **When a user references a document** (e.g. "the brand guidelines PDF"), check `00-inbox/raw/` first before asking them to re-upload.
-- **When processing a raw document** in a session, note the source path in the output file's frontmatter as `source_file: "00-inbox/raw/filename"`.
-- **Suggest filing here** whenever a user drops a PDF or document into a session that isn't already stored in the vault.
+### `00-inbox/raw/` — Documents
+PDFs, Word files, reports, specs received externally (e.g. brand guidelines, vendor documents, internal reports).
+
+### `Readwise/` — External content
+Tweets, articles, books, and web content saved via the Readwise app or browser extension. Subfolders:
+- `Readwise/Tweets/` — saved tweets by author
+- `Readwise/Full Document Contents/Tweets/` — full thread captures by topic (75 threads)
+- `Readwise/Articles/` — saved articles with highlights
+- `Readwise/Books/` — books with highlights
+- `Readwise/Full Document Contents/Articles/` — full-text article exports
+- `Readwise/Full Document Contents/Books/` — full-text book exports
+
+### Rules for both
+- **Never auto-process.** Wait for the user to reference content in a session.
+- **Check here first** before asking the user to re-upload or re-paste anything.
+- **When processing raw content** in a session, note the source in the output file's frontmatter: `source_file: "00-inbox/raw/filename"` or `source_readwise: "Readwise/..."`.
+- **Suggest filing to `00-inbox/raw/`** whenever a user drops a PDF or document into a session that isn't already stored there.
+- **Suggest saving to Readwise** when a user pastes a long article or tweet thread they want to keep.
