@@ -15,40 +15,26 @@ status: "needs-review"
 
 Threads saved to Readwise Full Document Contents/Tweets/ not yet individually processed. Run `/process-readwise` again to work through these.
 
-**Runs completed:** 3 (7 + 8 + 17 threads filed = 32 threads processed across all runs)
+**Runs completed:** 4 (7 + 8 + 17 + 18 threads processed = ~50 threads processed across all runs)
 
-## Medium Relevance — Claude / AI Tools / PKM (Remaining)
+## Medium Relevance — Claude / AI Tools / PKM (Remaining ~12)
 
 | Thread | Source File |
 |--------|-------------|
-| Andrej Karpathy literally shows how to build apps by prompting | Readwise/Full Document Contents/Tweets/Andrej Karpathy literally shows how to build apps by prompting....md |
-| Announcing The Stargate Project | Readwise/Full Document Contents/Tweets/Announcing The Stargate Project.md |
-| As a Longtime Tools for Thought User, I'd Seen A... | Readwise/Full Document Contents/Tweets/As a Longtime Tools for Thought User, I'd Seen A....md |
-| Claude + Obsidian = A true AI employee | Readwise/Full Document Contents/Tweets/Claude + Obsidian = A true AI employee.md |
-| Claude + Obsidian have to be illegal | Readwise/Full Document Contents/Tweets/Claude + Obsidian have to be illegal.md |
-| Claude Code Master PARA Method with Code | Readwise/Full Document Contents/Tweets/Claude Code Master PARA Method with Code.md |
-| Claude Cowork The Ultimate Guide for PMs | Readwise/Full Document Contents/Tweets/Claude Cowork The Ultimate Guide for PMs.md |
-| Google just quietly dropped an AI that runs on your... (x2) | Readwise/Full Document Contents/Tweets/Google just quietly dropped an AI that runs on your....md |
-| Google's level of disrespect is OFF THE CHARTS right now | Readwise/Full Document Contents/Tweets/Google's level of disrespect is OFF THE CHARTS right now.md |
-| How to Build Your Second Brain | Readwise/Full Document Contents/Tweets/How to Build Your Second Brain.md |
-| How to set up Claude Cowork the right way | Readwise/Full Document Contents/Tweets/How to set up Claude Cowork the right way(so it actually does your work while you step away).md |
 | How to start using Claude Code in 30 min | Readwise/Full Document Contents/Tweets/How to start using Claude Code in 30 min.md |
-| I heard this internal memo of mine is being leaked | Readwise/Full Document Contents/Tweets/I heard this internal memo of mine is being leaked....md |
 | I put the entire Claude Code GTM Engineering Playbook into... | Readwise/Full Document Contents/Tweets/I put the entire Claude Code GTM Engineering Playbook into....md |
 | I put the entire Claude Routines Playbook into ONE Notion | Readwise/Full Document Contents/Tweets/I put the entire Claude Routines Playbook into ONE Notion....md |
-| I'm giving a talk for developers about the best ways | Readwise/Full Document Contents/Tweets/I'm giving a talk for developers about the best ways....md |
 | In 14 minutes, this Anthropic engineer who wrote Building Effective | Readwise/Full Document Contents/Tweets/In 14 minutes, this Anthropic engineer who wrote Building Effective....md |
 | Is the UK's electric vehicle target about to fall to... | Readwise/Full Document Contents/Tweets/Is the UK's electric vehicle target about to fall to....md |
 | These are the top 12 performing local LLMs | Readwise/Full Document Contents/Tweets/These are the top 12 performing local LLMs for the....md |
 | This 2 hour Stanford lecture on AI careers | Readwise/Full Document Contents/Tweets/This 2 hour Stanford lecture on AI careers will teach....md |
 | This 2-hour Stanford lecture breaks down how models like ChatGPT | Readwise/Full Document Contents/Tweets/This 2-hour Stanford lecture breaks down how models like ChatGPT....md |
-| this guy literally breaks down the exact Claude + Obsidian | Readwise/Full Document Contents/Tweets/this guy literally breaks down the exact Claude + Obsidian....md |
 | This is an absolute masterclass from MIT on how to | Readwise/Full Document Contents/Tweets/This is an absolute masterclass from MIT on how to....md |
-| This is the Claude guide that Anthropic should've shipped from... | Readwise/Full Document Contents/Tweets/This is the Claude guide that Anthropic should've shipped from....md |
-| Top Stanford students have a secret NotebookLM workflow | Readwise/Full Document Contents/Tweets/Top Stanford students have a secret NotebookLM workflow.md |
 | Un ingeniero de Google automatizó el 80% de su trabajo | Readwise/Full Document Contents/Tweets/Un ingeniero de Google automatizó el 80% de su trabajo....md |
 | we just published the definitive guide to writing good prose | Readwise/Full Document Contents/Tweets/we just published the definitive guide to writing good prose....md |
 | When Your Life's Work Becomes Free and Abundant | Readwise/Full Document Contents/Tweets/When Your Life's Work Becomes Free and Abundant.md |
+
+**Note:** "In 14 minutes, this Anthropic engineer..." file is very large — use offset/limit when reading.
 
 ## Low Relevance / Clickbait / Unknown
 
