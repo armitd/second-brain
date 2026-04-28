@@ -18,6 +18,7 @@ tags: ["#project", "#garden", "#home-improvement"]
 - [ ] Regrout patio in a dry weather window
 
 ### Lighting & Cabling
+- [ ] Rearrange garden lights
 - [ ] Sketch current garden lighting layout — mark cable runs and problem areas 📅 2026-05-01
 - [ ] Check whether garage has an existing power feed 📅 2026-05-01
 - [ ] Decide on mains vs. low-voltage system 📅 2026-05-04
@@ -33,6 +34,7 @@ tags: ["#project", "#garden", "#home-improvement"]
 - [ ] Repaint the decking
 
 ### Pergola & Rockery
+- [ ] Remove rotting pergola
 - [ ] Measure bottom of garden — width, depth, any slope 📅 2026-05-01
 - [ ] Decide primary pergola use case (seating, plants, dining) 📅 2026-05-01
 - [ ] Research pergola kit vs. build-from-scratch options 📅 2026-05-04
