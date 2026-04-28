@@ -6,39 +6,24 @@ date_processed: "2026-04-27"
 created: "2026-04-27 17:14"
 last_updated: "2026-04-28 09:21"
 title: "Unprocessed Thread Captures — Batch April 2026"
-tags: ["#readwise", "#thread", "#batch", "#unprocessed"]
+tags: ["#readwise", "#thread", "#batch", "#complete"]
 relevance: "mixed"
-status: "needs-review"
+status: "complete"
 ---
 
 # Unprocessed Thread Captures — Batch April 2026
 
-Threads saved to Readwise Full Document Contents/Tweets/ not yet individually processed. Run `/process-readwise` again to work through these.
+**Status: COMPLETE** — all medium-relevance threads have been processed across 5 runs.
 
-**Runs completed:** 4 (7 + 8 + 17 + 18 threads processed = ~50 threads processed across all runs)
+**Total processed:** ~62 threads filed across all runs (7 + 8 + 17 + 18 + 12 = 62)
 
-## Medium Relevance — Claude / AI Tools / PKM (Remaining ~12)
+## Medium Relevance — DONE
 
-| Thread | Source File |
-|--------|-------------|
-| How to start using Claude Code in 30 min | Readwise/Full Document Contents/Tweets/How to start using Claude Code in 30 min.md |
-| I put the entire Claude Code GTM Engineering Playbook into... | Readwise/Full Document Contents/Tweets/I put the entire Claude Code GTM Engineering Playbook into....md |
-| I put the entire Claude Routines Playbook into ONE Notion | Readwise/Full Document Contents/Tweets/I put the entire Claude Routines Playbook into ONE Notion....md |
-| In 14 minutes, this Anthropic engineer who wrote Building Effective | Readwise/Full Document Contents/Tweets/In 14 minutes, this Anthropic engineer who wrote Building Effective....md |
-| Is the UK's electric vehicle target about to fall to... | Readwise/Full Document Contents/Tweets/Is the UK's electric vehicle target about to fall to....md |
-| These are the top 12 performing local LLMs | Readwise/Full Document Contents/Tweets/These are the top 12 performing local LLMs for the....md |
-| This 2 hour Stanford lecture on AI careers | Readwise/Full Document Contents/Tweets/This 2 hour Stanford lecture on AI careers will teach....md |
-| This 2-hour Stanford lecture breaks down how models like ChatGPT | Readwise/Full Document Contents/Tweets/This 2-hour Stanford lecture breaks down how models like ChatGPT....md |
-| This is an absolute masterclass from MIT on how to | Readwise/Full Document Contents/Tweets/This is an absolute masterclass from MIT on how to....md |
-| Un ingeniero de Google automatizó el 80% de su trabajo | Readwise/Full Document Contents/Tweets/Un ingeniero de Google automatizó el 80% de su trabajo....md |
-| we just published the definitive guide to writing good prose | Readwise/Full Document Contents/Tweets/we just published the definitive guide to writing good prose....md |
-| When Your Life's Work Becomes Free and Abundant | Readwise/Full Document Contents/Tweets/When Your Life's Work Becomes Free and Abundant.md |
+All medium-relevance threads from this batch have been filed to `05-knowledge/booklets/tweets/`.
 
-**Note:** "In 14 minutes, this Anthropic engineer..." file is very large — use offset/limit when reading.
+## Low Relevance / Clickbait / Unknown — SKIPPED
 
-## Low Relevance / Clickbait / Unknown
-
-Titles that appear to be low-quality hype threads or raw URLs — skip unless a specific title becomes relevant:
+The following titles were assessed as low-quality hype threads, raw URLs, or content with no extractable value. No files created. Skip permanently unless a specific title becomes relevant to an active project.
 
 - ANTHROPIC LITERALLY JUST HANDING US THE BLUEPRINT🤯 (x2)
 - 🚨 BREAKING Someone just built the exact tool Andrej Karpathy...
@@ -73,4 +58,4 @@ Titles that appear to be low-quality hype threads or raw URLs — skip unless a 
 - You've been lied to
 
 ---
-*Batch index updated by COG — run /process-readwise to continue*
+*Batch closed by COG — April 2026 tweet batch fully processed*
