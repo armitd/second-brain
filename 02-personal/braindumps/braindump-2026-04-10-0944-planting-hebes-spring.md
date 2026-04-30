@@ -5,7 +5,9 @@ date: "2026-04-10"
 created: "2026-04-10 09:44"
 themes: ["gardening", "hebes", "spring-planting"]
 tags: ["#braindump", "#gardening", "#hebes", "#spring"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-30]]"
+consolidated_date: "2026-04-30"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"

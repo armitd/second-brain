@@ -5,7 +5,9 @@ date: "2026-04-27"
 created: "2026-04-27 09:55"
 themes: ["llm-wiki", "knowledge-management", "rag-vs-wiki", "finetuning-endgame", "cog-pattern"]
 tags: ["#braindump", "#llm-wiki", "#knowledge-management", "#cog", "#karpathy"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-30]]"
+consolidated_date: "2026-04-30"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"

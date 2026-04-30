@@ -5,7 +5,9 @@ date: "2026-04-10"
 created: "2026-04-10 10:32"
 themes: ["gardening", "planting", "fatsia"]
 tags: ["#braindump", "#raw-thoughts", "#gardening"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-30]]"
+consolidated_date: "2026-04-30"
 energy_level: "low"
 emotional_tone: "neutral"
 confidence: "high"

@@ -5,7 +5,9 @@ date: "2026-04-08"
 created: "2026-04-08 10:24"
 themes: ["DLD", "research", "internal knowledge", "stakeholder context"]
 tags: ["#braindump", "#professional", "#DLD", "#research-task"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-30]]"
+consolidated_date: "2026-04-30"
 energy_level: "low"
 emotional_tone: "neutral"
 confidence: "high"

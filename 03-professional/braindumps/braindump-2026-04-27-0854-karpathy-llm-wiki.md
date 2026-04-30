@@ -5,7 +5,9 @@ date: "2026-04-27"
 created: "2026-04-27 08:54"
 themes: ["llm-wiki", "knowledge-architecture", "rag-alternative", "ai-knowledge-management", "cog-pattern"]
 tags: ["#braindump", "#raw-thoughts", "#ai-knowledge", "#enterprise-architecture", "#karpathy"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-30]]"
+consolidated_date: "2026-04-30"
 energy_level: "high"
 emotional_tone: "curious"
 confidence: "high"

@@ -5,7 +5,9 @@ date: "2026-04-08"
 created: "2026-04-08 13:05"
 themes: ["garden", "planting", "shrubs", "photinia", "landscaping"]
 tags: ["#braindump", "#personal", "#garden", "#planting", "#shrubs"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-30]]"
+consolidated_date: "2026-04-30"
 energy_level: "low"
 emotional_tone: "relaxed/creative"
 confidence: "high"

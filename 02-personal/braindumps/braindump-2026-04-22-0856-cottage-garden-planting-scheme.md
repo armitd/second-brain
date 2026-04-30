@@ -5,7 +5,9 @@ date: "2026-04-22"
 created: "2026-04-22 08:56"
 themes: ["cottage garden", "planting scheme", "garden design", "perennials"]
 tags: ["#braindump", "#gardening", "#cottage-garden", "#planting"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-30]]"
+consolidated_date: "2026-04-30"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"

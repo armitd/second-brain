@@ -6,7 +6,9 @@ date: "2026-04-29"
 created: "2026-04-29 10:38"
 themes: ["ifttt-mcp", "agentic-automation", "real-world-triggers", "mcp-governance"]
 tags: ["#braindump", "#mcp", "#ifttt", "#agentic-ai", "#automation"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-30]]"
+consolidated_date: "2026-04-30"
 energy_level: "high"
 emotional_tone: "curious"
 confidence: "high"
