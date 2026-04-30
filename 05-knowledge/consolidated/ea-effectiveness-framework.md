@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "ea-effectiveness"
 created: "2026-04-09"
-last_updated: "2026-04-20"
-consolidation_id: "consolidation-2026-04-20"
-source_documents: 17
+last_updated: "2026-04-30"
+consolidation_id: "consolidation-2026-04-30"
+source_documents: 22
 status: "working"
 tags: ["#framework", "#consolidated", "#enterprise-architecture", "#visibility", "#effectiveness", "#transition"]
 ---
@@ -96,6 +96,35 @@ Enterprise architects are structurally at risk of invisibility. The discipline s
 - [[braindump-2026-04-07-1550-architecture-guide-update]] — "An architecture guide is a marketing document as much as a reference document. Scenarios beat abstractions: 'Starting a new system purchase? Talk to architecture first.'"
 
 **Confidence:** High — consistent across all communication-focused braindumps
+
+---
+
+### Principle 5: EA in the Agentic Era — From Process Governance to Architectural Intent
+
+**Statement:** As AI agents absorb the coordination layer of organisations (planning, dependency management, status tracking), EA functions whose value is framed around *process* become structurally redundant. EA's durable value proposition is *architectural intent* — defining goals clearly enough that autonomous systems can execute them well. This is the repositioning the current transition requires.
+
+**The Byttow argument:**
+David Byttow's essay "AI Absorbed the Process Layer" makes the mechanism explicit:
+- Coordination overhead (sprint planning, handoff docs, alignment meetings) was always a cost, never a value — agents now bear that cost
+- What remains after coordination is automated is *judgment*: goal clarity, taste, direction, ownership
+- **"AI will not replace managers. It will expose the ones whose contribution was procedural rather than directional."**
+- **"AI makes the gap visible"** — if you cannot articulate a goal clearly enough for an AI agent to act on it, you could not articulate it clearly enough for your team either. AI just removes the friction that previously masked the gap
+
+**The EA repositioning:**
+- From: governance as friction (review gates, standards compliance, process ownership)
+- To: governance as intent-setting (defining what goals agents are authorised to pursue, with what tools, under what constraints)
+
+This is a stronger position. As agents accelerate execution, the cost of building in the wrong direction increases. EA's role shifts from *slowing down bad decisions* to *improving the quality of goals before execution starts*.
+
+**Evidence:**
+- [[braindump-2026-04-27-0955-ai-absorbed-process-layer]] — Byttow: coordination collapse, judgment as leverage, "fast delivery of the wrong thing is worse than slow delivery"
+- [[braindump-2026-04-27-0955-shopify-tobi-ai-memo]] — Tobi Lutke's Shopify memo: before asking for headcount or a new process, demonstrate why an AI-first alternative wouldn't work. EA should apply this standard to its own governance proposals
+- [[daily-brief-2026-04-30]] — Amazon Connect Customer: AWS reframed agentic contact centre from "deflection" to "relationship." The goal definition is the new value — not the process wrapper around execution
+
+**The internal framing to use:**
+> *"EA's value in an agentic world is not governance of AI processes — it is architectural clarity that makes AI agent deployment safe and directional. Agents amplify whatever judgment sits at the centre. EA's job is to improve the quality of that judgment before deployment begins."*
+
+**Confidence:** High — converging evidence from Byttow, Shopify memo, and Agarwal braindumps; framing tested across multiple sources independently
 
 ---
 
@@ -210,6 +239,23 @@ Enterprise architects are structurally at risk of invisibility. The discipline s
 - [[braindump-2026-04-09-1418-budgeting-roadmaps]] — budgeting starts July 2026; roadmaps needed by mid-June; capability map is the spine
 
 **Status at April 10, 2026:** Working. Framework is holding up across a second week of application. Budget deadline creates concrete pressure to complete the Belron Business Understanding Framework Phase 1 by end of April.
+
+### April 20–30, 2026: Fifth Consolidation — Agentic Repositioning
+
+**What Emerged:** The period produced a cluster of three professionally-interconnected braindumps (Byttow, Shopify memo, Agarwal) that together define a new strategic layer for EA in the agentic era. This is not an additive update — it shifts the framework's underlying premise.
+
+**The structural argument now complete:**
+- Byttow describes *what is happening organisationally*: coordination is being absorbed by agents, judgment becomes the scarce resource
+- Shopify describes *what the best companies are requiring*: AI as baseline expectation, "hire an AI before a human," measurement built in
+- Agarwal describes *what happens at the individual level*: craft abundance, builder's disposition as the new signal, constraints dissolving for those with clarity
+
+Together they define the repositioning EA must make: from process governance to architectural intent. Principle 5 added.
+
+**Sources:** [[braindump-2026-04-27-0955-ai-absorbed-process-layer]], [[braindump-2026-04-27-0955-shopify-tobi-ai-memo]], [[braindump-2026-04-27-0955-life-work-becomes-free-agarwal]]
+
+**Status at April 30, 2026:** Working. Five principles; six use cases. Principle 5 is the most important addition since the initial framework and significantly changes how EA effectiveness is framed.
+
+---
 
 ### April 20, 2026: Fourth Consolidation — Transition Moment Live
 

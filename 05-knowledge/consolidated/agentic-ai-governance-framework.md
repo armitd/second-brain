@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "agentic-ai-governance"
 created: "2026-04-10"
-last_updated: "2026-04-20"
-consolidation_id: "consolidation-2026-04-20"
-source_documents: 16
+last_updated: "2026-04-30"
+consolidation_id: "consolidation-2026-04-30"
+source_documents: 21
 status: "working"
 tags: ["#framework", "#consolidated", "#agentic-AI", "#MCP", "#A2A", "#EA-governance", "#protocols"]
 ---
@@ -122,6 +122,36 @@ An AI tool's Google Workspace OAuth application was compromised. The attacker pi
 
 ---
 
+### Principle 5: Governance Is Intent-Setting, Not Process Compliance
+
+**Statement:** In an agentic world, governance of AI systems is most effective when framed as *intent-setting* — defining what goals agents are authorised to pursue, with what tools, under what constraints — rather than as process compliance (review gates, standards enforcement). This framing is both strategically stronger and more likely to be adopted by the teams building agent systems.
+
+**The Byttow framing:**
+As AI agents absorb the coordination layer, "governance as friction" loses both its function and its audience. What remains is judgment: the quality of the goals that agents act upon. MCP governance's role, in this frame, is not to slow down AI deployment — it is to ensure that the goals embedded in agent configurations are the right ones. This is a more credible governance position.
+
+**Practical application to MCP Governance:**
+- Governance policy should lead with *authorised intent*: "These are the goals this agent is authorised to pursue, with these tools, in these contexts" — not just a list of prohibited actions
+- The blast-radius concept (a single MCP server granting access to hundreds of services) is reframed: not "limit the tools" but "is the authorised goal scope appropriate for the breadth of access?"
+- This framing will be better received by engineering and product teams building agent systems than a compliance-first approach
+
+**The IFTTT MCP case study (blast-radius in practice):**
+The IFTTT MCP braindump (April 29) is a concrete example: one MCP server wrapping ~700 IFTTT applets. Approving the server doesn't grant one capability — it implicitly grants the agent access to smart home, SMS, email, Google Sheets, Slack, Todoist, and ~700 other services. This is a real-world example of the blast-radius governance problem. Key governance questions:
+- Is the authorised goal scope appropriate for this breadth of access?
+- Which applets are pre-authorised vs. require explicit approval per use?
+- How is the webhook key secured — IAM, secrets manager, or plaintext config?
+
+**Evidence:**
+- [[braindump-2026-04-29-1038-ifttt-mcp-server]] — IFTTT MCP blast-radius case study
+- [[braindump-2026-04-27-0955-ai-absorbed-process-layer]] — Byttow: governance as intent-setting vs. friction
+- [[05-knowledge/booklets/tweets/claude-token-management-kaize-2026-04-27]] — MCP always loaded = most expensive context; aligns with lazy loading optimisation
+
+**Architecture note — MCP Lazy Loading:**
+A developer-community insight from April 30: lazy loading MCP tools (loading only the tools needed for each specific task, not all tools upfront) is the next key MCP optimisation. This directly addresses the cost side of the blast-radius problem — if the governance model requires all tools to be pre-loaded, context costs scale with the tool catalogue. Lazy loading + authorised-intent governance = right tools, right time, right cost.
+
+**Confidence:** High — blast-radius principle is structurally sound; intent-setting framing validated against Byttow
+
+---
+
 ## The Belron Application Map
 
 For a windscreen repair/replace business, the natural multi-agent workflow is end-to-end job lifecycle:
@@ -207,6 +237,25 @@ The emerging tech topic planning explicitly assesses MCP/A2A as the strongest to
 A2A 1-year milestone confirms 150+ organisations and Microsoft Agent Framework 1.0 — the protocol has crossed from experimental to enterprise-production. The EA governance window is now.
 
 **Source:** [[daily-brief-2026-04-10]]
+
+### April 20–30, 2026: Intent-Setting Framing + AWS Reference Architecture
+
+**What Changed:** Three developments that advance both the governance argument and Belron's application context:
+
+**1. Amazon Connect Customer — first agentic contact centre with MCP support at scale.**
+AWS rebranded Amazon Connect as Amazon Connect Customer and rebuilt it as a four-product agentic AI suite (Customer/Decisions/Talent/Health). Key governance-relevant feature: **MCP support built in** — 29 agentic features including pre-built autonomous AI agents, real-time agent assist, and AI observability and testing. United Airlines deployed in 3 months vs. the previous 12. This is the most concrete enterprise reference architecture for agentic contact centre AI with MCP, directly relevant to both the Contact Centre of the Future project and as a governance reference point.
+
+**2. White House blocks Anthropic Mythos expansion — government AI governance as a precedent signal.**
+The White House formally blocked Anthropic's plan to expand Mythos (a cybersecurity AI that identified thousands of zero-day vulnerabilities) to 70 companies, citing security concerns. This is not directly relevant to Belron's commercial AI use, but it establishes a precedent: powerful AI capabilities are subject to oversight at the deployment-scale level, not just at the tool level. The governance architecture Belron builds for MCP should anticipate this pattern at enterprise scale.
+
+**3. Google Cloud +63% / Azure +40% — AI infrastructure investment confirmed at enterprise scale.**
+Big Tech Q1 2026 earnings: Google Cloud $20B (+63%), Azure 40% growth with $37B AI run rate. Combined 2026 capex commitment: ~$525B. This confirms that the cloud AI infrastructure Belron's agentic systems will run on is being built aggressively. Platform availability is no longer the constraint — governance is.
+
+**Sources:** [[daily-brief-2026-04-30]], [[braindump-2026-04-29-1038-ifttt-mcp-server]]
+
+**Status at April 30, 2026:** Working. Five principles, three use cases. Amazon Connect Customer is the new Belron-relevant reference architecture. IFTTT MCP blast-radius case study added as a governance teaching example.
+
+---
 
 ### April 16–20, 2026: MCP Becomes Mainstream + New Attack Vector Confirmed
 
