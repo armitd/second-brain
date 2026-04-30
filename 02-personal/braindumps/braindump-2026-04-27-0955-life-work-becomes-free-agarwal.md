@@ -5,7 +5,9 @@ date: "2026-04-27"
 created: "2026-04-27 09:55"
 themes: ["ai-workforce", "identity", "adaptability", "restlessness", "craft-and-abundance"]
 tags: ["#braindump", "#ai-workforce", "#identity", "#personal", "#professional"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-30]]"
+consolidated_date: "2026-04-30"
 energy_level: "high"
 emotional_tone: "reflective"
 confidence: "high"

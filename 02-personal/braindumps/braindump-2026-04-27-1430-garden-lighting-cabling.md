@@ -5,7 +5,9 @@ date: "2026-04-27"
 created: "2026-04-27 14:30"
 themes: ["garden-lighting", "electrical-cabling", "garage-lighting", "home-improvement"]
 tags: ["#braindump", "#raw-thoughts", "#garden", "#lighting", "#electrical", "#personal"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-30]]"
+consolidated_date: "2026-04-30"
 energy_level: "medium"
 emotional_tone: "frustrated"
 confidence: "high"

@@ -5,7 +5,9 @@ date: "2026-04-27"
 created: "2026-04-27 09:55"
 themes: ["ai-workforce", "enterprise-ai-adoption", "leadership", "performance-management", "ai-as-baseline"]
 tags: ["#braindump", "#ai-workforce", "#enterprise-architecture", "#ea-positioning", "#shopify"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-30]]"
+consolidated_date: "2026-04-30"
 energy_level: "high"
 emotional_tone: "motivated"
 confidence: "high"

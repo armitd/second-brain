@@ -5,7 +5,9 @@ date: "2026-04-27"
 created: "2026-04-27 15:37"
 themes: ["health", "spectacles", "health-insurance", "finance"]
 tags: ["#braindump", "#raw-thoughts", "#health", "#insurance", "#personal"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-30]]"
+consolidated_date: "2026-04-30"
 energy_level: "low"
 emotional_tone: "practical"
 confidence: "high"

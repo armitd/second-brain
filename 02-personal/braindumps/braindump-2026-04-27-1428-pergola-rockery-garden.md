@@ -5,7 +5,9 @@ date: "2026-04-27"
 created: "2026-04-27 14:28"
 themes: ["garden-improvement", "pergola-installation", "rockery", "home-projects"]
 tags: ["#braindump", "#raw-thoughts", "#garden", "#home-improvement", "#personal"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-30]]"
+consolidated_date: "2026-04-30"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"

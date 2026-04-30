@@ -5,7 +5,9 @@ date: "2026-04-27"
 created: "2026-04-27 14:31"
 themes: ["patio-maintenance", "grouting", "garden-hardscaping", "home-improvement"]
 tags: ["#braindump", "#raw-thoughts", "#garden", "#patio", "#maintenance", "#personal"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-30]]"
+consolidated_date: "2026-04-30"
 energy_level: "medium"
 emotional_tone: "frustrated"
 confidence: "high"

@@ -5,7 +5,9 @@ date: "2026-04-27"
 created: "2026-04-27 09:55"
 themes: ["agentic-ai", "organisational-design", "enterprise-architecture", "coordination-collapse", "judgment-as-leverage"]
 tags: ["#braindump", "#agentic-ai", "#enterprise-architecture", "#ea-positioning", "#transition"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-30]]"
+consolidated_date: "2026-04-30"
 energy_level: "high"
 emotional_tone: "urgent"
 confidence: "high"

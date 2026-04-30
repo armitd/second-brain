@@ -5,7 +5,9 @@ date: "2026-04-29"
 created: "2026-04-29 08:27"
 themes: ["readwise-setup", "knowledge-management", "signal-curation", "cog-infrastructure"]
 tags: ["#braindump", "#readwise", "#knowledge-management", "#cog", "#second-brain"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-04-30]]"
+consolidated_date: "2026-04-30"
 energy_level: "medium"
 emotional_tone: "intentional"
 confidence: "high"
