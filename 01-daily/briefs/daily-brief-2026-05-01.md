@@ -231,6 +231,108 @@ Stripe's Link digital wallet now works with autonomous AI agents — allowing ag
 
 ---
 
+## Afternoon Update — 10:17
+
+*Four additional stories surfaced in a second research pass.*
+
+---
+
+### 10. AAIF Reaches 170 Member Organisations — Formal Project Lifecycle Approved
+**Update to:** Story 1 (MCP → AAIF) | **Projects:** MCP Governance
+
+Material additions to this morning's story: the AAIF has already reached **170 member organisations** — more than double the membership CNCF had at the same stage of its lifecycle. The Technical Steering Committee has approved a **formal project lifecycle policy** with three stages (Growth, Impact, Emeritus), opening the door for external projects to formally join the foundation. SDK downloads are confirmed at **110 million per month**.
+
+The enterprise security focus from the Dev Summit is also more explicit than reported this morning: the point was made that "you cannot trust an agent to enforce its own policies — the control plane has to be correct every single time, checking the intersection of what the agent is allowed to do AND what the user is allowed to do on every request." This is verbatim the governance gap identified in your MCP Governance framework.
+
+**Sources:**
+- AAIF Blog (Tier 1) — 2026-04-30 — [MCP Is Now Enterprise Infrastructure: Everything That Happened at MCP Dev Summit](https://aaif.io/blog/mcp-is-now-enterprise-infrastructure-everything-that-happened-at-mcp-dev-summit-north-america-2026/)
+
+**Confidence:** High
+
+---
+
+### 11. CVE-2026-31431 "Copy Fail" — Root Access on Every Linux Since 2017
+**Relevance:** High — critical for AI agent infrastructure and MCP deployments | **Projects:** MCP Governance
+
+A critical Linux kernel zero-day disclosed on 30 April, discovered and exploited using AI analysis by Theori/Xint Code Research. A 732-byte Python script achieves root access on every major Linux distribution since 2017 via a logic error in the kernel's authencesn cryptographic template.
+
+**Key facts:**
+- Found by AI in approximately one hour of scan time against the Linux crypto/ subsystem — "one operator prompt, no harnessing"
+- Affects all shared-kernel Linux environments — bare metal, VMs, containers
+- Patched environments: AWS Lambda/Fargate (Firecracker microVMs, separate kernel per tenant) and Cloudflare Workers (V8 isolates, no Linux kernel in threat model) are **not vulnerable**
+- Any Belron AI agent running in a shared Linux container or unpatched VM is potentially at risk of cross-tenant privilege escalation
+
+**Action:** Verify that any Linux infrastructure running AI agents (MCP servers, agentic pipelines, cloud VMs) has received the kernel patch. If Belron runs containerised workloads on shared hosts, this is a day-zero item for the security team.
+
+**Sources:**
+- CyberSecurityNews (Tier 2) — 2026-04-30 — [Linux Kernel 0-Day "Copy Fail" Roots Every Major Distribution Since 2017](https://cybersecuritynews.com/linux-kernel-0-day-copy-fail/)
+- The Hacker News (Tier 1) — 2026-04-30 — [New Linux 'Copy Fail' Vulnerability Enables Root Access](https://thehackernews.com/2026/04/new-linux-copy-fail-vulnerability.html)
+- Bugcrowd (Tier 2) — [What We Know About Copy Fail (CVE-2026-31431)](https://www.bugcrowd.com/blog/what-we-know-about-copy-fail-cve-2026-31431/)
+
+**Confidence:** High — multiple security publications; CVE assigned; original researcher writeup available
+
+---
+
+### 12. Microsoft Dynamics 365 Contact Center: Three AI Agents Now GA
+**Relevance:** Direct | **Projects:** Contact Centre of the Future
+
+Microsoft launched three purpose-built AI agents for Dynamics 365 Contact Center on 27 April 2026 — two now Generally Available, one in public preview:
+
+| Agent | Status | Function |
+|---|---|---|
+| **Customer Assist** | GA | Frontline self-service across voice and digital; blends deterministic logic (payments, compliance) with generative reasoning; transfers full context on escalation |
+| **Quality Assurance** | GA | Evaluates interactions at scale in real-time and post-conversation; autonomous improvement loop with Customer Assist |
+| **Service Operations** | Public Preview | Environment provisioning, configuration, workflow setup for administrators |
+
+**Pricing model:** Consumption-based Copilot credits — charged per conversation handled, real-time assistance provided, summary generated, or QA evaluation completed. Not per-seat.
+
+**Why this matters for CCOTF:**
+This is the most concrete enterprise-grade agentic contact centre GA product now available from a hyperscaler. The three-agent architecture (customer-facing self-service / QA loop / ops administration) maps directly to the CCOTF design challenges. The autonomous QA→improvement loop is particularly notable — it closes the evaluation cycle that most contact centre AI pilots leave as a manual step.
+
+**Action:** Review the Customer Assist + Quality Assurance agent GA capabilities as a reference architecture for the CCOTF design. The consumption-based credits model is a better commercial fit for pilot-to-production than traditional per-seat CCaaS.
+
+**Sources:**
+- Microsoft Dynamics 365 Blog (Tier 1) — 2026-04-27 — [Dynamics 365 Contact Center AI Agents Transform CX](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/04/27/dynamics-365-contact-center-ai-agents/)
+- CX Today (Tier 2) — [Microsoft Deploys Three AI Agents to Automate Contact Center Operations](https://www.cxtoday.com/contact-center/microsoft-dynamics-365-contact-center-ai-agents/)
+- Constellation Research (Tier 2) — [Microsoft Adds Slew of AI Agents in Dynamics 365 Contact Center](https://www.constellationr.com/insights/news/microsoft-adds-slew-ai-agents-dynamics-365-contact-center-sales-customer-insights)
+
+**Confidence:** High — official Microsoft blog announcement; GA is confirmed
+
+---
+
+### 13. Karpathy Sequoia Ascent 2026 — Software 3.0 and Agentic Engineering
+**Relevance:** Strategic — frames the AI literacy conversation for enterprise architects
+
+Andrej Karpathy's Sequoia Ascent 2026 fireside chat (published ~30 April) is circulating widely in the AI practitioner community. The key framing:
+
+**Software 3.0:** Three eras of software —
+- **1.0:** Explicit code (traditional programming)
+- **2.0:** Trained neural networks
+- **3.0:** Natural language prompting an LLM interpreter
+
+The shift to 3.0 is not about speed — it is about a different class of problems becoming solvable. Karpathy's frame: "Don't just ask what AI can help you build faster. Ask what AI makes *unnecessary*."
+
+**AI automates fastest where output can be verified.** Code and math first. The implication: any business process where output can be checked (assessment scores, call transcripts, form completions) is a near-term automation target.
+
+**Understanding as the bottleneck:** "As AI gets better, understanding becomes the bottleneck — you need enough depth to direct the system and know what to ask, inspect, reject, and what matters." This is the exact framing for why EA-level AI governance matters at Belron — not owning the models, but owning the judgment.
+
+**Why this matters for EA conversations:** This is the best recent framing for explaining to non-technical stakeholders why enterprise architects, not IT vendors, should lead the AI capability conversation. The "understanding is the bottleneck" insight positions EA as the function that provides that understanding at the organisational level.
+
+**Sources:**
+- Andrej Karpathy on X (Tier 2) — 2026-04-30 — [Sequoia Ascent 2026 highlights](https://x.com/karpathy/status/2049903821095354523)
+- The AI Opportunities (Tier 2) — [Sequoia AI Ascent 2026: Andrej Karpathy summary](https://www.theaiopportunities.com/p/sequoia-ai-ascent-2026-andrej-karpathy)
+
+**Confidence:** Medium-High — summary from multiple independent sources; video available
+
+---
+
+### Additional Afternoon Action Items
+- [ ] Verify Linux kernel patch status on any AI agent / MCP server infrastructure (CVE-2026-31431) 📅 2026-05-01
+- [ ] Review Microsoft D365 Customer Assist + QA Agent GA release as CCOTF reference architecture 📅 2026-05-05
+- [ ] Pull Karpathy "understanding is the bottleneck" framing into EA positioning materials for AI governance conversations 📅 2026-05-07
+
+---
+
 ## Verification Report
 
 ### Source Analysis
