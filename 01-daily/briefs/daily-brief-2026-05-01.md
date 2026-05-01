@@ -9,7 +9,7 @@ confidence: "high"
 tags: ["#daily-brief", "#news", "#strategic-intelligence"]
 interests: ["MCP governance", "agentic AI", "ADAS calibration", "automotive", "enterprise architecture", "foundation models", "AI geopolitics", "Anthropic", "AI governance"]
 projects_referenced: ["mcp-governance", "ai-damage-assessment-poc", "contact-centre-future"]
-items_count: 9
+items_count: 13
 dedup_urls:
   - "https://thenewstack.io/mcp-maintainers-enterprise-roadmap/"
   - "https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation"
@@ -20,6 +20,10 @@ dedup_urls:
   - "https://x.com/TeksEdge/status/2050029839835713800"
   - "https://x.com/ericgeller/status/2049858000000000001"
   - "https://www.anthropic.com/research"
+  - "https://cybersecuritynews.com/linux-kernel-0-day-copy-fail/"
+  - "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/04/27/dynamics-365-contact-center-ai-agents/"
+  - "https://x.com/karpathy/status/2049903821095354523"
+  - "https://aaif.io/blog/mcp-is-now-enterprise-infrastructure-everything-that-happened-at-mcp-dev-summit-north-america-2026/"
 ---
 
 # Daily Brief — 1 May 2026
