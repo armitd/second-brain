@@ -351,4 +351,4 @@ The shift to 3.0 is not about speed — it is about a different class of problem
 
 ---
 
-*Curated by COG | Sources verified within 7-day window | 2026-05-01 08:33*
+*Curated by COG | Sources verified within 7-day window | Morning pass: 2026-05-01 08:33 | Afternoon pass: 2026-05-01 10:17*
