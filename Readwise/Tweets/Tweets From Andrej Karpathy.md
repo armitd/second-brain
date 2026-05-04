@@ -19,3 +19,6 @@
   Something I'm finding very useful recently: using LLMs to build personal knowledge bases for various topics of research interest. In this way, a large fraction of my recent token throughput is going less into manipulating code, and more into manipulating ([View Tweet](https://x.com/karpathy/status/2039805659525644595))
 - Wow, this tweet went very viral!
   I wanted share a possibly slightly improved version of the tweet in an "idea file". The idea of the idea file is that in this era of LLM agents, there is less of a point/need of sharing the specific code/app, you just share the idea, then the https://t.co/4UAmYYFzCw ([View Tweet](https://x.com/karpathy/status/2040470801506541998))
+- Fireside chat at Sequoia Ascent 2026 from a ~week ago. Some highlights:
+  The first theme I tried to push on is that LLMs are about a lot more than just speeding up what existed before (e.g. coding). Three examples of new horizons:
+  1. menugen: an app that can be fully engulfed by https://t.co/AJFgYC6SoN ([View Tweet](https://x.com/karpathy/status/2049903821095354523))
