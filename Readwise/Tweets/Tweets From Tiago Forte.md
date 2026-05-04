@@ -20,3 +20,6 @@
   I want a simple site with a few pages, with a modern, clean, but polished UI and nice interactive effects
   Should I just use Claude Code for this, or is it worth using a more specialized ([View Tweet](https://x.com/fortelabs/status/2026341049031897103))
 - Claude Code: Master PARA Method with Code https://t.co/oSQc4CGP93 ([View Tweet](https://x.com/fortelabs/status/2041909174678823198))
+- I want to debunk the claim that I see a lot around here that Obsidian is "just plain text markdown files" which means "you can take them anywhere and open them with any app"
+  That simply isn't true
+  Yes, maybe the raw text of the notes is markdown, but many other parts cannot be ([View Tweet](https://x.com/fortelabs/status/2050536278798533103))
