@@ -24,3 +24,13 @@
   Claude reads this before every task.
   To download mine, go https://t.co/4jjg5bZnRH https://t.co/AnLhjctHmr
   ![](https://pbs.twimg.com/media/HFiOVxEakAM_8dm.jpg) ([View Tweet](https://x.com/rubenhassid/status/2042558212990292013))
+- How to duplicate yourself into Claude in a weekend: 
+  (even if you've never written a prompt before)
+  1. Download the desktop app.
+  ☑ Go to claude .com/download
+  ☑ Set Opus 4.7 as default
+  ☑ Turn ON Extended Thinking
+  2. Open Cowork mode.
+  ☑ Cowork = where your voice lives
+  ☑ https://t.co/hz2ztgwLzS https://t.co/9nn8rPfvIl
+  ![](https://pbs.twimg.com/media/HHXeIQ2acAAk5F7.jpg) ([View Tweet](https://x.com/rubenhassid/status/2050789469910093910))
