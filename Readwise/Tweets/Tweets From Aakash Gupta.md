@@ -47,3 +47,8 @@
   4:57 - Inside the system analyst agent
   5:52 - Live demo: 0 → TestFlight
   8:42 - Define a "good" https://t.co/do83BNHLSP ([View Tweet](https://x.com/aakashgupta/status/2049985094233002181))
+- Most people use Claude Code as a faster way to type. One prompt, one output, one shot at the answer. That's why most of what comes out is AI slop.
+  Gabor's approach is different. He set up 21 specialized agents inside Claude Code, structured exactly like a real software company. https://t.co/dgrmVbxsx3 https://t.co/cXBiDtlNwK ([View Tweet](https://x.com/aakashgupta/status/2051666220332794238))
+- Most people vibe coding right now are doing the equivalent of walking up to one random contractor and saying "build me a three bedroom house."
+  Six months later they're surprised the house isn't what they wanted.
+  You don't want one guy with a hammer. You want an architect with a https://t.co/Zdo4OW1Cyb https://t.co/cXBiDtlNwK ([View Tweet](https://x.com/aakashgupta/status/2051818171263516885))
