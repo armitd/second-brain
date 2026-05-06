@@ -42,7 +42,10 @@ I want to cook smash burgers this evening.
 
 **The sauce:**
 - Smash sauce = mayo + American mustard + ketchup + finely diced pickles (or pickle juice) + pinch of garlic powder. Mix in advance.
-- Apply to both bun halves.
+- **Ratios:** 3 tbsp mayo · 1 tsp American mustard · 1 tsp ketchup · 1 tbsp finely diced dill pickles · pinch of garlic powder
+- Optional additions: pinch of onion powder, dash of smoked paprika
+- Mix 20–30 minutes ahead and let it sit — flavours knit together
+- Apply to both bun halves, not just one.
 
 **The build (bottom to top):**
 - Bottom bun (sauced) → patty + cheese → patty + cheese → pickles → shredded iceberg → onion (raw or griddled) → top bun (sauced)
