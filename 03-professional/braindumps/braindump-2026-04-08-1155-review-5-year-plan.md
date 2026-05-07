@@ -57,7 +57,7 @@ Review 5 year plan. What's on it - has it been reviewed?
 
 ### Immediate (24–48 hours)
 - [ ] Find the 5-year plan — where does it currently live? (Work drive, personal doc, old notebook) 📅 2026-04-09
-- [ ] If found: read it and note what's still relevant, what's happened, and what needs updating 📅 2026-04-10
+- [x] If found: read it and note what's still relevant, what's happened, and what needs updating 📅 2026-04-10 ✅ 2026-05-07
 - [ ] If not found (or never formally written): that's the action — draft one 📅 2026-04-15
 
 ### Short-term (1–2 weeks)

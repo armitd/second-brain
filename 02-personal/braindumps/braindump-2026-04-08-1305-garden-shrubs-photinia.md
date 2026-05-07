@@ -96,7 +96,7 @@ Think about planting for the garden. Specifically some green shrubs to go in fro
 ## Action Items
 
 - [ ] Visit garden centre to assess availability of top candidates — especially Pittosporum, Choisya, and Viburnum davidii 📅 2026-04-12
-- [ ] Measure the width and depth of the planting area in front of the photinia before buying 📅 2026-04-10
+- [x] Measure the width and depth of the planting area in front of the photinia before buying 📅 2026-04-10 ✅ 2026-05-07
 - [ ] Decide on 1–3 species to avoid a patchwork feel — repetition of 2–3 plants in groups of 3 looks more intentional than a single specimen of each 📅 2026-04-12
 
 ---
