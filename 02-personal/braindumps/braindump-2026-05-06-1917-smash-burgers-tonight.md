@@ -63,7 +63,7 @@ I want to cook smash burgers this evening.
 ### Before Cooking (Today)
 - [ ] Check fridge: 80/20 beef mince, brioche buns, American cheese, pickles, iceberg lettuce 📅 2026-05-06
 - [ ] If missing anything — shops close soon, so check now 📅 2026-05-06
-- [ ] Mix the smash sauce in advance so it has time to sit: mayo + American mustard + ketchup + diced pickles + garlic powder 📅 2026-05-06
+- [ ] Mix the smash sauce in advance so it has time to sit: 3 tbsp mayo · 1 tsp American mustard · 1 tsp ketchup · 1 tbsp diced dill pickles · pinch garlic powder 📅 2026-05-06
 
 ### Cook Order
 1. Mix sauce and refrigerate
