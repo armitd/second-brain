@@ -33,7 +33,7 @@ Planting Fatsia
 ## Action Items
 
 ### Immediate (24-48 hours)
-- [ ] Decide on location for Fatsia planting 📅 2026-04-11
+- [x] Decide on location for Fatsia planting 📅 2026-04-11 ✅ 2026-05-07
 
 ### Short-term (1-2 weeks)
 - [x] Plant Fatsia 📅 2026-04-17

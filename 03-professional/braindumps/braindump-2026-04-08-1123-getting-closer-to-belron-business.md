@@ -61,7 +61,7 @@ How do I get closer to the Belron business. I need to learn more about how it al
 ## A Getting-Closer System
 
 ### Learn Through Documents (start here — low friction)
-- [ ] Find and read any Belron strategy or operating model documents available on the intranet 📅 2026-04-10
+- [x] Find and read any Belron strategy or operating model documents available on the intranet 📅 2026-04-10 ✅ 2026-05-07
 - [ ] Watch/read John Prodgers' DLD presentations (already noted) — internal knowledge is a good proxy for business reality 📅 2026-04-11
 - [ ] Find recent all-hands or leadership presentations — exec narrative often reveals what the business actually cares about 📅 2026-04-12
 
@@ -84,7 +84,7 @@ How do I get closer to the Belron business. I need to learn more about how it al
 
 ### Immediate (24–48 hours)
 - [ ] List the 5 things you *don't know* about how Belron operates that you most need to understand — this shapes where to focus 📅 2026-04-09
-- [ ] Find the Belron intranet/strategy docs and spend 30 minutes reading 📅 2026-04-10
+- [x] Find the Belron intranet/strategy docs and spend 30 minutes reading 📅 2026-04-10 ✅ 2026-05-07
 
 ### Short-term (1–2 weeks)
 - [ ] Book an informal conversation with one person who is close to the operational reality of the business 📅 2026-04-18
