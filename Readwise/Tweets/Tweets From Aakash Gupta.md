@@ -52,3 +52,5 @@
 - Most people vibe coding right now are doing the equivalent of walking up to one random contractor and saying "build me a three bedroom house."
   Six months later they're surprised the house isn't what they wanted.
   You don't want one guy with a hammer. You want an architect with a https://t.co/Zdo4OW1Cyb https://t.co/cXBiDtlNwK ([View Tweet](https://x.com/aakashgupta/status/2051818171263516885))
+- The reason 21 specialized agents inside Claude Code beats one prompt is the same reason your brain has a face recognition area separate from your language area.
+  Your fusiform face area identifies Mom from across a parking lot in 170 milliseconds. If face recognition were spread https://t.co/cXBiDtlNwK ([View Tweet](https://x.com/aakashgupta/status/2053232555093311648))
