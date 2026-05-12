@@ -62,12 +62,14 @@ This framework is the missing layer.
 
 | Platform | Best Fit If... | Strengths | Watch |
 |---|---|---|---|
-| **Amazon Connect** | Belron is AWS-first | Native AI/ML ecosystem (Lex, Bedrock, Connect Wisdom); MCP support confirmed (May 2026); full agentic rebrand | Deeply AWS-tied; switching cost increases over time |
+| **Amazon Connect** | ✅ **AWS is a confirmed Belron cloud provider (May 2026)** | Native AI/ML ecosystem (Lex, Bedrock, Connect Wisdom); MCP support confirmed (May 2026); full agentic rebrand as Amazon Connect Customer; United Airlines deployed in 3 months vs. previous 12 | Deeply AWS-tied; switching cost increases over time — but this is already Belron's cloud |
 | **Genesys Cloud CX** | Cloud-neutral; best-of-breed preferred | Market leader; broad AI partner ecosystem; strongest WFM integration | Higher per-seat cost; independent of cloud infrastructure |
 | **Salesforce Service Cloud Voice** | Salesforce is the CRM of record at Belron | Native CRM integration; Agentforce (May 2026 GA) is the agentic layer | Requires Salesforce CRM; licensing complexity |
 | **NICE CXone** | WFM and QM are the primary priorities | Strong WFM and AI QA portfolio | Less AI innovation velocity than Amazon/Salesforce |
 
-**The unknown:** Which CCaaS platform does Belron currently use? This is the highest-priority fact to confirm before any CCOTF architecture work proceeds.
+**AWS confirmed:** AWS is a Belron cloud provider (confirmed May 12, 2026), which makes Amazon Connect the front-runner CCaaS candidate — it runs natively on AWS infrastructure, integrates with Amazon Bedrock for AI, and now has full MCP support and an agentic rebrand (Amazon Connect Customer). This does not preclude Genesys or Salesforce if Belron has existing contracts, but the AWS fit is now a confirmed advantage rather than a hypothesis.
+
+**The remaining unknown:** Which CCaaS platform does Belron *currently* use? Even if Amazon Connect is the target state, understanding the current platform determines the migration path and transition complexity.
 
 **Evidence:**
 - [[braindump-2026-05-07-0934-ccotf-technology-component-model]] — "The CCaaS platform choice is the most consequential single technology decision. Everything else in this reference model either sits on top of, integrates with, or is constrained by the CCaaS platform"
