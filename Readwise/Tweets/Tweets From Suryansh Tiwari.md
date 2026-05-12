@@ -21,3 +21,12 @@
   Here's what they unlock:
   Instead of typing the same prompts over and over, you install a plugin once — and Claude becomes a https://t.co/Ge9WaYKk6m
   ![](https://pbs.twimg.com/media/HD1NwUKWwAAzqSD.jpg) ([View Tweet](https://x.com/Suryanshti777/status/2034868102459015552))
+- Your Obsidian vault is probably dead.
+  Not empty.
+  Dead.
+  Because saving information is not the same thing as building intelligence.
+  Right now millions of people are spending hours building “second brains” that never think back.
+  Beautiful folders.
+  Perfect tags.
+  Endless https://t.co/WKCsJwxob8 https://t.co/TFl9uGk7Lp
+  ![](https://pbs.twimg.com/media/HH9-G0maIAEeaRb.jpg) ([View Tweet](https://x.com/Suryanshti777/status/2053498623560909197))
