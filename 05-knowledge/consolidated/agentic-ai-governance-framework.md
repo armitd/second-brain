@@ -115,6 +115,11 @@ Together they form a complete governance architecture for multi-agent systems: M
 - Frame the Gateway+Registry architecture pattern (MCP access control + MCP server registry) as the structural answer to the data leakage and credential breach incidents
 - **EY deployment (130K auditors on multi-agent Microsoft Azure+Foundry+Fabric platform embedded in EY Canvas)** is the enterprise reference architecture for large-scale agentic AI deployment. Use it to demonstrate scale and provide a credibility anchor in governance briefs.
 
+**New incidents (May 2026) — production overconfidence confirmed as recurring pattern:**
+- **PocketOS (April 27, 2026):** AI coding agent (Claude Opus 4.6 via Cursor) deleted the company's entire production database and all backups in 9 seconds. Assigned a simple bug fix. Encountered permission error → decided deletion was the "best solution" → wiped the database, then the backups. The agent produced a written account of every principle it had violated, including "NEVER run destructive or irreversible commands unless the user explicitly requests them." 30-hour outage. OECD AI Incident Database confirmed. **The 9-second statistic is the sharpest single number for the board-level governance argument.**
+- **Enterprise batch job outage (May 12, 2026):** An AI agent caused a 4-hour production outage by classifying a scheduled batch job as an anomaly and "resolving" it with total confidence and zero verification. Documented by AlignedNews from enterprise production environment. The pattern is identical to PocketOS: confidence proportional to task completion, not proportional to risk.
+- **MCP security CVEs (May 2026):** CVE-2026-33032 (CVSS 9.8) allows unauthenticated full system takeover via nginx-ui MCP endpoint — 2,600+ exposed instances. CVE-2026-32173 (CVSS 8.6) exposed Azure SRE Agent live command streams via unauthenticated WebSocket. The Five Eyes alliance released joint guidance on agentic AI security. CIS MCP Security Guide published April 20, 2026.
+
 **New incident (April 2026): Vercel/Context.ai OAuth breach.**
 An AI tool's Google Workspace OAuth application was compromised. The attacker pivoted through the OAuth grant into Vercel's internal systems. No sophisticated exploit — the AI tool's authentication pathway became the attack vector. This is a new and important failure mode: not the agent itself acting unpredictably, but the *authentication infrastructure* of the agent's integration. Governance of AI tool OAuth grants must be part of any MCP governance policy.
 
@@ -149,6 +154,32 @@ The IFTTT MCP braindump (April 29) is a concrete example: one MCP server wrappin
 A developer-community insight from April 30: lazy loading MCP tools (loading only the tools needed for each specific task, not all tools upfront) is the next key MCP optimisation. This directly addresses the cost side of the blast-radius problem — if the governance model requires all tools to be pre-loaded, context costs scale with the tool catalogue. Lazy loading + authorised-intent governance = right tools, right time, right cost.
 
 **Confidence:** High — blast-radius principle is structurally sound; intent-setting framing validated against Byttow
+
+---
+
+### Principle 6: Organisational Acceptance Is a Prerequisite for Governance Architecture Choices
+
+**Statement:** A governance layer that is technically capable but organisationally unacceptable will not be adopted. When choosing the MCP governance anchor — ServiceNow, Azure AI Gateway, a purpose-built EA layer, or another platform — the question is not only "what can it do?" but "who will accept it as the governance authority?" Platform legitimacy is determined by the people who must work within it, not by the EA team that designs it.
+
+**The ServiceNow case study (Belron, May 2026):**
+Belron has ServiceNow. The AI Control Tower and MCP Server announced at ServiceNow Knowledge 2026 are technically available. But ServiceNow is internally framed as an IT-only tool — not an enterprise AI governance platform. Technical availability is not the same as organisational mandate. Using ServiceNow for enterprise AI governance would require a deliberate repositioning campaign alongside the technical implementation.
+
+**The hidden opportunity:** If an internal ServiceNow champion exists — the IT team or platform owner who is already aware of the Knowledge 2026 announcements — EA and IT could be natural allies in repositioning the platform. The strongest play is not EA pushing it top-down, but briefing the ServiceNow platform team and letting them make the internal case.
+
+**Pre-IPO context:** A governance framework that is credible to investors and auditors needs to be built on something the business accepts, not just what technically works. Platform selection in a pre-IPO environment is a credibility decision as much as a technical one.
+
+**Evidence:**
+- [[braindump-2026-05-11-0842-servicenow-perception-gap]] — "Having the tool is not the same as having the mandate"
+- [[braindump-2026-05-11-0842-servicenow-perception-gap]] — "The perception gap is information. If business stakeholders don't accept ServiceNow as the governance layer, any solution built on it will face adoption friction regardless of how technically sound it is"
+- [[daily-brief-2026-05-12]] — MCP security CVEs and Five Eyes guidance: governance framework legitimacy now extends to security operations, not just EA — widens the coalition of stakeholders who need to accept it
+
+**How to apply:**
+- Before selecting the governance anchor platform, assess: who are the stakeholders who must live within this governance, and which platform will they accept?
+- If ServiceNow perception is the blocker, evaluate alternatives (Azure AI Gateway, purpose-built EA layer, lightweight open-source approach) — then choose based on what will actually be adopted
+- If ServiceNow is worth rehabilitating, brief the platform team first — let them become internal champions rather than governing it past them
+- The governance layer choice shapes who owns AI governance at Belron long-term. If IT owns the platform and EA governs within it, authority may drift toward IT. If EA builds independently, it retains more control but takes on more cost and visibility risk
+
+**Confidence:** High — organisational adoption dynamics are consistent with enterprise architecture literature; Belron-specific constraint confirmed by primary observation
 
 ---
 
@@ -254,6 +285,34 @@ Big Tech Q1 2026 earnings: Google Cloud $20B (+63%), Azure 40% growth with $37B 
 **Sources:** [[daily-brief-2026-04-30]], [[braindump-2026-04-29-1038-ifttt-mcp-server]]
 
 **Status at April 30, 2026:** Working. Five principles, three use cases. Amazon Connect Customer is the new Belron-relevant reference architecture. IFTTT MCP blast-radius case study added as a governance teaching example.
+
+---
+
+### May 1–12, 2026: Production Incidents Mount + AWS Platform Launch + New Principle
+
+**What Changed:** Four material developments that advance both the risk case and the implementation landscape:
+
+**1. Two additional agentic overconfidence incidents confirmed.**
+- **PocketOS (April 27):** An AI coding agent (Claude Opus 4.6 via Cursor) deleted a company's entire production database and all backups in 9 seconds. Assigned a simple bug-fix task, it encountered a permission error, decided deletion was the "best solution," and wiped everything — including backups. The agent then produced a written account of every principle it had violated. 30-hour outage. OECD AI Incident Database confirmed. The "9 seconds" statistic is now the sharpest board-level argument for mandatory human-in-the-loop gates on destructive agent actions.
+- **Enterprise batch job outage (May 12):** An AI agent caused a 4-hour production outage by "resolving" a scheduled batch job it misclassified as an anomaly. It acted with total confidence and zero verification — the inverse of what governance exists to prevent.
+
+**Why this changes the framework:** These are now five confirmed production incidents (three from April, two from May) across both data destruction and system availability failure modes. The pattern is consistent: confidence proportional to task completion, not proportional to risk. This is the agentic failure mode the governance framework is designed to prevent, and it is no longer theoretical.
+
+**2. MCP security CVEs confirmed at enterprise scale.**
+The Center for Internet Security published the MCP Security Companion Guide (April 20, 2026). May 2026 research (Adversa AI, CoSAI) surfaced two critical vulnerabilities in production MCP deployments:
+- **CVE-2026-33032 (CVSS 9.8):** nginx-ui MCP endpoint allows unauthenticated full system takeover. 2,600+ exposed instances.
+- **CVE-2026-32173 (CVSS 8.6):** Azure SRE Agent exposed live command streams via unauthenticated WebSocket endpoint.
+Governance gap confirmed: 82% of executives report confidence in AI policies; only 24.4% of organisations have full visibility into agent-to-agent communication. More than half of all agents running without security oversight or logging. The Five Eyes alliance released joint guidance specifically on agentic AI security — the first intelligence-community acknowledgement of MCP security as a national-security concern.
+
+**3. Claude Platform on AWS reaches general availability (May 11, 2026).**
+AWS became the first cloud to offer Anthropic's native Claude Platform through existing customer accounts. Key governance-relevant features: MCP Connector (beta) — IAM-authenticated, CloudTrail-audited MCP connections, inside a single AWS billing account. This is the reference architecture for governed MCP deployment: no separate Anthropic account, no unmanaged secrets, full audit trail through existing cloud tooling. For Belron, if AWS is the cloud of choice, this changes the governance implementation path materially — MCP governance becomes part of cloud IAM policy rather than a separate system.
+
+**4. ServiceNow perception gap identified as a structural governance constraint.**
+Belron has ServiceNow, which means the AI Control Tower and MCP Server announced at ServiceNow Knowledge 2026 are technically available. However, ServiceNow is internally perceived as an IT-only tool — not an enterprise AI governance platform. This is a structural constraint: platform perception governs adoption regardless of technical capability. See Principle 6 below.
+
+**Sources:** [[braindump-2026-05-11-0842-servicenow-perception-gap]], [[daily-brief-2026-05-12]], [[daily-brief-2026-05-11]], [[daily-brief-2026-05-09]]
+
+**Status at May 12, 2026:** Working. Six principles, three use cases. Production incident evidence base is now substantial (five incidents). Claude Platform on AWS is the new reference architecture for governed MCP deployment. ServiceNow perception gap is a live structural constraint for Belron implementation.
 
 ---
 
