@@ -6,7 +6,9 @@ date: "2026-05-07"
 created: "2026-05-07 09:34"
 themes: ["technology-reference-model", "contact-centre", "CCOTF", "architecture", "component-model"]
 tags: ["#braindump", "#CCOTF", "#contact-centre", "#technology-model", "#enterprise-architecture", "#reference-model"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-05-12]]"
+consolidated_date: "2026-05-12"
 energy_level: "high"
 emotional_tone: "analytical"
 confidence: "high"

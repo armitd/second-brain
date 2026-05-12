@@ -6,7 +6,9 @@ date: "2026-05-11"
 created: "2026-05-11 08:42"
 themes: ["servicenow", "perception-gap", "mcp-governance", "internal-politics"]
 tags: ["#braindump", "#raw-thoughts", "#mcp-governance", "#servicenow"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-05-12]]"
+consolidated_date: "2026-05-12"
 energy_level: "medium"
 emotional_tone: "pragmatic"
 confidence: "high"

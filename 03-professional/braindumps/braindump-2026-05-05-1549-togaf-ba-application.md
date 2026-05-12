@@ -5,7 +5,9 @@ date: "2026-05-05"
 created: "2026-05-05 15:49"
 themes: ["business-architecture", "TOGAF", "enterprise-architecture", "professional-development", "role-application"]
 tags: ["#braindump", "#business-architecture", "#TOGAF", "#enterprise-architecture", "#professional-development"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-05-12]]"
+consolidated_date: "2026-05-12"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"

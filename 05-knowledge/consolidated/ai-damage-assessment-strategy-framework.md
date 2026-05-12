@@ -152,7 +152,11 @@ Building a custom AI damage assessment solution requires thinking in layers. Eac
 
 ### Build Partners (Custom Build Option)
 
+**New option (May 2026): OpenAI Deployment Company**
+On May 11, 2026, OpenAI launched the OpenAI Deployment Company ($4B, 19 investment firm partners including Goldman Sachs, McKinsey, and TPG as lead). Acquired Tomoro for ~150 deployment engineers. The model: OpenAI engineers placed directly inside enterprise client organisations alongside their own teams. This is the first time OpenAI itself is a viable alternative to independent build partners for enterprise AI. If the damage assessment PoC is GPT-4o-based (which the prototype path suggests), OpenAI Deployment Company is now a live option alongside UK agencies — particularly for the AI/CV model layer and back-end integration. **The independent UK agencies on the watchlist now face direct competition from the model provider itself.**
+
 **For the model layer:**
+- **OpenAI Deployment Company** (global) — New option; most relevant if prototype uses GPT-4o foundation; places engineers directly in-house; 19 investment firm partner network
 - **Faculty AI** (UK) — Best UK ML consultancy for computer vision at enterprise scale
 - **Datatonic** (UK, GCP specialist) — Best choice if Belron is GCP-first; Gemini expertise
 - **Roke** (UK) — Deep CV capability, security-conscious approach to data
@@ -219,7 +223,11 @@ The build window for a differentiating custom model is **2026–2027.** After th
 
 **Status as of April 20:** In progress. Target delivery: April 24.
 
+**Status update (May 12, 2026):** RFI issued (confirmed week of April 28). Workshop delivered May 12, 2026. The project has moved from internal research to external market engagement. Both milestones are confirmed in [[weekly-checkin-2026-05-01]].
+
 **Evidence:** [[weekly-checkin-2026-04-20]] — "Slide for RFI for the Damage Assessment deck" named as week's priority; "The Damage Assessment RFI is the most strategically interesting active thread. Moving from research and competitive watchlist to a formal RFI deck is the moment a concept becomes a project."
+
+**Evidence (updated):** [[weekly-checkin-2026-05-01]] — "RFI out the door for the AI Damage Assessment PoC — moves the project from internal thinking to external market engagement." Workshop on 12 May 2026 confirmed in preparation and subsequently delivered.
 
 ---
 
@@ -231,6 +239,21 @@ The build window for a differentiating custom model is **2026–2027.** After th
 - Internal labelling (technicians label their own jobs?) vs. external annotation partner
 - Data residency: UK/EU only for GDPR compliance
 - Ownership: ensure contractual clarity that Belron owns all labelled data
+
+---
+
+## The CCOTF Connection
+
+**New strategic insight (May 2026):** The Contact Centre of the Future project is the *delivery channel* for AI Damage Assessment. The damage assessment AI capability (built via the PoC) lives in Domain 4 of the CCOTF technology reference model (AI & Automation) and the Belron-specific layer (Glass Type / Damage Assessment). CCOTF is not a parallel project — it is the platform through which damage assessment reaches customers.
+
+This means:
+- **The CCaaS platform decision (CCOTF) constrains the damage assessment integration architecture.** The AI damage assessment API must integrate with whichever CCaaS platform Belron selects. This must be a joint design decision, not a handoff.
+- **Domain 10 (CCOTF Integration Layer) includes the Insurer API** — the same interface that damage assessment will call to trigger claim pre-authorisation. The architecture teams for both projects must align on this integration point.
+- **The Corgi signal (May 2026):** Corgi, an AI-native full-stack insurer, raised $160M at $1.3B valuation (May 6, 2026) and is expanding into commercial vehicles. AI-native insurers process claims via API, not human-to-human liaison. If Belron's insurer partners shift toward AI-native platforms, the insurer API integration must be API-first, real-time, and machine-readable — which changes the integration architecture for both damage assessment and CCOTF. This is the most important external market signal for the insurer integration layer since the project began.
+
+**Evidence:**
+- [[braindump-2026-05-07-0934-ccotf-technology-component-model]] — "CCOTF is the *delivery channel* for AI damage assessment; the PoC is the *AI capability* it will call"
+- [[daily-brief-2026-05-07]] — Corgi raises $160M at $1.3B, expanding from insuretech into commercial vehicle coverage
 
 ---
 

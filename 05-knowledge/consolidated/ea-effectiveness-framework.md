@@ -128,6 +128,36 @@ This is a stronger position. As agents accelerate execution, the cost of buildin
 
 ---
 
+### Principle 6: BA-EA Fluency Multiplies the Impact of Both Functions
+
+**Statement:** An Enterprise Architect who understands business architecture well enough to be a high-quality partner — reading a capability model critically, connecting a value stream analysis to architecture constraints, bringing an AI/technology lens into BA conversations early — is more valuable than either a pure BA or a pure EA working separately. The EA-BA handoff is where value most commonly leaks; closing it from the EA side is higher leverage than adding more EA tools.
+
+**The key insight:** The goal is not to do BA — it is to work more effectively with BAs. TOGAF BA training gives an EA the vocabulary to engage meaningfully with existing BA artefacts: to spot what's missing, to connect a capability gap to an architecture decision, to ask "how does this capability change with AI augmentation?" These are questions only an EA with BA fluency can ask.
+
+**All three active projects are BA in disguise:**
+- **AI Damage Assessment PoC** = the "Vehicle Assessment" capability (currently human-performed) being transformed by AI. BA frames this as a capability transformation with technology as the enabler — connecting it to a board-level strategic objective rather than a technology experiment
+- **Contact Centre of the Future** = the "Customer Engagement" value stream being redesigned. BA provides the value stream map to show what is being automated, augmented, or eliminated — making the investment case concrete for non-technical stakeholders
+- **MCP Governance** = the "IT Governance" capability area. BA connects it to business policies, compliance requirements, and enterprise risk appetite — elevating it from a technology standards exercise to a business governance programme
+
+**The collaboration model:** Producing a Belron capability model from scratch is less valuable than engaging with the BA team's existing artefacts and contributing an EA/technology perspective to them. The first action is to get access to what's already there, not to start over.
+
+**Evidence:**
+- [[braindump-2026-05-05-1549-togaf-ba-application]] — "The course gives you enough BA knowledge to be a high-quality consumer and partner of BA work: you can read a capability model critically, spot where a value stream analysis is missing something relevant to architecture"
+- [[braindump-2026-05-05-1549-togaf-ba-application]] — "The EA-BA handoff is where value leaks... Understanding BA is how an EA closes that gap from their side"
+- [[braindump-2026-05-05-1549-togaf-ba-application]] — Belron capability model inferred: Customer Acquisition → Appointment Management → Vehicle Assessment → Glass Repair/Replace → ADAS Calibration → Claims Management
+- [[braindump-2026-05-07-0934-ccotf-technology-component-model]] — CCOTF technology model is the technology layer that sits beneath the capability model — the missing artefact is the explicit capability-to-technology mapping
+
+**LeanIX connection:** LeanIX has Business Architecture features (value streams, capability maps) that are likely underused. BA training knowledge maps directly to LeanIX practice — creating a two-for-one: BA fluency improves the EA-BA partnership AND improves LeanIX utilisation.
+
+**How to apply:**
+- Access the existing BA artefacts first (capability model, value stream maps) — ask the 3 BAs in the EA team what they have
+- For each active project: frame it explicitly as a capability transformation story, not just a technology project
+- In BA joint-working sessions: ask the question "how does this capability change with AI augmentation?" — this is the uniquely EA/technology perspective BA colleagues cannot easily provide themselves
+
+**Confidence:** High — principle is structurally sound and grounded in a specific braindump; application to all three projects is well-evidenced
+
+---
+
 ## Applications & Use Cases
 
 ### Use Case 1: Establishing EA Presence in a New Role
