@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "ai-damage-assessment-strategy"
 created: "2026-04-10"
-last_updated: "2026-04-20"
-consolidation_id: "consolidation-2026-04-20"
-source_documents: 12
+last_updated: "2026-05-12"
+consolidation_id: "consolidation-2026-05-12"
+source_documents: 17
 status: "working"
 tags: ["#framework", "#consolidated", "#damage-assessment", "#computer-vision", "#AI", "#build-vs-buy", "#Belron", "#RFI"]
 ---

@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "agentic-ai-governance"
 created: "2026-04-10"
-last_updated: "2026-04-30"
-consolidation_id: "consolidation-2026-04-30"
-source_documents: 21
+last_updated: "2026-05-12"
+consolidation_id: "consolidation-2026-05-12"
+source_documents: 26
 status: "working"
 tags: ["#framework", "#consolidated", "#agentic-AI", "#MCP", "#A2A", "#EA-governance", "#protocols"]
 ---
