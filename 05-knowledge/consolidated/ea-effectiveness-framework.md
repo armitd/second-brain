@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "ea-effectiveness"
 created: "2026-04-09"
-last_updated: "2026-04-30"
-consolidation_id: "consolidation-2026-04-30"
-source_documents: 22
+last_updated: "2026-05-12"
+consolidation_id: "consolidation-2026-05-12"
+source_documents: 24
 status: "working"
 tags: ["#framework", "#consolidated", "#enterprise-architecture", "#visibility", "#effectiveness", "#transition"]
 ---
