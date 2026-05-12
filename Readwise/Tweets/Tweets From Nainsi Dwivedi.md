@@ -15,3 +15,4 @@
   While you're prompting one AI, he has 5 in his terminal + 5-10 on the web all shipping code simultaneously.
   And the real weapon? https://t.co/7YXWFbJugO
   ![](https://pbs.twimg.com/media/HDYVd4IaMAgWp2p.jpg) ([View Tweet](https://x.com/NainsiDwiv50980/status/2032835888070500801))
+- https://t.co/QCjzxVRk5y ([View Tweet](https://x.com/NainsiDwiv50980/status/2053498460918485092))
