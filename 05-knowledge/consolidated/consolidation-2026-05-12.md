@@ -252,7 +252,7 @@ Status updates applied to all source braindumps:
 
 ### Validation Questions (must answer before next framework update)
 - [ ] Which CCaaS platform does Belron currently use? — unlocks Domain 6 analysis in CCOTF framework
-- [ ] Is Belron AWS-first? — determines whether Claude Platform on AWS is a viable MCP governance path
+- [x] ~~Is Belron AWS-first?~~ **Confirmed: AWS is a Belron cloud provider (May 12, 2026).** Claude Platform MCP Connector is now in scope for MCP governance; Amazon Connect is the front-runner CCaaS candidate.
 - [ ] Has the EU AI Act Digital Omnibus been formally enacted? — determines whether December 2027 or August 2026 is the operative deadline
 - [ ] Who owns ServiceNow at Belron? — determines ServiceNow perception gap mitigation path
 
