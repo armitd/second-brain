@@ -18,3 +18,8 @@
   → 1,854 nodes
   → 3,856 edges
   → One custom 3D knowledge galaxy https://t.co/rBJHSXpIsL https://t.co/RhHioFahmj ([View Tweet](https://x.com/leopardracer/status/2053045302777594245))
+- I HAVEN’T OPENED A SINGLE BOOK THIS MONTH. CLAUDE READ 34 OF THEM FOR ME
+  I built a vault in Obsidian, connected Claude and added Notebooklm
+  went to sleep
+  woke up with flashcards, mind maps, and an AI that answers from my own notes only
+  my friends are still highlighting pdfs https://t.co/uQIKRmeyzy https://t.co/lTvmIHK9mq ([View Tweet](https://x.com/leopardracer/status/2054147963719495893))
