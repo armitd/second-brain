@@ -11,6 +11,37 @@ tags: ["#competitive", "#watchlist", "#market-intelligence"]
 
 ---
 
+## Unified Communications & Contact Centre (UCaaS / CCaaS)
+
+### Zoom (Zoom Contact Centre / Zoom Phone)
+- **What they do:** Cloud-based video, voice, and contact centre platform. Zoom Contact Centre (ZCC) is their CCaaS product — agent workspace, routing, IVR, analytics, AI-powered assist. Zoom Phone is their UCaaS/telephony layer. Both compete directly with Microsoft Teams and Genesys/NICE in the enterprise UC and contact centre space.
+- **Why watch:** Attended Zoom EBC (May 2026). Zoom is pitching against the same persistent problems Armo worked on at HSBC — customer routing, agent assist, omnichannel consistency — and the observation is that "they're still problems." This is a signal about how much genuine progress CCaaS vendors have made vs. polished demos.
+- **EBC observation (May 2026):** Zoom pitched their **AI add-ons to CCaaS** — AI Companion (agent assist), AI Expert Assist (real-time guidance), Zoom Virtual Agent (AI IVR/chatbot), conversation analytics, AI summaries. The observation: the underlying contact centre problems from HSBC days (routing quality, agent productivity, omnichannel consistency) haven't been solved — they've had AI layered on top. AI is being used to mask structural CCaaS complexity, not eliminate it. Treat Zoom's AI pitch as incremental improvement, not architectural resolution.
+- **Questions to answer:** What specific ZCC capabilities did Zoom demo that were most relevant to Belron's contact centre needs? Which of the persistent problems did they claim to solve — and what's the evidence? Does Belron currently use Zoom Phone or Zoom Meetings at any opco?
+- **Relevance:** Contact Centre of the Future project — Zoom is a potential CCaaS vendor or displacement risk to existing telephony. Also relevant to UC architecture representation (how Zoom fits in the vendor ownership map).
+- **Source:** [[braindump-2026-05-16-0041-contact-centre-uc-architecture-ebc]]
+- **Last updated:** 2026-05-16
+
+---
+
+## Auto Glass Operations Technology
+
+### AutoBolt
+- **What they do:** Glass part identification service — VIN or licence plate lookup returns the correct NAGs/OEM part numbers, vehicle features (solar glass, acoustic glass, ADAS sensors), and calibration requirements for any specific vehicle. Essentially a search engine for the right glass, powered by OEM as-built data.
+- **HQ:** Toronto, Canada
+- **Pricing:** ~$86/month for 200 lookups (SaaS subscription)
+- **Current market:** US auto glass shops (primary); no confirmed UK/EU availability yet
+- **Accuracy:** ~99.8% reported by users in industry press
+- **Vehicle coverage:** Ford, GM, Stellantis, Toyota/Lexus, Hyundai/Kia, Nissan/Infiniti, Mazda, Subaru, BMW, Mercedes-Benz, VW/Audi, Volvo
+- **Partnerships:** eDirectGlass (embedded lookup in ordering platform), BidClips (VIN lookup in quoting tool)
+- **Key data point:** AutoBolt's 2023 ADAS report: 89% of MY2023+ vehicles require calibration after windshield replacement (up from 25% in MY2016). Calibration is now a $1B industry.
+- **Why watch:** Belron faces the same "right glass first time" problem across all opcos. AutoBolt is Toronto-based (not US-locked by design) and supports licence plate lookup (UK-compatible model). If Belron doesn't have an equivalent capability, this is a gap — or a partnership/integration opportunity.
+- **Questions to answer:** Does any Belron opco already use AutoBolt? Does AutoBolt have UK/EU plans? Does Belron have an equivalent internal tool? Does AutoBolt's 89% calibration figure hold in UK/EU vehicle mix?
+- **Source:** [[braindump-2026-05-16-0037-autobolt-glass-part-identification]]
+- **Last updated:** 2026-05-16
+
+---
+
 ## AI Damage Assessment — Automotive / Glass
 
 ### Tractable
