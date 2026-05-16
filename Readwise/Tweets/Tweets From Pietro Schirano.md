@@ -13,3 +13,6 @@
   Create beautiful components and functional apps, while providing production ready code. 
   Available today, free, for everyone.
   The Cursor moment for design is here. https://t.co/MpdBCnivoC ([View Tweet](https://twitter.com/skirano/status/1927434384249946560))
+- You can now run MagicPath as a native canvas inside Codex to design and build functional apps.
+  It's pretty incredible.
+  Here's how to do it 👇 https://t.co/3dVKxq7pGe ([View Tweet](https://x.com/skirano/status/2055364115560878480))
