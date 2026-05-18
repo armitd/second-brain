@@ -57,10 +57,10 @@ A weekend-long outdoor birthday celebration in a Somerset field. Two nights, pro
 ### Invitations & Guests
 - [ ] Draft guest list 📅 2026-05-25
 - [ ] Decide on invite format — physical, digital, WhatsApp group, or all three
-- [ ] Send save-the-date / invitations 📅 2026-06-01
-- [ ] Set RSVP deadline (suggest end of June) 📅 2026-06-28
-- [ ] Create a WhatsApp group for attendees once invites are out
-- [ ] Collect dietary requirements once RSVPs confirmed
+- [ ] Send invitations 📅 2026-05-31
+- [ ] RSVP deadline — chase all outstanding by this date 📅 2026-06-15
+- [ ] Create a WhatsApp group for attendees once invites are out 📅 2026-05-31
+- [ ] Collect dietary requirements once RSVPs confirmed 📅 2026-06-15
 
 ### Catering & Drinks
 - [ ] Decide catering approach: self-catered, hired caterer, BBQ, food trucks
@@ -145,11 +145,11 @@ A weekend-long outdoor birthday celebration in a Somerset field. Two nights, pro
 
 ## Immediate Next Steps
 
-- [ ] Draft guest list and rough numbers 📅 2026-05-25
 - [ ] Confirm field access, water, and power situation 📅 2026-05-25
 - [ ] Decide catering approach (caterer vs self-catered) 📅 2026-05-25
-- [ ] Send save-the-date messages to close group 📅 2026-06-01
+- [ ] Send invitations to all 59 parties 📅 2026-05-31
 - [ ] Get portable toilet and generator quotes 📅 2026-06-15
+- [ ] Lock down catering numbers once RSVPs close 📅 2026-06-16
 
 ---
 

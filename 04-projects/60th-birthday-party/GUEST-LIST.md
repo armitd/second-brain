@@ -120,11 +120,11 @@ Children identified: Jim + Carly's 2 kids (confirmed), Emma's 3 kids (uncertain/
 ### Gig Buddies
 *4 confirmed · 2 uncertain · max 6*
 
-| # | Party | Confirmed? | Notes |
-|---|-------|-----------|-------|
-| 53 | Jeremy + Kathy | Yes | |
-| 54 | Gino + Briony | Yes | |
-| 55 | Jo + Son | ? | |
+| #   | Party          | Confirmed? | Notes |
+| --- | -------------- | ---------- | ----- |
+| 53  | Jeremy + Kathy | Yes        |       |
+| 54  | Gino + Briony  | Yes        |       |
+| 55  | Jo + Son       | ?          |       |
 
 ---
 
