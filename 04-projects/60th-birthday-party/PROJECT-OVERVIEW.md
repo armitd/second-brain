@@ -67,10 +67,13 @@ A weekend-long outdoor birthday celebration in a Somerset field. Two nights, pro
 - [ ] Plan Friday evening arrival food (something easy — fire pit / BBQ?)
 - [ ] Plan Saturday main event food (the big meal / centrepiece)
 - [ ] Plan Sunday morning breakfast/brunch before people leave
-- [ ] Organise drinks — real ale, wine, spirits, soft drinks, teas
+- [ ] Organise drinks — wine, spirits, soft drinks, teas
 - [ ] Hire or borrow large cool boxes / ice supply if no power fridges
-- [ ] Check if a local Somerset brewery does festival kegs or cask supply
 - [ ] Look into mobile bar hire if needed
+- [ ] **Butcombe Beer** — contact Butcombe Brewery to order keg(s) for the weekend 📅 2026-06-30
+- [ ] **Thatchers Cider** — contact Thatchers (Sandford) to order keg(s) for the weekend 📅 2026-06-30
+- [ ] Decide keg sizes once final headcount confirmed (standard: 50L = ~88 pints per keg) 📅 2026-06-16
+- [ ] Arrange keg cooling — cool box, ice, or hire a keg cooler/font 📅 2026-07-15
 
 ### Infrastructure
 - [ ] **Power:** Generator hire or solar/battery pack for lighting + sound 📅 2026-06-15
