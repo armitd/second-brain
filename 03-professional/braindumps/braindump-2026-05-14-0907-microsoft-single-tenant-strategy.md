@@ -6,7 +6,9 @@ date: "2026-05-14"
 created: "2026-05-14 09:07"
 themes: ["enterprise-architecture", "microsoft-tenant", "cloud-governance", "belron-ipo", "platform-consolidation"]
 tags: ["#braindump", "#raw-thoughts", "#enterprise-architecture", "#microsoft", "#azure", "#tenant-strategy", "#governance"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-05-19]]"
+consolidated_date: "2026-05-19"
 energy_level: "medium"
 emotional_tone: "analytical"
 confidence: "high"

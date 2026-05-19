@@ -5,7 +5,9 @@ date: "2026-05-11"
 created: "2026-05-11 12:00"
 themes: ["anthropic", "belron-strategy", "ai-adoption", "internal-advocacy", "h-and-f"]
 tags: ["#braindump", "#raw-thoughts", "#anthropic", "#belron", "#strategy"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-05-19]]"
+consolidated_date: "2026-05-19"
 energy_level: "medium"
 emotional_tone: "determined"
 confidence: "high"

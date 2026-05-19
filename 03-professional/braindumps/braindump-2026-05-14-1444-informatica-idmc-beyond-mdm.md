@@ -6,7 +6,9 @@ date: "2026-05-14"
 created: "2026-05-14 14:44"
 themes: ["informatica", "idmc", "data-management", "salesforce-acquisition", "eu-ai-act", "ai-governance", "data-quality"]
 tags: ["#braindump", "#raw-thoughts", "#enterprise-architecture", "#informatica", "#data-governance", "#ai-governance", "#salesforce", "#mdm"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-05-19]]"
+consolidated_date: "2026-05-19"
 energy_level: "high"
 emotional_tone: "curious"
 confidence: "high"

@@ -5,7 +5,9 @@ date: "2026-05-16"
 created: "2026-05-16 00:41"
 themes: ["contact-centre-architecture", "uc-ccaas-representation", "single-tenant-microsoft", "ebc-observations", "architecture-communication"]
 tags: ["#braindump", "#contact-centre", "#architecture", "#microsoft", "#uc", "#ccaas", "#belron-ipo"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-05-19]]"
+consolidated_date: "2026-05-19"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"

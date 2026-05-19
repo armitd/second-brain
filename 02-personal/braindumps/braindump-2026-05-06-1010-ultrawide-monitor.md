@@ -5,7 +5,9 @@ date: "2026-05-06"
 created: "2026-05-06 10:10"
 themes: ["home-setup", "hardware", "purchase-decision", "productivity"]
 tags: ["#braindump", "#personal", "#home-office", "#hardware"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-05-19]]"
+consolidated_date: "2026-05-19"
 energy_level: "low"
 emotional_tone: "curious"
 confidence: "high"

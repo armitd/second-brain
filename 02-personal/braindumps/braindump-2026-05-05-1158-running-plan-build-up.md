@@ -5,7 +5,9 @@ date: "2026-05-05"
 created: "2026-05-05 11:58"
 themes: ["running", "fitness", "treadmill", "progressive-training"]
 tags: ["#braindump", "#running", "#fitness", "#health"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-05-19]]"
+consolidated_date: "2026-05-19"
 energy_level: "medium"
 emotional_tone: "motivated"
 confidence: "high"
