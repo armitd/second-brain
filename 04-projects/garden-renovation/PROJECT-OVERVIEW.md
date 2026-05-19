@@ -20,11 +20,11 @@ tags: ["#project", "#garden", "#home-improvement"]
 ### Lighting & Cabling
 - [ ] Rearrange garden lights
 - [ ] Sketch current garden lighting layout — mark cable runs and problem areas 📅 2026-05-01
-- [ ] Check whether garage has an existing power feed 📅 2026-05-01
-- [ ] Decide on mains vs. low-voltage system 📅 2026-05-04
+- [x] Check whether garage has an existing power feed 📅 2026-05-01 ✅ 2026-05-19
+- [x] Decide on mains vs. low-voltage system 📅 2026-05-04 ✅ 2026-05-19
 - [ ] Get quotes from 1-2 Part P electricians for garden + garage cable work 📅 2026-05-04
 - [ ] Plan cable routes in conjunction with pergola and rockery groundwork 📅 2026-05-04
-- [ ] Research garage light options (PIR floodlight, wall lantern, soffit downlights) 📅 2026-05-04
+- [x] Research garage light options (PIR floodlight, wall lantern, soffit downlights) 📅 2026-05-04 ✅ 2026-05-19
 
 ### Decking
 - [ ] Pressure wash the decking
@@ -43,15 +43,15 @@ tags: ["#project", "#garden", "#home-improvement"]
 - [ ] Sketch garden layout showing pergola and rockery together 📅 2026-05-04
 
 ### Lawn
-- [ ] Trim the lawn edges 📅 2026-05-04
+- [x] Trim the lawn edges 📅 2026-05-04 ✅ 2026-05-19
 
 ### Treadmill Setup
-- [ ] Clean the floor — sweep and wash with diluted PVA or concrete cleaner
-- [ ] Allow floor to dry fully (24-48 hours)
-- [ ] Apply concrete sealer/primer (e.g. Ronseal Diamond Hard) — 1-2 coats
-- [ ] Optional: apply floor paint over sealer for a smarter finish
-- [ ] Allow to cure fully (24 hrs minimum) before laying rubber mat
-- [ ] Lay rubber mat and set up treadmill
+- [x] Clean the floor — sweep and wash with diluted PVA or concrete cleaner ✅ 2026-05-19
+- [x] Allow floor to dry fully (24-48 hours) ✅ 2026-05-19
+- [x] Apply concrete sealer/primer (e.g. Ronseal Diamond Hard) — 1-2 coats ✅ 2026-05-19
+- [x] Optional: apply floor paint over sealer for a smarter finish ✅ 2026-05-19
+- [x] Allow to cure fully (24 hrs minimum) before laying rubber mat ✅ 2026-05-19
+- [x] Lay rubber mat and set up treadmill ✅ 2026-05-19
 
 ## Source Braindumps
 - [[02-personal/braindumps/braindump-2026-04-27-1428-pergola-rockery-garden]]
