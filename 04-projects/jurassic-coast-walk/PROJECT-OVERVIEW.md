@@ -12,21 +12,24 @@ tags: ["#project", "#personal", "#walking", "#jurassic-coast"]
 
 **Date:** Thursday 28 May 2026 — **9 days away**  
 **Distance:** 25km (~15.5 miles)  
-**Section:** TBC — see options below  
+**Section:** TBC — see options below (Purbeck/Dorset end — Poole is the hub)  
 **Who:** TBC  
+**Transport:** Train to Poole · collected and dropped off at Poole by car  
 
 ---
 
-## Section Options for ~25km
+## Section Options for ~25km (Purbeck end — all within 30–45 min of Poole)
 
-| Section | Distance | Highlights | Notes |
-|---------|----------|------------|-------|
-| Lyme Regis → West Bay (via Golden Cap) | ~25km | Fossils at Charmouth, Golden Cap summit (191m), West Bay cliffs | Classic; X53 bus for return. Golden Cap is steep. |
-| Weymouth → Lulworth Cove (via Durdle Door) | ~24km | Durdle Door arch, Lulworth Cove, Bat's Head | X53 bus covers this stretch. Very scenic. |
-| Swanage → Kimmeridge (via Chapman's Pool) | ~22km | Quiet, wild; Chapman's Pool, Clavell Tower, Kimmeridge Bay | Limited bus return — needs two cars or taxi |
-| Charmouth → Abbotsbury (via Chesil) | ~28km | Golden Cap, Chesil Beach | Slightly long; can shorten to Bridport ~22km |
+With Poole as the hub, the Purbeck section is the natural choice — and it's some of the most dramatic walking on the entire coast. All options below work as linear walks: dropped at start, walk to end, collected.
 
-**Recommendation:** Lyme Regis → West Bay (via Golden Cap) — the best 25km on the whole coast. Fossils at Charmouth beach, the highest point on the south coast at Golden Cap, and a classic West Bay finish. X53 bus handles the return.
+| Section | Distance | Highlights | Logistics |
+|---------|----------|------------|-----------|
+| **Lulworth Cove → Swanage** (via Kimmeridge, Chapman's Pool, St Aldhelm's Head) | ~28km | The best of Purbeck — everything | Drop at Lulworth (~45 min from Poole); collect at Swanage (~25 min from Poole). Long day. |
+| **Durdle Door → Kimmeridge → Worth Matravers** | ~24km | Durdle Door, Bat's Head, Kimmeridge Bay | Drop at Durdle Door car park (~45 min); collect Worth Matravers or Kimmeridge (~35 min). |
+| **Swanage → Kimmeridge** (via Chapman's Pool, St Aldhelm's Head) | ~22km | Wild, quiet, spectacular — Chapman's Pool is extraordinary | Drop at Swanage (~25 min from Poole); collect at Kimmeridge (~35 min). |
+| **Worth Matravers → Swanage loop** (via St Aldhelm's Head, Dancing Ledge) | ~24km | Circular option — one pick-up/drop-off point | Drop and collect at Worth Matravers — easiest logistics. |
+
+**Recommendation: Swanage → Kimmeridge via Chapman's Pool and St Aldhelm's Head (~22–24km).** The quietest, wildest section of the entire Jurassic Coast. Chapman's Pool is jaw-dropping, St Aldhelm's Head has a Norman chapel on the headland, and the Kimmeridge ledges are unlike anything else on the coast. Poole to Swanage is 25 minutes by car; Kimmeridge pick-up is ~35 minutes from Poole. Low logistics complexity — clear start and end, no bus required.
 
 ---
 
@@ -34,11 +37,12 @@ tags: ["#project", "#personal", "#walking", "#jurassic-coast"]
 
 ### This Week (19–23 May)
 
+- [ ] **Buy walking rucksack** — see spec below; buy in store this week so you can use it on the test walk 📅 2026-05-21
 - [ ] **Choose section** and confirm route 📅 2026-05-20
 - [ ] Download GPX / OS map for chosen section — OS Maps app (OL116 for Lyme/Bridport) or Komoot 📅 2026-05-20
 - [ ] Confirm who is coming and share route plan 📅 2026-05-21
-- [ ] Check X53 Jurassic Coaster bus times for return leg (or arrange second car) 📅 2026-05-21
-- [ ] Book parking at start point if needed 📅 2026-05-21
+- [ ] Share chosen section with driver — confirm drop-off point, pick-up point, and estimated finish time 📅 2026-05-21
+- [ ] Book parking at start point if needed (Worth Matravers and Kimmeridge car parks charge; Swanage has pay-and-display) 📅 2026-05-21
 - [ ] Check boots — are they adequately broken in? 📅 2026-05-20
 - [ ] Do a test walk of 10–12km with a loaded pack 📅 2026-05-23
 
@@ -47,7 +51,8 @@ tags: ["#project", "#personal", "#walking", "#jurassic-coast"]
 - [ ] Gather all kit and check against packing list 📅 2026-05-25
 - [ ] Charge power bank and GPS watch if using 📅 2026-05-27
 - [ ] Check weather forecast for 28 May — adjust clothing plan accordingly 📅 2026-05-27
-- [ ] Check tides for 28 May if route includes any beach sections 📅 2026-05-27
+- [ ] Check tides for 28 May — Chapman's Pool approach can be affected at very high tide 📅 2026-05-27
+- [ ] Confirm train times Poole → home for the evening 📅 2026-05-27
 - [ ] Plan food — make or buy packed lunch and snacks 📅 2026-05-27
 - [ ] **Pack bag the night before** 📅 2026-05-27
 
@@ -89,7 +94,7 @@ tags: ["#project", "#personal", "#walking", "#jurassic-coast"]
 - [ ] Headtorch (not essential for a May day walk but worth packing)
 
 ### Kit
-- [ ] Daypack (25–35L with waist strap)
+- [ ] **Daypack (25–35L with waist strap)** — TO BUY — see spec below
 - [ ] Walking poles
 - [ ] Emergency whistle
 - [ ] Small dry bag or pack cover (waterproof your kit)
@@ -113,43 +118,82 @@ tags: ["#project", "#personal", "#walking", "#jurassic-coast"]
 ### Admin
 - [ ] Cash (some coastal pubs/cafés are cash-only)
 - [ ] Phone fully charged before leaving
-- [ ] Bus pass / contactless for X53 return (if using bus)
+- [ ] Train ticket to Poole (book if not already done) 📅 2026-05-20
+- [ ] Parking cash/card for start point car park
 
 ---
 
-## Route Notes — Lyme Regis → West Bay (recommended)
+## Route Notes — Swanage → Kimmeridge (recommended)
 
-*Fill in once section confirmed*
+*Refine once section confirmed*
 
-**Start:** Lyme Regis harbour car park  
-**Finish:** West Bay harbour  
-**Distance:** ~25km  
-**Total ascent:** ~900m (Golden Cap is 191m; it's earned)  
+**Start:** Swanage — Durlston Country Park car park (or town centre)  
+**Finish:** Kimmeridge Bay car park  
+**Distance:** ~22–24km depending on exact start point  
+**Total ascent:** ~900m — rolling and relentless; this section does not flatten out  
 **Estimated time:** 7–8 hours at walking pace (allow full day)  
+**Drop-off:** Swanage (~25 min from Poole)  
+**Pick-up:** Kimmeridge Bay (~35 min from Poole)  
 
 **Key waypoints:**
-1. Lyme Regis → Charmouth beach (~4km) — fossil hunting on the beach
-2. Charmouth → Golden Cap summit (~5km) — the main climb; views to Portland and Start Point
-3. Golden Cap → Seatown (~3km) — the descent; steep, take your time
-4. Seatown → Eype (~5km) — rolling coastal path
-5. Eype → West Bay (~3km) — dramatic cliff finale into West Bay harbour
+1. Swanage → Durlston Head (~2km) — lighthouse and dramatic cliff start; views back to Old Harry Rocks
+2. Durlston → Dancing Ledge (~5km) — narrow cliff path; Dancing Ledge has a natural tidal pool cut into the ledge
+3. Dancing Ledge → Worth Matravers (~3km) — village with the Square and Compass pub; good lunch stop
+4. Worth Matravers → St Aldhelm's Head (~3km) — headland with a Norman chapel and coastguard lookout; outstanding views
+5. St Aldhelm's Head → Chapman's Pool (~2km) — the descent to Chapman's Pool is steep and spectacular
+6. Chapman's Pool → Kimmeridge (~5km) — clifftop path via Egmont Point; Kimmeridge ledges at the end
 
 **Pubs en route:**
-- The Anchor Inn, Seatown — perfect halfway stop
-- The George, Chideock (~1km off route, worth it in bad weather)
-- The Hive Beach Café, Burton Bradstock (just past West Bay, seasonally)
+- **The Square and Compass, Worth Matravers** — the best pub on the Jurassic Coast; cash only; real ales and pasties; perfectly placed at the halfway point. Do not miss this.
+- Kimmeridge has no pub; nearest is The New Inn, Church Knowle (~10 min drive)
 
-**Return:** X53 Jurassic Coaster bus, West Bay → Lyme Regis (check current First Bus timetable — hourly or better in season)
+**Parking:**
+- Swanage: Durlston Country Park (NT members free; otherwise pay-and-display)
+- Kimmeridge: Smedmore Estate car park (£ per day — take cash)
+
+---
+
+## Rucksack — What to Buy
+
+**Size:** 25–30L for a day walk. Enough for all kit, food, and waterproofs without being unwieldy.
+
+**Non-negotiables:**
+- **Hip/waist belt** — transfers load from shoulders to hips; essential on a 22km day. Without it you'll feel it in your shoulders by lunchtime.
+- **Padded back panel** — ventilated is better in May (Osprey Talon/Tempest style AirSpeed meshbacks are excellent)
+- **Chest strap** — stabilises the pack on uneven terrain
+- **Rain cover included** — or buy separately; Purbeck coast in May can turn wet fast
+- **Hydration bladder compatible** (sleeve + port) — optional but nice if you use a bladder rather than bottles
+
+**Good options at this size and budget:**
+
+| Pack | Size | Price | Notes |
+|------|------|-------|-------|
+| **Osprey Talon 22** (men) / **Tempest 20** (women) | 20–22L | ~£110–130 | Best ventilated back panel; industry standard; available at Cotswold Outdoor |
+| **Osprey Stratos 26** | 26L | ~£140 | Slightly more volume; same AirSpeed back; better for a longer day |
+| **Deuter Speed Lite 25** | 25L | ~£100 | Very light; excellent fit; good alternative to Osprey |
+| **Decathlon Quechua MH500 30L** | 30L | ~£40 | Outstanding value; basic but works; available same-day in store |
+| **Gregory Zulu 25** | 25L | ~£130 | Excellent fit system; worth trying alongside Osprey |
+
+**Where to buy this week (in store, so you can try it on):**
+- **Cotswold Outdoor** — best range; staff know their kit; can fit the pack properly
+- **Go Outdoors** — widespread; broad range; price match
+- **Decathlon** — if budget is the priority; Quechua MH500 is genuinely good for the money
+
+**Fitting tip:** Try it loaded. Stuff a jacket and a water bottle in it before you buy. The hip belt should sit on your hip bones, not your waist. Tighten the shoulder straps until snug, then tighten the hip belt, then the load lifters (the straps that pull the top of the pack toward your shoulders). If the shop won't let you do this, go to a different shop.
+
+**The break-in reality:** A rucksack doesn't need breaking in like boots — but you absolutely want to do the test walk (planned for 23 May) wearing it loaded so you can adjust the fit and find any rub points before the main walk.
 
 ---
 
 ## Useful Resources
 
 - **Official SWCP route:** [nationaltrail.co.uk](https://www.nationaltrail.co.uk/en_GB/trails/south-west-coast-path/)
-- **X53 Jurassic Coaster timetable:** [firstbus.co.uk](https://www.firstbus.co.uk)
-- **Tide times:** [tidesnet.org.uk](https://www.tidesnet.org.uk)
+- **Komoot — Swanage to Kimmeridge:** search Komoot for this section; community-validated GPX
+- **Durlston Country Park:** [durlston.co.uk](https://www.durlston.co.uk) — car park info and trail maps
+- **Tide times:** [tidesnet.org.uk](https://www.tidesnet.org.uk) — check Kimmeridge/Swanage
 - **Cliff safety:** [jurassiccoast.org](https://jurassiccoast.org)
-- **Weather:** Met Office — Bridport/Lyme Regis forecast
+- **Weather:** Met Office — Swanage/Wareham forecast
+- **The Square and Compass, Worth Matravers:** cash only — take £10–15 for lunch
 
 ---
 
