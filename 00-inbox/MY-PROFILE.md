@@ -24,6 +24,7 @@ tags: ["#profile", "#config", "#cog"]
 - [[04-projects/mcp-governance/PROJECT-OVERVIEW|MCP Governance]]
 - [[04-projects/contact-centre-future/PROJECT-OVERVIEW|Contact Centre of the Future]]
 - [[04-projects/60th-birthday-party/PROJECT-OVERVIEW|60th Birthday Party]]
+- [[04-projects/jurassic-coast-walk/PROJECT-OVERVIEW|Jurassic Coast Walk]]
 
 ## Related
 - [[MY-INTERESTS|My Interests & News Sources]]
