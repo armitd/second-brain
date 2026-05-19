@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "ea-effectiveness"
 created: "2026-04-09"
-last_updated: "2026-05-12"
-consolidation_id: "consolidation-2026-05-12"
-source_documents: 24
+last_updated: "2026-05-19"
+consolidation_id: "consolidation-2026-05-19"
+source_documents: 31
 status: "working"
 tags: ["#framework", "#consolidated", "#enterprise-architecture", "#visibility", "#effectiveness", "#transition"]
 ---
@@ -155,6 +155,68 @@ This is a stronger position. As agents accelerate execution, the cost of buildin
 - In BA joint-working sessions: ask the question "how does this capability change with AI augmentation?" — this is the uniquely EA/technology perspective BA colleagues cannot easily provide themselves
 
 **Confidence:** High — principle is structurally sound and grounded in a specific braindump; application to all three projects is well-evidenced
+
+---
+
+### Principle 7: EA as Experiment Design Owner — Innovation Accounting as Governance
+
+**Statement:** In an organisation running AI PoCs, the EA team's highest-leverage governance contribution is not reviewing the architecture *after* a PoC has been built — it is defining *what counts as evidence* before the first sprint begins. Innovation accounting (a lean startup discipline) gives EA a structured tool for this: define the hypothesis, the leading indicator metrics, and the pivot threshold before any code is written.
+
+**Why this matters for Belron's AI portfolio:**
+In 2026, AI PoCs are proliferating faster than traditional governance can review them. The question "when does this generate value?" is no longer answered by a delivery date — it is answered by a learning milestone. EA's role is to force this definition early, creating a governance moment that is forward-looking rather than backward-looking.
+
+**The innovation accounting toolkit:**
+| Tool | EA Action |
+|---|---|
+| **Hypothesis definition** | Before PoC kick-off: "We believe [capability X] will [outcome Y] for [customer Z]. We will know this is true when [leading indicator]." |
+| **Leading indicators** | Define the measurable outcomes that confirm value *before* revenue arrives — accuracy rate, decision quality, time-to-decision, technician confidence score |
+| **Experiment design** | Recommend Wizard of Oz or Concierge MVP phases before committing to model infrastructure — test whether the *decision* is valuable when a human makes it |
+| **Pivot threshold** | Pre-define the evidence level that would trigger a direction change — removes politics from the decision at the stage gate |
+| **Innovation accounting review** | Monthly or per-sprint: are we learning at the rate we predicted? Are our leading indicators moving? |
+
+**Wizard of Oz principle:** Before committing to model training, data pipelines, or MLOps infrastructure, run a human-in-the-loop pilot — a person does what the AI will eventually do. If the decision isn't valuable when a human makes it, the AI version won't be either. This is underused in enterprise AI and should be a standard first gate for any Belron AI PoC.
+
+**The lean startup critique to hold in tension:** Lean startup optimises for *incremental* validation. For breakthrough bets (AI Damage Assessment at full deployment scale), the vision must come first — experiments validate the *path* to the vision, not the vision itself. Don't let fast feedback loops kill long-horizon bets.
+
+**Evidence:**
+- [[braindump-2026-05-06-0952-lean-startup-cycle]] — Innovation accounting as the answer to "when does this generate value?"; Wizard of Oz MVPs underused in enterprise AI; EA as experiment design owner
+- [[braindump-2026-05-06-0952-lean-startup-cycle]] — "Pivot/persevere as an EA governance artefact — if EA owns the framework for defining validated learning before the PoC begins, EA is structuring the governance moment"
+- [[braindump-2026-05-06-1627-togaf-adm-templates-belron-adaptation]] — BA capability maps serve as the hypothesis-definition layer for lean startup experiments
+
+**Confidence:** High — well-sourced; the Wizard of Oz + innovation accounting application to Belron's active AI projects is directly applicable and not dependent on Belron-specific unknowns
+
+---
+
+### Principle 8: A Belron Architecture Artefact Set — Lite ADM, Not Full TOGAF
+
+**Statement:** TOGAF's ADM templates were designed for formal, project-by-project architecture engagements. Belron's EA practice is smaller, faster-moving, and operating across multiple simultaneous initiatives. The right response is a curated "Belron Architecture Artefact Set" — six templates adapted from TOGAF's strongest concepts, anchored to LeanIX for data, used for narrative and governance only.
+
+**The six artefacts worth adapting (not all at once — sequence matters):**
+
+*Tier 1 — Adapt Now:*
+1. **Architecture Principles** — 1 page per principle; covers rationale, implications, what it rules out. Belron likely has implicit principles — make them explicit and govern against them
+2. **Architecture Vision** — 2–3 pages per initiative; what problem, what future state, what's in/out of scope, key risks. Aligns stakeholders before architecture work begins
+3. **Stakeholder Map** — 1 page; who cares, what they care about, what they need to see
+
+*Tier 2 — Adapt Medium-Term:*
+4. **Architecture Brief** (simplified Statement of Architecture Work) — half a page; what we're committing to investigate and produce, by when, approved by whom
+5. **Architecture Contract** — 1–2 pages; what architecture commitments the project team is making, who signs off, what happens if they want to deviate. **This is the biggest governance gap at Belron.**
+6. **Compliance Assessment** — lightweight checklist tied to Architecture Principles; run at project gate reviews
+
+**LeanIX boundary:** LeanIX already covers Application Portfolio (replacing Application Architecture deliverables), Technology Radar (replacing Technology Architecture inventory), and roadmap views. Any Belron template set must treat LeanIX as the system of record for data — documents are for narrative, decisions, and governance only.
+
+**The Architecture Contract is the highest-impact gap.** Belron currently makes architecture decisions without a governance artefact that defines what commitments a project team is making. A lightweight Architecture Contract (1–2 pages) per initiative would be immediately valuable for all three active projects — and becomes an IPO-adjacent artefact as investor-grade technology governance documentation.
+
+**IPO signal:** The ability to demonstrate coherent, documented technology architecture standards is investor-facing work as Belron approaches an H2 2026 IPO. Architecture communication is a pre-IPO deliverable, not just an internal discipline.
+
+**Evidence:**
+- [[braindump-2026-05-06-1627-togaf-adm-templates-belron-adaptation]] — Full ADM template assessment for Belron; Lite ADM proposal; LeanIX overlap mapping; Architecture Contract as biggest gap
+- [[braindump-2026-05-16-0041-contact-centre-uc-architecture-ebc]] — "Showing tech standards to markets is IPO-adjacent"; architecture communication as investor-facing work
+- [[braindump-2026-05-05-1549-togaf-ba-application]] — BA artefacts as the evidence base that Architecture Vision documents summarise
+
+**Sequencing:** Start with Architecture Principles and Architecture Vision (lightest, most universally useful) before tackling Architecture Contract (most impactful but requires buy-in from delivery teams). Run the pilot on CCOTF — largest scope, most stakeholders.
+
+**Confidence:** High — TOGAF ADM structure is well-established; Belron-specific applicability is inferred from project context but solidly grounded
 
 ---
 

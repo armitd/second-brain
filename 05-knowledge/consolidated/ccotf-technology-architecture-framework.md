@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "ccotf-technology-architecture"
 created: "2026-05-12"
-last_updated: "2026-05-12"
-consolidation_id: "consolidation-2026-05-12"
-source_documents: 5
+last_updated: "2026-05-19"
+consolidation_id: "consolidation-2026-05-19"
+source_documents: 9
 status: "working"
 tags: ["#framework", "#consolidated", "#CCOTF", "#contact-centre", "#technology-reference-model", "#enterprise-architecture"]
 ---
@@ -137,6 +137,48 @@ This framework is the missing layer.
 - [[braindump-2026-05-05-1549-togaf-ba-application]] — "LeanIX's Business Architecture features (value streams, capability maps) are likely underused — BA course knowledge maps directly to LeanIX practice"
 
 **Confidence:** High
+
+---
+
+### Principle 6: Salesforce/Informatica Convergence Changes the CCaaS Platform Evaluation
+
+**Statement:** The Salesforce acquisition of Informatica (closed November 2025, $8B) has materially changed the weight of the Salesforce Service Cloud Voice / Agentforce CC option. Belron likely uses Informatica for MDM today. If that is true, Salesforce Agentforce CC is not just a CCaaS platform — it is a data-integrated, AI-native contact centre that already has access to Belron's master customer and vehicle data through the Informatica layer. This changes the cost-benefit equation compared to building equivalent data integrations for any other CCaaS platform.
+
+**What the Salesforce stack now looks like:**
+- **CCaaS:** Salesforce Agentforce Contact Center (launched Enterprise Connect 2026; generally available)
+- **AI agent platform:** Agentforce (multi-step agentic task completion, native in Service Cloud)
+- **Master data:** Informatica Customer 360 + MDM feeding Agentforce agents directly — trusted, governed customer data without additional integration effort
+- **Data integration:** Informatica Cloud Data Integration (CDI) — the leading ETL platform, now part of the same vendor
+- **Data quality:** Informatica CLAIRE DQ Agent — AI-native data quality that directly improves Agentforce output
+- **CRM:** Salesforce CRM (Sales Cloud / Service Cloud) — if Belron uses this, the integration is native
+
+**The pivotal unknown:** Does Belron use Salesforce CRM (Sales Cloud, Service Cloud)? If yes, the Salesforce stack has a structural advantage that Microsoft and Amazon cannot easily match at the data layer. If no, the Informatica layer is the decision point — worth activating regardless of CCaaS choice.
+
+**Architecture implication:** The CCaaS platform evaluation should now be explicitly three-way: Microsoft-stack (Teams Phone + Dynamics 365 CC + Azure AI) vs. Salesforce-stack (Agentforce CC + Informatica + MuleSoft) vs. Amazon-stack (Amazon Connect + Bedrock). The Informatica asset is a swing factor in the Microsoft vs. Salesforce comparison.
+
+**Evidence:**
+- [[braindump-2026-05-14-1444-informatica-idmc-beyond-mdm]] — "Salesforce acquired Informatica. Informatica is now the data foundation for Agentforce. If Belron evaluates Agentforce CC, they get the data quality, governance, and catalog layer as part of the stack — and if they already have Informatica MDM, Customer 360 feeds the Agentforce agents directly"
+- [[braindump-2026-05-16-0041-contact-centre-uc-architecture-ebc]] — Zoom EBC visit; still-unsolved contact centre problems that EBC polish doesn't resolve
+
+**Confidence:** High on the Salesforce/Informatica convergence fact; Medium on Belron-specific impact (depends on whether Belron uses Salesforce CRM — currently unknown)
+
+---
+
+### Principle 7: Vendor EBC Content Requires Reference Customer Validation Before Acting On It
+
+**Statement:** Executive Briefing Centre visits are effective at demonstrating vendor capability against a client's stated pain points. They are not evidence that those pain points are solved. Vendors brief against the same structural pain points across every client, every year — because those pain points are structurally persistent, not because the vendor has genuinely resolved them. Belron should treat EBC content as a hypothesis to test against reference customer evidence, not as a proof point.
+
+**The diagnostic test:** For every EBC commitment or capability demonstration, ask: "Which reference customer can I speak to who has deployed this in production at our scale?" If the answer is a case study or a demo environment, the problem is probably still a problem.
+
+**The Zoom EBC signal (May 2026):** A Zoom CCaaS EBC session showed AI add-ons layered on top of underlying CCaaS problems that were recognised from prior (HSBC) experience. The observation: same problems, better presentation. The key institutional memory from HSBC-scale contact centre deployments is that the hardest problems in contact centre technology — routing accuracy at scale, knowledge base quality, agent adoption of AI tools — are not solved by a vendor briefing; they are solved by programme management, change management, and sustained investment in data quality.
+
+**The vendor lock-in representation challenge:** Any honest architecture diagram for UC/CCaaS should explicitly show: which vendor owns which component, data proximity (where does customer data actually live), and the lock-in/buy-in spectrum. This forces the vendor conversation into the open and gives stakeholders a clear view of dependency risk before a platform decision is made.
+
+**Evidence:**
+- [[braindump-2026-05-16-0041-contact-centre-uc-architecture-ebc]] — "They are solving the problems that we were solving at HSBC but they're still problems." EBC content as marketing until validated by reference customers.
+- [[braindump-2026-05-16-0041-contact-centre-uc-architecture-ebc]] — Architecture representation challenge: showing vendor ownership, data proximity, lock-in vs. buy-in
+
+**Confidence:** High — this is a generalisable principle validated repeatedly across enterprise technology selection; the HSBC pattern gives it specific institutional grounding
 
 ---
 
