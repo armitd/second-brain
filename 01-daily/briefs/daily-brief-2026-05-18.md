@@ -9,7 +9,7 @@ confidence: "high"
 tags: ["#daily-brief", "#news", "#strategic-intelligence"]
 interests: ["Anthropic Claude", "Google IO", "agentic AI", "MCP governance", "contact centre", "LeanIX", "AI damage assessment", "real economy AI", "enterprise architecture"]
 projects_referenced: ["ai-damage-assessment-poc", "mcp-governance", "contact-centre-future"]
-items_count: 8
+items_count: 9
 dedup_urls:
   - "https://www.anthropic.com/news/claude-opus-4-7"
   - "https://www.anthropic.com/news/model-context-protocol"
@@ -21,6 +21,7 @@ dedup_urls:
   - "https://trymimetic.com/events/sf/google-io-2026-may-2026"
   - "https://x.com/pedrohumanos/status/2055424895538930120"
   - "https://x.com/gdb/status/2055436684666274020"
+  - "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN40Z0D6:0-autoglass-owner-belron-prepares-30-billion-euro-amsterdam-ipo-ft/"
 ---
 
 # Daily Brief — 18 May 2026
@@ -29,11 +30,30 @@ dedup_urls:
 
 ## Executive Summary
 
-Google I/O kicks off tomorrow and all eyes are on Gemini 3.5 and Google Omni — your three active projects each have a stake in what gets announced. Closer to your current work: Salesforce and Microsoft have both landed native agentic contact centre products in the last few weeks, which reshapes the CCaaS vendor landscape you're evaluating. And SAP LeanIX has quietly added AI agent and MCP server discovery — your two active projects (MCP Governance and the PoC) have just converged inside your EA tooling.
+Belron itself — not just D'Ieteren — is now confirmed preparing a €30B Amsterdam IPO, which changes the strategic context for every internal investment decision. Google I/O kicks off tomorrow with Gemini 3.5 and Google Omni expected. Salesforce and Microsoft have both landed native agentic contact centre products, reshaping the CCaaS vendor landscape. And SAP LeanIX has quietly added AI agent and MCP server discovery — your two active projects (MCP Governance and the PoC) have just converged inside your EA tooling.
 
 ---
 
 ## High Impact News
+
+### Belron Confirms €30B Amsterdam IPO Preparation
+
+**Relevance:** Your employer is preparing to go public at a €30B valuation — this changes the strategic context for every internal investment decision.
+
+According to the Financial Times (via Reuters), Belron has begun formal preparatory talks with banks for a stock market flotation, with Amsterdam as the lead venue. The FT estimates equity valuation at approximately €24B, implying an enterprise value of ~€32B once net debt is accounted for. This is a material step beyond the March 2026 Bloomberg story, which covered D'Ieteren exploring options for their *stake* in Belron. This new reporting is about Belron itself preparing for a public offering — a different and more advanced stage of the process.
+
+**Impact Assessment:**
+- **Projects Affected:** All three active projects — IPO preparation typically triggers an internal governance sprint, technology investment scrutiny, and sharper focus on demonstrable ROI from innovation initiatives
+- **Potential Effects:** Your AI Damage Assessment PoC, MCP Governance work, and Contact Centre of the Future project may all face either accelerated timelines (prove value before IPO) or enhanced scrutiny (investor-grade documentation). Projects that can be positioned as competitive differentiators gain strategic weight.
+- **Action Suggested:** Understand when the IPO roadshow period is likely to begin and whether your projects will be cited in investor materials. Consider whether your current documentation and outcome narratives are IPO-grade.
+
+**Sources:**
+- [Reuters/TradingView — Belron Prepares €30B Amsterdam IPO](https://www.tradingview.com/news/reuters.com,2026:newsml_FWN40Z0D6:0-autoglass-owner-belron-prepares-30-billion-euro-amsterdam-ipo-ft/) (Tier 1) — May 2026
+- [New Mobility News — Belron IPO spotlight](https://newmobility.news/en/2026/01/19/belron-ipo-plans-put-dieterens-crown-jewel-back-in-the-spotlight/) (Tier 2) — Jan 2026
+
+**Confidence:** High — FT/Reuters sourced; formal bank discussions confirm this is beyond rumour stage.
+
+---
 
 ### Salesforce Agentforce Contact Center + Microsoft Dynamics 365 — Agentic CC is Now Shipped, Not Roadmap
 
