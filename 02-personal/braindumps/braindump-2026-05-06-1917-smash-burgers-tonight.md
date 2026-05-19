@@ -5,7 +5,9 @@ date: "2026-05-06"
 created: "2026-05-06 19:17"
 themes: ["cooking", "smash-burgers", "dinner"]
 tags: ["#braindump", "#personal", "#cooking", "#food"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-05-19]]"
+consolidated_date: "2026-05-19"
 energy_level: "medium"
 emotional_tone: "excited"
 confidence: "high"

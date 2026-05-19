@@ -5,7 +5,9 @@ date: "2026-05-06"
 created: "2026-05-06 10:06"
 themes: ["grooming", "self-care", "purchase-decision"]
 tags: ["#braindump", "#personal", "#grooming"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-05-19]]"
+consolidated_date: "2026-05-19"
 energy_level: "low"
 emotional_tone: "neutral"
 confidence: "high"

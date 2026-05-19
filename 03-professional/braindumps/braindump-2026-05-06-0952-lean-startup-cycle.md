@@ -5,7 +5,9 @@ date: "2026-05-06"
 created: "2026-05-06 09:52"
 themes: ["lean-startup", "innovation", "product-development", "enterprise-ai", "validated-learning"]
 tags: ["#braindump", "#lean-startup", "#innovation", "#product-management", "#enterprise-architecture"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-05-19]]"
+consolidated_date: "2026-05-19"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"

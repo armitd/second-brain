@@ -5,7 +5,9 @@ date: "2026-05-06"
 created: "2026-05-06 16:27"
 themes: ["TOGAF", "ADM", "architecture-governance", "Belron", "EA-practice"]
 tags: ["#braindump", "#TOGAF", "#ADM", "#enterprise-architecture", "#Belron", "#governance"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-05-19]]"
+consolidated_date: "2026-05-19"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"

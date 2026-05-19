@@ -5,7 +5,9 @@ date: "2026-05-17"
 created: "2026-05-17 15:24"
 themes: ["admin", "expenses", "task"]
 tags: ["#braindump", "#raw-thoughts", "#personal", "#admin"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-05-19]]"
+consolidated_date: "2026-05-19"
 energy_level: "low"
 emotional_tone: "neutral"
 confidence: "high"
