@@ -1,7 +1,5 @@
 {
-	"nodes":[
-		{"id":"04f07ffa7027c4b0","type":"file","file":"04-projects/garden-renovation/PROJECT-OVERVIEW.md","x":-320,"y":-160,"width":400,"height":400}
-	],
+	"nodes":[],
 	"edges":[],
 	"metadata":{
 		"version":"1.0-1.0",
