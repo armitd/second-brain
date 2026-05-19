@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "ai-damage-assessment-strategy"
 created: "2026-04-10"
-last_updated: "2026-05-12"
-consolidation_id: "consolidation-2026-05-12"
-source_documents: 17
+last_updated: "2026-05-19"
+consolidation_id: "consolidation-2026-05-19"
+source_documents: 21
 status: "working"
 tags: ["#framework", "#consolidated", "#damage-assessment", "#computer-vision", "#AI", "#build-vs-buy", "#Belron", "#RFI"]
 ---
@@ -137,6 +137,52 @@ Building a custom AI damage assessment solution requires thinking in layers. Eac
 
 ---
 
+### Principle 5: Use Informatica DQ to Validate Training Data Before Model Training Begins
+
+**Statement:** The single most common failure mode for AI PoCs is poor training data quality — inconsistent labelling across opcos, class imbalances, duplicates, and distribution gaps that make a model behave unexpectedly in production. If Belron has an active Informatica IDMC subscription, the CLAIRE Data Quality Agent (available now, public preview November 2025) can profile the damage assessment training dataset before model training begins — and this activation costs nothing beyond what is already licensed.
+
+**What Informatica DQ does for training data:**
+- **Profiling:** Completeness, accuracy, consistency, distribution analysis across the training dataset — automatically
+- **Natural language rules:** *"Flag any windscreen image where the damage region is less than 5% of the total image area"* → generates the technical rule without data engineering
+- **Cross-opco consistency check:** Identifies labelling inconsistencies across damage records from different opcos (Autoglass UK, Carglass France, etc.) that would cause model drift
+- **Class imbalance detection:** Identifies if one damage type (e.g. chip) is underrepresented relative to another (crack, bull's-eye) — which causes systematic bias in the model's recommendations
+- **Real-time monitoring:** Catch training data drift before the model degrades in production
+
+**The governance story is cleaner with Informatica DQ.** EU AI Act requires data governance documentation for high-risk AI systems — training data lineage, quality standards, and profiling results are exactly what regulators want to see. Informatica's data lineage capability traces which data sources fed which models, automatically generating the compliance documentation.
+
+**Action:** Before any model training milestone, confirm whether Belron's Informatica IDMC subscription includes Data Quality (CDQ) and Data Governance and Catalog (CDGC) modules. If yes, incorporate CLAIRE DQ profiling as a mandatory data preparation gate — not additional effort, just activation.
+
+**Evidence:**
+- [[braindump-2026-05-14-1444-informatica-idmc-beyond-mdm]] — "AI Damage Assessment needs Informatica DQ before model training... Applying Informatica's CLAIRE DQ Agent to the Damage Assessment training dataset (images + associated damage records) would: identify inconsistent labelling across opcos, flag class imbalances, detect duplicates, and establish a quality baseline"
+- [[braindump-2026-05-14-1444-informatica-idmc-beyond-mdm]] — "Only 38% of organisations have established data quality standards for AI training data" (Informatica CDO Insights 2026)
+
+**Confidence:** High on the DQ methodology; Medium on availability — depends on what Informatica modules Belron has licensed (requires audit)
+
+---
+
+### Principle 6: The PoC Is the Advocacy Vehicle for Claude at Belron — Framing Matters
+
+**Statement:** Getting Belron to adopt Anthropic (Claude) as a strategic AI model provider will not happen through vendor relationships alone. H&F's position as an investor with an Anthropic JV does not translate into operational technology direction — PE firms govern through the board, not through platform choices. The route is internal: build something undeniably good using Claude, and let the evidence make the case.
+
+**The advocacy sequence:**
+1. Include Claude (Opus 4.7 / Sonnet 4.x) explicitly in the foundation model prototype comparison — not as the only option, but as an equal alongside GPT-5.4 and Gemini
+2. Measure accuracy, confidence calibration, and output structure objectively
+3. Use the prototype results as the internal evidence base — not "we prefer Anthropic" but "Claude produced the most interpretable structured output with the highest confidence calibration on our test cases"
+4. Frame the enterprise proposition: Claude is the safest, most enterprise-ready foundation model — safety as an architectural principle, not a vendor preference
+5. Identify the internal champion who could sign an enterprise agreement — CTO, CPO, or Group IT leadership
+
+**The IPO angle:** Pre-IPO, Belron wants technology stories for the prospectus narrative. A Claude-powered AI PoC that shows measurable results on Belron's core business (damage assessment accuracy) is a technology leadership story. Timing the enterprise conversation to coincide with strong PoC results is the leverage point.
+
+**The back channel option:** Anthropic's enterprise services team (H&F-backed venture) may be interested in Belron as a reference customer in the automotive/glass space. An exploratory conversation with Anthropic enterprise — not routed through H&F — is worth considering once the PoC has evidence to show.
+
+**Evidence:**
+- [[braindump-2026-05-11-1200-getting-belron-onto-anthropic]] — "H&F won't do it for me. The route to Anthropic at Belron is internal — through the PoC, through results, through EA positioning"
+- [[braindump-2026-05-11-1200-getting-belron-onto-anthropic]] — "'Building Belron's AI platform on the safest, most enterprise-ready foundation model' sounds like EA doing its job. That framing has a path through governance."
+
+**Confidence:** High on framing and advocacy path; Medium on timing (PoC results are not yet in)
+
+---
+
 ## The Competitive Landscape
 
 ### Existing Solutions (Buy/Partner Option)
@@ -147,6 +193,7 @@ Building a custom AI damage assessment solution requires thinking in layers. Eac
 | **Ravin AI** | AI vehicle inspection platform. 2B images processed. Hardware-agnostic | High — direct reference architecture | US MSO pilot underway; IAG-backed; no proprietary hardware |
 | **Audatex / Solera** | Automotive claims AI embedded in insurer workflows | High — may already be in Belron's value chain | Most important to check: do Belron insurance partners already use this? |
 | **NVIDIA Lyra 2.0** | Synthetic data generation platform for automotive AI training | High — training data supply | Generates photorealistic synthetic damage/vehicle images for model training. Directly addresses the "Layers 2–3 are hardest" problem — synthetic data can supplement real labelled images, reducing time and cost to reach training data volume thresholds |
+| **AutoBolt** | Glass part identification by VIN/licence plate — returns NAGs, OEM part numbers, ADAS calibration requirements | Medium — adjacent part ID use case | Toronto-based SaaS; ~99.8% accuracy; $86/month per 200 lookups. Currently US-focused but global brand coverage. Supports licence plate lookup (UK-relevant). ADAS calibration report: 89% of MY2023+ vehicles need calibration after windshield replacement. Not a damage assessment tool — a part selection tool that is a precondition to an accurate job. [[braindump-2026-05-16-0037-autobolt-glass-part-identification]] |
 
 **The key question before committing to custom build:** Do any of Belron's major insurance referral partners already use Tractable, Ravin, or Audatex/Solera for their own damage assessment? If yes, the argument becomes partnership + integration, not build.
 
