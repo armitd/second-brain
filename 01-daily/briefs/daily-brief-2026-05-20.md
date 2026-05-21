@@ -88,9 +88,7 @@ Google used I/O 2026 to reposition Gemini from "chatbot" to "execution layer acr
 
 **Relevance:** This is the most important external validation your MCP Governance project could receive. Google confirming MCP support transforms it from an Anthropic-led initiative into an industry standard.
 
-Google confirmed at I/O that **MCP support is coming to Gemini and Gemini Spark for third-party apps in the coming weeks**. Confirmed MCP integrations at launch: Adobe, Canva, OpenTable, Instacart, Samsung, Vivo, Xiaomi, OPPO, Spotify, CapCut — and more.
-
-More significantly, Google proposed **WebMCP**, a new open web standard that allows developers to expose structured tools (JavaScript functions, HTML forms) so browser-based AI agents can execute complex tasks with greater precision. An experimental WebMCP origin trial is beginning in Chrome 149.
+Google confirmed at I/O that **MCP support is coming to Gemini and Gemini Spark for third-party apps in the coming weeks**. Confirmed MCP integrations at launch: Adobe, Canva, OpenTable, Instacart, Samsung, Vivo, Xiaomi, OPPO, Spotify, CapCut — and  allows developers to expose structured tools (JavaScript functions, HTML forms) so browser-based AI agents can execute complex tasks with greater precision. An experimental WebMCP origin trial is beginning in Chrome 149.
 
 Gemini 3.5 Flash was also verified on the **MCP Atlas benchmark** in its official launch benchmarks — the first time a Google model has been evaluated on MCP-specific performance.
 
