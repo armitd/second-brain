@@ -23,6 +23,10 @@ tags: ["#project", "#overview", "#contact-centre", "#agentic-ai", "#enterprise-a
 
 ## Next Steps
 - [ ] Define project scope and objectives
+- [ ] Develop technology documentation standard format
+
+## Architecture Principles (emerging)
+- **Evaluate with explicit rules, not LLM inference** — AI agents in the contact centre (agent assist, call analytics, routing) should evaluate outcomes using ontology-driven rule logic, not leave the evaluation stage to the model. This produces auditable, consistent outputs. Source: [[03-professional/braindumps/braindump-2026-05-21-1700-semantic-layer-governance-newman|Semantic Layer Governance braindump]] (Darlene Newman).
 
 ---
 

@@ -77,3 +77,29 @@ For documents that cannot go through Readwise: internal/confidential files, Belr
 - **When a user drops a PDF or article into a session**, suggest saving it to Readwise so it flows through the standard path in future. Only suggest `00-inbox/raw/` for confidential/internal documents.
 - **When processing raw content**, note the source in the output file's frontmatter: `source_readwise: "Readwise/..."` or `source_file: "00-inbox/raw/filename"`.
 - **Suggest Readwise** when a user pastes a long article, tweet thread, or shares a public PDF they want to keep.
+
+## Behaviour Rules
+
+Rules governing what COG can do without explicit instruction:
+
+- **Scope lock:** Only modify files explicitly requested. If a related file needs attention, mention it — don't touch it. One task = one scope.
+- **Confirm before rewriting:** Never rewrite or substantially restructure an existing braindump, project file, or knowledge document without explicit instruction. Adding a section is fine; restructuring requires confirmation.
+- **Hard stop before destructive actions:** Deleting files, overwriting braindumps, removing project content — always confirm first. No exceptions.
+- **No autonomous scheduling:** Never create or modify cron jobs, scheduled tasks, or reminders without being asked. The user decides what runs automatically.
+- **Summarise changes:** After any session that modifies vault files, state which files were touched, what changed, and what was deliberately left unchanged.
+
+## Permanent Facts
+
+Always-true constraints that apply in every session — do not re-derive or contradict these:
+
+- **Who:** Armo — Enterprise Architect at Belron (global windscreen repair/replace company, ~35 countries, ~30,000 employees)
+- **Context:** Belron is pre-IPO (H2 2026 target). Major IT decisions carry IPO risk implications.
+- **Active projects:** AI Damage Assessment PoC · MCP Governance · Contact Centre of the Future · 60th Birthday Party · Jurassic Coast Walk
+- **Primary AI advocacy goal:** Getting Belron onto Anthropic/Claude — the AI Damage Assessment PoC is the primary vehicle; H&F's Anthropic relationship is background context, not a lever
+- **Framework files are immutable:** `.claude/`, `.kiro/`, `.gemini/`, `AGENTS.md`, `CLAUDE.md` — updated only via `cog-update.sh` or `/update-cog`. Never restructure or delete these.
+- **Readwise/ is immutable:** Raw source files. Read-only. Never delete, rename, or modify.
+- **COG memory lives in:** `.claude/projects/.../memory/` — auto-saved across sessions by the memory system
+
+## Known Failure Patterns
+
+See `ERRORS.md` in the vault root for a log of approaches that have failed and what worked instead. Check it when retrying a previously-attempted operation.
