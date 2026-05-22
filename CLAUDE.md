@@ -100,6 +100,17 @@ Always-true constraints that apply in every session — do not re-derive or cont
 - **Readwise/ is immutable:** Raw source files. Read-only. Never delete, rename, or modify.
 - **COG memory lives in:** `.claude/projects/.../memory/` — auto-saved across sessions by the memory system
 
+## Session Hygiene
+
+Guidelines for keeping session quality high as conversations grow:
+
+- **Use /compact when sessions get long:** Context quality drops as a session fills up. If a session has covered multiple distinct topics (e.g. daily brief + braindumps + research + project updates), run `/compact` to compress history before starting the next heavy task. Fresh context produces better output.
+- **Start a new session for substantive analytical work:** Don't continue a long operational session (Readwise processing, task filing, brief generation) into complex synthesis work (auto-research, position papers, weekly check-ins). Start fresh so the model has full context budget available.
+- **Model selection by task type:**
+  - **Opus** — complex synthesis, auto-research, position papers, weekly check-ins, architecture decisions, anything requiring deep reasoning across multiple sources
+  - **Sonnet** — routine execution: Readwise processing, filing braindumps, daily briefs, adding tasks, small edits
+- **Use Plan Mode (Shift+Tab) before complex skill runs:** For auto-research, weekly check-ins, or any multi-step skill with significant vault writes, switch to Plan Mode first. Let the model think through the approach before acting — prevents wasted work from wrong-direction execution.
+
 ## Known Failure Patterns
 
 See `ERRORS.md` in the vault root for a log of approaches that have failed and what worked instead. Check it when retrying a previously-attempted operation.
