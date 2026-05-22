@@ -43,6 +43,7 @@ Enterprise Architecture ownership of the Model Context Protocol (MCP) standard a
 - [ ] Draft Belron MCP adoption policy v0.1
 - [ ] Map existing Belron systems as candidate MCP server candidates
 - [ ] Review Linux Foundation MCP governance docs
+- [ ] Put together a reference architecture for MCP / Agentic AI
 
 ## Open Questions
 - **Semantic governance:** MCP tools return data to agents — but what does that data *mean*? Each agent may interpret the same field differently without a shared semantic layer. Semantic governance (controlled vocabulary, ontology-driven evaluation) is a dependency for meaningful MCP tool output. Needs scoping: is this in MCP Governance or a separate EA initiative? See [[03-professional/braindumps/braindump-2026-05-21-1700-semantic-layer-governance-newman|Semantic Layer Governance braindump]].
