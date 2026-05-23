@@ -141,16 +141,16 @@ Provide a reference model for the Contact Centre of the Future programme that:
 
 ## A.3 Architecture Drivers
 
-| Driver | Source |
-|---|---|
+| Driver                                                                                                                                                                         | Source                                                                  |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------- |
 | **D1.** Persistent contact centre problems (routing quality, agent productivity, omnichannel consistency) remain unsolved by vendor AI add-ons — structural redesign is needed | Zoom EBC observation, May 2026: "same problems as HSBC, still problems" |
-| **D2.** AI-first contact — LLM-powered virtual agents can now resolve 50–60% of contacts without human involvement | Industry data, May 2026 |
-| **D3.** CCOTF is the delivery channel for the AI Damage Assessment PoC — the two programmes must be architecturally coupled | Consolidation May 2026 |
-| **D4.** MCP Governance provides the upstream AI governance layer — Domain 4 (AI & Automation) and Domain 11 (AI Model Governance) must sit within it | [[2026-05-23-mcp-agentic-reference-architecture]] |
-| **D5.** Belron's domain-specific intelligence (VRM, insurer API, ADAS calibration, multi-opco routing) is the differentiator — not the CCaaS platform | CCOTF component model, May 2026 |
-| **D6.** IPO (H2 2026) requires demonstrable technology architecture governance — the contact centre is a significant customer-facing investment | Belron exec context |
-| **D7.** EU AI Act Articles 9/12/14 apply to AI agents making customer-facing decisions (routing, damage assessment, claim eligibility) | EUR-Lex |
-| **D8.** Multi-agent AI systems amplify semantic inconsistency — without shared vocabulary, parallel agents arrive at different answers to the same question | Darlene Newman / semantic layer governance braindump, May 2026 |
+| **D2.** AI-first contact — LLM-powered virtual agents can now resolve 50–60% of contacts without human involvement                                                             | Industry data, May 2026                                                 |
+| **D3.** CCOTF is the delivery channel for the AI Damage Assessment PoC — the two programmes must be architecturally coupled                                                    | Consolidation May 2026                                                  |
+| **D4.** MCP Governance provides the upstream AI governance layer — Domain 4 (AI & Automation) and Domain 11 (AI Model Governance) must sit within it                           | [[2026-05-23-mcp-agentic-reference-architecture]]                       |
+| **D5.** Belron's domain-specific intelligence (VRM, insurer API, ADAS calibration, multi-opco routing) is the differentiator — not the CCaaS platform                          | CCOTF component model, May 2026                                         |
+| **D6.** IPO (H2 2026) requires demonstrable technology architecture governance — the contact centre is a significant customer-facing investment                                | Belron exec context                                                     |
+| **D7.** EU AI Act Articles 9/12/14 apply to AI agents making customer-facing decisions (routing, damage assessment, claim eligibility)                                         | EUR-Lex                                                                 |
+| **D8.** Multi-agent AI systems amplify semantic inconsistency — without shared vocabulary, parallel agents arrive at different answers to the same question                    | Darlene Newman / semantic layer governance braindump, May 2026          |
 
 ## A.4 Stakeholders & Concerns
 
