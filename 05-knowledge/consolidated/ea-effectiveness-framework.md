@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "ea-effectiveness"
 created: "2026-04-09"
-last_updated: "2026-05-19"
-consolidation_id: "consolidation-2026-05-19"
-source_documents: 31
+last_updated: "2026-05-24"
+consolidation_id: "consolidation-2026-05-24"
+source_documents: 34
 status: "working"
 tags: ["#framework", "#consolidated", "#enterprise-architecture", "#visibility", "#effectiveness", "#transition"]
 ---
@@ -414,4 +414,18 @@ The team's scope, ownership, and deliverables are "all unclear, and it hasn't be
 
 ---
 
-*Consolidated from 17 sources | Confidence: High | Status: Working — fourth consolidation April 20; six use cases; transition moment live*
+### May 22–23, 2026: Two Formal Reference Architectures Completed
+
+**What Emerged:** In a single session, two full TOGAF Architecture Definition Documents were produced from accumulated braindumps: the MCP Agentic Reference Architecture ([[2026-05-22-mcp-agentic-reference-architecture]]) and the CCOTF Reference Architecture ([[2026-05-23-ccotf-reference-architecture]]). Both follow TOGAF 10 ADM Phases A–D with ArchiMate 3.2 notation, architecture principles, ABBs, standards information bases, and governance sections.
+
+This represents a significant velocity step: converting several months of accumulated braindumps and research into formal governance artefacts in one session. The dual-purpose artefact principle (Principle 2) is now validated at this scale — the same session that produced internal thinking also produced stakeholder-ready documents (including the exec diagram [[2026-05-23-ccotf-exec-diagram]]).
+
+**Pattern confirmed:** The TOGAF ADM template work (Principle 8) is paying off at speed. Having a clear artefact template in mind accelerates the translation from idea to governance document substantially.
+
+**Sources:** [[2026-05-22-mcp-agentic-reference-architecture]], [[2026-05-23-ccotf-reference-architecture]]
+
+**Status at May 24, 2026:** The EA artefact machine is running. Two reference architectures produced. The frontier now is social validation — getting these documents in front of stakeholders who can test, challenge, and endorse them.
+
+---
+
+*Consolidated from 34 sources | Confidence: High | Status: Working — fifth consolidation May 24; six use cases; two RAs complete; transition moment live*

@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "microsoft-single-tenant-strategy"
 created: "2026-05-19"
-last_updated: "2026-05-19"
-consolidation_id: "consolidation-2026-05-19"
-source_documents: 3
+last_updated: "2026-05-24"
+consolidation_id: "consolidation-2026-05-24"
+source_documents: 4
 status: "emerging"
 tags: ["#framework", "#consolidated", "#microsoft", "#azure", "#tenant-strategy", "#enterprise-architecture", "#cloud-governance", "#belron-ipo"]
 ---
@@ -102,6 +102,26 @@ The Microsoft tenant question has existed for years. What changed in 2025–2026
 **Data residency is solvable:** Microsoft Multi-Geo capability stores data in specific geographies within a single tenant — EU users' M365 data stays in EU, US stays in US. This satisfies most GDPR data residency requirements. China (PIPL) and a few regulated-sector edge cases may still require opco-level separation regardless.
 
 **Confidence:** High — governance-before-technology is a foundational EA principle; the Belron opco autonomy pattern is well-evidenced across all Group-level decisions (LeanIX, Dynamics 365, now tenant)
+
+---
+
+### Principle 5a: Copilot Artifact Governance Is the Missing Complement to Tenant Strategy
+
+**Statement:** Before concluding that a single tenant unlocks full Copilot intelligence, answer the governance companion question: where does Copilot actually put things? M365 Copilot creates multiple classes of persistent artifact — Copilot Pages (BizChat outputs), Teams meeting recaps, Loop components — and each lands in a different backing store (SharePoint, OneDrive, Loop workspace). Most organisations' retention and DLP policies predate Copilot and do not explicitly cover these content types. This is a governance risk that must be addressed before broader Copilot rollout, regardless of tenant topology.
+
+**Why this matters for the tenant strategy:**
+- A single tenant with Copilot running across all opcos amplifies the governance surface: sensitive meeting recaps from opco A could land in OneDrive accessible to users from opco B, depending on who initiates the meeting
+- Copilot artifact placement is surface-specific, not uniform: Teams meeting recap → initiator's OneDrive; BizChat/Copilot Pages → SharePoint/shared OneDrive; Loop → Loop workspaces backed by SharePoint
+- Existing M365 retention and DLP policies likely do not cover Copilot content types — this needs to be confirmed before any rollout (single-tenant or multi-tenant)
+- Any architecture options paper for tenant consolidation should include a "Copilot artifact governance" section as a dependency
+
+**The EA action:** Build a one-page reference mapping each Copilot surface to its backing storage, applicable retention policies, and data residency implications. This is pre-work for any tenant decision and also a valuable contribution to the Copilot rollout programme if one exists.
+
+**Evidence:**
+- [[braindump-2026-05-20-1352-copilot-365-notebooks-data-placement]] — "AI governance surface area is expanding faster than existing policy frameworks. Copilot content needs to be treated as a new content class"
+- [[braindump-2026-05-14-0907-microsoft-single-tenant-strategy]] — "Copilot governance is a benefit of single tenant" — this principle is the next step: govern the artifact before the topology
+
+**Confidence:** Medium-High — artifact placement is directionally correct from public Microsoft documentation; Belron's specific configuration requires internal confirmation
 
 ---
 

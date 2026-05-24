@@ -347,14 +347,14 @@ ArchiMate notation: `[A]` = Application Component, `[AS]` = Application Service,
 
 This layer has no equivalent in any generic CCaaS reference architecture. It is the architectural expression of Belron's domain knowledge.
 
-| Component | Type | Responsibility | Integration |
-|---|---|---|---|
-| **VRM / Vehicle Lookup Service** | [A] | Receives vehicle registration mark → returns vehicle make/model/year, glass specifications, ADAS sensor presence, calibration requirements | Feeds routing (ADAS-equipped → specialist), agent desktop (customer 360), damage assessment |
-| **Glass Type Identifier** | [AS] | Identifies OEM vs. aftermarket glass, acoustic/solar variants, part numbers | Feeds repair/replace decision, insurer authorisation |
-| **AI Damage Assessment Engine** | [A] | Photo/video → AI analysis → repair or replace recommendation with confidence score | **AIDA PoC integration point.** Low-confidence results route to human review (AP-02, HITL). |
-| **Insurer Claims API Connector** | [A] | Real-time pre-authorisation request to insurer → approved/declined/referred within contact duration | `claims-mcp` → MCP Gateway; insurer-specific adapters |
-| **ADAS Calibration Router** | [AS] | Identifies calibration requirement from VRM data → applies skills-based routing to ADAS-certified technician and depot | Feeds routing engine; affects field service job type |
-| **Multi-OpCo Routing Logic** | [AS] | Brand, language, geography, and regulatory routing across Autoglass, Carglass, Safelite, and others | CCaaS platform API; identity of brand-of-contact determines context |
+| Component                        | Type | Responsibility                                                                                                                             | Integration                                                                                 |
+| -------------------------------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| **VRM / Vehicle Lookup Service** | [A]  | Receives vehicle registration mark → returns vehicle make/model/year, glass specifications, ADAS sensor presence, calibration requirements | Feeds routing (ADAS-equipped → specialist), agent desktop (customer 360), damage assessment |
+| **Glass Type Identifier**        | [AS] | Identifies OEM vs. aftermarket glass, acoustic/solar variants, part numbers                                                                | Feeds repair/replace decision, insurer authorisation                                        |
+| **AI Damage Assessment Engine**  | [A]  | Photo/video → AI analysis → repair or replace recommendation with confidence score                                                         | **AIDA PoC integration point.** Low-confidence results route to human review (AP-02, HITL). |
+| **Insurer Claims API Connector** | [A]  | Real-time pre-authorisation request to insurer → approved/declined/referred within contact duration                                        | `claims-mcp` → MCP Gateway; insurer-specific adapters                                       |
+| **ADAS Calibration Router**      | [AS] | Identifies calibration requirement from VRM data → applies skills-based routing to ADAS-certified technician and depot                     | Feeds routing engine; affects field service job type                                        |
+| **Multi-OpCo Routing Logic**     | [AS] | Brand, language, geography, and regulatory routing across Autoglass, Carglass, Safelite, and others                                        | CCaaS platform API; identity of brand-of-contact determines context                         |
 
 #### Layer ⑤: CCaaS Core Platform
 

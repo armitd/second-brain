@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "ccotf-technology-architecture"
 created: "2026-05-12"
-last_updated: "2026-05-19"
-consolidation_id: "consolidation-2026-05-19"
-source_documents: 9
+last_updated: "2026-05-24"
+consolidation_id: "consolidation-2026-05-24"
+source_documents: 12
 status: "working"
 tags: ["#framework", "#consolidated", "#CCOTF", "#contact-centre", "#technology-reference-model", "#enterprise-architecture"]
 ---
@@ -164,6 +164,28 @@ This framework is the missing layer.
 
 ---
 
+### Principle 8: The CCOTF Reference Architecture Is Now a Formal TOGAF ADD — Govern From It
+
+**Statement:** The CCOTF programme now has a formal TOGAF Architecture Definition Document (v0.1, May 2026), structured across ADM Phases A–D with ArchiMate 3.2 notation. This is the architecture governance artefact for the programme — all subsequent technology decisions, vendor selections, and integration designs should be evaluated against it. The RA is not a static document; it defines the review cadence (quarterly; immediately on CCaaS platform decision) and explicitly flags nine open issues that need resolution.
+
+**What the RA adds beyond this framework:**
+- 9 Architecture Principles (AP-01 to AP-09) established and owned by EA
+- 19 Architecture Building Blocks (ABB-C01 to ABB-C19) defined at the component level
+- A Belron Intelligence Layer formally named and bounded as a separate architectural tier
+- AP-02: "Evaluate with explicit rules, not LLM inference" — the semantic governance principle (Darlene Newman, May 2026) — now an architecture standard for the CCOTF programme
+- A 5-phase programme roadmap (Foundation → AI-First CC → Intelligent Human CC → Belron Intelligence → Agentic Back-Office)
+- 9 Open Issues with owners — the most critical are: OI-02 (CCaaS platform selection), OI-05 (AI Damage Assessment PoC dependency), OI-07 (OneNote content migration due 30 May 2026)
+
+**AP-02 — Semantic Governance Principle:** Evaluation of customer eligibility, job type, damage classification, insurer pre-authorisation, and escalation criteria must use governed rules and explicit ontology, not LLM inference. This ensures determinism, auditability, and EU AI Act compliance. Source: [[braindump-2026-05-21-1700-semantic-layer-governance-newman]].
+
+**Evidence:**
+- [[2026-05-23-ccotf-reference-architecture]] — TOGAF ADD v0.1 covering all four ADM phases
+- [[braindump-2026-05-21-1700-semantic-layer-governance-newman]] — Newman principle: semantic layer = governance infrastructure, not technology
+
+**Confidence:** High — the RA exists and is the authoritative governance document for the programme
+
+---
+
 ### Principle 7: Vendor EBC Content Requires Reference Customer Validation Before Acting On It
 
 **Statement:** Executive Briefing Centre visits are effective at demonstrating vendor capability against a client's stated pain points. They are not evidence that those pain points are solved. Vendors brief against the same structural pain points across every client, every year — because those pain points are structurally persistent, not because the vendor has genuinely resolved them. Belron should treat EBC content as a hypothesis to test against reference customer evidence, not as a proof point.
@@ -298,6 +320,9 @@ Built as a primary EA deliverable for the CCOTF project. Trigger: the recognitio
 - Corgi AI-native insurance signal added: insurer API integration (Domain 10) must anticipate API-first insurer architecture
 - Microsoft Dynamics 365 Contact Center and Salesforce Agentforce Contact Center both shipped (April–May 2026) — CCaaS vendor AI competition is accelerating
 - Claude Platform on AWS MCP Connector: governance implication for Domain 11
+
+### May 22–23, 2026: CCOTF Reference Architecture TOGAF ADD Completed
+The technology component model and framework principles have been elevated into a formal TOGAF Architecture Definition Document — [[2026-05-23-ccotf-reference-architecture]]. This is the primary governance artefact for the CCOTF programme going forward. Key additions over the framework alone: formal architecture principles (AP-01 to AP-09), 19 ABBs, Belron Intelligence Layer formally scoped, 5-phase programme roadmap, and 9 open issues for resolution. The executive stakeholder diagram is at [[2026-05-23-ccotf-exec-diagram]].
 
 ---
 
