@@ -7,7 +7,9 @@ created: "2026-05-20 13:52"
 source_daybook: "01-daily/daybooks/daybook-2026-05-17.md"
 themes: ["microsoft-copilot", "m365", "data-placement", "notebooks", "governance"]
 tags: ["#braindump", "#raw-thoughts", "#microsoft", "#copilot", "#m365", "#governance", "#data-residency"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-05-24]]"
+consolidated_date: "2026-05-24"
 energy_level: "low"
 emotional_tone: "curious"
 confidence: "medium"
