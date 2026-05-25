@@ -23,3 +23,7 @@
   went to sleep
   woke up with flashcards, mind maps, and an AI that answers from my own notes only
   my friends are still highlighting pdfs https://t.co/uQIKRmeyzy https://t.co/lTvmIHK9mq ([View Tweet](https://x.com/leopardracer/status/2054147963719495893))
+- THIS MAN HASN’T OPENED HIS TASK MANAGER IN A WEEK AND HIS ENTIRE LIFE IS STILL ON TRACK
+  he dumped everything into one folder before bed and closed his laptop
+  woke up to a system that had already sorted every note and flagged every stalled project and assigned every task
+  his https://t.co/SHTD5ELi7P https://t.co/FBtlEEAGXJ ([View Tweet](https://x.com/leopardracer/status/2057013987083002016))
