@@ -11,3 +11,8 @@
 ## Highlights
 - https://t.co/lkRFCBt82J ([View Tweet](https://x.com/cyrilXBT/status/2047246104421388461))
 - https://t.co/1gCU5MmJ6n ([View Tweet](https://x.com/cyrilXBT/status/2052235121416188114))
+- https://t.co/FmSotxKER7 ([View Tweet](https://x.com/cyrilXBT/status/2056924424838815824))
+- Six months ago my Obsidian vault had 2,000 notes and I could not find anything.
+  I rebuilt the entire structure in one afternoon using this exact system.
+  I have not lost a single idea since.
+  The people who set this up today will wonder how they ever worked without it. https://t.co/ImrlDJcidx https://t.co/1oFHhu3Bef ([View Tweet](https://x.com/cyrilXBT/status/2058402610198073445))
