@@ -16,3 +16,8 @@
   I rebuilt the entire structure in one afternoon using this exact system.
   I have not lost a single idea since.
   The people who set this up today will wonder how they ever worked without it. https://t.co/ImrlDJcidx https://t.co/1oFHhu3Bef ([View Tweet](https://x.com/cyrilXBT/status/2058402610198073445))
+- Obsidian trading journal = a system that studies every trade you make.
+  Works while you sleep.
+  Every pattern identified. Every edge validated. Every mistake documented so it never costs you twice.
+  After 30 days it knows your trading better than you do.
+  After 90 days it is https://t.co/GftHYuKpdz https://t.co/ZgWhMWUz4X ([View Tweet](https://x.com/cyrilXBT/status/2059124167887216817))

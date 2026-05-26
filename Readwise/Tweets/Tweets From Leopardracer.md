@@ -27,3 +27,8 @@
   he dumped everything into one folder before bed and closed his laptop
   woke up to a system that had already sorted every note and flagged every stalled project and assigned every task
   his https://t.co/SHTD5ELi7P https://t.co/FBtlEEAGXJ ([View Tweet](https://x.com/leopardracer/status/2057013987083002016))
+- OBSIDIAN CREATES TENSION BETWEEN YOUR NODES. CLAUDE CREATES TENSION BETWEEN YOUR OLD LIFE AND YOUR NEW ONE
+  second brain captures what you think
+  45 automations execute what you think
+  morning trend scanner, inbox prioritizer, content calendar, invoice generator and 41 more
+  all https://t.co/fC34uyycAs https://t.co/QTX2cxAqfH ([View Tweet](https://x.com/leopardracer/status/2058919006438826089))

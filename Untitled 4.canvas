@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"8c731519e9d61cfb","type":"group","x":0,"y":400,"width":300,"height":300,"label":"Untitled group"}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
