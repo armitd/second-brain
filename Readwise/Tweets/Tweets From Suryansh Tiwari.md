@@ -30,3 +30,14 @@
   Perfect tags.
   Endless https://t.co/WKCsJwxob8 https://t.co/TFl9uGk7Lp
   ![](https://pbs.twimg.com/media/HH9-G0maIAEeaRb.jpg) ([View Tweet](https://x.com/Suryanshti777/status/2053498623560909197))
+- Claude Code feels completely different once you install this.
+  Anthropic quietly released an official plugin called claude-code-setup and it basically turns Claude Code from “pretty good” into an actual AI dev environment.
+  It scans your project and recommends:
+  → hooks
+  → https://t.co/829LufD2BT https://t.co/4wZCeGBJnA ([View Tweet](https://x.com/Suryanshti777/status/2059555214294970631))
+## New highlights added May 30, 2026 at 9:42 AM
+- Claude Code feels completely different once you install this.
+  Anthropic quietly released an official plugin called claude-code-setup and it basically turns Claude Code from “pretty good” into an actual AI dev environment.
+  It scans your project and recommends:
+  → hooks
+  → https://t.co/829LufD2BT https://t.co/4wZCeGBJnA ([View Tweet](https://x.com/Suryanshti777/status/2059555214294970631))

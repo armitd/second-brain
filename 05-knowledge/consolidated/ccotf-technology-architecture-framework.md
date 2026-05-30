@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "ccotf-technology-architecture"
 created: "2026-05-12"
-last_updated: "2026-05-24"
-consolidation_id: "consolidation-2026-05-24"
-source_documents: 12
+last_updated: "2026-05-30"
+consolidation_id: "consolidation-2026-05-30"
+source_documents: 15
 status: "working"
 tags: ["#framework", "#consolidated", "#CCOTF", "#contact-centre", "#technology-reference-model", "#enterprise-architecture"]
 ---
@@ -64,17 +64,21 @@ This framework is the missing layer.
 |---|---|---|---|
 | **Amazon Connect** | ✅ **AWS is a confirmed Belron cloud provider (May 2026)** | Native AI/ML ecosystem (Lex, Bedrock, Connect Wisdom); MCP support confirmed (May 2026); full agentic rebrand as Amazon Connect Customer; United Airlines deployed in 3 months vs. previous 12 | Deeply AWS-tied; switching cost increases over time — but this is already Belron's cloud |
 | **Genesys Cloud CX** | Cloud-neutral; best-of-breed preferred | Market leader; broad AI partner ecosystem; strongest WFM integration | Higher per-seat cost; independent of cloud infrastructure |
-| **Salesforce Service Cloud Voice** | Salesforce is the CRM of record at Belron | Native CRM integration; Agentforce (May 2026 GA) is the agentic layer | Requires Salesforce CRM; licensing complexity |
+| **Salesforce Agentforce Contact Center** | Salesforce Service Cloud Ent/Perf/Unlimited is the CRM of record at Belron | Native CRM integration; **AGCC GA (Feb 2026, UK available)** — voice, digital, AI agents and CRM in one platform; eliminates integration tax; $2/conversation | Hard Salesforce dependency — value disappears without Service Cloud; **no WFM** (still needs Verint/NICE); UK/US/Canada only — continental Carglass markets not covered |
 | **NICE CXone** | WFM and QM are the primary priorities | Strong WFM and AI QA portfolio | Less AI innovation velocity than Amazon/Salesforce |
 
 **AWS confirmed:** AWS is a Belron cloud provider (confirmed May 12, 2026), which makes Amazon Connect the front-runner CCaaS candidate — it runs natively on AWS infrastructure, integrates with Amazon Bedrock for AI, and now has full MCP support and an agentic rebrand (Amazon Connect Customer). This does not preclude Genesys or Salesforce if Belron has existing contracts, but the AWS fit is now a confirmed advantage rather than a hypothesis.
 
 **The remaining unknown:** Which CCaaS platform does Belron *currently* use? Even if Amazon Connect is the target state, understanding the current platform determines the migration path and transition complexity.
 
+**Agentforce Contact Center — fit analysis (May 2026):**
+AGCC is the strongest option *if and only if* Belron opcos run Salesforce Service Cloud. The AGCC value proposition is eliminating the integration tax between CRM and CCaaS. Without Salesforce, that advantage is moot. Key constraints for a Belron-wide play: (1) Geography — UK, US, Canada only today; continental Carglass markets (France, Germany, Belgium, Italy) not available; (2) WFM gap — no native workforce management, Verint/NICE still required; (3) Belron CCOTF architecture principle ("explicit rules, not LLM inference") needs reconciling with AGCC's agentic-default routing. De-risked entry: AGCC can be deployed alongside an existing platform as a single-opco pilot — Autoglass UK is the candidate if they run Salesforce. **First action: audit which Belron opcos run Salesforce Service Cloud.**
+
 **Evidence:**
 - [[braindump-2026-05-07-0934-ccotf-technology-component-model]] — "The CCaaS platform choice is the most consequential single technology decision. Everything else in this reference model either sits on top of, integrates with, or is constrained by the CCaaS platform"
 - [[daily-brief-2026-05-12]] — Salesforce Agentforce Contact Center GA confirms Service Cloud Voice as a live agentic option
 - [[daily-brief-2026-05-12]] — Microsoft Dynamics 365 Contact Center deployed three AI agents (April 2026) — worth assessing if Belron is Dynamics-stack
+- [[braindump-2026-05-30-0958-agentforce-contact-center-belron-fit]] — Full fit analysis: AGCC architecture, pricing, geographic gaps, WFM gap, Salesforce dependency, Belron-specific evaluation criteria
 
 **Confidence:** High
 
