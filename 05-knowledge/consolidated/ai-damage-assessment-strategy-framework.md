@@ -175,11 +175,15 @@ Building a custom AI damage assessment solution requires thinking in layers. Eac
 
 **The back channel option:** Anthropic's enterprise services team (H&F-backed venture) may be interested in Belron as a reference customer in the automotive/glass space. An exploratory conversation with Anthropic enterprise — not routed through H&F — is worth considering once the PoC has evidence to show.
 
+**May 2026 advocacy update — Anthropic $965B / $47B ARR:**
+Anthropic raised $65B Series H at a $965B valuation on May 28, 2026 — surpassing OpenAI as the most valuable private AI company. Annualised revenue is $47B. This is the last private round before IPO. For the advocacy sequence: use this data point as the opening credibility statement in any internal Belron briefing. Frame: "We are evaluating a partnership with a company that just became the most valuable AI startup in history, with $47B in annualised revenue and independent validation from AWS, Google, Altimeter, and Sequoia." This is the strongest external signal yet for the Anthropic-first narrative.
+
 **Evidence:**
 - [[braindump-2026-05-11-1200-getting-belron-onto-anthropic]] — "H&F won't do it for me. The route to Anthropic at Belron is internal — through the PoC, through results, through EA positioning"
 - [[braindump-2026-05-11-1200-getting-belron-onto-anthropic]] — "'Building Belron's AI platform on the safest, most enterprise-ready foundation model' sounds like EA doing its job. That framing has a path through governance."
+- [[daily-brief-2026-05-30]] — Anthropic $65B Series H at $965B valuation — last pre-IPO raise; $47B ARR; led by Altimeter, Dragoneer, Greenoaks, Sequoia with $5B from Amazon
 
-**Confidence:** High on framing and advocacy path; Medium on timing (PoC results are not yet in)
+**Confidence:** High on framing and advocacy path; **Updated to High on timing** — Anthropic's $965B moment is the strongest possible advocacy trigger; act now before IPO changes the commercial relationship dynamics
 
 ---
 
@@ -189,8 +193,8 @@ Building a custom AI damage assessment solution requires thinking in layers. Eac
 
 | Company | What They Do | Relevance | Notes |
 |---|---|---|---|
-| **Tractable** | AI for accident/vehicle damage assessment. $1B valuation. Used by insurers globally | Very high — adjacent market | Already in insurer ecosystem that touches Belron customers |
-| **Ravin AI** | AI vehicle inspection platform. 2B images processed. Hardware-agnostic | High — direct reference architecture | US MSO pilot underway; IAG-backed; no proprietary hardware |
+| **Tractable** | AI for accident/vehicle damage assessment. $1B valuation. Used by insurers globally | Very high — adjacent market | Already in insurer ecosystem that touches Belron customers. **May 2026:** AI Inspection now available in North America and Japan — active expansion across Belron's markets. Build window narrowing. |
+| **Ravin AI** | AI vehicle inspection platform. 2B images processed. Hardware-agnostic | High — direct reference architecture | **May 2026 update:** Ravin combined LLMs with their CV system — CV detects and classifies damage; LLM layer generates human-readable summaries and reports for insurers, shops, and customers. **Deployed in Australia and New Zealand** (O'Brien AutoGlass market — Belron). Currently being tested by a US MSO. This LLM+CV architecture is exactly the PoC target state. Check whether O'Brien AutoGlass already has a Ravin relationship. |
 | **Audatex / Solera** | Automotive claims AI embedded in insurer workflows | High — may already be in Belron's value chain | Most important to check: do Belron insurance partners already use this? |
 | **NVIDIA Lyra 2.0** | Synthetic data generation platform for automotive AI training | High — training data supply | Generates photorealistic synthetic damage/vehicle images for model training. Directly addresses the "Layers 2–3 are hardest" problem — synthetic data can supplement real labelled images, reducing time and cost to reach training data volume thresholds |
 | **AutoBolt** | Glass part identification by VIN/licence plate — returns NAGs, OEM part numbers, ADAS calibration requirements | Medium — adjacent part ID use case | Toronto-based SaaS; ~99.8% accuracy; $86/month per 200 lookups. Currently US-focused but global brand coverage. Supports licence plate lookup (UK-relevant). ADAS calibration report: 89% of MY2023+ vehicles need calibration after windshield replacement. Not a damage assessment tool — a part selection tool that is a precondition to an accurate job. [[braindump-2026-05-16-0037-autobolt-glass-part-identification]] |

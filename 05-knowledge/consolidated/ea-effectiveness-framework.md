@@ -214,6 +214,38 @@ In 2026, AI PoCs are proliferating faster than traditional governance can review
 - [[braindump-2026-05-16-0041-contact-centre-uc-architecture-ebc]] — "Showing tech standards to markets is IPO-adjacent"; architecture communication as investor-facing work
 - [[braindump-2026-05-05-1549-togaf-ba-application]] — BA artefacts as the evidence base that Architecture Vision documents summarise
 
+---
+
+### Principle 9: Working Backwards / PRFAQ — Start From the Press Release
+
+**Statement:** Before scoping or architecting any new initiative, write the press release first. Amazon's Working Backwards method forces clarity on the customer, the problem, and the outcome before any solution work begins. For an EA function, this is the highest-leverage tool for initiative framing, stakeholder alignment, and investment case quality.
+
+**The method:**
+1. **Press Release** — Write the announcement of the finished product or capability, as if the launch day has arrived. Audience: the customer. Forces: clarity on outcome, not solution.
+2. **FAQ (internal)** — What would the team ask before building? What are the hardest questions? Surfaces assumptions before they become architectural decisions.
+3. **FAQ (external)** — What would a sceptic, executive, or investor ask? Stress-tests the case.
+4. **Visuals/UX** — What does it look like in use? Often reveals gaps the text doesn't.
+5. **Build** — Only now.
+
+**For EA specifically:**
+- The PRFAQ replaces the Architecture Vision brief as the shareable, non-technical stakeholder artefact. It is more compelling than a capability map and requires no framework literacy to read.
+- Amazon's insight: *"If you can't write the press release, you don't understand the customer well enough to build for them."* EA equivalent: if you can't write the press release, you haven't understood the business problem well enough to govern the architecture.
+- **"Bounded independence"** (AWS Kiro): the right framing for how EA delegates work to agentic AI tools — set the spec and boundary, let the agent execute within it. PRFAQ is the spec-definition layer.
+
+**Direct applications:**
+- **AI Damage Assessment PoC:** Write the PRFAQ *now* — "Belron customer photographs windscreen damage and receives instant repair/replace recommendation." Writing this before the next stakeholder conversation will expose assumptions and sharpen the pitch.
+- **Contact Centre of the Future:** The PRFAQ for "Belron customer contacts us and their issue is resolved on first contact by an AI agent, with escalation to a human only when needed" is the vision artefact the programme needs.
+- **MCP Governance:** "Belron's AI systems interoperate safely without shadow integrations or data leakage, governed by a clear access control framework" — the PRFAQ for this initiative would be the most compelling way to bring governance to non-technical leadership.
+
+**The Working Backwards method is tool-independent:** Adopt it as an EA method regardless of whether Belron adopts AWS Kiro. It costs nothing to lift and use immediately.
+
+**Evidence:**
+- [[braindump-2026-05-26-1018-aws-kiro-workshop]] — "The Working Backwards / PRFAQ method is the most valuable takeaway regardless of Kiro itself — it's a method, not a tool, and it's lift-and-use into EA practice immediately"
+- [[braindump-2026-05-26-1018-aws-kiro-workshop]] — "Writing the press release first for 'Belron customer gets damage assessed in 30 seconds via app' forces clarity on customer experience before solutioning"
+- [[braindump-2026-05-26-1018-aws-kiro-workshop]] — "Spec-driven development" / "bounded independence" as the collaboration model between developer and agent
+
+**Confidence:** High — method is well-established (Amazon internal practice for 20+ years); direct applicability to EA practice is confirmed by workshop observation; Belron-specific applications are immediate
+
 **Sequencing:** Start with Architecture Principles and Architecture Vision (lightest, most universally useful) before tackling Architecture Contract (most impactful but requires buy-in from delivery teams). Run the pilot on CCOTF — largest scope, most stakeholders.
 
 **Confidence:** High — TOGAF ADM structure is well-established; Belron-specific applicability is inferred from project context but solidly grounded
