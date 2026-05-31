@@ -1,5 +1,31 @@
 {
   "enabledPlugins": {
     "claude-code-setup@claude-plugins-official": true
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -c \"\nimport sys, json\nd = json.load(sys.stdin)\np = d.get('tool_input', {}).get('file_path', '')\nprotected = ['.claude/skills/', '.claude/roles/', '.claude/agents/', 'CLAUDE.md', 'AGENTS.md']\nif any(x in p for x in protected):\n    print(json.dumps({'hookSpecificOutput': {'hookEventName': 'PreToolUse', 'permissionDecision': 'deny', 'permissionDecisionReason': 'Framework file — use /update-cog to update.'}}))\n\"",
+            "statusMessage": "Checking framework file protection..."
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd '/Users/darrenarmitage/Library/Mobile Documents/iCloud~md~obsidian/Documents/Second Brain' && git diff --quiet && git diff --cached --quiet || (git add -A && git commit -m \"vault backup: $(date '+%Y-%m-%d %H:%M:%S')\")",
+            "statusMessage": "Committing vault changes...",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
   }
 }
