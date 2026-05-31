@@ -5,7 +5,9 @@ date: "2026-05-30"
 created: "2026-05-30 10:50"
 themes: ["macro-intelligence", "snp500", "world-order", "geopolitics", "market-signals"]
 tags: ["#braindump", "#macro", "#snp500", "#world-order", "#geopolitics", "#belron-ipo"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-05-30]]"
+consolidated_date: "2026-05-30"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"
