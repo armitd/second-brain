@@ -5,10 +5,12 @@ date: "2026-05-26"
 created: "2026-05-26 10:18"
 themes: ["aws-kiro", "working-backwards", "prfaq", "spec-driven-development", "vaps-wiper-market", "ai-coding-tools"]
 tags: ["#braindump", "#raw-thoughts", "#aws", "#kiro", "#workshop", "#live-capture", "#working-backwards", "#vaps"]
-status: "in-progress"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-05-30]]"
+consolidated_date: "2026-05-30"
 energy_level: "medium"
 emotional_tone: "curious"
-confidence: "medium"
+confidence: "high"
 capture_mode: "live"
 event: "AWS Kiro Workshop"
 event_date: "2026-05-26"
@@ -215,4 +217,84 @@ The Working Backwards exercise is being run on a Belron-relevant scenario: incre
 
 ---
 
-*Live-capture braindump — merged with daybook 2026-05-26. Pending final analysis pass when workshop concludes.*
+---
+
+## Post-Workshop Analysis *(completed 2026-05-30)*
+
+### Outstanding Questions — Answered
+
+**Q: What foundation model powers Kiro?**
+**A: Claude Sonnet + Amazon Nova via Amazon Bedrock.** As of May 2026, Kiro supports Claude Opus 4.8 (released May 28) via Bedrock. This resolves the strategic question entirely: Kiro adoption at Belron is **not** a threat to the Anthropic narrative — it is a second door into the same Anthropic relationship. Kiro + Claude Code = two delivery paths for Claude at Belron, both running through Bedrock or the Anthropic API.
+
+**Q: Does Kiro support MCP servers?**
+**A: Yes — native MCP support.** Kiro includes native Model Context Protocol support, enabling connection to any MCP-compatible tool server. It also supports the AWS MCP Server (GA May 2026), which wraps the full AWS service catalogue with proper authentication. **Governance implication:** Kiro is in scope for the MCP Governance project. Any Belron team using Kiro is running an MCP-connected agent. This must be addressed in the MCP governance framework.
+
+**Q: Pricing model?**
+**A:** Free tier: 50 interactions/month. Pro: **$19/month**. Competitive with Cursor ($20/month). Important caveat: spec-mode requests cost $0.20/credit vs $0.04 for vibe-mode — a 5× premium for the signature feature. Pro gives ~350 mixed requests (225 vibe-mode, 125 spec-mode). For heavy spec-driven use, costs escalate.
+
+**Q: IDE scope — VS Code only?**
+**A: Standalone IDE** (not a plugin). Built on VS Code foundations but ships as its own application. Kiro replaced Amazon Q Developer — if any Belron developers use Q Developer, Kiro is the natural upgrade path.
+
+**Q: Data residency / GovCloud?**
+**A:** Kiro is available in GovCloud regions (confirmed February 2026). Inference runs through Amazon Bedrock with regional data residency options — compatible with GDPR requirements for EU opcos.
+
+**Q: Are the VAPS wiper numbers live Belron data or workshop illustration?**
+**A: Unknown** — not resolved by post-workshop research. The specificity of the numbers (70% unrealised, €200m vs €1bn opportunity, France pilot, next pilots Sweden/Switzerland/Canada) strongly suggests live Belron data rather than a generic retail example. The fact AWS chose a VAPS scenario for a workshop with Belron attendees supports this. **Action still needed:** Confirm with the AWS account team or internal VAPS owner whether these numbers are current.
+
+---
+
+### Spec Artefact Format — What Kiro Actually Produces
+
+Before writing any code, Kiro generates three structured documents:
+1. **requirements.md** — functional requirements in EARS (Easy Approach to Requirements Syntax) notation
+2. **design.md** — system design, architecture decisions, component breakdown
+3. **tasks.md** — structured implementation task list, sequenced and reviewable
+
+The developer reviews and approves all three before code generation begins. This is the "spec-first" claim made concrete. The documents are plain Markdown — version-controllable, reviewable in PRs, portable outside Kiro.
+
+**EA relevance:** requirements.md + design.md are lightweight equivalents of an Architecture Vision + Solution Design. For a small initiative, generating these via Kiro and reviewing them as EA governance artefacts is a plausible lightweight alternative to a full TOGAF review.
+
+---
+
+### Revised Strategic Assessment (post-workshop)
+
+**The Anthropic question is resolved — in the best possible way.**
+Kiro runs on Claude via Bedrock. AWS Kiro adoption at Belron = Claude adoption at Belron, routed through AWS infrastructure. The initial risk ("Kiro could dilute the Anthropic narrative") is inverted: Kiro and Claude Code are two compatible delivery paths for Claude at Belron, not competitors.
+
+**Kiro vs Claude Code — they're not the same tool.**
+| | Kiro | Claude Code |
+|---|---|---|
+| **Starting point** | Spec (requirements.md → design.md → tasks.md → code) | Conversation (iterative, context-driven) |
+| **Best for** | Greenfield features, structured delivery, regulated environments where artefacts matter | Exploratory work, debugging, refactoring, fast iteration |
+| **Governance angle** | Spec artefacts are reviewable EA inputs | Less structured; harder to govern without explicit conventions |
+| **Developer profile** | Disciplined SDLC teams; those who want a plan before executing | Fast-moving teams; those comfortable with iterative convergence |
+| **Foundation model** | Claude via Bedrock | Anthropic API (Claude) |
+| **MCP support** | Native | Native |
+
+**The real competitive framing:** Kiro is not a Cursor replacement for everyone. It's the right tool for developers who need their AI-generated work to be auditable, approvable, and connected to a design artefact trail. For a pre-IPO Belron building technology stories for investors, that distinction matters.
+
+**Working Backwards method — lift immediately, regardless of Kiro.**
+The PRFAQ method is platform-independent. The most valuable takeaway from the workshop requires zero AWS commitment. Already incorporated into [[ea-effectiveness-framework]] as Principle 9.
+
+**MCP Governance scope update:**
+Kiro must be listed as a governed MCP client in the Belron MCP Governance framework. Any Belron developer running Kiro on internal data sources is operating an MCP-connected agent under EA's governance scope.
+
+---
+
+### Revised Action Items (post-workshop)
+
+**Immediate:**
+- [ ] Add Kiro to developer tooling watchlist alongside Claude Code, Cursor, GitHub Copilot 📅 2026-06-05
+- [ ] Update MCP Governance framework scope to include Kiro as a governed MCP client 📅 2026-06-05
+- [ ] Draft AI Damage Assessment PRFAQ using the Working Backwards method (independent of Kiro) 📅 2026-06-05
+
+**Short-term:**
+- [ ] Confirm VAPS/wiper numbers (70% unrealised, €200m–€1bn) with AWS account team or internal VAPS owner — are these live Belron figures? 📅 2026-06-13
+- [ ] Assess Kiro pilot feasibility: is there a Belron development team (AWS-native, disciplined SDLC) where a Kiro pilot would fit naturally? Free tier = zero cost to evaluate. 📅 2026-06-13
+
+**Strategic consideration:**
+If Belron already uses Amazon Q Developer for any development team, Kiro is the natural upgrade path — and that team is already an Anthropic (via Bedrock) customer without necessarily knowing it. Map the Q Developer footprint.
+
+---
+
+*Post-workshop analysis completed 2026-05-30. Outstanding: VAPS data provenance unconfirmed.*

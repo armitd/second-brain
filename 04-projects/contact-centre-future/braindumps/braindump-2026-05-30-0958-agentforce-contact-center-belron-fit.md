@@ -6,7 +6,9 @@ date: "2026-05-30"
 created: "2026-05-30 09:58"
 themes: ["agentforce-contact-center", "salesforce", "ccaas-evaluation", "vendor-fit", "contact-centre-future"]
 tags: ["#braindump", "#CCOTF", "#contact-centre", "#salesforce", "#agentforce", "#ccaas", "#vendor-evaluation"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-05-30]]"
+consolidated_date: "2026-05-30"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"
