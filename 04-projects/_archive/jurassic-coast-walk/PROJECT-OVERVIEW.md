@@ -1,7 +1,7 @@
 ---
 type: "project"
 title: "Jurassic Coast Walk — 28 May 2026"
-status: "planning"
+status: "archived"
 created: "2026-05-19"
 walk_date: "2026-05-28"
 distance_km: 25
