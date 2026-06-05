@@ -21,3 +21,14 @@
   Every pattern identified. Every edge validated. Every mistake documented so it never costs you twice.
   After 30 days it knows your trading better than you do.
   After 90 days it is https://t.co/GftHYuKpdz https://t.co/ZgWhMWUz4X ([View Tweet](https://x.com/cyrilXBT/status/2059124167887216817))
+- OBSIDIAN PLUS HERMES AGENT IS THE MOST POWERFUL PERSONAL OPERATING SYSTEM AVAILABLE RIGHT NOW AND ALMOST NOBODY HAS BUILT IT YET.
+  Obsidian holds everything you know permanently.
+  Hermes reads it, reasons across it, and runs your most important workflows automatically.
+  Morning https://t.co/NY18pIdJyl https://t.co/8scTm7SIcK ([View Tweet](https://x.com/cyrilXBT/status/2061715750356979996))
+- MOST OBSIDIAN SETUPS WORK AGAINST THE PERSON USING THEM.
+  Too many folders.
+  Too many tags.
+  Too many rules to follow before you can capture a single thought.
+  The system becomes the thing you have to manage—
+  instead of the thing that manages your life.
+  This guide builds it the https://t.co/kUlLtz6RYT https://t.co/UKlHNNXpWe ([View Tweet](https://x.com/cyrilXBT/status/2062010184915144857))
