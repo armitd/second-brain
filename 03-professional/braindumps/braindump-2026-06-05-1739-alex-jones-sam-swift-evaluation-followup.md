@@ -41,7 +41,7 @@ Send Alex slides from Friday
 ## Action Items
 
 ### Immediate — OVERDUE (captured June 1, now June 5)
-- [ ] Send Alex Jones the slides from Friday 📅 2026-06-05
+- ~~Send Alex Jones the slides from Friday~~ *(cancelled 2026-06-05)*
 - [ ] Speak to Alex Jones about Sam Swift and the evaluation 📅 2026-06-06
 
 ---
