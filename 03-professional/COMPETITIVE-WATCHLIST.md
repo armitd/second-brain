@@ -1,7 +1,7 @@
 ---
 type: "competitive-watchlist"
 created: "2026-04-09"
-last_updated: "2026-04-09 11:55"
+last_updated: "2026-06-04"
 tags: ["#competitive", "#watchlist", "#market-intelligence"]
 ---
 
@@ -282,6 +282,38 @@ When shortlisting, assess each against:
 | Model confidence / uncertainty handling | Low-confidence predictions must route to human review |
 | Training data strategy experience | Most agencies underestimate this — ask specifically |
 | Reference clients in service / insurance / automotive | Domain familiarity accelerates delivery |
+
+---
+
+## AI Governance Tooling
+
+### Noma
+- **What they do:** Commercial AI agent and MCP server governance platform. Two-layer product: (1) Access Control — auto-inventories every agent and MCP server, assigns distinct identities, lets security teams classify at tool-level granularity (Approved / Requires Review / Blocked); (2) Runtime Enforcement — monitors complete behavioural chains (prompts, tool calls, data access, actions) in real time, detecting prompt injection, data exfiltration, and scope violations.
+- **HQ:** Not disclosed
+- **Customers:** "Widely adopted by Fortune 500 customers" — no named clients disclosed
+- **Pricing:** Not disclosed
+- **Why watch:** Noma is productising the MCP governance problem that Belron's MCP Governance framework is architecting. The existence of a commercial product in this space (1) validates the problem is real at enterprise scale; (2) means there is a vendor to evaluate or displace; (3) provides a reference for what commercial MCP governance looks like before building custom.
+- **Key quote (CEO Niv Braun):** "Agents can be coerced into misusing authorization through malicious runtime inputs — continuous verification is essential beyond initial policy definition."
+- **Relevance:** MCP Governance project — evaluate as a potential tooling layer before building custom; reference in internal governance presentations as market validation
+- **Action:** Request a demo before next MCP Governance milestone
+- **Source:** [[daily-brief-2026-06-03]]
+- **Last updated:** 2026-06-03
+
+---
+
+## CRM & Customer Data Platform
+
+### Salesforce (Service Cloud + Marketing Cloud + Data Cloud)
+- **What they do:** Salesforce is Belron's existing CRM and contact centre platform. Service Cloud powers the contact centre agent workspace. Marketing Cloud handles customer communications and journey orchestration. Data Cloud (formerly Salesforce CDP / Genie) is the real-time customer data platform layer that unifies data across all Salesforce products and external sources into a single customer profile.
+- **Belron footprint:** Service Cloud and Marketing Cloud confirmed as live at Belron (as of 2026-06-04, Front Office Guild context).
+- **Data Cloud pitch:** Salesforce's push is to add Data Cloud to connect the two existing clouds — giving contact centre agents a real-time unified customer profile during interactions, and enabling triggered personalised journeys from Marketing Cloud based on service behaviour.
+- **Einstein AI dependency:** Salesforce's entire AI layer (Einstein next-best-action, churn scoring, agent assist) now runs on Data Cloud as the substrate — the AI story is only available if Data Cloud is licensed.
+- **Why watch:** Belron is already in the Salesforce ecosystem. Data Cloud is the natural upsell and would directly affect CCOTF capability (agent 360 view) and marketing personalisation. Any CCOTF vendor evaluation must account for existing Service Cloud investment and the cost/benefit of Data Cloud vs. alternative CDPs.
+- **Watch-out:** Data Cloud is licensed on data volumes and activations, not per-seat. Organisations that bought it without committed use cases found it expensive. Validate specific use cases and expected ROI before licensing discussions.
+- **Questions to answer:** What specific use cases were discussed at the Front Office Guild? Is Data Cloud already being piloted at any Belron opco? What does the current Service Cloud / Marketing Cloud data integration look like — is there already a gap being felt?
+- **Relevance:** Contact Centre of the Future (CCOTF) — Service Cloud is the existing CC platform; Data Cloud is the unification layer. Also relevant to customer data strategy and marketing personalisation.
+- **Source:** [[braindump-2026-06-04-1523-salesforce-data-360]], Front Office Guild meeting 2026-06-04
+- **Last updated:** 2026-06-04
 
 ---
 
