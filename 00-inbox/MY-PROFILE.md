@@ -25,6 +25,7 @@ tags: ["#profile", "#config", "#cog"]
 - [[04-projects/contact-centre-future/PROJECT-OVERVIEW|Contact Centre of the Future]]
 - [[04-projects/60th-birthday-party/PROJECT-OVERVIEW|60th Birthday Party]]
 - [[04-projects/jurassic-coast-walk/PROJECT-OVERVIEW|Jurassic Coast Walk]]
+- [[04-projects/getting-fit/PROJECT-OVERVIEW|Getting Fit]]
 
 ## Related
 - [[MY-INTERESTS|My Interests & News Sources]]
