@@ -48,6 +48,7 @@ tags: ["#project", "#garden", "#home-improvement"]
 - [ ] Decide which plants to buy — consider what's already there and what needs filling
 - [ ] Purchase plants
 - [ ] Plant and water in
+- [ ] Sort out the path
 
 ### Lawn
 - [x] Trim the lawn edges 📅 2026-05-04 ✅ 2026-05-19
