@@ -21,6 +21,8 @@ Using the home automation platform to unify all my home automation networks
 
 Devices on the network with a hub: Philips Hue; Google Home Hub and Nest Doorbell; LightwaveRF; Alexa; Sonos; IKEA home automation - bulbs and Tradfri switches
 
+Primary interest: making IKEA Tradfri switches work reliably with the other sets of devices, and simplifying control overall
+
 ---
 
 ## Content Analysis
@@ -29,7 +31,9 @@ Devices on the network with a hub: Philips Hue; Google Home Hub and Nest Doorbel
 
 1. **Home automation via Raspberry Pi** — the core idea: self-hosted home automation running on low-cost hardware at home.
 2. **OpenClaw as the platform** — the specific software in mind. *Note: OpenClaw is not a widely known home automation platform — worth verifying the name. Possible alternatives Armo may mean: OpenHAB, Home Assistant, or a newer/niche platform. Clarify before investing time.*
-3. **Unification goal** — the primary motivation is not just automation but consolidation. Multiple home automation networks already exist (different ecosystems/devices) and the Raspi platform would act as a single hub to unify them all.
+3. **IKEA switch cross-control** — the specific pain point: Tradfri switches currently only control IKEA bulbs. The goal is to make them reliable physical controls for *all* devices across ecosystems.
+4. **Simplify control** — replace seven separate apps with one interface. Voice (Alexa + Google) stays as-is; physical switches and automations route through HA.
+5. **Unification goal** — the primary motivation is not just automation but consolidation. Multiple home automation networks already exist (different ecosystems/devices) and the Raspi platform would act as a single hub to unify them all.
 4. **Hobby / maker project** — this is a personal project in the maker/DIY space, not professional.
 
 ### Questions Raised
@@ -64,7 +68,8 @@ Devices on the network with a hub: Philips Hue; Google Home Hub and Nest Doorbel
 
 ### Key Insights
 
-1. **Self-hosted home automation is a natural extension of the maker mindset** — running on a Raspi signals a preference for local control, no subscription fees, and full ownership. This is consistent with the data residency instincts visible in professional work (GDPR, self-hosted AI models).
+1. **The IKEA switch problem is the killer use case** — Tradfri switches are siloed inside the IKEA Zigbee ecosystem. With a Zigbee USB dongle (~£15) on the Raspi, Home Assistant intercepts every button press as an event and can trigger any automation across all seven ecosystems. The switch becomes a universal physical control for the whole house. First automation to prove this: IKEA switch → Hue lights in the same room.
+2. **Self-hosted home automation is a natural extension of the maker mindset** — running on a Raspi signals a preference for local control, no subscription fees, and full ownership. This is consistent with the data residency instincts visible in professional work (GDPR, self-hosted AI models).
 2. **This device mix strongly favours Home Assistant** — all seven ecosystems have working Home Assistant integrations. Notably:
    - **Philips Hue + IKEA Tradfri** both use Zigbee — with a Zigbee USB dongle (e.g. Sonoff Zigbee 3.0), HA can control both directly without needing their hubs
    - **LightwaveRF** is UK-specific; HA has a community integration (cloud-reliant — worth noting as a potential weak point)
