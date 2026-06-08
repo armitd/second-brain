@@ -12,6 +12,19 @@ tags: ["#project", "#personal", "#home-automation", "#raspberry-pi"]
 
 Unify all home automation networks into a single platform running on a Raspberry Pi — one dashboard, one automation engine, all devices.
 
+**Primary use case:** Make IKEA Tradfri switches control devices across all ecosystems (not just IKEA bulbs), and simplify overall control so you're not managing seven separate apps.
+
+---
+
+## The Core Problem
+
+IKEA Tradfri switches currently only control IKEA bulbs — they're siloed inside the IKEA ecosystem. The goal is to use them as universal physical controls that can trigger automations across Hue, LightwaveRF, Sonos, and everything else.
+
+**How Home Assistant solves this:**
+With a Zigbee USB dongle on the Raspi, HA intercepts every Tradfri button press as an event and can trigger *any* automation — turn on Hue lights, start a Sonos playlist, trigger a LightwaveRF scene, whatever. The IKEA switch becomes a universal remote for the whole house.
+
+**Simplifying control:** One HA dashboard replaces seven apps. Voice control (Alexa + Google Home) still works as before, but physical switches and automations now all route through HA.
+
 ## Platform
 
 **Home Assistant** on Raspberry Pi (4 or 5) — self-hosted, local-first, no cloud dependency.
@@ -60,12 +73,16 @@ Unify all home automation networks into a single platform running on a Raspberry
 
 ## Integration Priority Order
 
-1. **Sonos** — easiest, local, start here
-2. **Philips Hue** — native integration, quick win
-3. **IKEA Tradfri** — Zigbee, straightforward
-4. **Google Home / Nest Doorbell** — bidirectional voice + doorbell triggers
-5. **Alexa** — bidirectional voice
-6. **LightwaveRF** — most complex, cloud-dependent, tackle last
+1. **IKEA Tradfri + Zigbee dongle** — highest priority; this is the core use case. Get switches controlling everything.
+2. **Philips Hue** — first target for IKEA switch cross-control; native HA integration
+3. **Sonos** — easy win; local, excellent HA support
+4. **LightwaveRF** — next target for switch control; check integration state first ⚠️
+5. **Google Home / Nest Doorbell** — doorbell trigger automations
+6. **Alexa** — bidirectional voice (keep working alongside physical switches)
+
+## First Automation to Build
+
+IKEA Tradfri switch → turns on Philips Hue lights in the same room. Once that works, the pattern extends to every other device.
 
 ---
 
