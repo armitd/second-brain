@@ -42,6 +42,13 @@ tags: ["#project", "#garden", "#home-improvement"]
 - [ ] Check UK permitted development rules for intended structure size 📅 2026-05-04
 - [ ] Sketch garden layout showing pergola and rockery together 📅 2026-05-04
 
+### Front Garden
+- [ ] Remove all weeds — beds and borders
+- [ ] Tidy edges and clear any overgrowth
+- [ ] Decide which plants to buy — consider what's already there and what needs filling
+- [ ] Purchase plants
+- [ ] Plant and water in
+
 ### Lawn
 - [x] Trim the lawn edges 📅 2026-05-04 ✅ 2026-05-19
 
