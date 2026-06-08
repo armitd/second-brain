@@ -27,6 +27,7 @@ tags: ["#profile", "#config", "#cog"]
 
 - [[04-projects/getting-fit/PROJECT-OVERVIEW|Getting Fit]]
 - [[04-projects/nordics/PROJECT-OVERVIEW|Nordics]]
+- [[04-projects/garden-renovation/PROJECT-OVERVIEW|Garden Renovation]]
 
 ## Related
 - [[MY-INTERESTS|My Interests & News Sources]]
