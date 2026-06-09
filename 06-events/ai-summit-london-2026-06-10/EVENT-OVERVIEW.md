@@ -20,8 +20,7 @@ projects_referenced: ["mcp-governance", "contact-centre-future", "ai-damage-asse
 
 ## Agenda
 
-![[attachments/agenda-1.png]]
-![[attachments/agenda-2.png]]
+[[AGENDA|Full personalised agenda →]]
 
 ---
 
