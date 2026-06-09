@@ -13,6 +13,10 @@ tags: ["#profile", "#config", "#cog"]
 - **Name**: Armo
 - **Role**: Enterprise Architect at a windscreen repair/replace company
 - **Role Pack**: Enterprise Architect
+- **Location**: Merton Park, Wimbledon
+- **Phone**: 07771 514540
+- **Email (personal)**: darrenarmitage@me.com
+- **Email (work)**: darren.armitage@belron.com
 - **Profile Created**: 2026-04-06
 
 ## Settings
