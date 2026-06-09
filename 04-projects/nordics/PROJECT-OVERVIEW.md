@@ -16,6 +16,7 @@ tags: ["#project", "#professional", "#nordics", "#belron"]
 
 ## Key Stakeholders
 
+- **Jonas** — Nordics CIO; programme sponsor [[05-knowledge/people/jonas]]
 - **Joakim Andersen** — involved in the programme; needs Signavio access [[05-knowledge/people/joakim]]
 
 ## Tools & Systems
@@ -29,6 +30,7 @@ tags: ["#project", "#professional", "#nordics", "#belron"]
 ## Next Steps
 
 - [ ] Raise Signavio access for Joakim Andersen 📅 2026-06-09
+- [ ] Talk to Jonas about Synergy as a front-office option — Josef's internally developed windscreen repair FO solution
 
 ## Notes
 
