@@ -32,7 +32,6 @@ Need to collate Genesys consumption numbers - not just licencing cost.
 - What consumption categories apply to Genesys at Belron? Voice minutes? Digital channel interactions? AI feature consumption (Einstein equivalents)? API calls?
 - Is Genesys Cloud CX being evaluated (consumption-based SaaS) or a legacy on-prem/hybrid Genesys deployment?
 - Who holds this data at Belron — the IT team, the finance team, or the contact centre operations team?
-- Is Joakim Andersen the right person to get this from, given he has the Genesys evaluation thread open?
 - Are there current Genesys invoices or consumption dashboards accessible?
 
 ### Decisions Contemplated
@@ -58,7 +57,6 @@ Need to collate Genesys consumption numbers - not just licencing cost.
 
 ### Pattern Recognition
 
-- **Connected to Joakim Andersen** — Joakim has the open Genesys evaluation thread. He is likely the right person to obtain consumption data from. [[05-knowledge/people/joakim]]
 - **Connected to competitive watchlist** — Genesys is on the watchlist; this data feeds that entry
 
 ### Strategic Implications
@@ -71,8 +69,7 @@ Need to collate Genesys consumption numbers - not just licencing cost.
 ## Action Items
 
 ### Immediate (24-48 hours)
-- [ ] Chase Joakim Andersen for Genesys consumption data — voice, digital, AI features, storage 📅 2026-06-10
-- [ ] Identify who at Belron holds the Genesys invoices or consumption dashboards 📅 2026-06-10
+- [ ] Chase Dave T for Genesys consumption numbers — voice, digital, AI features, storage 📅 2026-06-10
 
 ### Short-term (1-2 weeks)
 - [ ] Build a Genesys total cost model: licensing + consumption at current volume + consumption at projected scale 📅 2026-06-16
@@ -85,7 +82,6 @@ Need to collate Genesys consumption numbers - not just licencing cost.
 
 ## Connections
 - **Related Project:** [[04-projects/contact-centre-future/PROJECT-OVERVIEW]]
-- **Related Person:** [[05-knowledge/people/joakim]] — open Genesys evaluation thread
 - **Competitive Watchlist:** [[03-professional/COMPETITIVE-WATCHLIST]] — Genesys entry
 
 ---
