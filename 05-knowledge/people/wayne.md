@@ -18,7 +18,7 @@ tags:
 - Role and organisation unknown — to be filled in [confidence: low]
 
 ### Open Threads
-- Sort out Friday cash session — confirm whether Armo needs to attend [Source: week-plan-2026-06-08 | 2026-06-09 | confidence: high]
+- Friday cash session resolved — Armo is not attending [Source: conversation | 2026-06-09 | confidence: high]
 
 ---
 
