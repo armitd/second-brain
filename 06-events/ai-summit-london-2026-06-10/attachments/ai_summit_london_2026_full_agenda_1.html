@@ -1,0 +1,476 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.wrap{padding:1rem 0;font-family:var(--font-sans)}
+.day-tabs{display:flex;gap:8px;margin-bottom:1.25rem}
+.day-tab{padding:7px 18px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);font-size:13px;font-weight:500;cursor:pointer;background:var(--color-background-primary);color:var(--color-text-secondary)}
+.day-tab.active{background:var(--color-background-info);color:var(--color-text-info);border-color:transparent}
+.legend{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:1.25rem}
+.li{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--color-text-secondary)}
+.dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.dv{background:#534AB7}.dm{background:#1D9E75}.dw{background:#BA7517}.db{background:#E24B4A}.dg{background:#888780}
+.day-panel{display:none}
+.day-panel.active{display:block}
+.block{margin-bottom:1.25rem}
+.block-label{font-size:11px;font-weight:500;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;padding-top:4px}
+.ses{border-radius:10px;border:0.5px solid var(--color-border-tertiary);padding:11px 13px;background:var(--color-background-primary);margin-bottom:6px}
+.ses.vip{border-left:3px solid #534AB7}
+.ses.must{border-left:3px solid #1D9E75}
+.ses.watch{border-left:3px solid #BA7517}
+.ses.ccaas{border-left:3px solid #E24B4A}
+.ses.break{background:var(--color-background-secondary);border:none;padding:7px 13px}
+.sh{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:3px}
+.st{font-size:13px;font-weight:500;color:var(--color-text-primary);line-height:1.4;flex:1}
+.stm{font-size:12px;color:var(--color-text-secondary);white-space:nowrap;flex-shrink:0}
+.sm{display:flex;gap:5px;flex-wrap:wrap;margin-top:4px}
+.badge{font-size:11px;padding:2px 7px;border-radius:100px}
+.bv{background:#EEEDFE;color:#3C3489}
+.bm{background:#E1F5EE;color:#085041}
+.bw{background:#FAEEDA;color:#633806}
+.br{background:#FCEBEB;color:#791F1F}
+.bs{background:var(--color-background-secondary);color:var(--color-text-secondary)}
+.spk{font-size:12px;color:var(--color-text-secondary);margin-top:3px}
+.note{font-size:12px;color:var(--color-text-tertiary);margin-top:3px;font-style:italic}
+.clash-note{font-size:11px;background:var(--color-background-warning);color:var(--color-text-warning);padding:4px 8px;border-radius:var(--border-radius-md);margin-top:4px;display:inline-block}
+</style>
+
+<div class="wrap">
+<h2 class="sr-only">AI Summit London 2026 — full personalised agenda for enterprise architect VIP attendee</h2>
+<div class="day-tabs">
+  <button class="day-tab active" onclick="sw('w',this)">Wed 10 June</button>
+  <button class="day-tab" onclick="sw('t',this)">Thu 11 June</button>
+</div>
+<div class="legend">
+  <div class="li"><div class="dot dv"></div>VisionAIres (VIP)</div>
+  <div class="li"><div class="dot dm"></div>Must attend</div>
+  <div class="li"><div class="dot dw"></div>Worth considering</div>
+  <div class="li"><div class="dot db"></div>CCaaS / CX scout</div>
+  <div class="li"><div class="dot dg"></div>Expo / break</div>
+</div>
+
+<!-- WEDNESDAY -->
+<div class="day-panel active" id="pw">
+
+<div class="block-label">Opening — Headliners stage</div>
+
+<div class="ses break"><div class="sh"><div class="st">Doors open · Expo floor · AI Trail</div><div class="stm">08:00</div></div></div>
+
+<div class="ses break"><div class="sh"><div class="st">Informa opening remarks</div><div class="stm">08:50–09:00</div></div></div>
+
+<div class="ses watch">
+  <div class="sh"><div class="st">Chairperson's welcome: how intelligence became practical</div><div class="stm">09:00–09:15</div></div>
+  <div class="sm"><span class="badge bw">Worth attending</span><span class="badge bs">Headliners</span></div>
+  <div class="spk">Stephanie Hare</div>
+  <div class="note">Good scene-setter — AI from brittle rules to repeatable business impact</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Modeling reality: when AI leaves the cloud and starts walking the streets</div><div class="stm">09:15–09:40</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Headliners</span></div>
+  <div class="spk">Zach Rash (Coco Robotics) · John Hanke (Niantic Spatial)</div>
+  <div class="note">Physical AI, world models, spatial intelligence — agentic systems in the real world</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">From AI pilots to enterprise transformation: operating agents at scale (IBM)</div><div class="stm">09:40–10:05</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Headliners</span></div>
+  <div class="spk">Parul Mishra (IBM) · Dave Treat (Pearson PLC)</div>
+  <div class="note">Governed agentic systems, coordinating agents across domains, SDLC transformation — directly maps to Belron's brief</div>
+</div>
+
+<div class="block-label">10:00 — Tracks open (parallel streams begin)</div>
+
+<div class="ses vip">
+  <div class="sh"><div class="st">VisionAIres chair's opening · then: Inside Defence AI — closed-door MoD roundtable</div><div class="stm">10:00–10:50</div></div>
+  <div class="sm"><span class="badge bv">VisionAIres VIP</span></div>
+  <div class="spk">Mark Ridgway, Chris Moore-Bick, Deana Rouse, Victoria Cope, Caroline Woodbridge-Lewin (MoD)</div>
+  <div class="note">Governance, procurement pathways, public-private AI partnership — closed-door, peer network opportunity</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">AI in action: from idea to agent in under 25 minutes (live build, no script)</div><div class="stm">10:05–10:30</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Headliners</span></div>
+  <div class="spk">Tom Hewitson (General Purpose)</div>
+  <div class="note">Real audience problem, agent built live — honest view of what agents can actually do today</div>
+  <div class="clash-note">⚠ Clashes with VisionAIres MoD roundtable — choose based on priority</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Beyond PoCs: scaling AI for real business impact</div><div class="stm">10:10–10:35</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Beyond AI at Scale</span></div>
+  <div class="spk">Mohsen Ghasempour (Kingfisher)</div>
+  <div class="note">PoC to production, trusted AI foundations, CX and productivity outcomes — closest session to Belron's current position</div>
+</div>
+
+<div class="ses watch">
+  <div class="sh"><div class="st">Beyond the AI hype: operational readiness, governance and real-world adoption</div><div class="stm">10:10–10:35</div></div>
+  <div class="sm"><span class="badge bw">Worth attending</span><span class="badge bs">Applied AI</span></div>
+  <div class="spk">Chris Browne (Tesco)</div>
+  <div class="note">Governance in practice, human oversight in complex environments</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Leading AI transformation: enterprise context layer for agentic AI (Glean + Ericsson)</div><div class="stm">10:30–10:55</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Headliners</span></div>
+  <div class="spk">Joel McKelvey (Glean) · Kallol Dutta (Ericsson)</div>
+  <div class="note">Unified context layer, multi-model agents, shadow AI governance, 25%+ productivity gains — vendor to scout</div>
+</div>
+
+<div class="ses break"><div class="sh"><div class="st">VisionAIres morning break (lounge networking)</div><div class="stm">10:50–11:35</div></div><div class="sm"><span class="badge bv">VisionAIres VIP</span></div></div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Executive presentation by Minister Kanishka Narayan (AI Minister, DSIT)</div><div class="stm">11:10–11:35</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Headliners</span></div>
+  <div class="note">UK AI policy direction, sovereign AI, regulatory posture — essential for enterprise strategy context</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Speech on AI in defence by Air Chief Marshal Sir Rich Knighton, Chief of the Defence Staff</div><div class="stm">11:35–12:00</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Headliners</span></div>
+  <div class="note">UK CDS vision for AI in defence — high-profile, signals national AI direction</div>
+</div>
+
+<div class="ses watch">
+  <div class="sh"><div class="st">The agentic era: how companies change and stay competitive</div><div class="stm">11:35–12:00</div></div>
+  <div class="sm"><span class="badge bw">Worth attending</span><span class="badge bs">Start-up &amp; Investor</span></div>
+  <div class="note">Structural shifts in the agentic era, where workflows break, where advantage moves</div>
+</div>
+
+<div class="block-label">12:00 — Short breaks across tracks · 12:35 — Lunch</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Inside the agentic enterprise (Elsewhen)</div><div class="stm">12:10–12:35</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Headliners</span></div>
+  <div class="spk">Leon Gauhman (Elsewhen)</div>
+  <div class="note">Systems of record vs systems of register, operating model for agents beyond chatbots — sharp strategic framing</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Sovereign AI is within your reach (IBM)</div><div class="stm">12:10–12:35</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Beyond AI at Scale</span></div>
+  <div class="spk">Thierry Supplisson (IBM)</div>
+  <div class="note">Sovereignty beyond data residency — operational, technological and governance control. Relevant to Belron's multi-country footprint</div>
+</div>
+
+<div class="ses watch">
+  <div class="sh"><div class="st">Why your AI keeps getting it wrong: the semantic backbone fix</div><div class="stm">12:10–12:35</div></div>
+  <div class="sm"><span class="badge bw">Worth attending</span><span class="badge bs">Data Excellence</span></div>
+  <div class="spk">Andreas Blumauer (Graphwise)</div>
+  <div class="note">Semantic GraphRAG, knowledge graphs, reducing hallucinations — useful for knowledge architecture work</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Governing the machine in the age of AI agents (Masterclass)</div><div class="stm">13:00–13:50</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Masterclasses</span></div>
+  <div class="spk">Paul Dongha (NatWest) · Ray Eitel-Porter (Jesus College Cambridge)</div>
+  <div class="note">Agentic risk, cascading failures, staged autonomy, circuit breakers, kill-switches — exactly what Belron's governance track needs</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Partner meetup: scaling agentic AI (TechUK hosted)</div><div class="stm">13:00–14:00</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Networking</span></div>
+  <div class="note">Practical guidance on agentic AI operating models, regulatory developments, AI Opportunities Action Plan — peer networking with AI practitioners</div>
+  <div class="clash-note">⚠ Clashes with Governing the Machine masterclass — the masterclass is more structured value</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Panel: AI sovereignty — possibility or pipe dream for Europe?</div><div class="stm">13:35–14:15</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Headliners</span></div>
+  <div class="spk">Victoria Cope (MoD) · Sasha Rubel (AWS) · Ollie Ilott (DSIT) · Sonia Nash (SAP) · Stephanie Hare</div>
+  <div class="note">Data sovereignty, European AI independence, regulation vs competitiveness — relevant to Belron's D'Ieteren/European enterprise context</div>
+</div>
+
+<div class="ses vip">
+  <div class="sh"><div class="st">The price of intelligence (VisionAIres panel)</div><div class="stm">13:35–14:10</div></div>
+  <div class="sm"><span class="badge bv">VisionAIres VIP</span></div>
+  <div class="spk">Raihan Noushad (bp) · Nazim Ünlu (ex-Novartis) · Natalia Konstantinova (NatWest) · Sue Daley OBE (TechUK)</div>
+  <div class="note">Inference costs, agent spend governance, when automation grows margins vs erodes them — direct CFO-level AI ROI conversation</div>
+</div>
+
+<div class="ses watch">
+  <div class="sh"><div class="st">Panel: the AI workforce revolution — leading the next era of work</div><div class="stm">13:35–14:15</div></div>
+  <div class="sm"><span class="badge bw">Worth attending</span><span class="badge bs">Beyond AI at Scale</span></div>
+  <div class="spk">DP Indetkar (Northern Trust) · Sue Attewell (Jisc) · Sara Maldon (Make)</div>
+  <div class="note">Hybrid human-AI teams, supervising AI-generated output, entry-level role disruption — team leadership angle</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Panel: trusted agents in R&amp;D — where autonomy ends and oversight begins</div><div class="stm">13:35–14:15</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Applied AI</span></div>
+  <div class="spk">Sofia Ihsan (Forvis Mazars) · Meera Patel · Subrata Bose (Bayer) · Margi Sheth (Novo Nordisk)</div>
+  <div class="note">Autonomy boundaries, approval ladders, audit-ready evidence — maps directly to Belron's governance work</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Scientific finding and best workflows in agentic engineering (Masterclass)</div><div class="stm">14:00–14:50</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Masterclasses</span></div>
+  <div class="spk">Denis Volkhonskiy · Laure Faretti (Nebius)</div>
+  <div class="note">AGENTS.md frameworks, MCP decision trees, safety playbook for real teams — directly relevant to your MCP strategy work</div>
+</div>
+
+<div class="ses watch">
+  <div class="sh"><div class="st">AstraZeneca: harnessing AI to transform patient outcomes</div><div class="stm">14:25–14:50</div></div>
+  <div class="sm"><span class="badge bw">Worth attending</span><span class="badge bs">Headliners</span></div>
+  <div class="spk">Anne-Claire Gerbaldi (AstraZeneca)</div>
+  <div class="note">Chief Digital, Data and AI Officer — AI at scale across a complex global value chain. Good Belron parallel</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">ROI revolution: strategic AI investments for scale</div><div class="stm">14:25–14:50</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Beyond AI at Scale</span></div>
+  <div class="spk">Simon Ellis (Pets at Home)</div>
+  <div class="note">AI investment prioritisation, ROI-to-architecture mapping, portfolio management — useful framing for Belron's investment decisions</div>
+</div>
+
+<div class="ses vip">
+  <div class="sh"><div class="st">Decision fatigue in the C-Suite (VisionAIres panel)</div><div class="stm">15:00–15:35</div></div>
+  <div class="sm"><span class="badge bv">VisionAIres VIP</span></div>
+  <div class="spk">Indhira Mani (Intact Insurance) · George McCrea (The Crown Estate) · Jonathan Davis (Zurich) · David Reed (DataIQ)</div>
+  <div class="note">Which AI decisions need board attention vs delegation, how to act decisively under uncertainty — C-suite framing for EA leaders</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">From AI ready to AI ruled: designing operating models for autonomous workflows (Masterclass)</div><div class="stm">15:00–15:50</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Masterclasses</span></div>
+  <div class="spk">Tharun Loknath (Just Group)</div>
+  <div class="note">Multi-agent coordination, governance strategies, autonomy maturity roadmap — designed for CTOs, CIOs, enterprise architects</div>
+  <div class="clash-note">⚠ Clashes with VisionAIres C-Suite panel — both high-value, pick based on format preference</div>
+</div>
+
+<div class="ses watch">
+  <div class="sh"><div class="st">SAP AI agent discovery workshop (VisionAIres Challenge Lab)</div><div class="stm">15:30–16:30</div></div>
+  <div class="sm"><span class="badge bv">VisionAIres VIP</span><span class="badge bw">Workshop</span></div>
+  <div class="spk">Sam Renshaw, Manzar Haq, Sonia Nash (SAP)</div>
+  <div class="note">Hands-on: design your own enterprise agent concept. 40 seats — book early if interested</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Humans at the helm: leading agentic AI in the enterprise</div><div class="stm">15:35–16:15</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Headliners</span></div>
+  <div class="spk">Michael Jacobides (LBS) · Sebastian Weir (IBM) · Mohsen Ghasempour (Kingfisher) · Angela Read Downes (NICE) · Catriona Campbell</div>
+  <div class="note">Agent controllers, human-in-the-loop at enterprise scale, maximising value while managing risk — strong panel</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Panel: the AgentOps stack — building, operating and scaling autonomous systems</div><div class="stm">15:35–16:15</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Next Generation</span></div>
+  <div class="spk">Andrew Harrison (Booking.com) · Bas van Schaik (1Password) · Frederik Heda (bp) · Lisa Lucas</div>
+  <div class="note">Evaluation, monitoring, permissions, incident response for agent systems — operational complement to governance masterclass</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">The instruction layer for enterprise AI: building trusted experiences at scale (eGain)</div><div class="stm">15:00–15:25</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Data Excellence</span></div>
+  <div class="spk">James Hunt (eGain)</div>
+  <div class="note">Ungoverned operational knowledge as the root cause of AI failures — knowledge infrastructure for customer service and agentic automation</div>
+</div>
+
+<div class="ses watch">
+  <div class="sh"><div class="st">Model ecosystems and harness design for cost-effective enterprise agents (Masterclass — Glean)</div><div class="stm">16:00–16:50</div></div>
+  <div class="sm"><span class="badge bw">Worth attending</span><span class="badge bs">Masterclasses</span></div>
+  <div class="spk">Zubin Irani (Glean)</div>
+  <div class="note">Context-Harness-Model framework, token efficiency, multi-model ecosystems — practical architecture for agentic platforms</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Scaling the magic of the store experience at Pandora with AI (Salesforce + Publicis)</div><div class="stm">17:00–17:25</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Headliners</span></div>
+  <div class="spk">Johan Andersson · Catarina Miranda (Pandora)</div>
+  <div class="note">AI agents Gemma (selling) and Clara (service) — end-to-end customer journey AI. Direct parallel to Belron's booking and repair CX</div>
+</div>
+
+<div class="ses break"><div class="sh"><div class="st">VisionAIres chair's closing remarks · all track closing remarks</div><div class="stm">17:25–17:30</div></div></div>
+<div class="ses break"><div class="sh"><div class="st">National AI Awards ceremony</div><div class="stm">18:30</div></div></div>
+
+</div><!-- end wednesday -->
+
+<!-- THURSDAY -->
+<div class="day-panel" id="pt">
+
+<div class="block-label">Opening — Headliners stage</div>
+
+<div class="ses break"><div class="sh"><div class="st">Informa opening remarks</div><div class="stm">09:00–09:10</div></div></div>
+
+<div class="ses watch">
+  <div class="sh"><div class="st">From conversational AI to deepfakes: building and breaking digital reality</div><div class="stm">09:25–09:50</div></div>
+  <div class="sm"><span class="badge bw">Worth attending</span><span class="badge bs">Headliners</span></div>
+  <div class="spk">Maja Pantic (NatWest)</div>
+  <div class="note">Digital humans, deepfakes, identity risk in customer interactions</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">From copilot to colleague: what it takes to become a frontier firm (Microsoft + EY)</div><div class="stm">09:50–10:15</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Headliners</span></div>
+  <div class="spk">Jed Griffiths (Microsoft) · Chris Withers (EY)</div>
+  <div class="note">World's largest corporate AI agent study — human-agent teams, performance, trust. Directly relevant to Belron's M365 Copilot deployment</div>
+</div>
+
+<div class="block-label">10:00 — Tracks open</div>
+
+<div class="ses vip">
+  <div class="sh"><div class="st">The AI talent paradox (VisionAIres panel)</div><div class="stm">10:05–10:40</div></div>
+  <div class="sm"><span class="badge bv">VisionAIres VIP</span></div>
+  <div class="spk">Michelle Hastings (Vodafone) · David Palmer (Pairpoint) · Tyler Shores (Cambridge) · Lawrence Ampofo (Vodafone)</div>
+  <div class="note">Hidden costs of AI hiring, mission-critical vs hype skills, team ROI — directly relevant to leading your 40-person distributed team</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">The irreducible human spirit: creativity and flourishing beyond AI</div><div class="stm">10:15–10:40</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Headliners</span></div>
+  <div class="spk">Prof. Fernando Garibay (The Garibay Institute)</div>
+  <div class="note">Grammy-winning polymath and academic — reframes AI as substrate for human creativity. Draws on music and short-form content</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Industrial AI in action: what works and why (bp)</div><div class="stm">10:10–10:35</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Applied AI</span></div>
+  <div class="spk">Clare Williams Nagassar, Dragi Laz, Adrian O'Neill (bp)</div>
+  <div class="note">Safety, legacy systems, regulation as real constraints — maps to Belron's operational environment</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Scaling AgentOps: observability, safety and control in production AI</div><div class="stm">10:10–10:35</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Next Generation</span></div>
+  <div class="spk">Andy McMahon (Barclays)</div>
+  <div class="note">Multi-agent observability, evaluation frameworks, responsible AgentOps — exactly the MCP gateway governance work you are leading</div>
+</div>
+
+<div class="ses ccaas">
+  <div class="sh"><div class="st">Leading the future of AI-powered customer experiences (NICE)</div><div class="stm">10:45–11:10</div></div>
+  <div class="sm"><span class="badge br">CCaaS scout</span><span class="badge bs">Beyond AI at Scale</span></div>
+  <div class="spk">Angela Read Downes (NICE)</div>
+  <div class="note">Agentic AI in contact centres, proactive CX, real-time guidance — NICE is a key CCaaS vendor on your radar</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">The end of generic AI in the enterprise (Writer)</div><div class="stm">10:40–10:55</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Impact Arena</span></div>
+  <div class="spk">Mohammad Shaker (Writer)</div>
+  <div class="note">Company-specific operating system vs generic tools — context layer, governed knowledge, permissioned action</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Virgin Atlantic: building an AI concierge for the end-to-end customer journey</div><div class="stm">11:05–11:35</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Headliners</span></div>
+  <div class="spk">Bethan Lynch · Richard Masters (Virgin Atlantic)</div>
+  <div class="note">Context-aware AI agents across full customer journey — strong parallel to Belron's booking-to-repair journey</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Closing the AI value gap: RAG and agentic systems that deliver measurable impact</div><div class="stm">11:10–11:35</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Applied AI</span></div>
+  <div class="spk">Li Fu (Lloyds Banking Group)</div>
+  <div class="note">What separates agentic systems that scale from those stuck at demo — RAG with images and complex docs, reliability tracking</div>
+</div>
+
+<div class="ses watch">
+  <div class="sh"><div class="st">Skills that scale in the age of AI</div><div class="stm">11:35–12:15</div></div>
+  <div class="sm"><span class="badge bw">Worth attending</span><span class="badge bs">Headliners</span></div>
+  <div class="spk">Nazim Ünlu (ex-Novartis) · Bastien Parizot (Reckitt) · Sheila Flavell (FDM)</div>
+  <div class="note">AI literacy, data fluency, human-AI collaboration skills — actionable for team development</div>
+</div>
+
+<div class="ses vip">
+  <div class="sh"><div class="st">From ticket to trust: AI-augmented support as CX engine (VisionAIres)</div><div class="stm">11:45–12:15</div></div>
+  <div class="sm"><span class="badge bv">VisionAIres VIP</span></div>
+  <div class="note">Support as strategic layer — churn risk, expansion signals, revenue protection through AI-human CX design</div>
+</div>
+
+<div class="block-label">12:00–13:35 — Lunch</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Breaking barriers: from pilot to enterprise AI success</div><div class="stm">13:35–14:00</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Headliners</span></div>
+  <div class="spk">Richard Adams (DFTO)</div>
+  <div class="note">Why AI stalls at PoC, shared AI platforms, consistent deployment pipelines</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Panel: AI infrastructure darwinism — survive or die</div><div class="stm">13:35–14:15</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Beyond AI at Scale</span></div>
+  <div class="spk">Ruhi Khan (LSE) · Alpesh Doshi · Benedict Macon-Cooney (Tony Blair Institute) · Tamzin Kraftman (BBC)</div>
+  <div class="note">Which AI architectures collapse under cost, governance, and performance pressure — sovereign cloud, edge, hybrid</div>
+</div>
+
+<div class="ses watch">
+  <div class="sh"><div class="st">Panel: prove — demonstrating value and ROI during execution</div><div class="stm">13:35–14:15</div></div>
+  <div class="sm"><span class="badge bw">Worth attending</span><span class="badge bs">Data Excellence</span></div>
+  <div class="spk">Richard Clough (EY) · David Mead (Sky) · Robin Jones (AstraZeneca) · Linda Coule (HPE)</div>
+  <div class="note">Translating technical improvements to stakeholder-facing ROI — trust through transparency and evidence</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Panel: AI is live. Now what? — leadership in 2026</div><div class="stm">14:10–14:50</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Headliners</span></div>
+  <div class="spk">Andy Pemberton (Testkube) · Dr Ekaterina Abramova (LBS) · Dr Leanne Allen (KPMG) · Jambu Palaniappan (Checkatrade) · Axel Threlfall (Reuters)</div>
+  <div class="note">CXO high-stakes choices, accountability frameworks, governing AI safely while capturing business value — strong panel for EA leaders</div>
+</div>
+
+<div class="ses vip">
+  <div class="sh"><div class="st">The human impact conversation (VisionAIres)</div><div class="stm">14:00–14:40</div></div>
+  <div class="sm"><span class="badge bv">VisionAIres VIP</span></div>
+  <div class="spk">Catriona Campbell (AI By Design) · Srimanth Rudraraju (LSEG) · Mara Pometti (Mastercard)</div>
+  <div class="note">Workforce change pace and scope, policy intervention risk, reputation management during AI-driven restructuring</div>
+</div>
+
+<div class="ses ccaas">
+  <div class="sh"><div class="st">Talkdesk demo: orchestrating agentic AI across enterprise — from insight to action</div><div class="stm">14:20–14:30</div></div>
+  <div class="sm"><span class="badge br">CCaaS scout</span><span class="badge bs">AI Demo Tours</span></div>
+  <div class="note">Multi-agent system across CX, employee ops and contact centre — Talkdesk CCaaS vendor demo, booth #114</div>
+</div>
+
+<div class="ses watch">
+  <div class="sh"><div class="st">Pandora's journey on agentic shopping: from bold idea to production</div><div class="stm">14:25–14:50</div></div>
+  <div class="sm"><span class="badge bw">Worth attending</span><span class="badge bs">Creative AI</span></div>
+  <div class="spk">Riccardo Arnaldi (Pandora A/S)</div>
+  <div class="note">Unfiltered story of building agent Gemma — harness design, eval loops, human-in-the-loop, emotional storytelling layer</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Powering AI and agentic platforms with AWS (with Reach PLC case study)</div><div class="stm">15:00–15:25</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Beyond AI at Scale</span></div>
+  <div class="spk">Lewis James (Reach PLC) · Benjamin Le, Naren Gakka (AWS)</div>
+  <div class="note">Multi-agent platform on AWS, POC to production — practical architecture and proven patterns</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">From pilots to impact: building the enterprise AI fabric (IBM Masterclass)</div><div class="stm">16:00–16:50</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Masterclasses</span></div>
+  <div class="spk">Jiri De Jagere (IBM)</div>
+  <div class="note">Open hybrid AI fabric, MCP and A2A standards, composable agent ecosystem without vendor lock-in — directly relevant to your MCP strategy</div>
+</div>
+
+<div class="ses must">
+  <div class="sh"><div class="st">Panel: humans in the loop — designing organisations for the AI-native workplace</div><div class="stm">15:35–16:15</div></div>
+  <div class="sm"><span class="badge bm">Must attend</span><span class="badge bs">Next Generation</span></div>
+  <div class="spk">Sophie Engel (BITO) · Tamsin Cooper (Forward Institute) · Tom Hewitson (General Purpose)</div>
+  <div class="note">Roles changing, workflows shifting, operating models restructuring around AI — what still isn't working</div>
+</div>
+
+<div class="ses watch">
+  <div class="sh"><div class="st">Safe autonomy: governance, controls and real-time assurance</div><div class="stm">16:25–16:50</div></div>
+  <div class="sm"><span class="badge bw">Worth attending</span><span class="badge bs">Beyond AI at Scale</span></div>
+  <div class="spk">Jeff Valane (HSBC) · Sue Turner (AI Governance Limited)</div>
+  <div class="note">Real-time oversight, circuit breakers, board accountability when autonomous systems fail</div>
+</div>
+
+<div class="ses watch">
+  <div class="sh"><div class="st">The anti-AI backlash: AI adoption is getting harder</div><div class="stm">16:25–16:50</div></div>
+  <div class="sm"><span class="badge bw">Worth attending</span><span class="badge bs">Next Generation</span></div>
+  <div class="spk">Lauren Ingram (Next Big Thing)</div>
+  <div class="note">Common rollout mistakes, resistance and mistrust — trust-building and workflow design for genuine adoption</div>
+</div>
+
+<div class="ses break"><div class="sh"><div class="st">VisionAIres chair's closing · all track closing remarks</div><div class="stm">16:50–16:55</div></div></div>
+
+</div><!-- end thursday -->
+</div>
+
+<script>
+function sw(id,btn){
+  document.querySelectorAll('.day-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.day-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('p'+id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
