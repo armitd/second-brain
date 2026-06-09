@@ -15,11 +15,11 @@ tags:
 ## Compiled Truth
 
 ### Executive Snapshot
-- Contact associated with Genesys in the context of the CCOTF (Contact Centre of the Future) vendor evaluation [Source: [[01-daily/checkins/weekly-checkin-2026-06-07]] | 2026-06-07 | confidence: medium]
-- An open vendor evaluation thread as of week of 1 June 2026 that is stalling progress [Source: [[01-daily/checkins/weekly-checkin-2026-06-07]] | 2026-06-07 | confidence: high]
+- Has an open CCOTF-related thread — nature not yet confirmed [Source: [[01-daily/checkins/weekly-checkin-2026-06-07]] | 2026-06-07 | confidence: low]
+- Note: NOT connected to Genesys — earlier attribution was incorrect [Source: conversation | 2026-06-10 | confidence: high]
 
 ### Role & Responsibilities
-- Likely a vendor contact at Genesys or someone connected to the Genesys part of the CCOTF evaluation; exact role and organisation unconfirmed [Source: [[01-daily/checkins/weekly-checkin-2026-06-07]] | 2026-06-07 | confidence: low]
+- Role and organisation unconfirmed — involved in Nordics project (Signavio) and has a separate CCOTF thread, but not connected to Genesys [Source: conversation | 2026-06-10 | confidence: high]
 
 ### Working Style
 - [To be observed]
