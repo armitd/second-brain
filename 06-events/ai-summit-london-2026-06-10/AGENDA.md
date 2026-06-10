@@ -52,11 +52,11 @@ tags: ["#event", "#ai-summit", "#agenda"]
 
 ### 12:00 — Short Breaks · 12:35 — Lunch
 
-| Time | Session | Priority |
-|------|---------|----------|
-| 12:10–12:35 | **Inside the agentic enterprise** (Elsewhen) — Leon Gauhman | 🟢 |
-| 12:10–12:35 | **Sovereign AI is within your reach** (IBM) — Thierry Supplisson | 🟢 |
-| 12:10–12:35 | Why your AI keeps getting it wrong: the semantic backbone fix — Andreas Blumauer (Graphwise) | 🟡 |
+| Time        | Session                                                                                      | Priority |
+| ----------- | -------------------------------------------------------------------------------------------- | -------- |
+| 12:10–12:35 | **Inside the agentic enterprise** (Elsewhen) — Leon Gauhman                                  | 🟢       |
+| 12:10–12:35 | **Sovereign AI is within your reach** (IBM) — Thierry Supplisson                             | 🟢       |
+| 12:10–12:35 | Why your AI keeps getting it wrong: the semantic backbone fix — Andreas Blumauer (Graphwise) | 🟡       |
 
 ---
 
