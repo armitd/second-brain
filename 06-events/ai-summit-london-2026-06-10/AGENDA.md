@@ -22,13 +22,13 @@ tags: ["#event", "#ai-summit", "#agenda"]
 
 ### Opening — Headliners Stage
 
-| Time | Session | Priority |
-|------|---------|----------|
-| 08:00 | Doors open · Expo floor · AI Trail | ⬜ |
-| 08:50–09:00 | Informa opening remarks | ⬜ |
-| 09:00–09:15 | **Chairperson's welcome: how intelligence became practical** — Stephanie Hare | 🟡 |
-| 09:15–09:40 | **Modeling reality: when AI leaves the cloud and starts walking the streets** — Zach Rash (Coco Robotics) · John Hanke (Niantic Spatial) | 🟢 |
-| 09:40–10:05 | **From AI pilots to enterprise transformation: operating agents at scale** (IBM) — Parul Mishra · Dave Treat (Pearson PLC) | 🟢 |
+| Time        | Session                                                                                                                                  | Priority |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| 08:00       | Doors open · Expo floor · AI Trail                                                                                                       | ⬜        |
+| 08:50–09:00 | Informa opening remarks                                                                                                                  | ⬜        |
+| 09:00–09:15 | **Chairperson's welcome: how intelligence became practical** — Stephanie Hare                                                            | 🟡       |
+| 09:15–09:40 | **Modeling reality: when AI leaves the cloud and starts walking the streets** — Zach Rash (Coco Robotics) · John Hanke (Niantic Spatial) | 🟢       |
+| 09:40–10:05 | **From AI pilots to enterprise transformation: operating agents at scale** (IBM) — Parul Mishra · Dave Treat (Pearson PLC)               | 🟢       |
 
 *09:40 note: Governed agentic systems, coordinating agents across domains, SDLC transformation — directly maps to Belron's brief*
 
