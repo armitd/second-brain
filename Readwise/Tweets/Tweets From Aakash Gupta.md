@@ -59,3 +59,4 @@
   08:04 - Level 2: The Lovable + Claude Code bridge
   28:37 - Level 3: Cursor + Vercel for real production
   41:17 - Level 4: Agents, skills, and https://t.co/eSlAXdV5xO ([View Tweet](https://x.com/aakashgupta/status/2056508688383529305))
+- If you’ve been procrastinating on learning loops, read this. https://t.co/5C8dXu4FZ0 ([View Tweet](https://x.com/aakashgupta/status/2064006311231078862))

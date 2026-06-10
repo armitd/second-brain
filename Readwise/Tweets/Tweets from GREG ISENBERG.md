@@ -37,3 +37,6 @@
 - AI AGENTS 101 (58 minute free masterclass)
   send this to anyone who wants to understand ai agents, claude skills, md files, how to get the most out of AI etc in plain english:
   1. chat vs agents - chat models answer questions in a back and forth while agents take a goal, figure https://t.co/OeaTqtbhUP ([View Tweet](https://x.com/gregisenberg/status/2034052610664116550))
+- What does it actually mean to be AI native?
+  There was no clear guide on the internet for how to become AI native so we built the definitive one (60 min masterclass):
+  1. An AI native org has 3 layers: people for strategy and taste, agents for execution, and a shared context https://t.co/Eg3w1pQfYb ([View Tweet](https://x.com/gregisenberg/status/2064054350859649114))

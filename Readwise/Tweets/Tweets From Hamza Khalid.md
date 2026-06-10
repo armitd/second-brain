@@ -11,3 +11,4 @@
 ## Highlights
 - This is literally the best mini-course for learning about the Claude Code under 30 minutes.
   https://t.co/UlFM2JN4Xj ([View Tweet](https://twitter.com/Whizz_ai/status/2010607695620178026))
+
