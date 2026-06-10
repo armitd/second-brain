@@ -36,17 +36,17 @@ tags: ["#event", "#ai-summit", "#agenda"]
 
 ### 10:00 — Tracks Open
 
-| Time | Session | Priority |
-|------|---------|----------|
-| 10:00–10:50 | **VisionAIres chair's opening + Inside Defence AI** (closed-door MoD roundtable) | 🟣 |
-| 10:05–10:30 | **AI in action: from idea to agent in under 25 minutes** (live build, no script) — Tom Hewitson (General Purpose) | 🟢 ⚠️ clashes with MoD roundtable |
-| 10:10–10:35 | **Beyond PoCs: scaling AI for real business impact** — Mohsen Ghasempour (Kingfisher) | 🟢 |
-| 10:10–10:35 | **Beyond the AI hype: operational readiness, governance and real-world adoption** — Chris Browne (Tesco) | 🟡 |
-| 10:30–10:55 | **Leading AI transformation: enterprise context layer for agentic AI** (Glean + Ericsson) — Joel McKelvey · Kallol Dutta | 🟢 |
-| 10:50–11:35 | VisionAIres morning break (lounge networking) | 🟣 |
-| 11:10–11:35 | **Executive presentation: Minister Kanishka Narayan, AI Minister (DSIT)** | 🟢 |
-| 11:35–12:00 | **Speech on AI in defence** — Air Chief Marshal Sir Rich Knighton, Chief of the Defence Staff | 🟢 |
-| 11:35–12:00 | The agentic era: how companies change and stay competitive | 🟡 |
+| Time        | Session                                                                                                                  | Priority                          |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------ | --------------------------------- |
+| 10:00–10:50 | **VisionAIres chair's opening + Inside Defence AI** (closed-door MoD roundtable)                                         | 🟣                                |
+| 10:05–10:30 | **AI in action: from idea to agent in under 25 minutes** (live build, no script) — Tom Hewitson (General Purpose)        | 🟢 ⚠️ clashes with MoD roundtable |
+| 10:10–10:35 | **Beyond PoCs: scaling AI for real business impact** — Mohsen Ghasempour (Kingfisher)                                    | 🟢                                |
+| 10:10–10:35 | **Beyond the AI hype: operational readiness, governance and real-world adoption** — Chris Browne (Tesco)                 | 🟡                                |
+| 10:30–10:55 | **Leading AI transformation: enterprise context layer for agentic AI** (Glean + Ericsson) — Joel McKelvey · Kallol Dutta | 🟢                                |
+| 10:50–11:35 | VisionAIres morning break (lounge networking)                                                                            | 🟣                                |
+| 11:10–11:35 | **Executive presentation: Minister Kanishka Narayan, AI Minister (DSIT)**                                                | 🟢                                |
+| 11:35–12:00 | **Speech on AI in defence** — Air Chief Marshal Sir Rich Knighton, Chief of the Defence Staff                            | 🟢                                |
+| 11:35–12:00 | The agentic era: how companies change and stay competitive                                                               | 🟡                                |
 
 ---
 
