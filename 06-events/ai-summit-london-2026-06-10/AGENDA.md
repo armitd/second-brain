@@ -62,27 +62,27 @@ tags: ["#event", "#ai-summit", "#agenda"]
 
 ### Afternoon
 
-| Time | Session | Priority |
-|------|---------|----------|
-| 13:00–13:50 | **Governing the machine in the age of AI agents** (Masterclass) — Paul Dongha (NatWest) · Ray Eitel-Porter (Cambridge) | 🟢 |
-| 13:00–14:00 | Partner meetup: scaling agentic AI (TechUK) | 🟢 ⚠️ clashes with masterclass — masterclass preferred |
-| 13:35–14:15 | **Panel: AI sovereignty — possibility or pipe dream for Europe?** — Victoria Cope (MoD) · Sasha Rubel (AWS) · Ollie Ilott (DSIT) · Sonia Nash (SAP) · Stephanie Hare | 🟢 |
-| 13:35–14:10 | **The price of intelligence** (VisionAIres panel) — Raihan Noushad (bp) · Nazim Ünlu · Natalia Konstantinova (NatWest) · Sue Daley OBE | 🟣 |
-| 13:35–14:15 | Panel: the AI workforce revolution | 🟡 |
-| 13:35–14:15 | **Panel: trusted agents in R&D — where autonomy ends and oversight begins** — Sofia Ihsan · Subrata Bose (Bayer) · Margi Sheth (Novo Nordisk) | 🟢 |
-| 14:00–14:50 | **Scientific finding and best workflows in agentic engineering** (Masterclass) — Denis Volkhonskiy · Laure Faretti (Nebius) | 🟢 |
-| 14:25–14:50 | AstraZeneca: harnessing AI to transform patient outcomes — Anne-Claire Gerbaldi | 🟡 |
-| 14:25–14:50 | **ROI revolution: strategic AI investments for scale** — Simon Ellis (Pets at Home) | 🟢 |
-| 15:00–15:35 | **Decision fatigue in the C-Suite** (VisionAIres panel) | 🟣 |
-| 15:00–15:50 | **From AI ready to AI ruled: designing operating models for autonomous workflows** (Masterclass) — Tharun Loknath (Just Group) | 🟢 ⚠️ clashes with VisionAIres panel |
-| 15:00–15:25 | **The instruction layer for enterprise AI** (eGain) — James Hunt | 🟢 |
-| 15:30–16:30 | SAP AI agent discovery workshop (VisionAIres Challenge Lab) — 40 seats | 🟣 🟡 |
-| 15:35–16:15 | **Humans at the helm: leading agentic AI in the enterprise** — Michael Jacobides (LBS) · Sebastian Weir (IBM) · Mohsen Ghasempour · Angela Read Downes (NICE) | 🟢 |
-| 15:35–16:15 | **Panel: the AgentOps stack** — Andrew Harrison (Booking.com) · Bas van Schaik (1Password) · Frederik Heda (bp) | 🟢 |
-| 16:00–16:50 | Model ecosystems and harness design for cost-effective enterprise agents (Masterclass — Glean) — Zubin Irani | 🟡 |
-| 17:00–17:25 | **Scaling the magic of the store experience at Pandora with AI** (Salesforce + Publicis) — Johan Andersson · Catarina Miranda | 🟢 |
-| 17:25–17:30 | Closing remarks | ⬜ |
-| 18:30 | National AI Awards ceremony | ⬜ |
+| Time        | Session                                                                                                                                                              | Priority                                               |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| 13:00–13:50 | **Governing the machine in the age of AI agents** (Masterclass) — Paul Dongha (NatWest) · Ray Eitel-Porter (Cambridge)                                               | 🟢                                                     |
+| 13:00–14:00 | Partner meetup: scaling agentic AI (TechUK)                                                                                                                          | 🟢 ⚠️ clashes with masterclass — masterclass preferred |
+| 13:35–14:15 | **Panel: AI sovereignty — possibility or pipe dream for Europe?** — Victoria Cope (MoD) · Sasha Rubel (AWS) · Ollie Ilott (DSIT) · Sonia Nash (SAP) · Stephanie Hare | 🟢                                                     |
+| 13:35–14:10 | **The price of intelligence** (VisionAIres panel) — Raihan Noushad (bp) · Nazim Ünlu · Natalia Konstantinova (NatWest) · Sue Daley OBE                               | 🟣                                                     |
+| 13:35–14:15 | Panel: the AI workforce revolution                                                                                                                                   | 🟡                                                     |
+| 13:35–14:15 | **Panel: trusted agents in R&D — where autonomy ends and oversight begins** — Sofia Ihsan · Subrata Bose (Bayer) · Margi Sheth (Novo Nordisk)                        | 🟢                                                     |
+| 14:00–14:50 | **Scientific finding and best workflows in agentic engineering** (Masterclass) — Denis Volkhonskiy · Laure Faretti (Nebius)                                          | 🟢                                                     |
+| 14:25–14:50 | AstraZeneca: harnessing AI to transform patient outcomes — Anne-Claire Gerbaldi                                                                                      | 🟡                                                     |
+| 14:25–14:50 | **ROI revolution: strategic AI investments for scale** — Simon Ellis (Pets at Home)                                                                                  | 🟢                                                     |
+| 15:00–15:35 | **Decision fatigue in the C-Suite** (VisionAIres panel)                                                                                                              | 🟣                                                     |
+| 15:00–15:50 | **From AI ready to AI ruled: designing operating models for autonomous workflows** (Masterclass) — Tharun Loknath (Just Group)                                       | 🟢 ⚠️ clashes with VisionAIres panel                   |
+| 15:00–15:25 | **The instruction layer for enterprise AI** (eGain) — James Hunt                                                                                                     | 🟢                                                     |
+| 15:30–16:30 | SAP AI agent discovery workshop (VisionAIres Challenge Lab) — 40 seats                                                                                               | 🟣 🟡                                                  |
+| 15:35–16:15 | **Humans at the helm: leading agentic AI in the enterprise** — Michael Jacobides (LBS) · Sebastian Weir (IBM) · Mohsen Ghasempour · Angela Read Downes (NICE)        | 🟢                                                     |
+| 15:35–16:15 | **Panel: the AgentOps stack** — Andrew Harrison (Booking.com) · Bas van Schaik (1Password) · Frederik Heda (bp)                                                      | 🟢                                                     |
+| 16:00–16:50 | Model ecosystems and harness design for cost-effective enterprise agents (Masterclass — Glean) — Zubin Irani                                                         | 🟡                                                     |
+| 17:00–17:25 | **Scaling the magic of the store experience at Pandora with AI** (Salesforce + Publicis) — Johan Andersson · Catarina Miranda                                        | 🟢                                                     |
+| 17:25–17:30 | Closing remarks                                                                                                                                                      | ⬜                                                      |
+| 18:30       | National AI Awards ceremony                                                                                                                                          | ⬜                                                      |
 
 ---
 
