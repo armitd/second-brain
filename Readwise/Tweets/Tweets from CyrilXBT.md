@@ -32,3 +32,9 @@
   The system becomes the thing you have to manage—
   instead of the thing that manages your life.
   This guide builds it the https://t.co/kUlLtz6RYT https://t.co/UKlHNNXpWe ([View Tweet](https://x.com/cyrilXBT/status/2062010184915144857))
+- I've read every Obsidian guide on the internet.
+  Most of them cover one piece. Folder structure. Daily notes. 
+  A specific plugin.
+  Nobody had written the complete guide that takes you from zero to a vault that actually runs your life.
+  So I wrote it.
+  Philosophy, architecture, https://t.co/r8NyI3IKDA https://t.co/Yf3VuijTQe ([View Tweet](https://x.com/cyrilXBT/status/2064534263387816358))
