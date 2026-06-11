@@ -59,7 +59,7 @@ With a Zigbee USB dongle on the Raspi, HA intercepts every Tradfri button press 
 ## Next Steps
 
 ### Research & Planning
-- [ ] Verify platform — confirm Home Assistant is the right choice (check OpenClaw if it exists) 📅 2026-06-15
+- [ ] Verify platform — confirm Home Assistant is the right choice 📅 2026-06-15
 - [ ] Check current state of LightwaveRF HA integration — community maintained, cloud-dependent 📅 2026-06-15
 - [ ] Identify the first cross-network automation to build (the "proof it works" moment) 📅 2026-06-15
 
@@ -85,10 +85,6 @@ With a Zigbee USB dongle on the Raspi, HA intercepts every Tradfri button press 
 IKEA Tradfri switch → turns on Philips Hue lights in the same room. Once that works, the pattern extends to every other device.
 
 ---
-
-## Notes
-
-*Started from braindump 8 June 2026. First captured as "something like OpenClaw on a Raspi."*
 
 ---
 
