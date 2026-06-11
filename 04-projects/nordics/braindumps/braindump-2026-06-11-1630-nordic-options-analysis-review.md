@@ -42,9 +42,6 @@ https://belronglobal.sharepoint.com/:p:/r/sites/Global.Delivery/Shared%20Documen
 
 ## Action Items
 
-### Immediate
-- [ ] Clarify what "Brad's format" means — find a reference example or ask Brad directly 📅 2026-06-12
-
 ### Short-term
 - [ ] Review Nordic Options Analysis v3.0 ([open in SharePoint](https://belronglobal.sharepoint.com/:p:/r/sites/Global.Delivery/Shared%20Documents/15%20Nordics/Share%20with%20RFP%20team/Nordic%20Options%20Analysis%20v3.0.pptx?d=wc3ca11921e91426180f40eea5b3be117&csf=1&web=1&e=XgZ6Pe&nav=eyJzSWQiOjIxNDc0ODM2MDQsImNJZCI6ODQyNTkzNzY4fQ)) 📅 2026-06-13
 - [ ] Refactor slide deck into Brad's format 📅 2026-06-16
@@ -67,7 +64,7 @@ https://belronglobal.sharepoint.com/:p:/r/sites/Global.Delivery/Shared%20Documen
 
 ### Confidence Assessment
 - **Overall Analysis:** 90%
-- **Areas Requiring Clarification:** Who is Brad and what does his format look like? This is a blocker before the refactor can happen.
+- **Areas Requiring Clarification:** None — Brad's format derivable from the linked document.
 
 ---
 
