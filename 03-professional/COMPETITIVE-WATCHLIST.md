@@ -1,7 +1,7 @@
 ---
 type: "competitive-watchlist"
 created: "2026-04-09"
-last_updated: "2026-06-04"
+last_updated: "2026-06-11"
 tags: ["#competitive", "#watchlist", "#market-intelligence"]
 ---
 
@@ -266,6 +266,22 @@ Companies that build custom AI-powered products and solutions for enterprise cli
 - **What they do:** AI product design and build studio within Capgemini. Combines design thinking with AI engineering.
 - **Why watch:** If the front-end UX and AI model need to be designed and built by the same team — this is a rare combination at studio quality.
 - **Last updated:** 2026-04-09
+
+---
+
+### Firemind
+- **What they do:** Agentic AI IT operations platform — replaces traditional MSPs with autonomous AI agents that manage enterprise cloud infrastructure (AWS, Azure, GCP). Built on **Anthropic Claude**. Deploys entirely within the customer's own cloud account; no data leaves the customer environment. Products include IT Operations (cloud, VMware, AI ops), **Claude Enablement** (running Claude in private cloud), AI FinOps, and Build Sprint (rapid deployment).
+- **Key metrics:** ~90% incident auto-resolution; 93% of first-line IT work automated; MTTR from 2 hours → 9 minutes; 50%+ operational cost reduction.
+- **Clients:** Vodafone, Center Parcs, British Land, KONE, Bank Muscat, DFL, Tribe Connect
+- **Pricing:** Enterprise; outcomes-based contracting; no public pricing
+- **Why watch:** Three distinct angles for Belron:
+  1. **Claude Enablement** — dedicated service to deploy Claude inside a customer's private cloud. This is the production deployment question the AI Damage Assessment PoC will face: how do you run Claude against customer vehicle images without data leaving Belron infrastructure? Firemind may already have the answer.
+  2. **Claude-in-enterprise reference** — Vodafone, Center Parcs, and British Land are live at comparable UK enterprise scale. Concrete precedent for the "is Claude enterprise-ready?" conversation in Belron AI advocacy.
+  3. **Agentic governance reference** — their default-deny, customer-account-isolation model is a real-world example of governing autonomous agents in production. Relevant to MCP Governance framework development.
+- **Questions to answer:** Does Firemind's Claude Enablement support the specific deployment model needed for GDPR-compliant image analysis (EU data residency)? Have they worked with automotive, insurance, or service-industry clients? Is their Build Sprint applicable to a PoC context or only to IT ops?
+- **Relevance:** AI Damage Assessment PoC (Claude Enablement, private cloud deployment); MCP Governance (real-world agent governance reference); AI advocacy (live Claude enterprise case study)
+- **Source:** [[firemind-ai-it-operations-2026-06-11]]
+- **Last updated:** 2026-06-11
 
 ---
 
