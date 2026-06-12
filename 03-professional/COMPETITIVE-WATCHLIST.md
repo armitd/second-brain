@@ -1,7 +1,7 @@
 ---
 type: "competitive-watchlist"
 created: "2026-04-09"
-last_updated: "2026-06-11"
+last_updated: "2026-06-12"
 tags: ["#competitive", "#watchlist", "#market-intelligence"]
 ---
 
@@ -145,13 +145,25 @@ tags: ["#competitive", "#watchlist", "#market-intelligence"]
 
 ---
 
-### Microsoft AI (Azure OpenAI + Copilot)
-- **What they do:** Azure OpenAI Service (GPT-4o hosted on Azure), Azure AI Vision, Azure Machine Learning, Microsoft Copilot ecosystem.
-- **Why watch:** Most enterprise-relevant AI vendor if Belron is Microsoft-stack. Azure OpenAI gives GPT-4o capability within Azure's compliance and data residency boundaries — important for GDPR on customer photos. Copilot Studio is the platform for the EA Copilot agent idea.
-- **Relevance:** Damage assessment (Azure OpenAI / Custom Vision); EA Copilot agent; MCP + agentic AI on Azure; enterprise compliance for EU data.
+### Microsoft AI (Azure OpenAI + Copilot + Agent 365)
+- **What they do:** Azure OpenAI Service (GPT-4o hosted on Azure), Azure AI Vision, Azure Machine Learning, Microsoft Copilot ecosystem, and — as of May 2026 — **Microsoft Agent 365**, a dedicated enterprise control plane for AI agent governance.
+- **Why watch:** Most enterprise-relevant AI vendor if Belron is Microsoft-stack. Azure OpenAI gives GPT-4o capability within Azure's compliance and data residency boundaries — important for GDPR on customer photos. Copilot Studio is the platform for the EA Copilot agent idea. Agent 365 is now the governance layer across the entire agent fleet.
+- **Relevance:** Damage assessment (Azure OpenAI / Custom Vision); EA Copilot agent; MCP + agentic AI on Azure; enterprise compliance for EU data; **agent governance (MCP Governance project)**.
 - **Capability for damage assessment:** High — Azure Custom Vision + Azure OpenAI together cover both fine-tuned model and foundation model approaches.
-- **Source:** [[braindump-2026-04-09-0934-ea-copilot-agent]], [[braindump-2026-04-09-1136-market-scan-machine-vision-frontend]]
-- **Last updated:** 2026-04-09
+
+#### Microsoft Agent 365 (GA May 2026) — Key update
+- **What it is:** Microsoft's "control plane for agents" — observe, govern, and secure the enterprise AI agent fleet
+- **Three pillars:** Observe (centralised registry, agent map, shadow AI discovery) | Govern (Entra + Purview + lifecycle management) | Secure (Defender + Intune + runtime blocking)
+- **Pricing:** $15/user/month standalone, or included in **Microsoft 365 E7** (new tier above E5)
+- **Prerequisites:** Works best with M365 E5; at least one qualifying Agent 365 licence needed
+- **Ecosystem integrations:** Salesforce Agentforce ✅, Databricks Genie ✅, AWS Bedrock (preview), Google Cloud (preview)
+- **Notable:** Can discover **Claude Code** sessions — Agent 365 inventories Claude Code as a governed agent workload
+- **MCP gap (unconfirmed):** Docs govern agents broadly; MCP server-level governance not explicitly addressed — needs demo to validate
+- **Relation to Noma:** Agent 365 = broad agent fleet governance. Noma = MCP server runtime enforcement. Likely complementary layers, not alternatives.
+- **Belron relevance:** If Belron is M365 E5, path to Agent 365 is $15/user/month or E7 upgrade. Salesforce Agentforce ↔ Agent 365 sync is directly relevant to CCOTF. MCP Governance project should evaluate as candidate tooling layer.
+- **Action:** Request demo from Microsoft account team — probe MCP server governance specifically
+- **Source:** [[braindump-2026-06-12-1235-microsoft-agent-365]]
+- **Last updated:** 2026-06-12
 
 ---
 
