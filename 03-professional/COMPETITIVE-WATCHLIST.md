@@ -1,7 +1,7 @@
 ---
 type: "competitive-watchlist"
 created: "2026-04-09"
-last_updated: "2026-06-12"
+last_updated: "2026-06-14"
 tags: ["#competitive", "#watchlist", "#market-intelligence"]
 ---
 
@@ -131,7 +131,15 @@ tags: ["#competitive", "#watchlist", "#market-intelligence"]
 - **Relevance:** MCP governance (EA-owned); damage assessment image analysis; Copilot agent alternatives.
 - **Capability for damage assessment:** Good — Claude vision can analyse images. Slightly less optimised for structured classification than GPT-4o but strong reasoning.
 - **Source:** [[braindump-2026-04-08-0942-a2a-mcp-research-strategy]], [[daily-brief-2026-04-09]]
-- **Last updated:** 2026-04-09
+- **Last updated:** 2026-06-14
+
+#### Model release log
+| Model | Date | Key capability |
+|-------|------|---------------|
+| Claude Opus 4.8 | May 28, 2026 | Sharper judgment, more honesty about its own progress, ability to work independently for longer. Same price as Opus 4.7. |
+| Claude Fable 5 (Mythos) | June 9, 2026 | New flagship model. Shipped June 9, 2026 — 2 hours before first public awareness according to Adiix thread. High performance; positioned as the new top-tier Claude. |
+
+**Fable 5 / Mythos note:** The "Mythos" name appears in social media; official Anthropic branding uses "Fable 5." Confirm official naming when available. Key for Belron AI advocacy: Claude Fable 5 is the model to reference in the AI Damage Assessment PoC pitch as the current capability ceiling.
 
 ---
 
