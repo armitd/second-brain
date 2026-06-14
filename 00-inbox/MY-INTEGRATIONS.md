@@ -34,7 +34,8 @@ tags: ["#integrations", "#config", "#cog"]
 
 
 **Microsoft 365 — Planner Task Sync**
-- planner-webhook-url: *(paste your Power Automate HTTP trigger URL here after setup)*
+- method: OneDrive file drop (free PA connectors — no premium licence required)
+- drop-folder: `~/Library/CloudStorage/OneDrive-BelronGlobal/COG-Tasks/`
 - plan-name: *(your personal Planner plan name)*
 - buckets: Inbox, AI Damage Assessment, MCP Governance, Contact Centre, Personal
 - setup-guide: [[05-knowledge/integrations/sync-tasks-pa-flow]]
