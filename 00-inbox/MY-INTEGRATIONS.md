@@ -33,6 +33,12 @@ tags: ["#integrations", "#config", "#cog"]
 - No API needed — read directly from vault files
 
 
+**Microsoft 365 — Planner Task Sync**
+- planner-webhook-url: *(paste your Power Automate HTTP trigger URL here after setup)*
+- plan-name: *(your personal Planner plan name)*
+- buckets: Inbox, AI Damage Assessment, MCP Governance, Contact Centre, Personal
+- setup-guide: [[05-knowledge/integrations/sync-tasks-pa-flow]]
+
 ## Disabled
 -
 - **Slack**: Not confirmed during onboarding. Enable anytime by moving to Active section.
