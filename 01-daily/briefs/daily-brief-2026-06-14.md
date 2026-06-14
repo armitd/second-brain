@@ -141,6 +141,7 @@ The 2M token context window is the standout figure. For the damage assessment us
 - [ ] Add Ramp AI Index adoption crossover stat to your Claude evidence pack (34.44% US business adoption, overtaking OpenAI) 📅 2026-06-16
 - [ ] Once Gemini 3.5 Pro hits GA, set up a benchmark test with your PoC image set — focus "Deep Think" mode on edge-case damage ambiguity, not just raw classification 📅 2026-06-21
 - [ ] Create slides for Team meeting 📅 2026-06-15 #synced
+- [ ] Review feeds for daily brief
 
 ### Research Needed
 - Monitor whether the US export control directive is extended, reversed, or escalated — this directly determines whether the flagship Claude models become available to Belron again
