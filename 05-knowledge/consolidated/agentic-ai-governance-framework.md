@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "agentic-ai-governance"
 created: "2026-04-10"
-last_updated: "2026-05-30"
-consolidation_id: "consolidation-2026-05-30"
-source_documents: 31
+last_updated: "2026-06-14"
+consolidation_id: "consolidation-2026-06-14"
+source_documents: 37
 status: "working"
 tags: ["#framework", "#consolidated", "#agentic-AI", "#MCP", "#A2A", "#EA-governance", "#protocols"]
 ---
@@ -381,11 +381,104 @@ The week produced the sharpest evidence yet that the governance gap is real and 
 
 ---
 
+### May 14 – June 14, 2026: Harness Concept Crystallises + Semantic Gap Identified
+
+**What Changed:** Three conceptual developments that upgrade the governance model from protocol-level to execution-context-level:
+
+**1. The harness as the right unit of governance (June 11, 2026)**
+Synthesis of parallel evidence threads (Claude Code CLAUDE.md: "the harness executes these, not Claude"; Firemind's product architecture; Claude Managed Agents launch with credential vaults; MCP Dev Summit framing) produced a clear articulation: the harness is the right governance unit. MCP Governance reframed as "enterprise harness design standards, with MCP as the primary interface protocol." A standalone framework has been created: [[harness-design-standard-framework]].
+
+**2. Semantic governance identified as the missing layer (May 21, 2026)**
+Newman's semantic layer research (consolidated May 24) identified a gap: current governance covers *who can access what*; it does not cover *what the accessed data means*. Without a shared semantic layer, multi-agent systems create "parallel realities" — each agent interprets the same business term differently. Architecture principle proposed: Evaluate stage should use explicit rules, not LLM inference.
+
+**3. MCP tooling landscape concrete (June 2026)**
+Three governance tooling options confirmed: Docker MCP Toolbox (open source), Noma (commercial, EA/security ownership), Microsoft Agent 365 (M365-native). These are harness monitoring/enforcement layers. Vendor evaluation is now actionable.
+
+**4. Kiro confirmed as Claude via Bedrock — harness governance scope expanded**
+AWS Kiro confirmed to run on Claude via Bedrock. Any Belron developer using Kiro is running an MCP-connected agent in scope for MCP Governance. Kiro and Claude Code are two compatible harness patterns — not competitors.
+
+**Sources:** [[braindump-2026-06-11-0938-harnesses-agentic-ai]], [[braindump-2026-05-21-1700-semantic-layer-governance-newman]], [[weekly-checkin-2026-06-07]], [[braindump-2026-05-26-1018-aws-kiro-workshop]]
+
+---
+
+### Principle 8: The Harness Is the Unit of Governance — Not the Model, Not the MCP Server
+
+**Statement:** When governing agentic AI in an enterprise, the right unit is the harness — the configured execution context that wraps a model and defines what it can see, what it can do, when it can act, and who can change those constraints. Governing "AI" is too abstract; governing a specific model is vendor-specific; governing individual MCP servers is too granular. The harness is the right level.
+
+**Practical application of the harness concept to MCP Governance:**
+- **Reframe the project:** Instead of "how do we govern MCP servers?" → "how do we establish enterprise harness design standards, with MCP as the primary harness interface protocol?"
+- **EA owns the template; teams own instances:** EA defines what a compliant harness must contain (permitted tools, data scope, escalation paths, audit trail, identity). Teams configure harness instances within EA's template — same model as cloud landing zones.
+- **Harness registry:** A lightweight inventory of all deployed harnesses (not just MCP server lists) — with EA ownership, risk tier, and last-reviewed date.
+
+**Harness component checklist (required for any governed Belron agent):**
+
+| Component | Governance question |
+|---|---|
+| Permitted tools | Which MCP servers / APIs can this agent call? |
+| Data scope | Which data sources (read / write)? What classification? |
+| Allowed actions | Read-only? Write? Execute? Destructive? |
+| Escalation paths | What triggers human-in-the-loop? What is the threshold? |
+| Memory | What does the agent retain? How long? Who can see it? |
+| Audit trail | Every tool call logged? Output logged? Stored how long? |
+| Identity | Managed identity (Entra)? Service account? OAuth grant? |
+| Modification governance | Who can change this harness? What approval is required? |
+
+**MCP governance tooling landscape (as of June 2026):**
+
+Three concrete options exist for implementing the registry + monitoring layer:
+
+| Tool | Type | Best for |
+|---|---|---|
+| **Docker MCP Toolbox** | Open source | Developer-led governance; MCP server packaging and distribution; lowest adoption friction |
+| **Noma** | Commercial | Enterprise harness monitoring + policy enforcement; designed for EA/security ownership; aligns with intent-setting governance model |
+| **Microsoft Agent 365** | Microsoft-stack | Belron tenants already on M365; native Entra integration; preferred if single-tenant strategy is in place |
+
+**The harness recursion problem in multi-agent systems:**
+When Agent A's harness includes Agent B as a tool, Agent B has its own harness. A2A delegation must respect both harnesses — Agent B cannot be instructed to exceed its own constraints, even by a trusted Agent A. This must be a design requirement in any multi-agent architecture.
+
+**Evidence:**
+- [[braindump-2026-06-11-0938-harnesses-agentic-ai]] — "The harness is the right unit of governance. Not the model. Not the tool. Not the agent."
+- [[05-knowledge/consolidated/harness-design-standard-framework]] — Full framework for harness design standards
+- [[weekly-checkin-2026-06-07]] — MCP tooling landscape: Docker (open), Noma (commercial), Agent 365 (Microsoft-stack)
+- [[daily-brief-2026-06-09]] — Claude Managed Agents: cron scheduling + credential vaults = Anthropic building harness infrastructure into platform layer
+
+**How to apply:** When reviewing any agentic AI use case, lead with harness evaluation — not model benchmarking. When briefing stakeholders on AI governance, use "agent operating model" as the business-facing term for harness. See [[harness-design-standard-framework]] for the full standard.
+
+**Confidence:** High — concept well-evidenced across multiple parallel sources
+
+---
+
+### Principle 9: Semantic Governance Is the Missing Layer in AI Governance
+
+**Statement:** Enterprise AI governance currently addresses toolchain security, access control, and deployment standards. It does not govern *meaning* — what the data returned by agents and tools actually means. Without a shared semantic layer (controlled vocabulary, ontology, shared business definitions), separate AI agents running in parallel create "parallel realities" — each agent independently interprets the same business term and arrives at different answers.
+
+**The parallel realities risk at Belron:**
+Belron runs 30+ opcos, each with their own definitions of core business objects: job, customer, technician, SLA, case closed, escalation, calibration. As AI agents are deployed across opcos — or at group level pulling from multiple opcos — semantic inconsistency produces divergent outputs that are each internally defensible. That is harder to detect than a data error.
+
+**Architecture standard: Evaluate with explicit rules, not LLM inference.**
+The evaluate stage of any agent pipeline (routing decisions, case classification, SLA determination) should use explicit ontology-driven logic, not LLM reasoning. This produces auditable, consistent, non-deterministic outputs — critical for EU AI Act compliance and insurance-grade decision audit trails.
+
+**Connection to MCP Governance:**
+MCP tools expose data to agents. If those tools return data without semantic context (e.g., `job_status: 3` with no ontology), each agent interprets it independently. Semantic governance is the upstream dependency for meaningful MCP tool output. MCP Governance scope should explicitly include: "What does the data returned by MCP tools mean?"
+
+**Evidence:**
+- [[braindump-2026-05-21-1700-semantic-layer-governance-newman]] — Newman: "separate AI agents running in parallel create parallel realities — each agent independently interprets the same business term"
+- [[braindump-2026-05-20-1352-copilot-365-notebooks-data-placement]] — Copilot agents across BizChat, Loop, Teams each operating in different data contexts without shared semantic layer
+- [[braindump-2026-05-30-0958-agentforce-contact-center-belron-fit]] — CCOTF: "escalation", "resolution", "customer satisfaction" will be interpreted differently by multiple systems without semantic governance
+
+**Practical entry point:**
+A lightweight enterprise ontology covering the 20–30 core business objects that appear across multiple agent use cases (job, customer, technician, SLA, case, resolution, escalation, calibration, booking, damage, claim) would be the minimum viable semantic governance artefact. This can be owned by the CDO or Data Governance lead, not IT. EA should propose it; a data governance body should own it.
+
+**Confidence:** High on the problem; Medium on the Belron-specific state (unknown whether any existing enterprise ontology work is underway)
+
+---
+
 ## Related Frameworks
 
 - [[ea-effectiveness-framework]] — Principle 2: The MCP/A2A briefing is a dual-purpose artefact (governance tool + visibility instrument)
 - [[belron-business-understanding-framework]] — Layer 4 (Systems Landscape) identifies which systems are MCP server candidates
 - [[ai-damage-assessment-strategy-framework]] — The damage assessment workflow is a candidate A2A multi-agent pipeline
+- [[harness-design-standard-framework]] — The harness as the unit of governance (Principle 8 detail)
 
 ---
 
@@ -403,4 +496,4 @@ The week produced the sharpest evidence yet that the governance gap is real and 
 
 ---
 
-*Consolidated from 16 sources | First version: April 10, 2026 | Last updated: April 20, 2026 | Status: Working*
+*Consolidated from 37 sources | First version: April 10, 2026 | Last updated: June 14, 2026 | Status: Working (Principles 1–7 solid; Principles 8–9 Emerging)*
