@@ -140,7 +140,7 @@ The 2M token context window is the standout figure. For the damage assessment us
 - [ ] Update AI advocacy talking points: lead with Opus 4.8 + Sonnet 4.6 (unaffected), acknowledge Fable 5 export controls accurately. Prepare one-liner for "can Belron use Claude?" 📅 2026-06-16
 - [ ] Add Ramp AI Index adoption crossover stat to your Claude evidence pack (34.44% US business adoption, overtaking OpenAI) 📅 2026-06-16
 - [ ] Once Gemini 3.5 Pro hits GA, set up a benchmark test with your PoC image set — focus "Deep Think" mode on edge-case damage ambiguity, not just raw classification 📅 2026-06-21
-- [ ] Create slides for Team meeting 📅 2026-06-15 #planner
+- [ ] Create slides for Team meeting 📅 2026-06-15 #synced
 
 ### Research Needed
 - Monitor whether the US export control directive is extended, reversed, or escalated — this directly determines whether the flagship Claude models become available to Belron again
