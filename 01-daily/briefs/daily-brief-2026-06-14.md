@@ -7,6 +7,8 @@ sources_verified: true
 news_age_verified: true
 confidence: "high"
 tags: ["#daily-brief", "#news", "#strategic-intelligence"]
+sharepoint_published_at: "2026-06-14 13:41"
+sharepoint_filename: "daily-brief-14-june-2026-2026-06-14.pdf"
 interests: ["Anthropic Claude", "AI export controls", "foundation models", "Belron IPO", "Gemini", "MCP governance"]
 projects_referenced: ["AI Damage Assessment PoC", "MCP Governance"]
 items_count: 4

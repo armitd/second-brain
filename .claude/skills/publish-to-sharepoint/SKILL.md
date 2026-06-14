@@ -97,12 +97,12 @@ Wait for explicit confirmation. If no, stop.
 
 ### Step 7: Convert to PDF
 
-Run `md-to-pdf` with the source file:
+`md-to-pdf` writes the PDF next to the source file. To keep the vault clean, copy the source to `/tmp` first, convert there, then move the PDF to OneDrive:
 
 ```bash
-md-to-pdf "[full path to source .md file]" \
-  --dest /tmp/cog-publish/ \
-  --highlight-style github
+mkdir -p /tmp/cog-publish
+cp "[full path to source .md file]" /tmp/cog-publish/[source-filename].md
+cd /tmp/cog-publish && md-to-pdf [source-filename].md --highlight-style github
 ```
 
 This creates `/tmp/cog-publish/[source-filename].pdf`.
@@ -116,7 +116,6 @@ If the command fails, report the error output to the user and stop.
 
 ### Step 8: Copy to Drop Folder
 
-Copy to OneDrive with the derived filename:
 ```bash
 cp /tmp/cog-publish/[source-filename].pdf \
    ~/Library/CloudStorage/OneDrive-BelronGlobal/COG-Publish/[output-filename].pdf
