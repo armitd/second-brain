@@ -11,6 +11,6 @@ Quick-capture tasks not yet assigned to a project. Tag with `#planner` to sync t
 
 - [ ] Summarise AI Summit content 📅 2026-06-15 #synced
 - [ ] Slides for team meeting on MCP / Agentic Architecture 📅 2026-06-15 #synced
-- [ ] Post counselling wash-up — Gary Baker #planner
+- [ ] Post counselling wash-up — Gary Baker #synced
 - [ ] Replace gas cylinder on Aeron Chair
 - [ ] Look at headrest options for Aeron Chair
