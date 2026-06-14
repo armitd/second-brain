@@ -1,45 +1,72 @@
 ---
 type: "integration-guide"
 created: "2026-06-14"
-integration: "COG → Microsoft Planner via Power Automate"
+integration: "COG → Microsoft Planner via OneDrive file drop"
 skill: "sync-tasks"
-tags: ["#integration", "#power-automate", "#planner", "#tasks"]
+tags: ["#integration", "#power-automate", "#planner", "#tasks", "#onedrive"]
 ---
 
 # COG → Planner Sync: Power Automate Setup Guide
 
-One-time setup. Takes ~15 minutes. Once done, `/sync-tasks` just works.
+**Approach:** COG writes a JSON file to OneDrive. PA watches the folder, reads the file, creates Planner tasks, deletes the file.
+**PA licence required:** Standard (free connectors only — OneDrive + Planner)
+**Setup time:** ~15 minutes
 
 ---
 
 ## Before You Start
 
-You need:
-- [ ] Your personal Planner plan already created
-- [ ] The five buckets created in that plan: **Inbox**, **AI Damage Assessment**, **MCP Governance**, **Contact Centre**, **Personal**
-- [ ] Power Automate access (you already have this)
-- [ ] Your Planner Plan ID — get this from the Planner URL when viewing your plan: `https://tasks.office.com/.../#/taskboard/planid/**[THIS PART]**`
+- [ ] Five buckets created in your personal Planner plan: **Inbox**, **AI Damage Assessment**, **MCP Governance**, **Contact Centre**, **Personal**
+- [ ] OneDrive for Business (BelronGlobal) installed and syncing on your Mac
+- [ ] The `COG-Tasks` folder already created in your OneDrive (done automatically when the skill was set up)
+- [ ] Your Planner Plan ID — get this from the URL when viewing your plan in Planner: `https://tasks.office.com/.../#/taskboard/planid/[COPY THIS PART]`
 
 ---
 
 ## Step 1: Create the Flow
 
-1. Go to **make.powerautomate.com**
-2. Click **+ Create** → **Instant cloud flow**
+1. Go to **make.powerautomate.com** (sign in with your Belron account)
+2. Click **+ Create** → **Automated cloud flow**
 3. Name it: `COG Task Sync`
-4. Choose trigger: **When an HTTP request is received**
+4. Search for trigger: **"When a file is created"** (OneDrive for Business)
 5. Click **Create**
 
 ---
 
-## Step 2: Configure the HTTP Trigger
+## Step 2: Configure the Trigger
 
-Click the trigger step and paste this into the **Request Body JSON Schema** field:
+In the **"When a file is created"** trigger:
+
+- **Folder**: Browse to and select `/COG-Tasks`
+
+---
+
+## Step 3: Get File Content
+
+Click **+ New step** → search **OneDrive for Business** → **Get file content**.
+
+Configure:
+- **File**: select `Id` from the trigger dynamic content
+
+Rename this step: `Get file content`
+
+---
+
+## Step 4: Parse the JSON
+
+Click **+ New step** → search **Data Operation** → **Parse JSON**.
+
+Configure:
+- **Content**: select `File content` from the **Get file content** step
+- **Schema**: paste this:
 
 ```json
 {
   "type": "object",
   "properties": {
+    "sent_at": {
+      "type": "string"
+    },
     "tasks": {
       "type": "array",
       "items": {
@@ -64,116 +91,135 @@ Click the trigger step and paste this into the **Request Body JSON Schema** fiel
 }
 ```
 
-**Save the flow** — the HTTP POST URL will appear. Copy it — you'll need it in Step 5.
+Rename this step: `Parse task JSON`
 
 ---
 
-## Step 3: Add "List buckets" Action
+## Step 5: List Planner Buckets
 
-Click **+ New step** → search for **Planner** → select **List buckets (V3)**.
+Click **+ New step** → search **Planner** → **List buckets (V3)**.
 
 Configure:
 - **Plan ID**: paste your Planner Plan ID
 
-This retrieves the bucket list so the flow can match bucket names to IDs dynamically. You won't need to hardcode bucket IDs.
+This runs once per file and fetches all bucket IDs so the loop can match by name.
+
+Rename this step: `List buckets`
 
 ---
 
-## Step 4: Add "Apply to each" Loop
+## Step 6: Add "Apply to each" Loop
 
-Click **+ New step** → search for **Control** → select **Apply to each**.
+Click **+ New step** → **Control** → **Apply to each**.
 
-In the **Select an output from previous steps** field, use the dynamic content picker to select:
-- `tasks` (from the HTTP trigger body)
+- **Select output from previous steps**: select `tasks` from the **Parse task JSON** dynamic content
 
-Inside the loop, add the following steps:
+Rename this step: `For each task`
+
+Inside the loop, add these three steps:
 
 ---
 
-### Step 4a: Filter Bucket by Name
+### Step 6a: Filter Bucket by Name
 
-Inside the Apply to each, click **+ Add an action** → **Data Operation** → **Filter array**.
+Inside the loop → **+ Add an action** → **Data Operation** → **Filter array**.
 
 Configure:
-- **From**: select `value` from the **List buckets** output
-- **Filter**: `name` **is equal to** → then select `bucket` from dynamic content (from the HTTP trigger's current item)
+- **From**: select `value` from the **List buckets** step
+- **Filter row**: click into the left field → select `name` from **List buckets** dynamic content
+- **is equal to**
+- Right field: select `bucket` from **Parse task JSON** (current item)
 
-Rename this step: `Filter bucket by name`
+Rename: `Filter bucket by name`
 
 ---
 
-### Step 4b: Create the Planner Task
+### Step 6b: Create Planner Task
 
-Add another action inside the loop: **Planner** → **Create a task (V3)**.
+Inside the loop → **+ Add an action** → **Planner** → **Create a task (V3)**.
 
 Configure:
 - **Plan ID**: your Planner Plan ID
-- **Title**: select `title` from the HTTP trigger dynamic content (current item)
-- **Bucket ID**: `first(body('Filter_bucket_by_name'))?['id']`
-  *(Type this expression manually using the Expression tab)*
-- **Due date/time**: Use this expression:
-  `if(empty(items('Apply_to_each')?['due_date']), null, concat(items('Apply_to_each')?['due_date'], 'T12:00:00Z'))`
-  *(This sets noon UTC on the due date, or leaves it blank if no date was provided)*
+- **Title**: select `title` from **Parse task JSON** (current item)
+- **Bucket ID**: click the Expression tab and enter:
+  ```
+  first(body('Filter_bucket_by_name'))?['id']
+  ```
+- **Due date/time**: click Expression tab and enter:
+  ```
+  if(empty(items('For_each_task')?['due_date']), null, concat(items('For_each_task')?['due_date'], 'T12:00:00Z'))
+  ```
 
-Rename this step: `Create Planner task`
+Rename: `Create Planner task`
 
 ---
 
-### Step 4c: Add Notes to the Task
+### Step 6c: Add Notes
 
-Add another action inside the loop: **Planner** → **Update task details (V3)**.
+Inside the loop → **+ Add an action** → **Planner** → **Update task details (V3)**.
 
 Configure:
-- **Task ID**: select `id` from the **Create Planner task** output
-- **Description**: select `notes` from the HTTP trigger dynamic content (current item)
+- **Task ID**: select `id` from **Create Planner task**
+- **Description**: select `notes` from **Parse task JSON** (current item)
 
-Rename this step: `Add task notes`
-
----
-
-## Step 5: Save and Get the Webhook URL
-
-1. Click **Save** (top right)
-2. Click back on the **HTTP trigger** step
-3. Copy the **HTTP POST URL** — it looks like:
-   `https://prod-xx.westeurope.logic.azure.com:443/workflows/abc123.../triggers/manual/paths/invoke?api-version=...`
+Rename: `Add task notes`
 
 ---
 
-## Step 6: Add the Webhook URL to COG
+## Step 7: Delete the Processed File
 
-Open `00-inbox/MY-INTEGRATIONS.md` and add to the Active section:
+After the loop (outside it) → **+ New step** → **OneDrive for Business** → **Delete file**.
 
-```markdown
-**Microsoft 365 — Planner Task Sync**
-- planner-webhook-url: https://prod-xx.westeurope.logic.azure.com/...
-- plan-name: [your plan name]
-- buckets: Inbox, AI Damage Assessment, MCP Governance, Contact Centre, Personal
+Configure:
+- **File**: select `Id` from the trigger dynamic content
+
+Rename: `Delete processed file`
+
+---
+
+## Step 8: Save the Flow
+
+Click **Save**. The flow is now active and watching the COG-Tasks folder.
+
+---
+
+## Step 9: Test It
+
+1. Copy this JSON and save it as `test.json` anywhere on your Mac
+2. Move or copy it into `~/Library/CloudStorage/OneDrive-BelronGlobal/COG-Tasks/`
+3. Wait ~1–2 minutes
+4. Check Planner — a task "COG sync test" should appear in the Inbox bucket
+5. The file should disappear from COG-Tasks (PA deleted it)
+
+```json
+{
+  "sent_at": "2026-06-14T12:00:00",
+  "tasks": [
+    {
+      "title": "COG sync test",
+      "due_date": "2026-06-21",
+      "bucket": "Inbox",
+      "notes": "Test task — delete me"
+    }
+  ]
+}
 ```
 
 ---
 
-## Step 7: Test It
+## Flow Summary
 
-Run this in terminal to verify the flow works end-to-end:
-
-```bash
-curl -s -X POST \
-  -H "Content-Type: application/json" \
-  -d '{
-    "tasks": [
-      {
-        "title": "COG sync test task",
-        "due_date": "2026-06-21",
-        "bucket": "Inbox",
-        "notes": "Test from COG sync-tasks skill"
-      }
-    ]
-  }' \
-  'YOUR_WEBHOOK_URL_HERE'
 ```
-
-Check Planner — a task called "COG sync test task" should appear in the Inbox bucket. Delete it once confirmed.
+Trigger: File created in OneDrive /COG-Tasks
+  └── Get file content
+  └── Parse task JSON
+  └── List Planner buckets
+  └── For each task:
+        └── Filter bucket by name → get bucket ID
+        └── Create Planner task (title, bucket, due date)
+        └── Update task details (add source notes)
+  └── Delete processed file
+```
 
 ---
 
@@ -181,25 +227,12 @@ Check Planner — a task called "COG sync test task" should appear in the Inbox 
 
 | Symptom | Likely cause | Fix |
 |---|---|---|
-| 400 Bad Request | JSON schema mismatch | Check the payload matches the schema exactly |
-| Task created but wrong bucket | Bucket name mismatch | Check bucket names in Planner exactly match: Inbox, AI Damage Assessment, MCP Governance, Contact Centre, Personal |
-| Due date missing in Planner | Date format issue | Ensure skill sends `YYYY-MM-DD` format |
-| Flow not triggering | Webhook URL expired | Re-save the PA flow, copy the new URL |
-| No task notes appearing | Update task details step failing | Check the Task ID expression in Step 4c |
+| File sits in COG-Tasks unprocessed | PA flow not triggered | Check flow is turned on; OneDrive trigger can take 1–3 min |
+| Task created but wrong bucket | Bucket name mismatch | Confirm bucket names in Planner exactly match: `Inbox`, `AI Damage Assessment`, `MCP Governance`, `Contact Centre`, `Personal` |
+| Task created with no due date | `due_date` field empty | Expected — task created without a due date |
+| File not deleted after processing | Delete step failed | Check Delete file step is outside (after) the Apply to each loop |
+| Flow run history shows error | Expression syntax | Check the bucket ID and due date expressions in Steps 6b |
 
 ---
 
-## Flow Summary (Quick Reference)
-
-```
-Trigger: HTTP POST (JSON)
-  └── List Planner buckets
-  └── Apply to each task:
-        └── Filter bucket array by name
-        └── Create Planner task (title, bucket ID, due date)
-        └── Update task details (add notes/source)
-```
-
----
-
-*Set up: 2026-06-14 | Skill: /sync-tasks | See .claude/skills/sync-tasks/SKILL.md*
+*Set up: 2026-06-14 | Skill: /sync-tasks | Drop folder: ~/Library/CloudStorage/OneDrive-BelronGlobal/COG-Tasks/*

@@ -1,6 +1,6 @@
 ---
 name: sync-tasks
-description: Sync open tasks from the COG vault to Microsoft Planner via Power Automate webhook
+description: Sync open tasks from the COG vault to Microsoft Planner via OneDrive file drop
 roles: [all]
 integrations: ["microsoft-365-planner"]
 ---
@@ -8,109 +8,112 @@ integrations: ["microsoft-365-planner"]
 # COG Sync Tasks Skill
 
 ## Purpose
-Send open tasks from the COG vault to Microsoft Planner via a Power Automate webhook. Two modes: batch sync all tasks tagged `#planner`, or interactively pick individual tasks to send.
+Send open tasks from the COG vault to Microsoft Planner. The skill writes a JSON file to a OneDrive folder; a Power Automate flow picks it up, creates the Planner tasks, and deletes the file. No premium PA licence required.
 
 ## When to Invoke
 - User types `/sync-tasks` — batch sync all `#planner` tagged tasks
 - User types `/sync-tasks pick` — interactive picker from recent vault files
-- User says "sync tasks to Planner", "send tasks to O365", "push tasks"
+- User says "sync tasks to Planner", "send tasks to O365", "push tasks to Planner"
 
 ## Tagging Convention
 
-Tasks are marked for sync by adding `#planner` to the task line:
+Mark any task for sync by adding `#planner` to the task line:
 
 ```
 - [ ] Request Microsoft Agent 365 demo 📅 2026-06-20 #planner
 - [ ] Review MCP governance framework draft 📅 2026-06-18 #planner
 ```
 
-Tasks without `#planner` are never touched by this skill. Tasks already synced are marked `#synced` by the skill after a successful push.
+Tasks without `#planner` are never touched. Successfully synced tasks are marked `#synced` to prevent re-sending.
+
+## Drop Folder
+
+All task files are written to:
+```
+~/Library/CloudStorage/OneDrive-BelronGlobal/COG-Tasks/
+```
+
+File naming: `cog-tasks-YYYY-MM-DD-HHMM.json`
+
+Power Automate watches this folder and processes files as they arrive.
+
+---
 
 ## Pre-Flight Check
 
-### 1. Get Webhook URL
+Run `date '+%Y-%m-%d %H:%M'` to get the current timestamp.
 
-Read `00-inbox/MY-INTEGRATIONS.md` and find the `planner-webhook-url` under the Microsoft 365 / Power Automate section.
-
-If not found:
+Confirm the drop folder exists:
+```bash
+ls ~/Library/CloudStorage/OneDrive-BelronGlobal/COG-Tasks/
 ```
-No Planner webhook URL configured.
 
-Add the following to the Microsoft 365 section of 00-inbox/MY-INTEGRATIONS.md:
-
-**Microsoft 365 — Planner Sync**
-- planner-webhook-url: https://prod-xx.westeurope.logic.azure.com/...
-
-See 05-knowledge/integrations/sync-tasks-pa-flow.md for setup instructions.
+If it doesn't exist, create it:
+```bash
+mkdir -p ~/Library/CloudStorage/OneDrive-BelronGlobal/COG-Tasks/
 ```
-Stop.
-
-### 2. Get Current Date
-
-Run `date '+%Y-%m-%d'` to get today's date for reporting.
 
 ---
 
 ## Mode 1: Batch Sync (default — `/sync-tasks`)
 
-### Step 1: Scan the Vault for Tagged Tasks
+### Step 1: Scan for Tagged Tasks
 
-Use Bash to find all files containing `#planner`:
+Search the vault for all files containing `#planner`:
 
 ```bash
 grep -rl "#planner" \
-  "/path/to/vault/01-daily" \
-  "/path/to/vault/02-personal" \
-  "/path/to/vault/03-professional" \
-  "/path/to/vault/04-projects" \
-  "/path/to/vault/00-inbox" \
+  "/Users/darrenarmitage/Library/Mobile Documents/iCloud~md~obsidian/Documents/Second Brain/01-daily" \
+  "/Users/darrenarmitage/Library/Mobile Documents/iCloud~md~obsidian/Documents/Second Brain/02-personal" \
+  "/Users/darrenarmitage/Library/Mobile Documents/iCloud~md~obsidian/Documents/Second Brain/03-professional" \
+  "/Users/darrenarmitage/Library/Mobile Documents/iCloud~md~obsidian/Documents/Second Brain/04-projects" \
+  "/Users/darrenarmitage/Library/Mobile Documents/iCloud~md~obsidian/Documents/Second Brain/00-inbox" \
   2>/dev/null
 ```
 
-For each file found, read it and extract lines matching:
+For each matching file, read it and extract lines matching the pattern:
 ```
-- [ ] <task text> [optional 📅 YYYY-MM-DD] #planner
+- [ ] <task text> [📅 YYYY-MM-DD] #planner
 ```
 
-Extract per task:
-- **title**: the task text (strip the `- [ ]` prefix, the `📅 YYYY-MM-DD` date, and the `#planner` tag)
-- **due_date**: the `📅` date if present, otherwise null
-- **source_file**: the file path
-- **bucket**: determined by bucket routing rules (see below)
+Per task, extract:
+- **title**: task text only — strip `- [ ]`, the `📅 YYYY-MM-DD` date token, and the `#planner` tag. Trim whitespace.
+- **due_date**: the `📅` date if present (`YYYY-MM-DD`), otherwise omit the field
+- **source_file**: relative vault path (for notes)
+- **bucket**: from bucket routing rules below
 
 If no `#planner` tasks found:
 ```
 No tasks tagged #planner found in the vault.
 
-To mark a task for sync, add #planner to any task line:
+Tag any task to mark it for sync:
   - [ ] Your task 📅 2026-06-20 #planner
 ```
 Stop.
 
-### Step 2: Show Summary Before Sending
-
-Display the tasks about to be synced:
+### Step 2: Show Summary and Confirm
 
 ```
-Found N tasks to sync to Planner:
+Found N task(s) to sync to Planner:
 
   1. [Inbox] Request Microsoft Agent 365 demo — due 2026-06-20
      Source: 01-daily/briefs/daily-brief-2026-06-14.md
 
   2. [MCP Governance] Review framework draft — due 2026-06-18
-     Source: 04-projects/mcp-governance/planning/...
+     Source: 04-projects/mcp-governance/...
 
-Send these N tasks to Planner? (yes/no)
+Send to Planner? (yes/no)
 ```
 
-Wait for confirmation before proceeding.
+Wait for confirmation.
 
-### Step 3: POST to Power Automate Webhook
+### Step 3: Write JSON Drop File
 
-Send a single HTTP POST to the webhook URL with this JSON payload:
+Write the following JSON to `~/Library/CloudStorage/OneDrive-BelronGlobal/COG-Tasks/cog-tasks-YYYY-MM-DD-HHMM.json`:
 
 ```json
 {
+  "sent_at": "2026-06-14T14:30:00",
   "tasks": [
     {
       "title": "Request Microsoft Agent 365 demo",
@@ -122,70 +125,58 @@ Send a single HTTP POST to the webhook URL with this JSON payload:
       "title": "Review MCP governance framework draft",
       "due_date": "2026-06-18",
       "bucket": "MCP Governance",
-      "notes": "Source: 04-projects/mcp-governance/planning/..."
+      "notes": "Source: 04-projects/mcp-governance/..."
     }
   ]
 }
 ```
 
-Use Bash with curl:
+Use `sent_at` with the timestamp from the `date` command.
+
+Verify the file was written:
 ```bash
-curl -s -o /tmp/pa_response.json -w "%{http_code}" \
-  -X POST \
-  -H "Content-Type: application/json" \
-  -d '<JSON payload>' \
-  '<webhook URL>'
+ls -la ~/Library/CloudStorage/OneDrive-BelronGlobal/COG-Tasks/
 ```
 
-### Step 4: Handle Response
+### Step 4: Mark Tasks as Synced
 
-- **HTTP 200 or 202:** Success → proceed to Step 5
-- **HTTP 400:** Bad request — report the response body, do not mark tasks as synced
-- **HTTP 4xx/5xx or curl failure:** Report the error, do not mark tasks as synced
-
-### Step 5: Mark Tasks as Synced
-
-For each successfully synced task, edit the source file to replace `#planner` with `#synced` on that task line:
+For each successfully written task, edit the source file and replace `#planner` with `#synced` on that task line:
 
 ```
 BEFORE: - [ ] Request Microsoft Agent 365 demo 📅 2026-06-20 #planner
 AFTER:  - [ ] Request Microsoft Agent 365 demo 📅 2026-06-20 #synced
 ```
 
-This prevents the task from being re-sent on the next sync run.
-
-### Step 6: Confirm Completion
+### Step 5: Confirm
 
 ```
-✅ N tasks synced to Planner.
+✅ N task(s) written to OneDrive — Power Automate will create them in Planner shortly.
 
   → [Inbox] Request Microsoft Agent 365 demo — due 2026-06-20
   → [MCP Governance] Review framework draft — due 2026-06-18
 
-Tasks marked #synced in source files.
+Tasks marked #synced in source files. Check Planner in ~1–2 minutes.
 ```
 
 ---
 
 ## Mode 2: Interactive Pick (`/sync-tasks pick`)
 
-### Step 1: Scan Recent Files for Open Tasks
+### Step 1: Scan Recent Files
 
-Find all vault files modified in the last 14 days:
+Find all vault markdown files modified in the last 14 days:
 
 ```bash
-find "/path/to/vault/01-daily" \
-     "/path/to/vault/02-personal" \
-     "/path/to/vault/03-professional" \
-     "/path/to/vault/04-projects" \
-     -name "*.md" -newer "/path/to/vault/.claude/settings.json" \
-     -not -path "*/.git/*" \
-     2>/dev/null | head -50
+find \
+  "/Users/darrenarmitage/Library/Mobile Documents/iCloud~md~obsidian/Documents/Second Brain/01-daily" \
+  "/Users/darrenarmitage/Library/Mobile Documents/iCloud~md~obsidian/Documents/Second Brain/02-personal" \
+  "/Users/darrenarmitage/Library/Mobile Documents/iCloud~md~obsidian/Documents/Second Brain/03-professional" \
+  "/Users/darrenarmitage/Library/Mobile Documents/iCloud~md~obsidian/Documents/Second Brain/04-projects" \
+  -name "*.md" -mtime -14 -not -path "*/.git/*" \
+  2>/dev/null
 ```
 
-Actually use `find ... -mtime -14` to get files modified in last 14 days.
-
-Read each file and extract ALL open tasks (`- [ ]` lines), regardless of `#planner` tag. Exclude tasks already marked `#synced`.
+Read each file and extract all open tasks (`- [ ]` lines). Exclude any already marked `#synced`.
 
 ### Step 2: Present Numbered List
 
@@ -196,37 +187,31 @@ Open tasks from the last 14 days — pick which to send to Planner.
      daily-brief-2026-06-14.md
 
   2. [MCP Governance] Add Composio to vendor landscape — due 2026-06-14
-     mcp-governance/braindumps/braindump-2026-06-13...md
+     braindump-2026-06-13-1517-composio.md
 
-  3. [AI Damage Assessment] Run benchmark test once Gemini 3.5 Pro hits GA — due 2026-06-21
+  3. [AI Damage Assessment] Run benchmark once Gemini 3.5 Pro hits GA — due 2026-06-21
      daily-brief-2026-06-14.md
 
-  4. [Inbox] Update AI advocacy talking points re: export controls — due 2026-06-16
-     daily-brief-2026-06-14.md
-
-Enter task numbers to send (e.g. 1,3 or all), or 'cancel':
+Enter task numbers to send (e.g. 1,3 or all), or cancel:
 ```
 
 ### Step 3: Process Selection
 
-Wait for user response:
 - `1,3` → send tasks 1 and 3
 - `all` → send all listed tasks
-- `cancel` or `none` → abort
+- `cancel` → abort
 
-For each selected task, determine bucket using routing rules (below). If the bucket is ambiguous (e.g. a mixed file), ask: "Which bucket for '[task title]'? (Inbox / AI Damage Assessment / MCP Governance / Contact Centre / Personal)"
+For picked tasks, determine bucket from routing rules. If source file path is ambiguous, ask: *"Which bucket? Inbox / AI Damage Assessment / MCP Governance / Contact Centre / Personal"*
 
-### Step 4: POST and Confirm
+### Step 4: Write, Confirm
 
-Same as Mode 1 Steps 3–6 above. In pick mode, do **not** modify the source files (the user didn't tag them, so don't mark them `#synced` unless they explicitly added `#planner` — just send them).
+Same as Mode 1 Steps 3–5. In pick mode, do **not** mark source files `#synced` — the user didn't tag them and may want to pick them again later.
 
 ---
 
 ## Bucket Routing Rules
 
-Determine the target Planner bucket from the source file path:
-
-| File path contains | Bucket |
+| File path contains | Planner bucket |
 |---|---|
 | `04-projects/ai-damage-assessment` | `AI Damage Assessment` |
 | `04-projects/mcp-governance` | `MCP Governance` |
@@ -242,24 +227,29 @@ Determine the target Planner bucket from the source file path:
 
 ---
 
-## JSON Payload Schema
-
-The webhook expects this exact structure:
+## JSON Schema (for PA flow reference)
 
 ```json
 {
-  "tasks": [
-    {
-      "title": "string — task text, clean (no markdown, no emoji dates, no tags)",
-      "due_date": "string — YYYY-MM-DD, or omit if no due date",
-      "bucket": "string — one of: Inbox, AI Damage Assessment, MCP Governance, Contact Centre, Personal",
-      "notes": "string — source file path for traceability"
+  "type": "object",
+  "properties": {
+    "sent_at": { "type": "string" },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title":    { "type": "string" },
+          "due_date": { "type": "string", "description": "YYYY-MM-DD" },
+          "bucket":   { "type": "string" },
+          "notes":    { "type": "string" }
+        },
+        "required": ["title", "bucket"]
+      }
     }
-  ]
+  }
 }
 ```
-
-`title` is required. All other fields are optional but should be included when available.
 
 ---
 
@@ -267,19 +257,17 @@ The webhook expects this exact structure:
 
 | Situation | Response |
 |---|---|
-| Webhook URL not configured | Stop, show setup instructions |
-| No `#planner` tasks found (batch mode) | Stop, show tagging instructions |
-| curl fails (network) | Report error, do not modify source files |
-| PA returns 4xx/5xx | Report error body, do not modify source files |
-| PA returns 200/202 but no body | Treat as success |
-| Source file not writable | Report which files couldn't be updated, but count the sync as successful |
+| Drop folder missing | Create it with `mkdir -p`, then proceed |
+| No `#planner` tasks found | Stop, show tagging instructions |
+| File write fails | Report error, do not modify source files |
+| Old files still in COG-Tasks folder | Warn: "N file(s) already in drop folder — PA may not have processed them yet. Check Planner before syncing again." |
 
 ---
 
 ## Notes
 
-- The `#synced` tag prevents double-sending. Do not remove it manually unless you want the task re-sent.
-- Completed tasks (`- [x]`) are never synced, even if they have `#planner`.
-- The skill does not update or delete tasks already in Planner — it only creates new ones.
-- Task completion in Planner does not flow back to the vault (one-way sync only).
-- See `05-knowledge/integrations/sync-tasks-pa-flow.md` for the Power Automate flow setup guide.
+- PA typically processes the file within 1–2 minutes of it appearing in OneDrive.
+- The `#synced` tag prevents double-sending. Do not remove it unless you want the task re-sent.
+- Completed tasks (`- [x]`) are never included, even if tagged `#planner`.
+- The skill does not update or delete tasks already in Planner — one-way, create only.
+- See `05-knowledge/integrations/sync-tasks-pa-flow.md` for the PA flow setup guide.
