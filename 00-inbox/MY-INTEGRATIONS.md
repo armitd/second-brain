@@ -33,6 +33,13 @@ tags: ["#integrations", "#config", "#cog"]
 - No API needed — read directly from vault files
 
 
+**SharePoint — Document Publishing**
+- method: OneDrive file drop (free PA connectors — OneDrive + SharePoint)
+- drop-folder: `~/Library/CloudStorage/OneDrive-BelronGlobal/COG-Publish/`
+- staging-site: *(paste your SharePoint site URL here)*
+- target-folder: *(e.g. /Documents/COG)*
+- setup-guide: [[05-knowledge/integrations/publish-to-sharepoint-pa-flow]]
+
 **Microsoft To Do — Task Sync**
 - method: OneDrive file drop (free PA connectors — OneDrive + Microsoft To Do Business)
 - drop-folder: `~/Library/CloudStorage/OneDrive-BelronGlobal/COG-Tasks/`
