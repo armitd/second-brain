@@ -6,7 +6,9 @@ date: "2026-06-04"
 created: "2026-06-04 17:10"
 themes: ["MCP reference architecture", "simplified diagram", "communication artefact", "governance"]
 tags: ["#braindump", "#raw-thoughts", "#mcp-governance", "#architecture", "#diagram"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-06-14]]"
+consolidated_date: "2026-06-14"
 energy_level: "medium"
 emotional_tone: "purposeful"
 confidence: "high"

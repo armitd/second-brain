@@ -5,7 +5,9 @@ date: "2026-06-04"
 created: "2026-06-04 15:16"
 themes: ["enterprise architecture", "architecture operating model", "EA SA TA split", "best practice proposal"]
 tags: ["#braindump", "#raw-thoughts", "#professional", "#enterprise-architecture", "#operating-model"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-06-14]]"
+consolidated_date: "2026-06-14"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"

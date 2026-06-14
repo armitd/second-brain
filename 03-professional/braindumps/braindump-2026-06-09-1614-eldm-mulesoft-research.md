@@ -5,7 +5,9 @@ date: "2026-06-09"
 created: "2026-06-09 16:14"
 themes: ["ELDM", "MuleSoft", "data-architecture", "integration"]
 tags: ["#braindump", "#raw-thoughts", "#professional", "#eldm", "#mulesoft", "#data-architecture", "#integration"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-06-14]]"
+consolidated_date: "2026-06-14"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "medium"

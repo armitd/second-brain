@@ -5,7 +5,9 @@ date: "2026-05-31"
 created: "2026-05-31"
 themes: ["business-capability-mapping", "enterprise-architecture", "application-rationalization", "EA-tooling", "heat-mapping"]
 tags: ["#braindump", "#enterprise-architecture", "#capability-mapping", "#application-rationalization", "#EA-strategy"]
-status: "raw"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-06-14]]"
+consolidated_date: "2026-06-14"
 source_notebooklm: "https://notebooklm.google.com/notebook/a2bc602e-331e-4cb6-b85c-120b4fb873c4"
 source_note: "Synthesised from 33-source NotebookLM notebook on Business Capability Mapping"
 energy_level: "high"

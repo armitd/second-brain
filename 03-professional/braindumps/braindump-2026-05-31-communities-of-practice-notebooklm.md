@@ -5,7 +5,9 @@ date: "2026-05-31"
 created: "2026-05-31"
 themes: ["communities-of-practice", "organisational-learning", "knowledge-management", "enterprise-strategy", "EA-enablement"]
 tags: ["#braindump", "#communities-of-practice", "#organisational-learning", "#knowledge-management", "#enterprise-architecture"]
-status: "raw"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-06-14]]"
+consolidated_date: "2026-06-14"
 source_notebooklm: "https://notebooklm.google.com/notebook/b04fbed1-1113-4a3e-a9fa-ca18eb1b4230"
 source_note: "Synthesised from NotebookLM notebook — source: 'Communities Of Practice Within And Across Organizations: A Guidebook'"
 energy_level: "high"
