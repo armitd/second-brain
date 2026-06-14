@@ -5,7 +5,9 @@ date: "2026-06-11"
 created: "2026-06-11 09:38"
 themes: ["agentic-ai", "harnesses", "governance", "mcp", "enterprise-architecture"]
 tags: ["#braindump", "#agentic-ai", "#harness", "#governance", "#mcp", "#enterprise-architecture"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-06-14]]"
+consolidated_date: "2026-06-14"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"
