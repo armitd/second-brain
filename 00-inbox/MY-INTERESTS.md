@@ -36,6 +36,7 @@ tags: ["#interests", "#daily-brief", "#config"]
 ## Preferred News Sources
 
 *No specific sources set. COG will search broadly for your topics. Add preferred sources here anytime.*
+https://thepromptfactory.substack.com/ 
 
 ## Notes
 *Add any additional context about your interests here.*
