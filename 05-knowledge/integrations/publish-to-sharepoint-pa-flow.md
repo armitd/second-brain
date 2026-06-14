@@ -8,7 +8,7 @@ tags: ["#integration", "#power-automate", "#sharepoint", "#publishing", "#onedri
 
 # COG → SharePoint Publish: Power Automate Setup Guide
 
-**Approach:** COG converts a vault document to HTML and drops it in OneDrive. PA watches the folder, uploads the file to SharePoint, and deletes it.
+**Approach:** COG converts a vault document to PDF and drops it in OneDrive. PA watches the folder, uploads the PDF to SharePoint, and deletes it.
 **PA licence required:** Standard (free connectors — OneDrive + SharePoint)
 **Setup time:** ~10 minutes
 
@@ -98,14 +98,13 @@ Three steps — the simplest PA flow in COG.
 
 ## Step 7: Test It
 
-1. Create a test HTML file:
-   ```html
-   <html><body><h1>COG publish test</h1><p>If you can see this, the flow works.</p></body></html>
-   ```
-2. Save as `cog-publish-test.html` and drop into `~/Library/CloudStorage/OneDrive-BelronGlobal/COG-Publish/`
+1. Run `/publish-to-sharepoint` in a COG session and point it at any vault document
+2. Confirm at the approval gate
 3. Wait ~1–2 minutes
-4. Check your SharePoint site — `cog-publish-test.html` should appear in the target folder
+4. Check your SharePoint site — the PDF should appear in the target folder
 5. The file should disappear from COG-Publish
+
+Alternatively, drop any PDF manually into `~/Library/CloudStorage/OneDrive-BelronGlobal/COG-Publish/` to test the PA flow independently.
 
 ---
 
