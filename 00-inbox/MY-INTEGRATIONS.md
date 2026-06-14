@@ -33,11 +33,10 @@ tags: ["#integrations", "#config", "#cog"]
 - No API needed — read directly from vault files
 
 
-**Microsoft 365 — Planner Task Sync**
-- method: OneDrive file drop (free PA connectors — no premium licence required)
+**Microsoft To Do — Task Sync**
+- method: OneDrive file drop (free PA connectors — OneDrive + Microsoft To Do Business)
 - drop-folder: `~/Library/CloudStorage/OneDrive-BelronGlobal/COG-Tasks/`
-- plan-name: *(your personal Planner plan name)*
-- buckets: Inbox, AI Damage Assessment, MCP Governance, Contact Centre, Personal
+- landing-list: COG (tasks land here, promote to Project plan manually via My Tasks)
 - setup-guide: [[05-knowledge/integrations/sync-tasks-pa-flow]]
 
 ## Disabled

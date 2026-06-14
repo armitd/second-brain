@@ -1,28 +1,26 @@
 ---
 type: "integration-guide"
 created: "2026-06-14"
-integration: "COG → Project for the web via OneDrive file drop"
+integration: "COG → Microsoft To Do via OneDrive file drop"
 skill: "sync-tasks"
-tags: ["#integration", "#power-automate", "#planner", "#project", "#tasks", "#onedrive"]
+tags: ["#integration", "#power-automate", "#todo", "#tasks", "#onedrive"]
 ---
 
-# COG → Planner Sync: Power Automate Setup Guide
+# COG → To Do Sync: Power Automate Setup Guide
 
-**Approach:** COG writes a JSON file to OneDrive. PA watches the folder, reads the file, creates tasks in Project for the web, deletes the file.
-**PA licence required:** Standard (free connectors — OneDrive + Project for the web)
-**Project licence required:** Project Plan 1 or higher (you have this — confirmed by Gantt/timeline view)
-**Setup time:** ~15 minutes
+**Approach:** COG writes a JSON file to OneDrive. PA watches the folder, reads the file, creates tasks in Microsoft To Do, deletes the file.
+**PA licence required:** Standard (free connectors only — OneDrive + Microsoft To Do)
+**Setup time:** ~10 minutes
 
-> **Note:** Your plan is at `planner.cloud.microsoft` with a timeline/Gantt view — this is a **Project for the web** premium plan. The PA flow uses the **"Project for the web"** connector, not the classic "Planner" connector. The JSON format COG writes is unchanged.
+> Tasks land in a dedicated To Do list. Move them to your Project plan from there if they need project tracking — everything aggregates in My Tasks in the new Planner anyway.
 
 ---
 
 ## Before You Start
 
-- [ ] Five buckets created in your project: **Inbox**, **AI Damage Assessment**, **MCP Governance**, **Contact Centre**, **Personal**
+- [ ] Create a list in Microsoft To Do called **COG** (or any name you prefer — just note it for Step 4)
 - [ ] OneDrive for Business (BelronGlobal) installed and syncing on your Mac
 - [ ] The `COG-Tasks` folder already created in your OneDrive (done automatically when the skill was set up)
-- [ ] Your Project ID — in PA, the "Project for the web" connector lets you pick your project from a dropdown, so you may not need to copy the ID manually. If you do need it, it appears in the URL at `planner.cloud.microsoft` as a GUID parameter.
 
 ---
 
@@ -98,20 +96,7 @@ Rename this step: `Parse task JSON`
 
 ---
 
-## Step 5: List Project Buckets
-
-Click **+ New step** → search **Project for the web** → **List buckets**.
-
-Configure:
-- **Project**: select your project from the dropdown (PA discovers your projects automatically)
-
-This runs once per file and fetches all bucket IDs so the loop can match by name.
-
-Rename this step: `List buckets`
-
----
-
-## Step 6: Add "Apply to each" Loop
+## Step 5: Add "Apply to each" Loop
 
 Click **+ New step** → **Control** → **Apply to each**.
 
@@ -119,48 +104,32 @@ Click **+ New step** → **Control** → **Apply to each**.
 
 Rename this step: `For each task`
 
-Inside the loop, add these three steps:
+Inside the loop, add one action:
 
 ---
 
-### Step 6a: Filter Bucket by Name
+### Step 5a: Create To Do Task
 
-Inside the loop → **+ Add an action** → **Data Operation** → **Filter array**.
-
-Configure:
-- **From**: select `value` from the **List buckets** step
-- **Filter row**: click into the left field → select `name` from **List buckets** dynamic content
-- **is equal to**
-- Right field: select `bucket` from **Parse task JSON** (current item)
-
-Rename: `Filter bucket by name`
-
----
-
-### Step 6b: Create Project Task
-
-Inside the loop → **+ Add an action** → **Project for the web** → **Create a task**.
+Inside the loop → **+ Add an action** → search **Microsoft To Do (Business)** → **Add a to-do (V3)**.
 
 Configure:
-- **Project**: select your project from the dropdown
-- **Task name**: select `title` from **Parse task JSON** (current item)
-- **Bucket**: click the Expression tab and enter:
-  ```
-  first(body('Filter_bucket_by_name'))?['id']
-  ```
-- **Due date**: click Expression tab and enter:
+- **List id**: select your **COG** list from the dropdown
+- **Title**: select `title` from **Parse task JSON** (current item)
+- **Due date time**: click the Expression tab and enter:
   ```
   if(empty(items('For_each_task')?['due_date']), null, concat(items('For_each_task')?['due_date'], 'T12:00:00Z'))
   ```
-- **Description**: select `notes` from **Parse task JSON** (current item)
+- **Body content**: click the Expression tab and enter:
+  ```
+  concat('[', items('For_each_task')?['bucket'], '] ', items('For_each_task')?['notes'])
+  ```
+  This puts `[Bucket] source file path` in the task notes so you know where it came from.
 
-> Notes go directly into the **Create a task** Description field — no separate update step needed (unlike classic Planner).
-
-Rename: `Create project task`
+Rename: `Create To Do task`
 
 ---
 
-## Step 7: Delete the Processed File
+## Step 6: Delete the Processed File
 
 After the loop (outside it) → **+ New step** → **OneDrive for Business** → **Delete file**.
 
@@ -171,19 +140,19 @@ Rename: `Delete processed file`
 
 ---
 
-## Step 8: Save the Flow
+## Step 7: Save the Flow
 
 Click **Save**. The flow is now active and watching the COG-Tasks folder.
 
 ---
 
-## Step 9: Test It
+## Step 8: Test It
 
-1. Copy this JSON and save it as `test.json` anywhere on your Mac
-2. Move or copy it into `~/Library/CloudStorage/OneDrive-BelronGlobal/COG-Tasks/`
+1. Copy this JSON and save it as `test.json`
+2. Drop it into `~/Library/CloudStorage/OneDrive-BelronGlobal/COG-Tasks/`
 3. Wait ~1–2 minutes
-4. Check Planner — a task "COG sync test" should appear in the Inbox bucket
-5. The file should disappear from COG-Tasks (PA deleted it)
+4. Check your COG list in To Do — "COG sync test" should appear with notes `[Inbox] Test task — delete me`
+5. The file should disappear from COG-Tasks
 
 ```json
 {
@@ -207,14 +176,20 @@ Click **Save**. The flow is now active and watching the COG-Tasks folder.
 Trigger: File created in OneDrive /COG-Tasks
   └── Get file content (OneDrive)
   └── Parse task JSON (Data Operation)
-  └── List buckets (Project for the web)
   └── For each task:
-        └── Filter bucket by name → get bucket ID (Data Operation)
-        └── Create a task (Project for the web — title, bucket, due date, description)
+        └── Add a to-do (Microsoft To Do — title, due date, bucket + source in notes)
   └── Delete processed file (OneDrive)
 ```
 
-> Six steps total. Notes/description go directly into Create a task — no separate update step needed.
+Four steps. No bucket routing logic needed — tasks land in your COG list and you promote to Project from there.
+
+---
+
+## Workflow After Sync
+
+1. `/sync-tasks` in COG → tasks appear in your **COG** To Do list within ~2 minutes
+2. Review in To Do (or in **My Tasks** in the new Planner, which aggregates everything)
+3. For anything needing project tracking → drag/move it into your Project plan from My Tasks
 
 ---
 
@@ -223,12 +198,10 @@ Trigger: File created in OneDrive /COG-Tasks
 | Symptom | Likely cause | Fix |
 |---|---|---|
 | File sits in COG-Tasks unprocessed | PA flow not triggered | Check flow is turned on; OneDrive trigger can take 1–3 min |
-| "Project for the web" connector not visible | Connector not available in your tenant | Search for "Project" — it may appear as "Project for the Web (Preview)" |
-| Task created but wrong bucket | Bucket name mismatch | Confirm bucket names in your project exactly match: `Inbox`, `AI Damage Assessment`, `MCP Governance`, `Contact Centre`, `Personal` |
-| Task created with no due date | `due_date` field empty | Expected — task created without a due date |
-| File not deleted after processing | Delete step failed | Check Delete file step is outside (after) the Apply to each loop |
-| Flow run shows connection error | Project licence not activated | Confirm Project Plan 1+ licence is assigned in M365 admin |
-| Flow run history shows expression error | Expression syntax | Check the bucket ID expression in Step 6b — ensure step names in expressions match your renamed steps exactly |
+| "Microsoft To Do (Business)" not visible | Using personal account | Ensure you're signed into PA with your Belron M365 account |
+| COG list not appearing in dropdown | List not created yet | Create the list in To Do first, then refresh PA |
+| Task created with no due date | `due_date` field empty in JSON | Expected — task created without a due date |
+| File not deleted after processing | Delete step is inside the loop | Move the Delete file step outside (after) the Apply to each loop |
 
 ---
 

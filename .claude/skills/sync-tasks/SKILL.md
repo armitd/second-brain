@@ -1,19 +1,19 @@
 ---
 name: sync-tasks
-description: Sync open tasks from the COG vault to Microsoft Planner via OneDrive file drop
+description: Sync open tasks from the COG vault to Microsoft To Do via OneDrive file drop
 roles: [all]
-integrations: ["microsoft-365-planner"]
+integrations: ["microsoft-to-do"]
 ---
 
 # COG Sync Tasks Skill
 
 ## Purpose
-Send open tasks from the COG vault to Microsoft Planner. The skill writes a JSON file to a OneDrive folder; a Power Automate flow picks it up, creates the Planner tasks, and deletes the file. No premium PA licence required.
+Send open tasks from the COG vault to Microsoft To Do. The skill writes a JSON file to a OneDrive folder; a Power Automate flow picks it up, creates the To Do tasks in the COG list, and deletes the file. No premium PA licence required.
 
 ## When to Invoke
 - User types `/sync-tasks` — batch sync all `#planner` tagged tasks
 - User types `/sync-tasks pick` — interactive picker from recent vault files
-- User says "sync tasks to Planner", "send tasks to O365", "push tasks to Planner"
+- User says "sync tasks to To Do", "send tasks to O365", "push tasks to Planner"
 
 ## Tagging Convention
 
@@ -150,12 +150,12 @@ AFTER:  - [ ] Request Microsoft Agent 365 demo 📅 2026-06-20 #synced
 ### Step 5: Confirm
 
 ```
-✅ N task(s) written to OneDrive — Power Automate will create them in Planner shortly.
+✅ N task(s) written to OneDrive — Power Automate will create them in your COG To Do list shortly.
 
   → [Inbox] Request Microsoft Agent 365 demo — due 2026-06-20
   → [MCP Governance] Review framework draft — due 2026-06-18
 
-Tasks marked #synced in source files. Check Planner in ~1–2 minutes.
+Tasks marked #synced in source files. Check To Do (COG list) in ~1–2 minutes.
 ```
 
 ---
@@ -269,5 +269,6 @@ Same as Mode 1 Steps 3–5. In pick mode, do **not** mark source files `#synced`
 - PA typically processes the file within 1–2 minutes of it appearing in OneDrive.
 - The `#synced` tag prevents double-sending. Do not remove it unless you want the task re-sent.
 - Completed tasks (`- [x]`) are never included, even if tagged `#planner`.
-- The skill does not update or delete tasks already in Planner — one-way, create only.
+- The skill does not update or delete tasks already in To Do — one-way, create only.
+- Tasks land in your **COG** list in To Do. Promote to your Project plan via My Tasks in Planner if needed.
 - See `05-knowledge/integrations/sync-tasks-pa-flow.md` for the PA flow setup guide.
