@@ -1,25 +1,28 @@
 ---
 type: "integration-guide"
 created: "2026-06-14"
-integration: "COG → Microsoft Planner via OneDrive file drop"
+integration: "COG → Project for the web via OneDrive file drop"
 skill: "sync-tasks"
-tags: ["#integration", "#power-automate", "#planner", "#tasks", "#onedrive"]
+tags: ["#integration", "#power-automate", "#planner", "#project", "#tasks", "#onedrive"]
 ---
 
 # COG → Planner Sync: Power Automate Setup Guide
 
-**Approach:** COG writes a JSON file to OneDrive. PA watches the folder, reads the file, creates Planner tasks, deletes the file.
-**PA licence required:** Standard (free connectors only — OneDrive + Planner)
+**Approach:** COG writes a JSON file to OneDrive. PA watches the folder, reads the file, creates tasks in Project for the web, deletes the file.
+**PA licence required:** Standard (free connectors — OneDrive + Project for the web)
+**Project licence required:** Project Plan 1 or higher (you have this — confirmed by Gantt/timeline view)
 **Setup time:** ~15 minutes
+
+> **Note:** Your plan is at `planner.cloud.microsoft` with a timeline/Gantt view — this is a **Project for the web** premium plan. The PA flow uses the **"Project for the web"** connector, not the classic "Planner" connector. The JSON format COG writes is unchanged.
 
 ---
 
 ## Before You Start
 
-- [ ] Five buckets created in your personal Planner plan: **Inbox**, **AI Damage Assessment**, **MCP Governance**, **Contact Centre**, **Personal**
+- [ ] Five buckets created in your project: **Inbox**, **AI Damage Assessment**, **MCP Governance**, **Contact Centre**, **Personal**
 - [ ] OneDrive for Business (BelronGlobal) installed and syncing on your Mac
 - [ ] The `COG-Tasks` folder already created in your OneDrive (done automatically when the skill was set up)
-- [ ] Your Planner Plan ID — get this from the URL when viewing your plan in Planner: `https://tasks.office.com/.../#/taskboard/planid/[COPY THIS PART]`
+- [ ] Your Project ID — in PA, the "Project for the web" connector lets you pick your project from a dropdown, so you may not need to copy the ID manually. If you do need it, it appears in the URL at `planner.cloud.microsoft` as a GUID parameter.
 
 ---
 
@@ -95,12 +98,12 @@ Rename this step: `Parse task JSON`
 
 ---
 
-## Step 5: List Planner Buckets
+## Step 5: List Project Buckets
 
-Click **+ New step** → search **Planner** → **List buckets (V3)**.
+Click **+ New step** → search **Project for the web** → **List buckets**.
 
 Configure:
-- **Plan ID**: paste your Planner Plan ID
+- **Project**: select your project from the dropdown (PA discovers your projects automatically)
 
 This runs once per file and fetches all bucket IDs so the loop can match by name.
 
@@ -134,35 +137,26 @@ Rename: `Filter bucket by name`
 
 ---
 
-### Step 6b: Create Planner Task
+### Step 6b: Create Project Task
 
-Inside the loop → **+ Add an action** → **Planner** → **Create a task (V3)**.
+Inside the loop → **+ Add an action** → **Project for the web** → **Create a task**.
 
 Configure:
-- **Plan ID**: your Planner Plan ID
-- **Title**: select `title` from **Parse task JSON** (current item)
-- **Bucket ID**: click the Expression tab and enter:
+- **Project**: select your project from the dropdown
+- **Task name**: select `title` from **Parse task JSON** (current item)
+- **Bucket**: click the Expression tab and enter:
   ```
   first(body('Filter_bucket_by_name'))?['id']
   ```
-- **Due date/time**: click Expression tab and enter:
+- **Due date**: click Expression tab and enter:
   ```
   if(empty(items('For_each_task')?['due_date']), null, concat(items('For_each_task')?['due_date'], 'T12:00:00Z'))
   ```
-
-Rename: `Create Planner task`
-
----
-
-### Step 6c: Add Notes
-
-Inside the loop → **+ Add an action** → **Planner** → **Update task details (V3)**.
-
-Configure:
-- **Task ID**: select `id` from **Create Planner task**
 - **Description**: select `notes` from **Parse task JSON** (current item)
 
-Rename: `Add task notes`
+> Notes go directly into the **Create a task** Description field — no separate update step needed (unlike classic Planner).
+
+Rename: `Create project task`
 
 ---
 
@@ -211,15 +205,16 @@ Click **Save**. The flow is now active and watching the COG-Tasks folder.
 
 ```
 Trigger: File created in OneDrive /COG-Tasks
-  └── Get file content
-  └── Parse task JSON
-  └── List Planner buckets
+  └── Get file content (OneDrive)
+  └── Parse task JSON (Data Operation)
+  └── List buckets (Project for the web)
   └── For each task:
-        └── Filter bucket by name → get bucket ID
-        └── Create Planner task (title, bucket, due date)
-        └── Update task details (add source notes)
-  └── Delete processed file
+        └── Filter bucket by name → get bucket ID (Data Operation)
+        └── Create a task (Project for the web — title, bucket, due date, description)
+  └── Delete processed file (OneDrive)
 ```
+
+> Six steps total. Notes/description go directly into Create a task — no separate update step needed.
 
 ---
 
@@ -228,10 +223,12 @@ Trigger: File created in OneDrive /COG-Tasks
 | Symptom | Likely cause | Fix |
 |---|---|---|
 | File sits in COG-Tasks unprocessed | PA flow not triggered | Check flow is turned on; OneDrive trigger can take 1–3 min |
-| Task created but wrong bucket | Bucket name mismatch | Confirm bucket names in Planner exactly match: `Inbox`, `AI Damage Assessment`, `MCP Governance`, `Contact Centre`, `Personal` |
+| "Project for the web" connector not visible | Connector not available in your tenant | Search for "Project" — it may appear as "Project for the Web (Preview)" |
+| Task created but wrong bucket | Bucket name mismatch | Confirm bucket names in your project exactly match: `Inbox`, `AI Damage Assessment`, `MCP Governance`, `Contact Centre`, `Personal` |
 | Task created with no due date | `due_date` field empty | Expected — task created without a due date |
 | File not deleted after processing | Delete step failed | Check Delete file step is outside (after) the Apply to each loop |
-| Flow run history shows error | Expression syntax | Check the bucket ID and due date expressions in Steps 6b |
+| Flow run shows connection error | Project licence not activated | Confirm Project Plan 1+ licence is assigned in M365 admin |
+| Flow run history shows expression error | Expression syntax | Check the bucket ID expression in Step 6b — ensure step names in expressions match your renamed steps exactly |
 
 ---
 
