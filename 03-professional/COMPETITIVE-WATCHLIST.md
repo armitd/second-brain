@@ -349,7 +349,14 @@ When shortlisting, assess each against:
 - **Questions to answer:** What specific use cases were discussed at the Front Office Guild? Is Data Cloud already being piloted at any Belron opco? What does the current Service Cloud / Marketing Cloud data integration look like — is there already a gap being felt?
 - **Relevance:** Contact Centre of the Future (CCOTF) — Service Cloud is the existing CC platform; Data Cloud is the unification layer. Also relevant to customer data strategy and marketing personalisation.
 - **Source:** [[braindump-2026-06-04-1523-salesforce-data-360]], Front Office Guild meeting 2026-06-04
-- **Last updated:** 2026-06-04
+- **Last updated:** 2026-06-14
+
+#### Salesforce Headless 360 (April 2026) — Major update
+- **What:** Marc Benioff announced Salesforce Headless 360 — entire Salesforce + Agentforce + Slack platforms exposed as APIs, MCP, and CLI. No browser required.
+- **Pricing model implication:** Per-seat pricing is structurally broken by agents. "Agents don't log in. They make API calls." One company running 50 agents that each make more API calls per day than the entire sales team does per month blows up the per-seat model.
+- **MCP exposure:** Salesforce now exposes MCP directly — meaning agents (including Claude Code agents) can connect to Salesforce data and workflows via MCP servers. Directly relevant to MCP Governance project scope.
+- **CCOTF relevance:** Any CCOTF contract renewal or vendor evaluation should probe headless/API pricing tiers. The per-seat assumption for Belron's Salesforce footprint (Service Cloud, Marketing Cloud) may not survive the next contract cycle if Belron deploys AI agents that interact with Salesforce programmatically.
+- **Source:** [[medium-relevance-batch-june-2026-06-14]]
 
 ---
 
