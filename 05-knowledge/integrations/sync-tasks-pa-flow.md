@@ -206,3 +206,4 @@ Four steps. No bucket routing logic needed — tasks land in your COG list and y
 ---
 
 *Set up: 2026-06-14 | Skill: /sync-tasks | Drop folder: ~/Library/CloudStorage/OneDrive-BelronGlobal/COG-Tasks/*
+Can you 
