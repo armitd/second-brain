@@ -40,3 +40,14 @@
 - What does it actually mean to be AI native?
   There was no clear guide on the internet for how to become AI native so we built the definitive one (60 min masterclass):
   1. An AI native org has 3 layers: people for strategy and taste, agents for execution, and a shared context https://t.co/Eg3w1pQfYb ([View Tweet](https://x.com/gregisenberg/status/2064054350859649114))
+- The takeaway from Fable 5 being BANNED by the government: GET GOOD AT LOCAL MODELS SO YOU HAVE 100% CONTROL. 
+  My entire weekend was going to be building my craziest ideas with Fable 5. That's now cancelled.
+  So instead of building with Fable this weekend, I've decided I'll go ([View Tweet](https://x.com/gregisenberg/status/2065773938915889253))
+## New highlights added June 15, 2026 at 6:59 PM
+- The takeaway from Fable 5 being BANNED by the government: GET GOOD AT LOCAL MODELS SO YOU HAVE 100% CONTROL. 
+  My entire weekend was going to be building my craziest ideas with Fable 5. That's now cancelled.
+  So instead of building with Fable this weekend, I've decided I'll go ([View Tweet](https://x.com/gregisenberg/status/2065773938915889253))
+## New highlights added June 15, 2026 at 6:59 PM
+- The takeaway from Fable 5 being BANNED by the government: GET GOOD AT LOCAL MODELS SO YOU HAVE 100% CONTROL. 
+  My entire weekend was going to be building my craziest ideas with Fable 5. That's now cancelled.
+  So instead of building with Fable this weekend, I've decided I'll go ([View Tweet](https://x.com/gregisenberg/status/2065773938915889253))
