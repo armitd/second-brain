@@ -58,7 +58,7 @@ A weekend-long outdoor birthday celebration in a Somerset field. Two nights, pro
 - [ ] Draft guest list 📅 2026-05-25
 - [ ] Decide on invite format — physical, digital, WhatsApp group, or all three
 - [ ] Send invitations 📅 2026-05-31
-- [ ] RSVP deadline — chase all outstanding by this date 📅 2026-06-15
+- [x] RSVP deadline — chase all outstanding by this date 📅 2026-06-15 ✅ 2026-06-15
 - [ ] Create a WhatsApp group for attendees once invites are out 📅 2026-05-31
 - [ ] Collect dietary requirements once RSVPs confirmed 📅 2026-06-15
 
@@ -77,7 +77,7 @@ A weekend-long outdoor birthday celebration in a Somerset field. Two nights, pro
 
 ### Infrastructure
 - [ ] **Power:** Generator hire or solar/battery pack for lighting + sound 📅 2026-06-15
-- [ ] **Loos:** Hire portable toilets — 1 per 30-40 people minimum 📅 2026-06-15
+- [x] **Loos:** Hire portable toilets — 1 per 30-40 people minimum 📅 2026-06-15 ✅ 2026-06-15
 - [ ] **Lighting:** String lights, lanterns, solar path lights for the field 📅 2026-07-01
 - [ ] **Shelter:** Large gazebo or marquee for main social area (weather contingency) 📅 2026-06-15
 - [ ] **Fire:** Check if fire pit / bonfire is allowed on the field 📅 2026-05-25
