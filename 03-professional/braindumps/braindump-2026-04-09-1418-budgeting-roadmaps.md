@@ -70,7 +70,7 @@ Roadmaps feed budgets. No roadmap = no justified budget ask. For an EA function,
 ### Medium-term (May–June)
 - [ ] Validate roadmap draft with 2–3 key stakeholders 📅 2026-05-15
 - [ ] Ensure LeanIX roadmap views are populated and presentable for budget conversations 📅 2026-05-30
-- [ ] Final roadmap ready for budget input 📅 2026-06-15
+- [x] Final roadmap ready for budget input 📅 2026-06-15 ✅ 2026-06-15
 
 ### Strategic Considerations
 - The roadmap is a visibility artefact as much as a planning tool — presenting it to leadership before the budget cycle is a natural stakeholder engagement moment

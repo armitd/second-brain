@@ -9,13 +9,13 @@ Quick-capture tasks not yet assigned to a project. Tag with `#planner` to sync t
 
 ---
 
-- [ ] Summarise AI Summit content 📅 2026-06-15 #synced
-- [ ] Slides for team meeting on MCP / Agentic Architecture 📅 2026-06-15 #synced
+- [x] Summarise AI Summit content #synced 📅 2026-06-15 ✅ 2026-06-15
+- [x] Slides for team meeting on MCP / Agentic Architecture #synced 📅 2026-06-15 ✅ 2026-06-15
 - [ ] Post counselling wash-up — Gary Baker #synced
-- [ ] Generate summary of TMD survey results 📅 2026-06-15 #synced
-- [ ] Review RFI responses — look at AI summaries 📅 2026-06-15 #synced
-- [ ] DPIA review 📅 2026-06-15 #synced
-- [ ] Review Agentic ref architecture 📅 2026-06-15 #synced
+- [x] Generate summary of TMD survey results #synced 📅 2026-06-15 ✅ 2026-06-15
+- [x] Review RFI responses — look at AI summaries #synced 📅 2026-06-15 ✅ 2026-06-15
+- [x] DPIA review #synced 📅 2026-06-15 ✅ 2026-06-15
+- [x] Review Agentic ref architecture #synced 📅 2026-06-15 ✅ 2026-06-15
 - [ ] Merge ref arch and John Prodgers diagram 📅 2026-06-15 #synced
 - [ ] Replace gas cylinder on Aeron Chair
 - [ ] Look at headrest options for Aeron Chair
