@@ -11,4 +11,9 @@
 ## Highlights
 - This is literally the best mini-course for learning about the Claude Code under 30 minutes.
   https://t.co/UlFM2JN4Xj ([View Tweet](https://twitter.com/Whizz_ai/status/2010607695620178026))
-
+## New highlights added June 15, 2026 at 6:59 PM
+- https://t.co/To5Vmqyli5 ([View Tweet](https://x.com/humzaakhalid/status/2062821175546515504))
+## New highlights added June 15, 2026 at 6:59 PM
+- https://t.co/To5Vmqyli5 ([View Tweet](https://x.com/humzaakhalid/status/2062821175546515504))
+## New highlights added June 15, 2026 at 6:59 PM
+- https://t.co/To5Vmqyli5 ([View Tweet](https://x.com/humzaakhalid/status/2062821175546515504))
