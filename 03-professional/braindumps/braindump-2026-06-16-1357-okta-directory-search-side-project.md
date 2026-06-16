@@ -40,6 +40,17 @@ I'm more interested for a side-project I want to do - to create an OKTA director
 2. **Build approach likely simplest as an MCP server:** Given the existing COG/Claude Code context, the natural shape of this side-project is a small custom MCP server wrapping Okta's directory API, callable from Claude Code or a Claude Desktop chat — directory search becomes a natural-language query.
 3. **Worth scoping size before starting:** "Search" could mean a one-off CLI script Armo runs locally, or a proper internal tool — the trigger and audience should be settled before building.
 
+## Organisational Benefit
+Not asked for by Armo as a justification — captured because it sharpens whether this stays a personal tool or becomes a pilot candidate.
+
+- **Cross-opco findability at scale:** At ~35 countries / ~30,000 employees with directories fragmented across opcos, a single search surface answers "who is this person, what opco/role/location are they in" without knowing which local system to check first — a real friction point for anyone working across opco boundaries (EA, central functions, M&A integration work).
+- **Faster cross-functional collaboration:** Central/group functions (architecture, IT, finance, M&A) regularly need to find the right local contact in an opco they don't work in day-to-day. A directory search tool shortens that from "ask around" to "search."
+- **Onboarding/org-navigation aid:** New joiners or people moving between opcos benefit from a single place to understand "who's who" rather than learning each opco's own people-finder (if one even exists).
+- **Low marginal cost, since the data already exists:** Okta is already the identity source of truth — this tool doesn't require new data collection, just a search layer over data that's already being maintained for authentication purposes.
+- **Demonstrates a pattern, not just a tool:** A working Okta-backed directory search is also a concrete, low-risk example of "read-only MCP server over an existing enterprise system" — incidentally useful as a reference point for the MCP Governance project's own work on what a well-scoped, low-risk MCP server looks like (without formally being part of that project).
+
+**Caveat:** these are the natural benefits *if* this gets used beyond Armo personally — for a personal tool, the benefit is simply Armo's own efficiency. Worth keeping this distinction in mind before any conversation about wider rollout (see data privacy/access question above).
+
 ## Action Items
 
 ### Short-term (1-2 weeks)
