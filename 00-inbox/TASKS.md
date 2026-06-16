@@ -19,3 +19,4 @@ Quick-capture tasks not yet assigned to a project. Tag with `#planner` to sync t
 - [ ] Merge ref arch and John Prodgers diagram 📅 2026-06-15 #synced
 - [ ] Replace gas cylinder on Aeron Chair
 - [ ] Look at headrest options for Aeron Chair
+- [ ] Think about the role of EA in the post-transformation Belron #planner
