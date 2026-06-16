@@ -1,7 +1,7 @@
 ---
 type: "competitive-watchlist"
 created: "2026-04-09"
-last_updated: "2026-06-14"
+last_updated: "2026-06-16"
 tags: ["#competitive", "#watchlist", "#market-intelligence"]
 ---
 
@@ -21,6 +21,16 @@ tags: ["#competitive", "#watchlist", "#market-intelligence"]
 - **Relevance:** Contact Centre of the Future project — Zoom is a potential CCaaS vendor or displacement risk to existing telephony. Also relevant to UC architecture representation (how Zoom fits in the vendor ownership map).
 - **Source:** [[braindump-2026-05-16-0041-contact-centre-uc-architecture-ebc]]
 - **Last updated:** 2026-05-16
+
+---
+
+### TELUS Digital + Cresta (CCaaS AI partnership)
+- **What they do:** TELUS Digital announced a partnership with Cresta (June 2026) to deliver AI-powered customer experience solutions for global enterprises — TELUS Digital becomes a preferred implementation partner integrating Cresta's unified CX AI platform (voice and chat AI agents, real-time human augmentation, conversation intelligence) across clients' CCaaS and CRM environments.
+- **Why watch:** New CCaaS vendor pairing to track as a comparison point against Belron's existing Salesforce Service Cloud-based approach and the Zoom CCaaS evaluation already on this watchlist. Both companies present at Customer Contact Week (Las Vegas, June 24–25, 2026) — expect a cluster of related CCaaS/AI announcements around that event.
+- **Questions to answer:** Does this partnership target any verticals or geographies relevant to Belron's opcos? Worth a follow-up scan after Customer Contact Week.
+- **Relevance:** Contact Centre of the Future — vendor landscape tracking ahead of CCOTF evaluation.
+- **Source:** [[daily-brief-2026-06-16]]
+- **Last updated:** 2026-06-16
 
 ---
 
@@ -120,8 +130,9 @@ tags: ["#competitive", "#watchlist", "#market-intelligence"]
 - **Why watch:** Raised $122B in April 2026. Dominant position in foundation models. GPT-4o vision is the fastest prototyping route for a damage assessment proof of concept — no training data required.
 - **Relevance:** Prototype damage assessment; agentic AI governance; Copilot agent alternatives.
 - **Capability for damage assessment:** High — GPT-4o can analyse images and return structured output. Best starting point for PoC.
-- **Source:** [[daily-brief-2026-04-09]], [[braindump-2026-04-09-1136-market-scan-machine-vision-frontend]]
-- **Last updated:** 2026-04-09
+- **GPT-5.6 (expected late June 2026):** Confirmed via Codex log leaks and internal signals; chief scientist Jakub Pachocki describes it as a "significant upgrade over GPT-5.5" focused on agentic workloads (improved long-running task completion), token efficiency, and safety improvements positioned competitively against Claude Fable 5 and Gemini 3.5 Pro. Release coincides with a planned ChatGPT overhaul and a confidential SEC IPO registration filing. No exact date — market consensus is June 23 or June 30. For the AI Damage Assessment PoC: GPT-5.6 completes the three-model benchmark set (alongside Claude Opus 4.8 live and Gemini 3.5 Pro GA expected same window) — its token efficiency focus is more relevant to production cost modelling than accuracy comparison.
+- **Source:** [[daily-brief-2026-04-09]], [[braindump-2026-04-09-1136-market-scan-machine-vision-frontend]], [[daily-brief-2026-06-15]]
+- **Last updated:** 2026-06-15
 
 ---
 
@@ -141,6 +152,10 @@ tags: ["#competitive", "#watchlist", "#market-intelligence"]
 
 **Fable 5 / Mythos note:** The "Mythos" name appears in social media; official Anthropic branding uses "Fable 5." Confirm official naming when available. Key for Belron AI advocacy: Claude Fable 5 is the model to reference in the AI Damage Assessment PoC pitch as the current capability ceiling.
 
+**Model deprecation (June 2026):** On June 15, 2026, Anthropic retired the pinned model identifiers `claude-sonnet-4-20250514` and `claude-opus-4-20250514` from the API with no grace period — requests using those identifiers now fail outright. Recommended replacements: `claude-sonnet-4-6`, `claude-opus-4-8`. Scope: API calls using pinned identifiers only — Claude.ai consumer accounts and Claude Code managed environments unaffected. **Action:** grep AI Damage Assessment PoC code/config for the old pinned identifiers before the next benchmark run 📅 2026-06-17. Also a reminder that pinned-version production systems need a monitoring/alerting process, not a one-time check.
+- **Source:** [[daily-brief-2026-06-16]]
+- **Last updated:** 2026-06-16
+
 ---
 
 ### Google DeepMind / Google AI
@@ -148,8 +163,9 @@ tags: ["#competitive", "#watchlist", "#market-intelligence"]
 - **Why watch:** Gemini 2.0 is highly capable on image tasks. Google's heritage in computer vision (Google Lens, Vision AI) is the deepest of any foundation model vendor. Vertex AI is a mature MLOps platform.
 - **Relevance:** Damage assessment prototype and production; Vertex AI as the model deployment platform if GCP is the cloud of choice; A2A protocol is Google-originated.
 - **Capability for damage assessment:** Very High — strongest image understanding heritage of any foundation model vendor. Gemini Flash offers cost-efficient inference at scale.
-- **Source:** [[braindump-2026-04-08-0942-a2a-mcp-research-strategy]], [[braindump-2026-04-09-1136-market-scan-machine-vision-frontend]]
-- **Last updated:** 2026-04-09
+- **Gemini 3.5 Pro (June 2026 update):** Still in Vertex AI preview as of June 15, 2026. GA market consensus is June 23 or June 30 (analyst consensus, not Google-confirmed). Pricing confirmed at ~$15/M input tokens, ~$60/M output tokens. Will be part of the three-model AI Damage Assessment PoC benchmark set alongside Claude Opus 4.8 and GPT-5.6 — accuracy comparison should centre on Gemini 3.5 Pro Deep Think. Separately, Google used Cloud Next 2026 to reposition Gemini Enterprise as a full "agentic enterprise control plane" (Agent Studio, simulation/stress-testing, agent registry, third-party marketplace) — relevant to MCP Governance vendor landscape alongside Microsoft Agent 365 and Salesforce Agent Fabric.
+- **Source:** [[braindump-2026-04-08-0942-a2a-mcp-research-strategy]], [[braindump-2026-04-09-1136-market-scan-machine-vision-frontend]], [[daily-brief-2026-06-15]], [[daily-brief-2026-06-16]]
+- **Last updated:** 2026-06-16
 
 ---
 
@@ -349,7 +365,16 @@ When shortlisting, assess each against:
 - **Questions to answer:** What specific use cases were discussed at the Front Office Guild? Is Data Cloud already being piloted at any Belron opco? What does the current Service Cloud / Marketing Cloud data integration look like — is there already a gap being felt?
 - **Relevance:** Contact Centre of the Future (CCOTF) — Service Cloud is the existing CC platform; Data Cloud is the unification layer. Also relevant to customer data strategy and marketing personalisation.
 - **Source:** [[braindump-2026-06-04-1523-salesforce-data-360]], Front Office Guild meeting 2026-06-04
-- **Last updated:** 2026-06-14
+- **Last updated:** 2026-06-16
+
+#### Salesforce Ships Native MCP Client + OAuth + "Agent Fabric" Governance (June 2026) — Major update
+- **What:** Salesforce's Summer '26 release (shipped June 15, 2026) brings a native MCP client to Agentforce 3 — agents can connect to any MCP-compliant server with no custom code. OAuth support for MCP connections shipped in the same release (relevant to RFC 9728/8707 Resource Server requirements). A new control-plane layer, **Agent Fabric**, adds "guided determinism" and governance controls for multi-vendor AI.
+- **Scale:** Agentforce ARR up 169% YoY to $800M; 2.4B agent work units logged. Multi-Agent Orchestration, Atlas Reasoning Engine 3.0, and A2A protocol support also shipped.
+- **MCP Governance implication:** Salesforce is now a live MCP client *and* server in Belron's stack — a governance framework needs a concrete answer for "what happens when Agentforce agents call out to MCP servers." No longer hypothetical given existing Service Cloud/Marketing Cloud licences.
+- **CCOTF implication:** Agent Fabric should be evaluated alongside Microsoft Agent 365 as a candidate governance layer for the Salesforce side of the contact centre stack — likely complementary, not competing.
+- **Action:** Request Agent Fabric + MCP/OAuth client walkthrough from Salesforce account team 📅 2026-06-23. Add Agent Fabric to MCP Governance vendor comparison alongside Microsoft Agent 365 and Noma 📅 2026-06-20.
+- **Source:** [[daily-brief-2026-06-16]]
+- **Last updated:** 2026-06-16
 
 #### Salesforce Headless 360 (April 2026) — Major update
 - **What:** Marc Benioff announced Salesforce Headless 360 — entire Salesforce + Agentforce + Slack platforms exposed as APIs, MCP, and CLI. No browser required.
