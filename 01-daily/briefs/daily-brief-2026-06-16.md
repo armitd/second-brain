@@ -16,6 +16,8 @@ dedup_urls:
   - "https://help.make.com/anthropic-claude-model-deprecations-on-june-15-2026"
   - "https://www.artificialintelligence-news.com/news/agentic-ai-governance-enterprise-readiness-google/"
   - "https://www.stocktitan.net/news/TU/telus-digital-and-cresta-partner-to-deliver-ai-agents-and-augment-m2r7oa4azz4c.html"
+sharepoint_published_at: "2026-06-16 08:24"
+sharepoint_filename: "daily-brief-16-june-2026.pdf"
 ---
 
 # Daily Brief — 16 June 2026
