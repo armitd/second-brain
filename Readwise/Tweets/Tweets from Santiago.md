@@ -18,3 +18,6 @@
   • An AI Image Editor
   • Support for 60+ languages
   Try it here: https://t.co/Av1fTHYkvG ([View Tweet](https://twitter.com/svpino/status/1912174428684952039))
+- There's no way call centers stay in business after this.
+  Listen to this conversation. You cannot tell I'm speaking to an AI voice agent here.
+  This is Cartesia's model. Right now, #1 in the world. https://t.co/hEuB4IIsYH https://t.co/S174hOCzMu ([View Tweet](https://x.com/svpino/status/2066569527341744396))
