@@ -49,24 +49,26 @@ Not asked for by Armo as a justification — captured because it sharpens whethe
 - **Low marginal cost, since the data already exists:** Okta is already the identity source of truth — this tool doesn't require new data collection, just a search layer over data that's already being maintained for authentication purposes.
 - **Demonstrates a pattern, not just a tool:** A working Okta-backed directory search is also a concrete, low-risk example of "read-only MCP server over an existing enterprise system" — incidentally useful as a reference point for the MCP Governance project's own work on what a well-scoped, low-risk MCP server looks like (without formally being part of that project).
 
-**Caveat:** these are the natural benefits *if* this gets used beyond Armo personally — for a personal tool, the benefit is simply Armo's own efficiency. Worth keeping this distinction in mind before any conversation about wider rollout (see data privacy/access question above).
+**Clarified intent (Armo, 2026-06-16):** This is a personal project in the sense that Armo is building it off his own initiative, not a commissioned deliverable — but the intent is for it to become a corporate tool used across Belron, not a private utility. Armo's view is that it will generate huge benefit at that scale. This changes the calculus on several of the open questions above: data privacy/access scope, formal sign-off, and audience need to be addressed as if for a real rollout, not deferred as "later, if it proves useful."
 
 ## Action Items
 
 ### Short-term (1-2 weeks)
 - [ ] Check what directory attributes are actually available via Okta's API for Belron's tenant (test with own access) 📅 2026-06-23
-- [ ] Decide scope: personal CLI/MCP tool for Armo's own use vs. something shareable 📅 2026-06-23
+- [ ] Identify who owns sign-off for a corporate tool built on Okta directory data (likely IT security / data privacy / Okta platform owner) 📅 2026-06-23
+- [ ] Sketch what "corporate tool" means concretely — internal web app, Teams/Slack-style bot, MCP server exposed to other Belron users — before building 📅 2026-06-23
 
 ### Strategic Considerations
-- If this proves useful personally, it could become a candidate for a small internal pilot — but that's a later decision, not now.
-- Keep this separate from the MCP Governance project's Okta research thread to avoid scope creep in either direction.
+- Since the intent is corporate-wide use, treat data privacy/access scope as a now-question, not a later-question — building first and asking permission after is the wrong order for an HR/people-data tool at this scale.
+- Worth a short pitch/one-pager to whoever owns Okta or IT security early, both to get sign-off and to test whether "huge benefit" lands the same way with them as it does with Armo.
+- Keep this separate from the MCP Governance project's Okta research thread to avoid scope creep in either direction — though if this is going corporate, MCP Governance stakeholders may need visibility regardless, since it's another agent/tool surface touching enterprise identity data.
 
 ## Connections
 - **Related Braindumps:** [[braindump-2026-06-16-1355-okta-mcp-agent-support]] (MCP Governance project — Okta's own MCP server and agent identity governance)
 
 ## Domain Classification
-- **Primary Domain:** Professional (70%) — work-context tool, but personal side-project rather than tied to a formal active project
-- **Reasoning:** Built around Belron's directory data and Okta tenant, but explicitly framed by Armo as "a side-project I want to do," not part of MCP Governance, CCOTF, or AI Damage Assessment scope.
+- **Primary Domain:** Professional (80%) — self-initiated build, but explicitly intended as a corporate tool rather than personal utility
+- **Reasoning:** Armo is building this off his own initiative ("a side-project I want to do") and it isn't part of MCP Governance, CCOTF, or AI Damage Assessment scope — but the stated intent is corporate-wide adoption, not personal use. The "personal project, corporate tool" framing is the key nuance: ownership/origin is personal, intended audience and impact are organisational.
 
 ## Processing Notes
 ### Confidence Assessment
