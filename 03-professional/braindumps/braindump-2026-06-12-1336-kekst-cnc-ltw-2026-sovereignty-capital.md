@@ -5,7 +5,9 @@ date: "2026-06-12"
 created: "2026-06-12 13:36"
 themes: ["AI sovereignty", "capital ownership", "London Tech Week", "infrastructure", "data residency", "pre-IPO"]
 tags: ["#braindump", "#LTW2026", "#sovereignty", "#AI-governance", "#capital", "#Belron", "#IPO"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-06-19]]"
+consolidated_date: "2026-06-19"
 source_file: "00-inbox/raw/kekst-cnc-ltw-2026-views-on-the-ground.docx"
 energy_level: "medium"
 emotional_tone: "curious"

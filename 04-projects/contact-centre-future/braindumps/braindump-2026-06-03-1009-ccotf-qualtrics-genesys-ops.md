@@ -6,7 +6,9 @@ date: "2026-06-02"
 created: "2026-06-03 10:09"
 themes: ["cross-market benchmarking", "genesys capability mapping", "contact centre community", "vendor evaluation", "stakeholder follow-ups"]
 tags: ["#braindump", "#raw-thoughts", "#ccotf", "#contact-centre", "#genesys", "#qualtrics"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-06-19]]"
+consolidated_date: "2026-06-19"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"

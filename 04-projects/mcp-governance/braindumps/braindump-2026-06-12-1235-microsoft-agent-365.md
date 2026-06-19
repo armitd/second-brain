@@ -6,7 +6,9 @@ date: "2026-06-12"
 created: "2026-06-12 12:35"
 themes: ["microsoft-agent-365", "agent-governance", "ai-control-plane", "mcp-governance"]
 tags: ["#braindump", "#raw-thoughts", "#microsoft", "#agent-governance", "#mcp-governance", "#ai-governance"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-06-19]]"
+consolidated_date: "2026-06-19"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"

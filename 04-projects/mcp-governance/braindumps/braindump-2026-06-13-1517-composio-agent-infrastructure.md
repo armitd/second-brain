@@ -7,7 +7,9 @@ created: "2026-06-13 15:17"
 source_url: "https://composio.dev/"
 themes: ["agent tool execution", "managed auth", "MCP infrastructure", "governance surface"]
 tags: ["#braindump", "#mcp-governance", "#agentic-ai", "#composio", "#tool-orchestration"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-06-19]]"
+consolidated_date: "2026-06-19"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"

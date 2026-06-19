@@ -5,7 +5,9 @@ date: "2026-06-09"
 created: "2026-06-09 16:14"
 themes: ["ICOE", "guidelines", "governance", "standards"]
 tags: ["#braindump", "#raw-thoughts", "#professional", "#icoe", "#governance", "#standards"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-06-19]]"
+consolidated_date: "2026-06-19"
 energy_level: "low"
 emotional_tone: "neutral"
 confidence: "medium"

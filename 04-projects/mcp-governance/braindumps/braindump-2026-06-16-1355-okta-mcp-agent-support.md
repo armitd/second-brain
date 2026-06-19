@@ -6,7 +6,9 @@ date: "2026-06-16"
 created: "2026-06-16 13:55"
 themes: ["okta", "mcp-server", "agent-identity-governance"]
 tags: ["#braindump", "#raw-thoughts", "#mcp-governance", "#research-flag"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-06-19]]"
+consolidated_date: "2026-06-19"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "medium"

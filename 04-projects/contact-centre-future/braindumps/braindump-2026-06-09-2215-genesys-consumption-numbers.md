@@ -6,7 +6,9 @@ date: "2026-06-09"
 created: "2026-06-09 22:15"
 themes: ["genesys", "consumption-costs", "vendor-evaluation", "ccotf"]
 tags: ["#braindump", "#raw-thoughts", "#professional", "#genesys", "#ccotf", "#vendor-evaluation", "#cost"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-06-19]]"
+consolidated_date: "2026-06-19"
 energy_level: "medium"
 emotional_tone: "neutral"
 confidence: "high"
