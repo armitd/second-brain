@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "agentic-ai-governance"
 created: "2026-04-10"
-last_updated: "2026-06-14"
-consolidation_id: "consolidation-2026-06-14"
-source_documents: 37
+last_updated: "2026-06-19"
+consolidation_id: "consolidation-2026-06-19"
+source_documents: 42
 status: "working"
 tags: ["#framework", "#consolidated", "#agentic-AI", "#MCP", "#A2A", "#EA-governance", "#protocols"]
 ---
@@ -425,13 +425,21 @@ AWS Kiro confirmed to run on Claude via Bedrock. Any Belron developer using Kiro
 
 **MCP governance tooling landscape (as of June 2026):**
 
-Three concrete options exist for implementing the registry + monitoring layer:
+The governance stack is now four distinct layers — each addressing a different governance concern:
 
-| Tool | Type | Best for |
-|---|---|---|
-| **Docker MCP Toolbox** | Open source | Developer-led governance; MCP server packaging and distribution; lowest adoption friction |
-| **Noma** | Commercial | Enterprise harness monitoring + policy enforcement; designed for EA/security ownership; aligns with intent-setting governance model |
-| **Microsoft Agent 365** | Microsoft-stack | Belron tenants already on M365; native Entra integration; preferred if single-tenant strategy is in place |
+| Layer | Tool | Type | Function |
+|---|---|---|---|
+| **Identity/Auth** | **Okta MCP Server** | Commercial | Agent identity governance; Elicitation API for human-in-loop confirmation on destructive actions (delete user, deactivate app); available from April 30, 2026 |
+| **Execution/Integration** | **Composio** | Commercial | 1000+ pre-built tool integrations; manages auth tokens for agent tool access; risk: agent self-registration (agents can register with external services autonomously — requires governance policy) |
+| **Policy/Enforcement** | **Noma** | Commercial | Enterprise harness monitoring + policy enforcement; designed for EA/security ownership; complementary with Composio (Composio = execution, Noma = enforcement) |
+| **Fleet/Control Plane** | **Microsoft Agent 365** | Microsoft-stack | GA May 1, 2026; $15/user/month; Observe/Govern/Secure framework; can discover Claude Code and other non-Microsoft agents; preferred if Belron is single-tenant M365 |
+| **Packaging/Registry** | **Docker MCP Toolbox** | Open source | MCP server packaging and distribution; lowest adoption friction; developer-led governance entry point |
+
+**Composio risk — agent self-registration:**
+Composio enables agents to connect to 1000+ external services by managing auth tokens on the agent's behalf. The governance risk: in a default-permissive configuration, an agent can register itself with an external service (creating an Okta-like OAuth grant) without human approval. This is the "blast radius at the execution layer" problem — distinct from, but complementary to, Noma's policy enforcement. Governance standard: Composio should operate in "approval-required" mode for any new service registration, with Noma enforcing the policy at runtime.
+
+**The complementary stack:**
+Composio (execution/auth) + Noma (enforcement) + Agent 365 (fleet control) + Okta (identity/auth) form a defence-in-depth governance stack. No single tool covers all four layers. EA governance policy should specify which layer each tool owns and how they interface.
 
 **The harness recursion problem in multi-agent systems:**
 When Agent A's harness includes Agent B as a tool, Agent B has its own harness. A2A delegation must respect both harnesses — Agent B cannot be instructed to exceed its own constraints, even by a trusted Agent A. This must be a design requirement in any multi-agent architecture.
@@ -473,12 +481,56 @@ A lightweight enterprise ontology covering the 20–30 core business objects tha
 
 ---
 
+### Principle 10: The Agentic Loop Is the Unit of Work — Governance Needs a Loop Budget Model
+
+**Statement:** An agentic loop is a program that prompts an agent, reads the output, decides if the task is complete, and iterates until done or a stopping condition is met. Loops are how agentic work is actually structured. Governance frameworks that address individual agent calls without governing the loop leave the most dangerous failure modes unaddressed: unbounded iteration, cost runaway, and no-progress scenarios.
+
+**What a loop is (Boris Cherny's definition, June 2026):**
+A loop has three elements:
+1. A program that issues prompts to an agent
+2. A reader that checks the output
+3. A decision gate that iterates or terminates
+
+The loop is not the agent — it is the structure that contains the agent. Governance of the loop means governing: how many iterations are permitted, what "no progress" looks like, what the maximum cost ceiling is, and who can be notified when the loop terminates (normally or abnormally).
+
+**The cost shift:**
+Writing the agent skill (the "what to do") is a one-time cost. The loop is the ongoing operational cost. In agentic AI, the cost model is inverted from traditional software: the capability (the skill) is cheap; the execution (the loop) is expensive. Governance frameworks that treat agent deployment as the control point miss that the loop — not the skill — is where the actual cost and risk accumulate.
+
+**Loop budget governance — required components:**
+
+| Governance element | What it controls | Default if unset |
+|---|---|---|
+| **Max iterations** | How many times the loop can prompt the agent | Unbounded — will iterate until task complete or token limit |
+| **No-progress detection** | Whether successive outputs are advancing toward the goal | None — loop can cycle forever on the same step |
+| **Cost ceiling** | Maximum spend per loop invocation | None — runaway loops can accumulate significant API cost |
+| **Timeout** | Maximum wall-clock time for the loop | None |
+| **Human escalation trigger** | When the loop is stuck, who gets notified | Fails silently or exits with error |
+| **Audit trail** | Each iteration logged with input, output, decision | Often absent by default |
+
+**The harness connection:**
+Loop budget governance is a harness design dimension — it must be part of the harness template (see [[harness-design-standard-framework]]). A harness that specifies permitted tools and data scope but does not specify loop governance is incomplete. EA governance review should include loop budget review as a required component for any agentic use case.
+
+**Skills are the asset; loops are the plumbing:**
+The strategic implication: Belron should invest in building reusable skills (the domain knowledge encoded in what the agent does) — these are the durable asset. Loops are infrastructure. Governance of loops is housekeeping that prevents the infrastructure from becoming a liability.
+
+**Evidence:**
+- [[braindump-2026-06-14-1937-wtf-is-a-loop]] — Boris Cherny definition: "a loop is a program that prompts an agent, reads output, decides if done, iterates." Five-stage lineage. Skills as asset; loops as plumbing.
+- [[braindump-2026-06-14-1937-wtf-is-a-loop]] — Cost shift: "writing code is free; managing the loop is expensive"
+- [[harness-design-standard-framework]] — Loop budget as the missing harness dimension
+
+**How to apply:** When approving any agentic workflow for production, require a loop specification alongside the harness specification: max iterations, no-progress detection, cost ceiling, timeout, and escalation path. If any are absent, send back to the team to specify them.
+
+**Confidence:** High — Boris Cherny's definition is authoritative; the loop budget governance extensions are EA synthesis of that pattern
+
+---
+
 ## Related Frameworks
 
 - [[ea-effectiveness-framework]] — Principle 2: The MCP/A2A briefing is a dual-purpose artefact (governance tool + visibility instrument)
 - [[belron-business-understanding-framework]] — Layer 4 (Systems Landscape) identifies which systems are MCP server candidates
 - [[ai-damage-assessment-strategy-framework]] — The damage assessment workflow is a candidate A2A multi-agent pipeline
 - [[harness-design-standard-framework]] — The harness as the unit of governance (Principle 8 detail)
+- [[ai-sovereignty-framework]] — Governance stack sovereignty assessment; avoiding vendor lock-in at the governance layer
 
 ---
 
@@ -496,4 +548,21 @@ A lightweight enterprise ontology covering the 20–30 core business objects tha
 
 ---
 
-*Consolidated from 37 sources | First version: April 10, 2026 | Last updated: June 14, 2026 | Status: Working (Principles 1–7 solid; Principles 8–9 Emerging)*
+### June 14–19, 2026: Loop Governance + Four-Layer Stack + Sovereignty Dimension
+
+**What Changed:** Three additions that extend the framework from harness-level to loop-level, and add a sovereign AI dimension:
+
+**1. Agentic loop governance (June 14, 2026)**
+Boris Cherny's "WTF Is a Loop" articulation crystallised the loop as the unit of agentic work — distinct from the agent skill, from the harness, and from the MCP server. Governance frameworks that stop at harness design leave loop-level risk unaddressed: unbounded iteration, cost runaway, no-progress cycling. Principle 10 added to address this.
+
+**2. Four-layer governance stack confirmed (June 12–16, 2026)**
+Three new vendor capabilities confirmed: Composio (execution/auth, 1000+ integrations, GA), Microsoft Agent 365 (fleet control, GA May 1), Okta MCP Server with Elicitation API (identity/auth, GA April 30). Together with Noma (enforcement) and Docker MCP Toolbox (packaging), these form a complete four-layer defence-in-depth governance stack. Principle 8 updated with the expanded table and Composio self-registration risk pattern.
+
+**3. Sovereign AI as governance dimension (June 12, 2026)**
+Kekst LTW 2026 confirmed AI sovereignty is entering IPO prospectuses as a risk factor. Governance frameworks must themselves be sovereignty-assessed — vendor lock-in at the governance layer is especially dangerous. New framework created: [[ai-sovereignty-framework]].
+
+**Sources:** [[braindump-2026-06-14-1937-wtf-is-a-loop]], [[braindump-2026-06-12-1235-microsoft-agent-365]], [[braindump-2026-06-13-1517-composio-agent-infrastructure]], [[braindump-2026-06-16-1355-okta-mcp-agent-support]], [[braindump-2026-06-12-1336-kekst-cnc-ltw-2026-sovereignty-capital]]
+
+---
+
+*Consolidated from 42 sources | First version: April 10, 2026 | Last updated: June 19, 2026 | Status: Working (Principles 1–9 solid; Principle 10 Emerging)*
