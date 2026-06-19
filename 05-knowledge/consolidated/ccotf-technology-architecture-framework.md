@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "ccotf-technology-architecture"
 created: "2026-05-12"
-last_updated: "2026-05-30"
-consolidation_id: "consolidation-2026-05-30"
-source_documents: 15
+last_updated: "2026-06-19"
+consolidation_id: "consolidation-2026-06-19"
+source_documents: 19
 status: "working"
 tags: ["#framework", "#consolidated", "#CCOTF", "#contact-centre", "#technology-reference-model", "#enterprise-architecture"]
 ---
@@ -66,6 +66,9 @@ This framework is the missing layer.
 | **Genesys Cloud CX** | Cloud-neutral; best-of-breed preferred | Market leader; broad AI partner ecosystem; strongest WFM integration | Higher per-seat cost; independent of cloud infrastructure |
 | **Salesforce Agentforce Contact Center** | Salesforce Service Cloud Ent/Perf/Unlimited is the CRM of record at Belron | Native CRM integration; **AGCC GA (Feb 2026, UK available)** — voice, digital, AI agents and CRM in one platform; eliminates integration tax; $2/conversation | Hard Salesforce dependency — value disappears without Service Cloud; **no WFM** (still needs Verint/NICE); UK/US/Canada only — continental Carglass markets not covered |
 | **NICE CXone** | WFM and QM are the primary priorities | Strong WFM and AI QA portfolio | Less AI innovation velocity than Amazon/Salesforce |
+
+**Cost model gap — licensing vs. consumption (June 2026):**
+Current CCaaS vendor evaluation uses published per-seat/per-agent licensing costs. A critical gap exists: CCaaS vendors are shifting toward consumption-based pricing (per-interaction, per-AI-action, per-minute-of-AI-assist), not just agent seat licensing. The total cost of ownership calculation for any CCaaS platform decision must include both the licensing model AND the consumption cost model — particularly for AI-native features (virtual agents, real-time assist, automated QA). Without consumption-side modelling, Belron risks an underestimated TCO that surfaces post-contract. Action: require consumption cost modelling alongside seat licensing in any CCaaS RFP response. Source: [[braindump-2026-06-09-2215-genesys-consumption-numbers]]
 
 **AWS confirmed:** AWS is a Belron cloud provider (confirmed May 12, 2026), which makes Amazon Connect the front-runner CCaaS candidate — it runs natively on AWS infrastructure, integrates with Amazon Bedrock for AI, and now has full MCP support and an agentic rebrand (Amazon Connect Customer). This does not preclude Genesys or Salesforce if Belron has existing contracts, but the AWS fit is now a confirmed advantage rather than a hypothesis.
 
@@ -208,6 +211,45 @@ AGCC is the strongest option *if and only if* Belron opcos run Salesforce Servic
 
 ---
 
+### Principle 9: The Community Is the Change Management Plan
+
+**Statement:** A pan-Belron programme affecting every contact centre across 35 countries cannot be governed by a small EA team producing architecture documents. The CCOTF community of contact centre practitioners — managers, ops leads, IT, BPO partners — is not a communications channel; it is the architecture's primary change management vehicle. Building the community before the platform decision means practitioners shape the direction rather than receive it.
+
+**The intelligence problem:**
+The CCOTF Reference Architecture has 9 open issues. Several (OI-01 capability boundary, OI-03 current platform knowledge, OI-06 insurer API complexity) are open because the EA team lacks line-of-sight into each opco. A community of practitioners with structured Signals capability is faster and broader than formal workshops and bilateral stakeholder loops.
+
+**The Hive Signals model (June 2026):**
+Belron's internal Hive innovation platform includes a Signals feature for structured idea and observation submission. Using this for a CCOTF community would:
+- Surface current-state platform information across opcos (resolving OI-03)
+- Identify pain points that the architecture must address (informing OI-01 scope)
+- Create a pipeline of early adopters for Phase 1 deployment (people who contributed are more likely to adopt)
+- Provide demonstrable cross-opco engagement for IPO governance narrative — evidence of programme maturity, not just architectural artefacts
+
+**Architecture principle connection:**
+AP-09 (multi-opco by default) is the technical statement. The Hive community is the human counterpart: the programme must work for Autoglass, Carglass, and Safelite simultaneously — so must the community.
+
+**The three roles that make this work:**
+- Founding members (5–10 respected practitioners per major opco — Autoglass UK, Carglass DE/FR, Safelite US) provide credibility
+- Signal contributors provide ground-level intelligence
+- Programme liaisons visibly act on community input to close the feedback loop — the pattern fails if signals are submitted but never visibly acted upon
+
+**Evidence:**
+- [[braindump-2026-06-19-1652-hive-ccotf-community]] — "The community IS the change management plan. People who contribute to a programme are more likely to adopt its outputs"
+- [[braindump-2026-06-05-1739-btops-collaboration-ccotf-viva-engage]] — BT&Ops gap: CCOTF needs a community home before it needs a communications plan; conversation will happen anyway in informal channels
+- [[braindump-2026-06-03-1009-ccotf-qualtrics-genesys-ops]] — Stakeholder loops (Jamie/Joakim/Heidi) as the current workaround for a community intelligence problem
+
+**How to apply:**
+1. Check whether a CCOTF or contact centre community already exists on Hive (avoid duplicate)
+2. Draft the community purpose statement and scope before inviting anyone — what is it for, who should join, what will they contribute?
+3. Define the Signals taxonomy: pain points, platform observations, vendor intelligence, ideas, external market signals
+4. Consider linking Signals to specific open issues in the RA — members submit against a named OI, making the community-to-architecture connection explicit
+
+**See also:** [[pattern-community-as-change-management]] — the generalisable pattern behind this principle
+
+**Confidence:** High on the principle; Medium on Hive Signals as the right specific implementation (needs product confirmation)
+
+---
+
 ## The 12-Domain Reference Model
 
 A complete contact centre technology stack organised into 12 functional domains. Each domain contains the standard components a modern CCOTF would include, plus notes on how they evolve in an AI-native architecture.
@@ -338,4 +380,16 @@ The technology component model and framework principles have been elevated into 
 
 ---
 
-*Consolidated from 5 sources | Confidence: Working | Status: Reference model built; estate validation pending*
+### June 2026 — Community Layer + Cost Model Gap + CCOTF Platform Landscape Mapped
+
+**What Changed:** Three additions:
+
+1. **Community as Change Management (Principle 9):** The Hive Signals community model added as the human counterpart to the AP-09 multi-opco architecture principle. Source: [[braindump-2026-06-19-1652-hive-ccotf-community]].
+
+2. **Consumption cost model gap:** Licensing-only evaluation of CCaaS platforms is insufficient — AI-native consumption pricing (per-interaction, per-AI-action) must be modelled alongside per-seat costs. Source: [[braindump-2026-06-09-2215-genesys-consumption-numbers]].
+
+3. **Belron contact centre platform landscape mapped:** LeanIX queried to extract full current-state contact centre platform inventory. 12 platforms identified across 11 countries. Genesys Cloud confirmed as strategic/target platform (tagged "Strategic" in LeanIX) across AU, BE, CH, DE, ES, FR (phaseIn), IT, NL, NZ, PT, US. Clear succession paths: Odigo → Genesys FR; Mitel AT → Effex; Avaya US/Amazon Connect → Genesys US; LivePerson → Salesforce Service Cloud EU. Confirms OI-03 (current platform knowledge) is substantially resolved for key opcos. Lucid diagram of this landscape was requested (user confirmed "yes please") but not yet completed — pending follow-up session.
+
+---
+
+*Consolidated from 19 sources | Confidence: Working | Status: Reference model built; platform landscape mapped via LeanIX; Hive community pending confirmation*

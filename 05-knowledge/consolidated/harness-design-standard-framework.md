@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "harness-design-standard"
 created: "2026-06-14"
-last_updated: "2026-06-14"
-consolidation_id: "consolidation-2026-06-14"
-source_documents: 6
+last_updated: "2026-06-19"
+consolidation_id: "consolidation-2026-06-19"
+source_documents: 9
 status: "emerging"
 tags: ["#framework", "#consolidated", "#agentic-ai", "#harness", "#governance", "#mcp", "#enterprise-architecture"]
 ---
@@ -69,11 +69,13 @@ A harness is the configured execution context that wraps an AI model and defines
 | **Permitted tools** | Which MCP servers / APIs the agent can call | Approved tool catalogue per use case risk tier |
 | **Data scope** | Which data sources the agent can read / write | Data classification alignment |
 | **Allowed actions** | What the agent can do (read-only vs. write vs. execute) | Authorised intent definition |
-| **Escalation paths** | What happens when agent is uncertain or blocked | Human-in-the-loop thresholds |
+| **Escalation paths** | What happens when agent is uncertain or blocked | Human-in-the-loop thresholds; Okta Elicitation API for destructive action confirmation |
 | **Memory** | What the agent retains between sessions | Data retention and privacy policy |
 | **Audit trail** | What gets logged and for how long | Compliance and EU AI Act auditability |
-| **Identity** | How the agent authenticates to tools and data | Entra ID managed identity or equivalent |
+| **Identity** | How the agent authenticates to tools and data | Entra ID managed identity or Okta MCP Server; no service account keys in config |
 | **Who can modify** | Which roles can change harness configuration | Change management and approval process |
+| **Loop budget** | Max iterations, cost ceiling, no-progress detection, timeout | Required for any iterative agentic workflow; absent = unbounded cost and risk |
+| **Tool registration scope** | Which external services can be added at runtime (Composio risk) | Approval-required mode for new service registration; default-deny for unreviewed integrations |
 
 **Evidence:**
 - [[braindump-2026-06-11-0938-harnesses-agentic-ai]] — "Permissions, allowed tools, data scope, escalation paths, audit logging — these are not afterthoughts to harness design, they *are* harness design."
@@ -240,6 +242,35 @@ Use "harness" in architecture documentation and EA-to-EA conversations. Use "age
 
 ---
 
+### Use Case 4: Composio Integration — Governance for Execution-Layer Auth
+
+**When to apply:** When evaluating or approving any agent that uses Composio (or similar execution-layer auth platforms) to access external services.
+
+**The Composio risk:** Composio manages auth tokens for 1000+ external services on an agent's behalf. In a default-permissive configuration, an agent can register with a new external service autonomously — creating a new OAuth grant without human approval. This is a harness-level governance failure: the permitted tool scope expands at runtime without EA review.
+
+**Governance requirement:** Any harness using Composio must specify:
+- Which services are pre-approved (listed in permitted tools)
+- Whether new service registration is approval-required or blocked
+- How Composio auth tokens are scoped (read vs. write vs. execute per service)
+- The audit trail: every new service registration must be logged and visible to EA
+
+**The Noma+Composio complementary model:** Composio manages *what the agent can connect to*; Noma governs *what the agent can do with those connections*. Both are needed. EA harness approval should verify both layers are in place.
+
+---
+
+### Use Case 5: Okta MCP Server — Human-in-the-Loop for Destructive Actions
+
+**When to apply:** When an agent harness requires Okta-managed identity operations, or when any agent harness is evaluated for human-in-the-loop controls on destructive actions.
+
+**The Okta Elicitation API pattern:**
+Okta's MCP server (GA April 30, 2026) integrates the MCP Elicitation API to enforce human confirmation before executing destructive operations — deleting apps, deactivating users, resetting credentials. The agent pauses at the destructive action, surfaces a confirmation request to the human operator, and only proceeds on explicit approval.
+
+**Harness design principle:** Any harness component that can take irreversible actions (delete, deactivate, terminate, transfer) should implement the Elicitation API pattern. This is the architectural answer to the PocketOS failure mode (9-second database deletion) applied at the identity layer.
+
+**Application to Belron:** If Belron uses Okta for identity/SSO (confirm whether this is the case), the Okta MCP Server is the lowest-friction path to agent identity governance — it inherits existing Okta policies and adds agent-specific controls on top.
+
+---
+
 ## Evolution & History
 
 ### June 2026 — Concept Crystallises
@@ -284,4 +315,18 @@ Use "harness" in architecture documentation and EA-to-EA conversations. Use "age
 
 ---
 
-*Consolidated from 6 sources | Confidence: High | Status: Emerging — concept is solid, enterprise standard document is the next deliverable*
+### June 19, 2026 — Loop Budget, Composio Risk, Okta Elicitation
+
+**What Changed:** Three additions that extend the harness component model:
+
+1. **Loop budget** added as a required harness component — max iterations, cost ceiling, no-progress detection, timeout. Driven by Boris Cherny's loop architecture definition; loops are where agentic cost and risk accumulate, not individual agent calls.
+
+2. **Composio self-registration risk** added as a harness governance requirement — agents using Composio must operate in approval-required mode for new service registrations. Default-permissive Composio is a harness design failure.
+
+3. **Okta Elicitation API** added as the identity component design pattern for destructive actions — human confirmation gate at the identity layer. Added as Use Case 5.
+
+**Sources:** [[braindump-2026-06-14-1937-wtf-is-a-loop]], [[braindump-2026-06-13-1517-composio-agent-infrastructure]], [[braindump-2026-06-16-1355-okta-mcp-agent-support]]
+
+---
+
+*Consolidated from 9 sources | Confidence: High | Status: Emerging — component model extended; enterprise standard document is the next deliverable*
