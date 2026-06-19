@@ -46,6 +46,18 @@ tags: ["#integrations", "#config", "#cog"]
 - landing-list: COG (tasks land here, promote to Project plan manually via My Tasks)
 - setup-guide: [[05-knowledge/integrations/sync-tasks-pa-flow]]
 
+**Granola**
+- Connected via Claude MCP integration
+- Use for: retrieving meeting transcripts, notes, and meeting history
+
+**IFTTT**
+- Connected via Claude MCP integration
+- Use for: applet automation, connecting services, running actions and queries
+
+**Lucid (Lucidchart)**
+- Connected via HTTP MCP at `https://mcp.lucid.app/mcp`
+- Use for: creating diagrams from natural language descriptions, searching and retrieving Lucid documents, generating org charts, creating shareable diagram links
+
 ## Disabled
 -
 - **Slack**: Not confirmed during onboarding. Enable anytime by moving to Active section.
