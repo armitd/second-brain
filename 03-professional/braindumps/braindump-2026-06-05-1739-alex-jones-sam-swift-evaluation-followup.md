@@ -5,7 +5,9 @@ date: "2026-06-01"
 created: "2026-06-05 17:39"
 themes: ["stakeholder follow-up", "evaluation", "Sam Swift", "Alex Jones"]
 tags: ["#braindump", "#raw-thoughts", "#professional", "#follow-up", "#stakeholder"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-06-19]]"
+consolidated_date: "2026-06-19"
 energy_level: "low"
 emotional_tone: "neutral"
 confidence: "medium"

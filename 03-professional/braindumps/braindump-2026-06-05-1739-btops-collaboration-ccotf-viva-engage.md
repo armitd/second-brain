@@ -5,7 +5,9 @@ date: "2026-06-03"
 created: "2026-06-05 17:39"
 themes: ["BT&Ops collaboration", "CCOTF community", "Viva Engage vs Teams", "internal comms"]
 tags: ["#braindump", "#raw-thoughts", "#professional", "#ccotf", "#btops", "#viva-engage"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-06-19]]"
+consolidated_date: "2026-06-19"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"

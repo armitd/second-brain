@@ -6,7 +6,9 @@ date: "2026-06-11"
 created: "2026-06-11 16:30"
 themes: ["nordic-options-analysis", "slide-review", "presentation-refactor"]
 tags: ["#braindump", "#nordics", "#task-capture", "#presentation"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-06-19]]"
+consolidated_date: "2026-06-19"
 energy_level: "medium"
 emotional_tone: "neutral"
 confidence: "high"

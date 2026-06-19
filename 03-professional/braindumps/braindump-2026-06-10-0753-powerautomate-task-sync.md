@@ -5,7 +5,9 @@ date: "2026-06-10"
 created: "2026-06-10 07:53"
 themes: ["power-automate", "task-sync", "m365-integration", "cog-workflow"]
 tags: ["#braindump", "#raw-thoughts", "#professional", "#power-automate", "#m365", "#tasks", "#workflow"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-06-19]]"
+consolidated_date: "2026-06-19"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"

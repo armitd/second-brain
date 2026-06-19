@@ -5,7 +5,9 @@ date: "2026-06-16"
 created: "2026-06-16 11:12"
 themes: ["belron-business-knowledge", "process-mapping"]
 tags: ["#braindump", "#raw-thoughts", "#professional", "#placeholder"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-06-19]]"
+consolidated_date: "2026-06-19"
 energy_level: "low"
 emotional_tone: "neutral"
 confidence: "low"

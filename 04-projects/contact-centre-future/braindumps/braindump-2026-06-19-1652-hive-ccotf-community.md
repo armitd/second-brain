@@ -6,7 +6,9 @@ date: "2026-06-19"
 created: "2026-06-19 16:52"
 themes: ["community-building", "hive-platform", "stakeholder-engagement", "ccotf-programme"]
 tags: ["#braindump", "#ccotf", "#hive", "#community", "#signals", "#engagement"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-06-19]]"
+consolidated_date: "2026-06-19"
 energy_level: "medium"
 emotional_tone: "purposeful"
 confidence: "high"

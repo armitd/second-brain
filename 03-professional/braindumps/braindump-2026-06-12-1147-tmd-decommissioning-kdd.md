@@ -5,7 +5,9 @@ date: "2026-06-12"
 created: "2026-06-12 11:47"
 themes: ["TMD", "decommissioning", "KDD", "enterprise-architecture"]
 tags: ["#braindump", "#todo", "#EA", "#TMD", "#KDD"]
-status: "captured"
+status: "consolidated"
+consolidated_in: "[[consolidation-2026-06-19]]"
+consolidated_date: "2026-06-19"
 energy_level: "low"
 emotional_tone: "neutral"
 confidence: "high"
