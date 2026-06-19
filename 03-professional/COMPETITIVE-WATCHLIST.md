@@ -1,7 +1,7 @@
 ---
 type: "competitive-watchlist"
 created: "2026-04-09"
-last_updated: "2026-06-16"
+last_updated: "2026-06-18"
 tags: ["#competitive", "#watchlist", "#market-intelligence"]
 ---
 
@@ -31,6 +31,20 @@ tags: ["#competitive", "#watchlist", "#market-intelligence"]
 - **Relevance:** Contact Centre of the Future — vendor landscape tracking ahead of CCOTF evaluation.
 - **Source:** [[daily-brief-2026-06-16]]
 - **Last updated:** 2026-06-16
+
+---
+
+### Cartesia AI (Sonic-3.5 / Ink-2)
+- **What they do:** AI voice model provider — Sonic-3.5 (streaming text-to-speech) and Ink-2 (streaming speech-to-text). Claim to be the only provider with #1 models for both speaking and listening simultaneously. New architectures designed specifically for real-time voice agents — low latency, high quality, indistinguishable from human speech in demos.
+- **Why watch:** Santiago (@svpino) demoed a Cartesia-powered voice agent call on June 15, 2026 with the observation "there's no way call centers stay in business after this." This is not a polished enterprise pitch — it's a practitioner demo, which makes it a more reliable signal. If Sonic-3.5 + Ink-2 represent the current capability ceiling for AI voice agents, then any CCOTF architecture that doesn't account for this level of voice quality is planning against yesterday's baseline.
+- **Key products:**
+  - **Sonic-3.5** — #1 streaming TTS model (as of June 2026). New architecture. Real-time, human-indistinguishable quality.
+  - **Ink-2** — #1 streaming STT model (as of June 2026). Paired with Sonic-3.5 as a complete voice layer.
+- **Business model:** API-based model provider — not a CCaaS platform. Consumed by voice agent builders (Genesys, NICE, or custom-built agents) as a speech layer.
+- **Questions to answer:** Does Genesys support Cartesia as a speech provider, or does it lock into its own TTS/STT? Is Cartesia already embedded in any CCaaS platforms Belron evaluates? What's the pricing model vs. native Genesys speech?
+- **Relevance:** Contact Centre of the Future — if CCOTF evaluates AI voice agents, the TTS/STT layer is a critical component. Cartesia may be the capability that makes AI voice agents production-credible, not just demo-credible. Also worth flagging to the CCOTF business case — the "AI can replace call centres" narrative is moving from theoretical to demonstrated.
+- **Source:** [[Readwise/Full Document Contents/Tweets/There's no way call centers stay in business after this]]
+- **Last updated:** 2026-06-18
 
 ---
 
