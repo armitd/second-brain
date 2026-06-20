@@ -2,10 +2,10 @@
 type: reference-architecture
 artefact_class: "TOGAF Architecture Definition Document — Vendor-Agnostic Base"
 domain: enterprise-architecture
-version: "0.2"
-date: 2026-06-19
+version: "0.3"
+date: 2026-06-20
 created: 2026-05-23
-updated: 2026-06-19
+updated: 2026-06-20
 title: "Contact Centre of the Future — Vendor-Agnostic Reference Architecture"
 owner: "Armo — Enterprise Architecture, Belron"
 status: "v0.2 — Working Draft"
@@ -41,8 +41,8 @@ tags:
 
 | Field | Value |
 |---|---|
-| Version | 0.2 (Working Draft) |
-| Date | 2026-06-19 |
+| Version | 0.3 (Working Draft) |
+| Date | 2026-06-20 |
 | Owner | Armo, Enterprise Architecture |
 | Notation | TOGAF 10 ADM phases A–D; ArchiMate 3.2 vocabulary |
 | Review cadence | Quarterly; immediately on CCaaS platform decision |
@@ -105,20 +105,20 @@ Four companion **Implementation Overlay** documents map vendor products to this 
 │  VRM / Vehicle Lookup  ·  Insurer Claims API  ·  ADAS Calibration Router    │
 │  AI Damage Assessment Engine  ·  Multi-OpCo Routing Logic                   │
 └──────────────────────────────┬──────────────────────────────────────────────┘
-                               │ MCP tool calls — audited, identity-bound
+                               │ Governed API calls — audited, identity-bound
 ┌──────────────────────────────▼──────────────────────────────────────────────┐
 │  ⑤  CCAAS CORE PLATFORM  (vendor TBD — see OI-02)                           │
 │  ACD · Omnichannel · SIP/WebRTC · Recording · WFM · Analytics · Platform API│
 └──────────────────────────────┬──────────────────────────────────────────────┘
                                │
 ┌──────────────────────────────▼──────────────────────────────────────────────┐
-│  ⑥  ENTERPRISE INTEGRATION — MCP GATEWAY                                     │
-│  customer-mcp  ·  scheduling-mcp  ·  vehicle-mcp                            │
-│  claims-mcp  ·  knowledge-mcp  ·  workforce-mcp                             │
+│  ⑥  ENTERPRISE INTEGRATION — GOVERNED API GATEWAY                            │
+│  Customer Data  ·  Scheduling & Dispatch  ·  Vehicle & Glass                │
+│  Claims & Insurer  ·  Knowledge & Policy  ·  Workforce                      │
 └─────────────────────────────────────────────────────────────────────────────┘
                     ⇕  Transversal (all layers)
     Semantic Layer (L2)  ·  Contact Audit Store (L4)
-    Identity & Security  ·  OpenTelemetry Observability
+    Identity & Access Management  ·  Distributed Observability
 ```
 
 **Reading the layers:**
@@ -126,7 +126,7 @@ Four companion **Implementation Overlay** documents map vendor products to this 
 - **③** Assisted human: when a human is needed, they are supported by real-time AI — never starting cold.
 - **④** Belron's competitive moat: vehicle, glass, insurer, and calibration intelligence that no generic CCaaS platform provides.
 - **⑤** Commodity infrastructure: the CCaaS platform is a deployment decision, not an architectural differentiator.
-- **⑥** Governance backbone: every agent-to-system call is logged, identity-bound, and auditable via the MCP Gateway.
+- **⑥** Governance backbone: every agent-to-system call is logged, identity-bound, and auditable via the Enterprise Integration Gateway.
 
 ---
 
@@ -138,7 +138,7 @@ Provide a reference model for the CCOTF programme that:
 
 1. Describes the target-state architecture in **vendor-agnostic component terms**
 2. Anchors the programme to Belron's existing business capability model (bridging the capability–technology gap)
-3. Makes explicit the connection to the AI Damage Assessment PoC (CCOTF is the delivery channel) and the MCP Governance framework (the governance layer for CCOTF's agentic components)
+3. Makes explicit the connection to the AI Damage Assessment PoC (CCOTF is the delivery channel) and the AI Governance programme (the governance layer for CCOTF's agentic components)
 4. Provides a baseline for gap analysis against Belron's current contact centre technology estate
 5. Serves as an honest representation of capability requirements, data proximity, and lock-in risk — suitable for exec and IPO-context conversations
 
@@ -155,7 +155,7 @@ Provide a reference model for the CCOTF programme that:
 | D1 | Persistent contact centre problems (routing quality, agent productivity, omnichannel consistency) remain unsolved by vendor AI add-ons — structural redesign is needed | Zoom EBC observation, May 2026: "same problems as HSBC, still problems" |
 | D2 | AI-first contact — LLM-powered virtual agents can now resolve 50–60% of contacts without human involvement | Industry data, May 2026 |
 | D3 | CCOTF is the delivery channel for the AI Damage Assessment PoC — the two programmes must be architecturally coupled | Consolidation May 2026 |
-| D4 | MCP Governance provides the upstream AI governance layer — Domain 4 (AI & Automation) and Domain 11 (AI Model Governance) must sit within it | MCP Agentic Reference Architecture (2026-05-23) |
+| D4 | The AI Governance programme provides the upstream governance layer — AI & Automation components and AI model decision-making must sit within it | AI Governance programme (Belron EA) |
 | D5 | Belron's domain-specific intelligence (VRM, insurer API, ADAS calibration, multi-opco routing) is the differentiator — not the CCaaS platform | CCOTF component model, May 2026 |
 | D6 | IPO (H2 2026) requires demonstrable technology architecture governance — the contact centre is a significant customer-facing investment | Belron exec context |
 | D7 | EU AI Act Articles 9/12/14 apply to AI agents making customer-facing decisions (routing, damage assessment, claim eligibility) | EUR-Lex |
@@ -170,10 +170,10 @@ Provide a reference model for the CCOTF programme that:
 | Customer Experience / Operations | Customer outcomes, agent productivity, omnichannel | Business, Application |
 | CISO | AI decisions in customer interactions, data egress, PCI/GDPR | Security, Compliance |
 | DPO / Legal | EU AI Act, GDPR for customer contact recordings, AI transparency | Compliance |
-| MCP Governance (EA) | Domain 4 and Domain 11 components within MCP governance scope | Governance |
+| AI Governance Programme (EA) | AI & Automation components and AI model decision points within governance scope | Governance |
 | AI Damage Assessment PoC team | Integration point in Layer ④ — CCOTF is the delivery channel | Application |
 | BA team | Capability boundary: CCOTF vs. front-office | Business Architecture |
-| Integration Platform team | Layer ⑥ — API/MCP integration with CRM, FSM, insurers | Application, Technology |
+| Integration Platform team | Layer ⑥ — governed API integration with CRM, FSM, insurers | Application, Technology |
 
 ## A.5 Architecture Principles
 
@@ -183,7 +183,7 @@ Provide a reference model for the CCOTF programme that:
 | AP-02 | **Evaluate with explicit rules, not LLM inference** | The Evaluate stage (routing decisions, damage assessment outcomes, claim eligibility) must produce auditable, consistent results. LLM inference at this stage produces variance. | Rule-based evaluation engines layered over LLM retrieval; AI retrieves and reasons, rules decide and log |
 | AP-03 | **CCaaS platform is infrastructure; the Belron Intelligence Layer is the moat** | The competitive differentiation is VRM lookup, insurer API integration, ADAS routing, and AI damage assessment — not which CCaaS platform is chosen | Invest deeply in Layer ④ (Belron Intelligence); treat Layer ⑤ (CCaaS) as a commodity infrastructure decision |
 | AP-04 | **The CCaaS platform decision unlocks all other technology decisions** | Everything in this reference model either sits on, integrates with, or is constrained by the CCaaS platform. Candidate selection must happen before detailed architecture work proceeds | No detailed technology design on Layers ②–③ or WFM until CCaaS platform is chosen |
-| AP-05 | **CCOTF's agentic AI components are governed by the MCP Governance framework** | AI decisions in a customer contact are subject to the same audit, identity, and accountability requirements as other enterprise agent actions | Layer ② AI components and all AI decision points connect to the MCP Agentic Reference Architecture |
+| AP-05 | **CCOTF's AI components are governed by the AI Governance programme** | AI decisions in a customer contact are subject to the same audit, identity, and accountability requirements as other enterprise agent actions | Layer ② AI components and all AI decision points are registered with and governed by the AI Governance programme |
 | AP-06 | **Architecture must honestly represent capability ownership and data proximity** | Vendor EBC content presents polished demos; architecture must show where data lives and which vendor controls it | Vendor overlays explicitly surface lock-in risk, data residency, and portability; these are surfaced before platform decisions |
 | AP-07 | **Semantic consistency is governed, not assumed** | AI agents operating across channels will each interpret business terms (customer, case, closed, authorised) independently unless a shared semantic layer governs meaning | Controlled vocabulary is a pre-requisite for multi-agent CCOTF deployments; semantic layer is a pre-Phase 1 dependency |
 | AP-08 | **Customer-facing AI must comply with EU AI Act Article 13 transparency** | Customers must be informed when interacting with an AI system | All virtual agent and automated decision touchpoints include disclosure |
@@ -229,7 +229,7 @@ Technician Dispatch → Repair/Replace → ADAS Calibration (if required) → Cl
 ```
 CCOTF owns the first four stages. The AI Damage Assessment PoC (AIDA) is the AI capability in stage two.
 
-**Value Stream 2: Incident → IT Resolution** *(out of CCOTF scope — owned by MCP Governance / ITSM)*
+**Value Stream 2: Incident → IT Resolution** *(out of CCOTF scope — owned by ITSM programme)*
 
 ## B.4 Capability Boundary — Open Issue
 
@@ -317,13 +317,13 @@ contact_record {
 │     ACD  ·  Omnichannel Routing  ·  SIP/WebRTC  ·  Recording         │
 │     WFM  ·  Analytics  ·  Platform API                               │
 ├──────────────────────────────────────────────────────────────────────┤
-│  ⑥ Enterprise Integration — MCP Gateway                               │
-│     customer-mcp  ·  scheduling-mcp  ·  vehicle-mcp                  │
-│     claims-mcp  ·  knowledge-mcp  ·  workforce-mcp                   │
+│  ⑥ Enterprise Integration — Governed API Gateway                      │
+│     Customer Data  ·  Scheduling & Dispatch  ·  Vehicle & Glass      │
+│     Claims & Insurer  ·  Knowledge & Policy  ·  Workforce             │
 └──────────────────────────────────────────────────────────────────────┘
                 ⇕ (transversal)
     Semantic Layer (L2)  ·  Audit & Recording (L4)
-    Identity & Security  ·  OpenTelemetry Observability
+    Identity & Access Management  ·  Distributed Observability
 ```
 
 ### C.2.2 Canonical Application Components
@@ -360,7 +360,7 @@ This layer has no equivalent in any generic CCaaS reference architecture. It mus
 | VRM / Vehicle Lookup Service | [A] | Receives vehicle registration mark → returns vehicle make/model/year, glass specifications, ADAS sensor presence, and calibration requirements. Must support UK, EU, and US plate formats. | Feeds routing engine, agent desktop, damage assessment |
 | Glass Type Identifier | [AS] | Identifies OEM vs. aftermarket glass, acoustic/solar variants, part numbers for the confirmed vehicle | Feeds repair/replace decision, insurer authorisation |
 | AI Damage Assessment Engine | [A] | Photo/video → AI analysis → repair or replace recommendation with confidence score. Per AP-02 and RP-03: results below confidence threshold route to human review. | **AIDA PoC integration point** |
-| Insurer Claims API Connector | [A] | Real-time pre-authorisation request to insurer → approved/declined/referred within contact duration. Per-insurer adapters required. | `claims-mcp` → MCP Gateway |
+| Insurer Claims API Connector | [A] | Real-time pre-authorisation request to insurer → approved/declined/referred within contact duration. Per-insurer adapters required. | Enterprise Integration Gateway (Claims & Insurer service domain) |
 | ADAS Calibration Router | [AS] | Identifies calibration requirement from VRM data → applies skills-based routing to ADAS-certified technician and appropriate depot | Feeds routing engine; affects field service job type |
 | Multi-OpCo Routing Logic | [AS] | Brand, language, geography, and regulatory routing across Autoglass, Carglass, Safelite, and others. Brand-of-contact determines context from the moment of inbound identification. | CCaaS Platform API |
 
@@ -386,18 +386,26 @@ This layer has no equivalent in any generic CCaaS reference architecture. It mus
 
 See individual vendor overlays for assessment against these criteria.
 
-#### Layer ⑥: Enterprise Integration — MCP Gateway
+#### Layer ⑥: Enterprise Integration — Governed API Gateway
 
-Fully specified in the MCP Agentic Reference Architecture (2026-05-23). The CCOTF-relevant MCP server families:
+This layer connects CCOTF's AI and human agents to Belron's enterprise systems of record through a governed, audited integration fabric. Every agent-to-system call must be authenticated, authorised, and logged — governance is built in at the integration layer, not bolted on.
 
-| MCP Server | Capability | Priority |
+The integration technology (API gateway, event streaming, integration platform, AI tool protocol) is a vendor decision addressed in the overlays and the AI Governance programme. The capability domains required are:
+
+| Integration Domain | Capability | Priority |
 |---|---|---|
-| `customer-mcp` | Customer profile, contact history, preferences | Immediate |
-| `scheduling-mcp` | Job scheduling, technician dispatch, depot capacity | Immediate |
-| `vehicle-mcp` | Vehicle master, glass specs, ADAS data | Immediate |
-| `claims-mcp` | FNOL, insurer authorisation, claim status | Phase 2 |
-| `knowledge-mcp` | Technical procedures, insurer requirements, SOPs | Immediate |
-| `workforce-mcp` | Agent skills, availability, language capability | Phase 2 |
+| Customer Data | Customer profile, contact history, preferences, authentication | Immediate |
+| Scheduling & Dispatch | Job scheduling, technician dispatch, depot capacity, SLA management | Immediate |
+| Vehicle & Glass | Vehicle master data, glass specifications, ADAS configuration | Immediate |
+| Claims & Insurer | FNOL, insurer pre-authorisation, claim status, settlement triggers | Phase 2 |
+| Knowledge & Policy | Technical procedures, insurer requirements, SOPs, product catalogue | Immediate |
+| Workforce | Agent skills, availability, language capability, shift data | Phase 2 |
+
+**Integration governance requirements (all domains):**
+- All calls authenticated to a named agent or system identity
+- All calls audit-logged with timestamp, caller identity, parameters, and result
+- Data residency enforced per contact's opco (EU data stays in EU)
+- Sensitive data (PCI, GDPR-restricted) never passed in clear text through the integration layer
 
 ---
 
@@ -411,15 +419,15 @@ Fully specified in the MCP Agentic Reference Architecture (2026-05-23). The CCOT
 │      EU Zone (GDPR) · US Zone (Safelite) · Shared Services        │
 ├──────────────────────────────────────────────────────────────────┤
 │  [SS] CCaaS Platform  (vendor TBD — OI-02)                        │
-│  [SS] MCP Gateway  (IBM ContextForge per MCP RA)                  │
-│  [SS] Service Mesh  (mTLS for agent-to-system communication)      │
+│  [SS] Enterprise Integration Gateway  (vendor TBD)                │
+│  [SS] Service Mesh  (mutual TLS for inter-service communication)  │
 ├──────────────────────────────────────────────────────────────────┤
-│  [TS] LLM Provider  (via Provider Adapter per MCP RA AP-06)       │
-│  [TS] Real-Time Transcription  (vendor-agnostic service)          │
-│  [TS] Identity  (Entra ID + OAuth 2.1 — agents + humans)          │
+│  [TS] LLM Provider  (vendor TBD — see vendor overlays)            │
+│  [TS] Real-Time Transcription  (vendor TBD)                       │
+│  [TS] Identity & Access Management  (enterprise IdP — vendor TBD) │
 │  [TS] Recording Storage  (GDPR-compliant; EU-region anchored)     │
 │  [TS] Audit Storage  (Immutable WORM — EU AI Act Art. 12)         │
-│  [TS] Observability  (OpenTelemetry → Dynatrace + Elastic)        │
+│  [TS] Distributed Observability  (vendor TBD)                     │
 │  [TS] Semantic Layer  (governed vocabulary — TBD via PoC)         │
 │  [TS] PCI Compliance Controls  (pause/resume, secure IVR)         │
 └──────────────────────────────────────────────────────────────────┘
@@ -430,10 +438,10 @@ Fully specified in the MCP Agentic Reference Architecture (2026-05-23). The CCOT
 | Decision | Requirement | Status | Resolved In |
 |---|---|---|---|
 | CCaaS Platform | Must meet Layer ⑤ requirements above | **Open — OI-02** | Vendor overlay + CIO decision |
-| LLM Provider | Via Provider Adapter (MCP RA ABB-02); Anthropic preferred for AIDA alignment | Dependency on CCaaS and cloud choice | Vendor overlay |
+| LLM Provider | Vendor TBD via vendor overlays; Anthropic preferred for AIDA alignment | Dependency on CCaaS and cloud choice | Vendor overlay |
 | Real-Time Transcription | Multi-language; feeds QA and audit; GDPR-compliant | Dependency on CCaaS choice | Vendor overlay |
 | AI Damage Assessment Engine | AIDA PoC output; integration via Layer ④ | **Dependency on AIDA PoC — OI-05** | AIDA programme |
-| Semantic Layer | Governed vocabulary for cross-agent consistency; shared with MCP Governance | **Open — OI-08** | EA-led initiative |
+| Semantic Layer | Governed vocabulary for cross-agent consistency; shared with AI Governance programme | **Open — OI-08** | EA-led initiative |
 | Recording Storage | GDPR EU-region primary; immutable WORM for compliance | Architecture defined | Vendor overlay specifies platform |
 | VRM Lookup | UK/EU/US plate formats; real-time; feeds routing | **Open — OI-04** | CCOTF Technical Ops |
 | Insurer API Integration | Per-insurer adapters; real-time response within contact duration | Architecture defined; adapters TBD | Integration Platform |
@@ -444,7 +452,7 @@ Fully specified in the MCP Agentic Reference Architecture (2026-05-23). The CCOT
 |---|---|---|
 | EU Zone (primary) | Autoglass UK, Carglass EU opcos | GDPR; EU AI Act; EU data stays in EU |
 | US Zone | Safelite | US data sovereignty; may use separate CCaaS instance |
-| Shared Services | Cross-opco: semantic layer, audit aggregation, MCP gateway federation | Non-personal-data only crosses zones |
+| Shared Services | Cross-opco: semantic layer, audit aggregation, integration gateway federation | Non-personal-data only crosses zones |
 
 ---
 
@@ -472,7 +480,7 @@ A contact arriving on an Autoglass UK number is processed under UK brand context
 Every contact (all channels, all agents, all virtual agent sessions) is scored by the AI QA component against a configurable rubric. No sampling. Results feed coaching agendas, not automated performance management (AP-02: rules decide outcomes, not AI scores alone).
 
 ### RP-08 Proactive Contact Prevention
-AI predicts which customers are likely to contact (appointment concerns, claim delays, post-repair queries) and triggers proactive outreach before they call. Requires `customer-mcp` real-time data.
+AI predicts which customers are likely to contact (appointment concerns, claim delays, post-repair queries) and triggers proactive outreach before they call. Requires real-time customer data from the Customer Data integration domain (Layer ⑥).
 
 ---
 
@@ -483,38 +491,38 @@ AI predicts which customers are likely to contact (appointment concerns, claim d
 | ABB-C01 | Channel Adapter | ① | Normalises inbound contacts from all channel types into a common interaction object | Must support: voice (PSTN + VoIP), chat, email, SMS, WhatsApp Business, video, web/app. See vendor overlay for native vs. partner channels. |
 | ABB-C02 | Virtual Agent Platform | ② | LLM-powered conversational AI for first-line resolution | Must use LLM-native reasoning (not rules trees); multi-language; capable of multi-turn dialogue; integrates with Layer ④ for VRM and damage context |
 | ABB-C03 | Intelligent Routing Engine | ② | Intent + context + queue → routing decision | Must support skills-based, attribute-based, and predictive routing; AP-02: routing decisions are rule-evaluated, not LLM-decided |
-| ABB-C04 | Proactive Outreach Orchestrator | ② | AI-triggered outbound contact initiation | Must consume predictive signals from `customer-mcp`; support voice, SMS, and email outbound |
+| ABB-C04 | Proactive Outreach Orchestrator | ② | AI-triggered outbound contact initiation | Must consume predictive signals from the Customer Data integration domain (Layer ⑥); support voice, SMS, and email outbound |
 | ABB-C05 | Real-Time Transcription | ② | Speech-to-text during live voice contacts | Must support Belron opco languages; output feeds ABB-C07 and ABB-C08 simultaneously; latency < 2s |
 | ABB-C06 | Unified Agent Desktop | ③ | Single-pane agent interface across all channels | Must surface VRM data, contact history, AI Assist, and case management in one view; no manual application switching |
 | ABB-C07 | Real-Time Agent Assist Engine | ③ | Live next-best-action and knowledge surfacing | Suggestions not auto-applied; agent confirms; must integrate with ABB-C16 (knowledge) |
 | ABB-C08 | AI Quality Assurance | ③ | 100% automated contact scoring | Must score all channels (not voice only); output is coaching input, not automated HR action |
 | ABB-C09 | VRM / Vehicle Lookup Service | ④ | VRM → vehicle profile lookup | Real-time; < 1s latency during routing; must support UK, EU, US plate formats; triggers on every authenticated contact |
 | ABB-C10 | AI Damage Assessment Engine | ④ | Photo/video → repair/replace recommendation | AIDA PoC integration point; confidence-gated per RP-03; result logged in contact record |
-| ABB-C11 | Insurer Claims API Connector | ④ | Real-time insurer pre-authorisation | Must respond within contact duration (~30s); per-insurer adapters; `claims-mcp` surface; high-value jobs require HITL override |
+| ABB-C11 | Insurer Claims API Connector | ④ | Real-time insurer pre-authorisation | Must respond within contact duration (~30s); per-insurer adapters; routed via the Claims & Insurer integration domain (Layer ⑥); high-value jobs require HITL override |
 | ABB-C12 | ADAS Calibration Router | ④ | Identifies calibration requirement → specialist routing | Triggered by VRM data; must integrate with skills-based routing in CCaaS platform |
 | ABB-C13 | Multi-OpCo Routing Logic | ④ | Brand/language/geo routing | Routes by opco brand from inbound identification; GDPR-aware data residency per contact |
 | ABB-C14 | CCaaS Core Platform | ⑤ | ACD, omnichannel, recording, WFM, analytics | Vendor TBD — OI-02; must satisfy Layer ⑤ non-negotiable criteria above |
-| ABB-C15 | MCP Gateway | ⑥ | Governed, audited, identity-bound tool access | IBM ContextForge per MCP RA; all agent-to-system calls authenticated and CloudTrail/equivalent logged |
-| ABB-C16 | Semantic Layer | Transversal | Controlled vocabulary for cross-agent consistency | Pre-requisite for multi-agent deployment; shared initiative with MCP Governance — OI-08 |
-| ABB-C17 | Contact Audit Store | Transversal | Immutable record of all contacts and AI decisions | WORM storage; GDPR-compliant retention; satisfies EU AI Act Art. 12; EU-region anchored |
-| ABB-C18 | Observability Plane | Transversal | End-to-end telemetry across all layers | OpenTelemetry mandatory; feeds existing Dynatrace + Elastic estate |
+| ABB-C15 | Enterprise Integration Gateway | ⑥ | Governed, audited, identity-bound API access to enterprise systems | Vendor TBD; must enforce: authentication of all callers, authorisation per caller identity, immutable audit log of all calls, data residency per opco zone. Integration technology (API gateway, event streaming, AI tool protocol) is an implementation choice resolved in vendor overlays. |
+| ABB-C16 | Semantic Layer | Transversal | Controlled vocabulary for cross-agent consistency | Pre-requisite for multi-agent deployment; shared initiative with AI Governance programme — OI-08; technology TBD |
+| ABB-C17 | Contact Audit Store | Transversal | Immutable record of all contacts and AI decisions | WORM-compliant immutable storage; GDPR-compliant retention; satisfies EU AI Act Art. 12; EU-region anchored; vendor TBD via overlay |
+| ABB-C18 | Observability Plane | Transversal | End-to-end telemetry across all layers | Distributed tracing and metrics across all layers; must feed existing enterprise observability estate; vendor TBD |
 | ABB-C19 | PCI Compliance Controls | Transversal | Payment card data isolation during contacts | Pause/resume recording API; card numbers never enter LLM context; CCaaS platform PCI-DSS scope |
 
 ---
 
-# Standards Information Base
+# Regulatory and Compliance Standards
 
-| Standard | Version | Conformance |
+The following are non-negotiable mandatory requirements — they apply regardless of vendor or technology choices. Technology standards (API protocols, integration standards, observability frameworks) are implementation decisions resolved in the vendor overlays.
+
+| Standard / Regulation | Scope | Conformance |
 |---|---|---|
-| Model Context Protocol | June 2025 spec | Mandatory for Layer ⑥ |
-| OAuth 2.1 + PKCE | RFC | Mandatory for all agent-to-system calls |
-| W3C TraceContext | W3C Rec | Mandatory for audit correlation |
-| OpenTelemetry | 1.x | Mandatory |
-| Open Semantic Interchange | v1.0 (Jan 2026) | Required for semantic layer |
-| GDPR | As enacted | Mandatory for EU contact data |
-| EU AI Act | As enacted | Mandatory for customer-facing AI decisions |
-| PCI-DSS | v4.0 | Mandatory for payment card data in IVR/agent |
-| Ofcom / national telecoms regulation | Per-country | Per-opco compliance |
+| GDPR | All contact data for EU opco customers | Mandatory — EU data stays in EU; retention, consent, subject access rights |
+| EU AI Act | All AI systems making customer-facing decisions (routing, damage assessment, claim eligibility) | Mandatory — Art. 9 risk management, Art. 12 logging, Art. 13 transparency, Art. 14 human oversight |
+| PCI-DSS v4.0 | Payment card data in IVR and agent-handled contacts | Mandatory — pause/resume recording; card numbers never in LLM context or unencrypted storage |
+| Ofcom / national telecoms regulation | Voice services per country | Per-opco compliance — number porting, emergency services, CLI rules |
+| GDPR-equivalent data protection laws | Non-EU opcos (UK GDPR, US state laws for Safelite) | Per-jurisdiction; mapped in deployment topology |
+
+**Technology standards note:** The choice of integration protocol, identity standard, API specification, and observability framework are vendor and implementation decisions. These will be specified in the CCaaS selection decision (OI-02) and the AI Governance programme framework. They do not belong in this vendor-agnostic RA.
 
 ---
 
@@ -527,7 +535,7 @@ AI predicts which customers are likely to contact (appointment concerns, claim d
 | Customer identity fraud (caller impersonation) | VRM-based verification as secondary factor; voice biometrics evaluated |
 | AI routing manipulation (customer gaming the virtual agent) | Intent confidence thresholds; rule-evaluated outcomes per AP-02; agent review for ambiguous intents |
 | Prompt injection via customer inputs | Input sanitisation before LLM context; Virtual Agent system prompt isolated from user turn |
-| Insurer API abuse (fraudulent authorisation requests) | `claims-mcp` tool call authenticated to agent identity; HITL for above-threshold job values |
+| Insurer API abuse (fraudulent authorisation requests) | Insurer API call authenticated to agent identity via Enterprise Integration Gateway; HITL for above-threshold job values |
 | Call recording exfiltration | Immutable storage; access logs; DLP on recording retrieval |
 | PCI data in LLM context | Pause/resume controls; payment card numbers never enter LLM context |
 | AI Quality score manipulation | QA model outputs version-pinned and logged; scores are coaching inputs, not automated actions |
@@ -545,19 +553,19 @@ AI predicts which customers are likely to contact (appointment concerns, claim d
 
 # Governance Framework
 
-## G.1 Relationship to MCP Governance
+## G.1 Relationship to the AI Governance Programme
 
-The CCOTF reference architecture is **subordinate** to the MCP Governance framework. Specifically:
-- Layer ② AI components (Virtual Agent, Intelligent Routing, AI Damage Assessment Engine) are registered as Agent Actors in the MCP Agent Registry
-- AI Model Governance is not a separate CCOTF concern — it is MCP Governance's domain, applied to CCOTF use cases
-- All MCP tool calls from CCOTF agents pass through the ContextForge gateway; CCOTF does not maintain its own gateway
+The CCOTF reference architecture is **subordinate** to the Belron AI Governance programme. Specifically:
+- Layer ② AI components (Virtual Agent, Intelligent Routing, AI Damage Assessment Engine) are registered as governed AI actors in the enterprise AI registry
+- AI Model Governance is not a separate CCOTF concern — it is the AI Governance programme's domain, applied to CCOTF use cases
+- All AI-to-system calls from CCOTF components pass through the Enterprise Integration Gateway; CCOTF does not maintain its own integration gateway
 
 ## G.2 Architecture Compliance Review Checklist
 
 A CCOTF project or sub-project completes an Architecture Compliance Review (ACR) that checks:
 
 1. Architecture Principles AP-01 through AP-09 (above)
-2. MCP RA Architecture Principles AP-01 through AP-10
+2. AI Governance programme principles (as published)
 3. CCaaS platform alignment (no shadow CCaaS deployments)
 4. Belron Intelligence Layer components used — not reimplemented per-project
 5. EU AI Act risk classification declared for all AI decision components
@@ -571,7 +579,7 @@ A CCOTF project or sub-project completes an Architecture Compliance Review (ACR)
 |---|---|---|
 | CCaaS platform selection | CIO + CCOTF Programme | EA, CISO, Legal, Procurement |
 | New AI Actor registration | EA | CISO, DPO, CCOTF Programme |
-| New MCP server family | EA + Capability Owner | DPO, CISO |
+| New integration service domain | EA + Capability Owner | DPO, CISO |
 | Insurer API onboarding | Integration Platform + Claims | Legal, CISO |
 | Confidence threshold adjustment | CCOTF Programme | EA, CISO (for HITL-affecting changes) |
 | Semantic layer term addition | EA + BA team | Capability owners |
@@ -582,11 +590,11 @@ A CCOTF project or sub-project completes an Architecture Compliance Review (ACR)
 
 | Phase | Scope | Dependencies |
 |---|---|---|
-| **Phase 0 — Foundation** | CCaaS platform decision; current-state gap analysis; MCP gateway; semantic layer scoping | OI-02 (CCaaS) and OI-03 (current estate) must be resolved first |
+| **Phase 0 — Foundation** | CCaaS platform decision; current-state gap analysis; Enterprise Integration Gateway selection; semantic layer scoping | OI-02 (CCaaS) and OI-03 (current estate) must be resolved first |
 | **Phase 1 — Core AI Contact** | Virtual Agent on primary channels; Intelligent Routing; VRM lookup; agent desktop with Real-Time Assist | CCaaS platform selected |
 | **Phase 2 — Belron Intelligence** | AI Damage Assessment integration (AIDA PoC → CCOTF); Insurer API real-time authorisation; ADAS calibration routing | AIDA PoC Phase 1 complete |
 | **Phase 3 — Full Omnichannel** | All channels live; 100% AI QA; proactive outreach; full multi-opco deployment | Phases 1 and 2 stable |
-| **Phase 4 — Agentic Back-Office** | Post-contact agentic workflows (auto job creation, auto claim submission, auto scheduling) via MCP | MCP Gateway Phases 2–3 |
+| **Phase 4 — Agentic Back-Office** | Post-contact agentic workflows (auto job creation, auto claim submission, auto scheduling) via Enterprise Integration Gateway | Integration Gateway Phases 2–3 complete |
 
 ---
 
@@ -601,11 +609,11 @@ A CCOTF project or sub-project completes an Architecture Compliance Review (ACR)
 | OI-05 | AI Damage Assessment Engine — dependent on AIDA PoC outcomes | Q4 2026 | AIDA PoC team |
 | OI-06 | Insurer API integration — per-insurer adapters needed; no current map of insurer connectivity | Q3 2026 | Integration Platform |
 | OI-07 | OneNote migration — UC/CCaaS architecture notes not yet in COG | Overdue | Armo |
-| OI-08 | Semantic layer scope — one initiative covering CCOTF and MCP Governance, or two? | Q2 2026 | EA |
+| OI-08 | Semantic layer scope — one initiative covering CCOTF and AI Governance programme, or two? | Q2 2026 | EA |
 | OI-09 | Multi-opco CCaaS topology — single global instance vs. regional instances | Q3 2026 | CIO + CCOTF Programme |
 
 ---
 
-*v0.2 working draft — 2026-06-19. Vendor-agnostic base: pair with vendor overlay documents for implementation-specific mappings.*
-*Supersedes: `05-knowledge/research/2026-05-23-ccotf-reference-architecture.md` (v0.1)*
+*v0.3 working draft — 2026-06-20. Vendor-agnostic base: technology assumptions removed; all implementation choices deferred to vendor overlays.*
+*Supersedes: v0.2 (2026-06-19) and `05-knowledge/research/2026-05-23-ccotf-reference-architecture.md` (v0.1)*
 *EA Owner: Armo · Belron Enterprise Architecture*

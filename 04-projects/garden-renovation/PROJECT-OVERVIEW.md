@@ -11,26 +11,26 @@ tags: ["#project", "#garden", "#home-improvement"]
 ## Tasks
 
 ### Patio
-- [ ] Inspect patio joints — assess extent of damage and joint width 📅 2026-05-01
-- [ ] Check for sunken or lifted slabs that need re-bedding 📅 2026-05-01
-- [ ] Apply weed killer to patio joints 📅 2026-05-04
-- [ ] Buy brush-in jointing compound (EASYJoint or Rompox) 📅 2026-05-04
-- [ ] Regrout patio in a dry weather window
+- [x] Inspect patio joints — assess extent of damage and joint width 📅 2026-05-01 ✅ 2026-06-20
+- [x] Check for sunken or lifted slabs that need re-bedding 📅 2026-05-01 ✅ 2026-06-20
+- [x] Apply weed killer to patio joints 📅 2026-05-04 ✅ 2026-06-20
+- [x] Buy brush-in jointing compound (EASYJoint or Rompox) 📅 2026-05-04 ✅ 2026-06-20
+- [x] Regrout patio in a dry weather window ✅ 2026-06-20
 
 ### Lighting & Cabling
 - [ ] Rearrange garden lights
 - [ ] Sketch current garden lighting layout — mark cable runs and problem areas 📅 2026-05-01
 - [x] Check whether garage has an existing power feed 📅 2026-05-01 ✅ 2026-05-19
 - [x] Decide on mains vs. low-voltage system 📅 2026-05-04 ✅ 2026-05-19
-- [ ] Get quotes from 1-2 Part P electricians for garden + garage cable work 📅 2026-05-04
-- [ ] Plan cable routes in conjunction with pergola and rockery groundwork 📅 2026-05-04
+- [x] Get quotes from 1-2 Part P electricians for garden + garage cable work 📅 2026-05-04 ✅ 2026-06-20
+- [x] Plan cable routes in conjunction with pergola and rockery groundwork 📅 2026-05-04 ✅ 2026-06-20
 - [x] Research garage light options (PIR floodlight, wall lantern, soffit downlights) 📅 2026-05-04 ✅ 2026-05-19
 
 ### Decking
-- [ ] Pressure wash the decking
+- [x] Pressure wash the decking ✅ 2026-06-20
 - [ ] Allow decking to dry fully (48-72 hours after pressure washing)
 - [ ] Sand any rough or raised grain areas before painting
-- [ ] Buy decking paint/stain
+- [x] Buy decking paint/stain ✅ 2026-06-20
 - [ ] Repaint the decking
 
 ### Pergola & Rockery
