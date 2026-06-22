@@ -11,3 +11,4 @@
 ## Highlights
 - "It never ceases to amaze me: We all love ourselves more than other people, but care more about their opinion than our own." — Marcus Aurelius ([View Tweet](https://twitter.com/RyanHoliday/status/1921596662990229721))
 - https://t.co/Ivh62TWeiY ([View Tweet](https://x.com/RyanHoliday/status/2049879448921489469))
+- https://t.co/B5zRhDpW45 ([View Tweet](https://x.com/RyanHoliday/status/2068361835074462082))
