@@ -34,3 +34,11 @@
   ☑ Cowork = where your voice lives
   ☑ https://t.co/hz2ztgwLzS https://t.co/9nn8rPfvIl
   ![](https://pbs.twimg.com/media/HHXeIQ2acAAk5F7.jpg) ([View Tweet](https://x.com/rubenhassid/status/2050789469910093910))
+- Stop (over) organizing Claude. It slows you down.
+  Here are 20 things to delete (& the 6 to keep):
+  Delete these today:
+  1. Your prompt library. You never open it.
+  2. The 40 skills you used once.
+  3. Every connector you added "just in case."
+  4. The 31-page prompting guide (I https://t.co/FOaAdWbR2S https://t.co/k0HPwkPvCn
+  ![](https://pbs.twimg.com/media/HLK-uAAa8AAH40S.png) ([View Tweet](https://x.com/rubenhassid/status/2068650136033480711))
