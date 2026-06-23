@@ -54,6 +54,13 @@ tags: ["#integrations", "#config", "#cog"]
 - Connected via Claude MCP integration
 - Use for: applet automation, connecting services, running actions and queries
 
+**LeanIX**
+- Connected via Claude MCP integration
+- Auth: API key stored in MCP server config (env var — not in vault)
+- Use for: querying Belron's EA repository — applications, tech stacks, architecture decisions, initiatives, components, fact sheets
+- Note: includes write-capable tools (create/update architecture decisions, tech stacks) — use with care; mutations affect the live EA repository
+- Data classification: Belron Confidential — LeanIX contains non-public application portfolio data
+
 **Lucid (Lucidchart)**
 - Connected via HTTP MCP at `https://mcp.lucid.app/mcp`
 - Use for: creating diagrams from natural language descriptions, searching and retrieving Lucid documents, generating org charts, creating shareable diagram links
