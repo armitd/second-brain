@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.cog.lectures</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/darrenarmitage/Library/Mobile Documents/iCloud~md~obsidian/Documents/Second Brain/scripts/run_lectures.sh</string>
+    </array>
+
+    <!-- Fire whenever lecture_queue.txt is saved — no cron needed -->
+    <key>WatchPaths</key>
+    <array>
+        <string>/Users/darrenarmitage/Library/Mobile Documents/iCloud~md~obsidian/Documents/Second Brain/scripts/lecture_queue.txt</string>
+    </array>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/cog-lectures.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/cog-lectures-error.log</string>
+
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>

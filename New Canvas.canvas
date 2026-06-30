@@ -1,0 +1,42 @@
+{
+	"nodes":[
+		{"id":"78bb6f13a2b09278","type":"group","ratio":1.7777777777777777,"x":-360,"y":-160,"width":1200,"height":675,"label":"Start Slide"},
+		{"id":"ad994b58e8d44ad2","type":"group","x":80,"y":40,"width":300,"height":300,"label":"Untitled group"},
+		{
+			"id":"563cbafcd13e10c3",
+			"type":"text",
+			"text":"- [ ] This is my new canvas \n\n\nCanvas part 2\n",
+			"styleAttributes":{},
+			"x":-120,
+			"y":-20,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a165416020e35d7b",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":100,
+			"y":160,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"f9542dd6752d866b",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":100,
+			"y":160,
+			"width":260,
+			"height":60
+		}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{},
+		"startNode":"78bb6f13a2b09278"
+	}
+}

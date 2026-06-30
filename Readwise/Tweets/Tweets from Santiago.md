@@ -21,3 +21,9 @@
 - There's no way call centers stay in business after this.
   Listen to this conversation. You cannot tell I'm speaking to an AI voice agent here.
   This is Cartesia's model. Right now, #1 in the world. https://t.co/hEuB4IIsYH https://t.co/S174hOCzMu ([View Tweet](https://x.com/svpino/status/2066569527341744396))
+- This agent relies on a marketplace of 2.8M+ specialized agents to complete a task.
+  This is how I imagine the future of personal agents.
+  Here is how this works:
+  1. Agentverse is a marketplace of agents
+  2. Anyone can build and publish an agent there
+  3. ASI:One is a personal https://t.co/VImpEwolRn ([View Tweet](https://x.com/svpino/status/2070163927959523831))

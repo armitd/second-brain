@@ -1,0 +1,8 @@
+# COG Lecture Queue
+# Add one YouTube URL per line. The loop processes each URL once and remembers it.
+# Save this file to trigger the launchd agent automatically.
+#
+# Example:
+# https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+https://www.youtube.com/watch?v=HjWESsnoU6g&t=83s

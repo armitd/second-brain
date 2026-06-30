@@ -32,3 +32,8 @@
   45 automations execute what you think
   morning trend scanner, inbox prioritizer, content calendar, invoice generator and 41 more
   all https://t.co/fC34uyycAs https://t.co/QTX2cxAqfH ([View Tweet](https://x.com/leopardracer/status/2058919006438826089))
+- HIS SECOND BRAIN HAS BEEN RUNNING FOR FOUR MONTHS AND HIS COWORKERS QUIT THEIRS ON WEEK THREE
+  no 15 plugins no hour-long processing sessions
+  one inbox, five minutes every evening, zero decisions at capture time
+  coworkers are still losing ideas across five different apps
+  the https://t.co/PAVtH5qUq0 https://t.co/4PwfBGf031 ([View Tweet](https://x.com/leopardracer/status/2070101721393619156))

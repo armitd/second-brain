@@ -17,10 +17,6 @@ tags: ["#integrations", "#config", "#cog"]
 
 **GitHub**1
 
-**AlignedNews**
-- API endpoint: `https://alignednews.com/v1`
-- Auth: Bearer token via env var `ALIGNEDNEWS_API_KEY`
-
 **Readwise**
 - Location: `Readwise/` in vault with four subfolders:
   - `Readwise/Tweets/` — saved tweets organised by author (one file per person, all their saved tweets inside)
@@ -66,7 +62,7 @@ tags: ["#integrations", "#config", "#cog"]
 - Use for: creating diagrams from natural language descriptions, searching and retrieving Lucid documents, generating org charts, creating shareable diagram links
 
 ## Disabled
--
+- **AlignedNews**: Cancelled 2026-06-30. Contributed 0 stories in 3 of last 5 briefs; when used, surfaced X/Twitter signals only. WebSearch covers the gap. $25 pcm saving.
 - **Slack**: Not confirmed during onboarding. Enable anytime by moving to Active section.
 - **Linear**: Not confirmed during onboarding. Enable anytime by moving to Active section.
 - **Confluence**: Not confirmed during onboarding. Enable anytime by moving to Active section.
