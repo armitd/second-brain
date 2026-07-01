@@ -1,7 +1,7 @@
 ---
 type: "competitive-watchlist"
 created: "2026-04-09"
-last_updated: "2026-06-18"
+last_updated: "2026-07-01"
 tags: ["#competitive", "#watchlist", "#market-intelligence"]
 ---
 
@@ -24,13 +24,20 @@ tags: ["#competitive", "#watchlist", "#market-intelligence"]
 
 ---
 
-### TELUS Digital + Cresta (CCaaS AI partnership)
+### TELUS Digital + Cresta / ElevenLabs (CCaaS AI implementation partnerships)
 - **What they do:** TELUS Digital announced a partnership with Cresta (June 2026) to deliver AI-powered customer experience solutions for global enterprises — TELUS Digital becomes a preferred implementation partner integrating Cresta's unified CX AI platform (voice and chat AI agents, real-time human augmentation, conversation intelligence) across clients' CCaaS and CRM environments.
 - **Why watch:** New CCaaS vendor pairing to track as a comparison point against Belron's existing Salesforce Service Cloud-based approach and the Zoom CCaaS evaluation already on this watchlist. Both companies present at Customer Contact Week (Las Vegas, June 24–25, 2026) — expect a cluster of related CCaaS/AI announcements around that event.
 - **Questions to answer:** Does this partnership target any verticals or geographies relevant to Belron's opcos? Worth a follow-up scan after Customer Contact Week.
 - **Relevance:** Contact Centre of the Future — vendor landscape tracking ahead of CCOTF evaluation.
 - **Source:** [[daily-brief-2026-06-16]]
-- **Last updated:** 2026-06-16
+
+#### TELUS Digital + ElevenLabs (added July 2026)
+- **What:** At Customer Contact Week 2026 (Las Vegas, June 24–25), TELUS Digital and ElevenLabs announced a strategic partnership making TELUS Digital a preferred implementation partner for **ElevenAgents**, ElevenLabs' enterprise voice-AI platform — TELUS Digital leads deployment, integration, and governance for enterprise clients adopting ElevenAgents at scale.
+- **Why it matters:** TELUS Digital is now hedged across **two** AI voice stacks (Cresta and ElevenLabs), which signals where the implementation-partner economics are heading: the value is consolidating around the integration/governance layer, not the underlying voice model. For CCOTF this changes the buy-vs-integrate calculus — the voice-AI layer (Cartesia, ElevenLabs, Cresta) is increasingly reached via a systems-integrator rather than as a pure API.
+- **Note:** ElevenLabs is currently a **disabled** integration in COG (see MY-INTEGRATIONS.md) — flagged here as competitive intelligence, not a tooling suggestion.
+- **Questions to answer:** Does ElevenAgents/ElevenLabs appear in any CCaaS platform Belron evaluates? How does the TELUS implementation model price vs. native Genesys/Salesforce voice?
+- **Source:** [[daily-brief-2026-07-01]]
+- **Last updated:** 2026-07-01
 
 ---
 
@@ -389,6 +396,13 @@ When shortlisting, assess each against:
 - **Action:** Request Agent Fabric + MCP/OAuth client walkthrough from Salesforce account team 📅 2026-06-23. Add Agent Fabric to MCP Governance vendor comparison alongside Microsoft Agent 365 and Noma 📅 2026-06-20.
 - **Source:** [[daily-brief-2026-06-16]]
 - **Last updated:** 2026-06-16
+
+#### Salesforce Agentforce Contact Center (June 2026) — CCaaS entry
+- **What:** At/around Customer Contact Week 2026, Salesforce launched **Agentforce Contact Center**, unifying AI, voice, and CRM into a single CCaaS platform — moving Salesforce from "agent workspace + Service Cloud" toward a full contact-centre platform play.
+- **CCOTF implication:** Directly relevant given Belron's existing Service Cloud footprint. Strengthens the case that the Salesforce side of the contact-centre stack could extend into full CCaaS rather than remaining just the agent workspace — sharpens the open "displacement vs. extend existing Service Cloud" question in the main Salesforce entry above, and the Zoom/Genesys evaluation.
+- **Action:** Add Agentforce Contact Center to the CCOTF vendor comparison alongside Zoom ZCC and the existing Service Cloud baseline. Probe whether it consumes the same Agent Fabric / MCP-client governance layer shipped in Summer '26.
+- **Source:** [[daily-brief-2026-07-01]]
+- **Last updated:** 2026-07-01
 
 #### Salesforce Headless 360 (April 2026) — Major update
 - **What:** Marc Benioff announced Salesforce Headless 360 — entire Salesforce + Agentforce + Slack platforms exposed as APIs, MCP, and CLI. No browser required.
