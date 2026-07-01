@@ -9,7 +9,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 -c \"\nimport sys, json\nd = json.load(sys.stdin)\np = d.get('tool_input', {}).get('file_path', '')\ncustom_skills = ['plan-week', 'process-readwise', 'capture-notes', 'publish-to-sharepoint', 'process-daybook', 'sync-tasks', 'vault-review']\nis_custom_skill = any(f'/skills/{s}/' in p for s in custom_skills)\nprotected = ['.claude/roles/', '.claude/agents/', 'CLAUDE.md', 'AGENTS.md', 'Readwise/']\nskills_protected = '.claude/skills/' in p and not is_custom_skill\nif skills_protected or any(x in p for x in protected):\n    print(json.dumps({'hookSpecificOutput': {'hookEventName': 'PreToolUse', 'permissionDecision': 'deny', 'permissionDecisionReason': 'Framework file — use /update-cog to update.'}}))\n\"",
+            "command": "python3 -c \"\nimport sys, json\nd = json.load(sys.stdin)\np = d.get('tool_input', {}).get('file_path', '')\ncustom_skills = ['daybook', 'plan-week', 'process-daybook', 'process-readwise', 'publish-to-sharepoint', 'sync-tasks', 'vault-review']\nis_custom_skill = any(f'/skills/{s}/' in p for s in custom_skills)\nprotected = ['.claude/roles/', '.claude/agents/', 'CLAUDE.md', 'AGENTS.md', 'Readwise/']\nskills_protected = '.claude/skills/' in p and not is_custom_skill\nif skills_protected or any(x in p for x in protected):\n    print(json.dumps({'hookSpecificOutput': {'hookEventName': 'PreToolUse', 'permissionDecision': 'deny', 'permissionDecisionReason': 'Framework file — use /update-cog to update.'}}))\n\"",
             "statusMessage": "Checking framework file protection..."
           }
         ]
