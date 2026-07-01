@@ -127,18 +127,22 @@ Omit any interval section silently if no qualifying notes were found in that win
 
 Always write to today's daybook at `01-daily/daybooks/daybook-YYYY-MM-DD.md`.
 
-**If the daybook doesn't exist yet:** Create it first with this content, then append the digest:
+**If the daybook doesn't exist yet:** Create it first with this content (matching the `/daybook` skill's exact template), then append the digest:
 
 ```markdown
 ---
-type: daybook
-date: YYYY-MM-DD
-created: YYYY-MM-DD
-status: Open
+type: "daybook"
+date: "YYYY-MM-DD"
+created: "YYYY-MM-DD"
+status: "open"
 ---
 
-# Daybook — D Month YYYY
+# Daybook — DD Month YYYY
+
+<!-- Append thoughts here throughout the day. No structure needed. Run /braindump when back at desk. -->
 ```
+
+Use the full date in the heading, e.g. `# Daybook — 17 May 2026`.
 
 Then append the digest with a blank line before the `## Vault Review` header.
 
