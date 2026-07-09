@@ -1,7 +1,7 @@
 ---
 type: reference
 domain: shared
-updated: "2026-06-08"
+updated: "2026-07-08"
 tags:
   - people
   - crm
@@ -31,10 +31,14 @@ tags:
 ### Open Threads
 - Conversation needed: Alex Jones and Sam Swift in relation to "the evaluation" — nature of the evaluation is unknown (vendor, role/performance, tool assessment?) [Source: [[03-professional/braindumps/braindump-2026-06-05-1739-alex-jones-sam-swift-evaluation-followup]] | 2026-06-05 | confidence: low]
 - Follow-up marked as the highest priority action for Monday 8 June 2026 [Source: [[01-daily/briefs/daily-brief-2026-06-08]] | 2026-06-08 | confidence: high]
+- "Hive" note (2026-07-08) — unclear what Hive refers to (tool, platform, or initiative); clarify and follow up if needed [Source: [[04-projects/contact-centre-future/braindumps/braindump-2026-07-08-1608-ccotf-knowledge-base-voc]] | 2026-07-08 | confidence: low]
 
 ---
 
 ## Timeline (Append-Only)
+
+### 2026-07-08
+- Referenced in the CCOTF daybook: "Alex Jones note re: Hive." Context and the meaning of "Hive" not captured [Source: [[04-projects/contact-centre-future/braindumps/braindump-2026-07-08-1608-ccotf-knowledge-base-voc]] | 2026-07-08 | confidence: low]
 
 ### 2026-06-01
 - Daybook capture: "Speak to Alex Jones about Sam Swift and the evaluation" and "Send Alex slides from Friday" — both items flagged as needing action [Source: [[03-professional/braindumps/braindump-2026-06-05-1739-alex-jones-sam-swift-evaluation-followup]] | 2026-06-05 | confidence: medium]
