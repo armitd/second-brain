@@ -191,7 +191,11 @@ Also append a one-line note at the bottom of the daybook file:
 *Processed → [[braindump-YYYY-MM-DD-HHMM-slug]]*
 ```
 
-### 10. Confirm Completion
+### 10. Archive the Daybook
+
+Create `01-daily/daybooks/archive/` if it doesn't exist. Move the now-processed daybook file there (same filename).
+
+### 11. Confirm Completion
 
 Report back:
 ```
@@ -202,7 +206,7 @@ Main themes: [theme1], [theme2], [theme3]
 Action items: [count] captured
 [If competitive intel extracted]: Also extracted competitive intelligence for [company/person].
 
-Daybook marked as processed.
+Daybook marked as processed and archived to 01-daily/daybooks/archive/.
 ```
 
 If the content was thin (fewer than ~50 words), note:
@@ -214,4 +218,4 @@ Note: The daybook was fairly sparse — you may want to add more context via /br
 - This skill is intentionally non-interactive. It reads and processes without asking questions, because the user is likely back at their desk wanting a quick turnaround, not a Q&A session.
 - If domain classification is genuinely ambiguous, default to `professional` rather than asking.
 - The `source: "daybook"` and `source_file:` frontmatter fields distinguish these braindumps from direct `/braindump` captures, which is useful for pattern analysis later.
-- Never delete or overwrite the daybook file — only append the processed note and update the status field.
+- Never delete or overwrite the daybook file — only append the processed note, update the status field, and move it to `01-daily/daybooks/archive/`.
