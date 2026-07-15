@@ -16,6 +16,8 @@ confidence: "medium"
 ## Raw Thoughts
 LeanIX discovery. What else can we do with it? How do we give non-licenced users enquiry access.
 
+How do we sell the LeanIX governance model to the AI group?
+
 *(Context from daybook 2026-07-15: raised alongside "SAP / LeanIX" and "AI Governance" in the Front Office Meeting.)*
 
 ## Content Analysis
@@ -34,6 +36,7 @@ LeanIX discovery. What else can we do with it? How do we give non-licenced users
 - Are viewer/read-only seats free, capped, or chargeable under our specific contract?
 - Who is the LeanIX admin / product owner internally, and who owns the SAP relationship?
 - What is the actual demand — how many people want enquiry access, and for what (portfolio queries, roadmaps, tech risk)?
+- Who leads the AI group, and what governance (if any) do they already have? Where's the gap the LeanIX model fills?
 
 ### Decisions Contemplated
 - Whether to expand LeanIX usage into new modules/use cases vs keep it as an APM inventory.
@@ -66,6 +69,24 @@ Beyond application inventory, SAP LeanIX supports:
 
 > ⚠️ Licensing specifics (viewer seat cost, caps, API usage rights) are contract-dependent. Treat the above as options to validate, not confirmed entitlements. Confirm with the SAP LeanIX account manager / Belron's licence owner before committing to an approach.
 
+### Selling the LeanIX governance model to the AI group
+
+The pitch is not "use our tool" — it's "adopt our governance discipline for AI assets." The LeanIX governance model already solves the problems the AI group is about to hit:
+
+- **What the model gives them:** a single authoritative register of assets, clear ownership per asset, lifecycle states, defined review/refresh cycles, and portfolio-level risk/cost visibility. Map that onto AI: an inventory of AI use cases / models / agents, each with an accountable owner, a lifecycle (PoC → pilot → production → retire), and risk classification.
+- **Why it lands now:** AI governance is being stood up from scratch. It is far cheaper to inherit a proven governance pattern than to invent a parallel one. Avoids a second, disconnected AI registry.
+- **The integration angle:** register AI use cases and models as fact sheets in LeanIX (or a linked object type), so the AI portfolio sits inside the same landscape as the applications and integrations it touches — dependencies become visible, not hidden.
+- **Pre-IPO framing:** demonstrable, auditable governance over the AI estate is an asset in IPO due diligence. "We know every AI system, who owns it, and its risk posture" is a strong story.
+- **Ties to MCP Governance:** the same governed-source-of-truth principle underpins [[04-projects/mcp-governance/PROJECT-OVERVIEW|MCP Governance]] — the AI group governance conversation and the MCP governance work should reinforce, not duplicate, each other.
+
+**How to sell it (tactics):**
+1. Lead with their pain (shadow AI, no owner accountability, no risk view), not the tool.
+2. Show a worked example — one real AI use case modelled as a LeanIX fact sheet with owner, lifecycle, and dependencies.
+3. Offer a light-touch pilot: register the current AI PoCs (incl. AI Damage Assessment) rather than boiling the ocean.
+4. Frame governance as an enabler of speed and trust, not a gate — this matters for adoption with an AI audience.
+
+> Watch-out: don't let "governance" read as bureaucracy to an AI group that wants to move fast. Position it as guardrails that let them scale safely and pass IPO scrutiny.
+
 ### Key Insights
 1. **The lever is usage maturity, not more tooling.** The value gap is almost certainly under-exploitation of what's already licensed — capability maps, tech-risk, roadmaps — rather than a missing feature.
 2. **Access model choice hinges on demand shape.** A handful of stakeholders → viewer seats or shared reports. Broad, recurring demand → API-fed dashboard is cheaper and more durable than buying seats.
@@ -89,6 +110,7 @@ Beyond application inventory, SAP LeanIX supports:
 - [ ] Scope the actual demand for enquiry access — who wants it and for what queries 📅 2026-07-22
 - [ ] Ask the LeanIX account manager to confirm viewer-seat cost/caps and API usage rights 📅 2026-07-22
 - [ ] Run a short internal "what are we not using?" audit against the module list above 📅 2026-07-22
+- [ ] Draft a one-slide pitch for the AI group: LeanIX governance model applied to AI assets (register PoCs as fact sheets) 📅 2026-07-22
 
 ### Strategic Considerations
 - Consider a one-page LeanIX value/roadmap paper tying capabilities to SAP transformation + IPO due diligence.

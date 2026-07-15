@@ -1,0 +1,321 @@
+<title>LeanIX Governance → AI</title>
+<style>
+  :root {
+    --ground: #EEF1F3;
+    --surface: #FBFCFD;
+    --ink: #13202B;
+    --ink-soft: #47606F;
+    --ink-faint: #7E93A0;
+    --line: #D4DDE2;
+    --accent: #0E7C86;
+    --accent-soft: #E1EFF0;
+    --signal: #B9722B;
+    --signal-soft: #F6E9D8;
+    --shadow: 24px 40px 80px -48px rgba(19, 32, 43, 0.45);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #0B141C;
+      --surface: #15232F;
+      --ink: #E9F0F3;
+      --ink-soft: #A6B9C4;
+      --ink-faint: #6E8593;
+      --line: #263A48;
+      --accent: #3FB8B0;
+      --accent-soft: #17323400;
+      --signal: #E0A45C;
+      --signal-soft: #2A2113;
+      --shadow: 24px 40px 90px -50px rgba(0, 0, 0, 0.8);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #0B141C;
+    --surface: #15232F;
+    --ink: #E9F0F3;
+    --ink-soft: #A6B9C4;
+    --ink-faint: #6E8593;
+    --line: #263A48;
+    --accent: #3FB8B0;
+    --accent-soft: #173234;
+    --signal: #E0A45C;
+    --signal-soft: #2A2113;
+    --shadow: 24px 40px 90px -50px rgba(0, 0, 0, 0.8);
+  }
+  :root[data-theme="light"] {
+    --ground: #EEF1F3;
+    --surface: #FBFCFD;
+    --ink: #13202B;
+    --ink-soft: #47606F;
+    --ink-faint: #7E93A0;
+    --line: #D4DDE2;
+    --accent: #0E7C86;
+    --accent-soft: #E1EFF0;
+    --signal: #B9722B;
+    --signal-soft: #F6E9D8;
+    --shadow: 24px 40px 80px -48px rgba(19, 32, 43, 0.45);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background:
+      radial-gradient(1200px 600px at 82% -10%, color-mix(in srgb, var(--accent) 9%, transparent), transparent 60%),
+      var(--ground);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    padding: clamp(16px, 4vw, 56px);
+    min-height: 100vh;
+  }
+
+  .mono {
+    font-family: ui-monospace, "SF Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .slide {
+    width: 100%;
+    max-width: 1120px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    padding: clamp(26px, 3.6vw, 52px);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(22px, 2.6vw, 34px);
+    position: relative;
+    overflow: hidden;
+    animation: rise 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+  .slide::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 6px;
+    background: linear-gradient(var(--accent), color-mix(in srgb, var(--accent) 55%, var(--signal)));
+  }
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .slide { animation: none; }
+  }
+
+  /* ---- header ---- */
+  header { display: flex; flex-direction: column; gap: 14px; }
+  .eyebrow {
+    display: flex; align-items: center; gap: 12px;
+    font-size: 11px; color: var(--accent); font-weight: 600;
+  }
+  .eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+  .eyebrow .div { flex: 1; height: 1px; background: var(--line); }
+  .eyebrow .tag { color: var(--ink-faint); }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(27px, 3.9vw, 46px);
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    font-weight: 760;
+    text-wrap: balance;
+    max-width: 20ch;
+  }
+  h1 em { font-style: normal; color: var(--accent); }
+  .subhead {
+    margin: 0;
+    font-size: clamp(14px, 1.35vw, 17px);
+    color: var(--ink-soft);
+    max-width: 62ch;
+    line-height: 1.5;
+  }
+
+  /* ---- mapping ---- */
+  .map {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: clamp(14px, 2vw, 30px);
+    align-items: stretch;
+  }
+  .col-head {
+    font-size: 11px; font-weight: 600; margin-bottom: 12px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .col-head.ea { color: var(--ink-faint); }
+  .col-head.ai { color: var(--accent); }
+  .rows { display: flex; flex-direction: column; gap: 9px; }
+  .cell {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: clamp(12.5px, 1.15vw, 14px);
+    line-height: 1.34;
+    min-height: 58px;
+    display: flex;
+    align-items: center;
+  }
+  .col.ai .cell {
+    border-color: color-mix(in srgb, var(--accent) 34%, var(--line));
+    background: color-mix(in srgb, var(--accent) 7%, var(--surface));
+    font-weight: 550;
+  }
+  .cell b { font-weight: 680; }
+
+  .arrows {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding-top: 30px;
+  }
+  .arrow {
+    min-height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    font-size: 18px;
+  }
+  @media (max-width: 720px) {
+    .map { grid-template-columns: 1fr; }
+    .arrows { display: none; }
+    .col.ea .cell { opacity: 0.9; }
+    .col-head { margin-top: 6px; }
+  }
+
+  /* ---- why now ---- */
+  .why {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(12px, 1.6vw, 20px);
+    border-top: 1px solid var(--line);
+    padding-top: clamp(18px, 2vw, 26px);
+  }
+  .why h2 {
+    grid-column: 1 / -1;
+    margin: 0 0 2px;
+    font-size: 11px;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+  .hook { display: flex; flex-direction: column; gap: 6px; }
+  .hook .n {
+    font-size: 11px; color: var(--accent); font-weight: 600;
+  }
+  .hook .t { font-size: clamp(13px, 1.25vw, 15px); font-weight: 650; letter-spacing: -0.01em; }
+  .hook .d { font-size: clamp(11.5px, 1.05vw, 12.5px); color: var(--ink-soft); line-height: 1.42; }
+  @media (max-width: 720px) { .why { grid-template-columns: 1fr; } }
+
+  /* ---- ask ---- */
+  .ask {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: var(--signal-soft);
+    border: 1px solid color-mix(in srgb, var(--signal) 32%, var(--line));
+    border-radius: 12px;
+    padding: 16px 20px;
+  }
+  .ask .badge {
+    flex-shrink: 0;
+    font-size: 10.5px;
+    font-weight: 700;
+    color: var(--signal);
+    border: 1px solid color-mix(in srgb, var(--signal) 45%, transparent);
+    border-radius: 6px;
+    padding: 5px 9px;
+  }
+  .ask p { margin: 0; font-size: clamp(13px, 1.2vw, 15px); line-height: 1.45; }
+  .ask p strong { color: var(--ink); }
+  .ask p span { color: var(--ink-soft); }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    font-size: 10.5px;
+    color: var(--ink-faint);
+    flex-wrap: wrap;
+  }
+</style>
+
+<div class="slide">
+  <header>
+    <div class="eyebrow mono">
+      <span class="dot"></span>
+      <span>Enterprise Architecture &rarr; AI Governance</span>
+      <span class="div"></span>
+      <span class="tag">Belron &middot; Draft</span>
+    </div>
+    <h1>Don't invent AI governance. <em>Inherit a model that already works.</em></h1>
+    <p class="subhead">The LeanIX governance model &mdash; the discipline we already run over the application estate &mdash; maps cleanly onto AI. Same register, same ownership, same lifecycle. Applied to use cases, models and agents.</p>
+  </header>
+
+  <section class="map" aria-label="Mapping EA governance to AI assets">
+    <div class="col ea">
+      <div class="col-head ea mono">What LeanIX governs today</div>
+      <div class="rows">
+        <div class="cell">Authoritative register of applications</div>
+        <div class="cell">A named, accountable owner per asset</div>
+        <div class="cell">Defined lifecycle: Plan &rarr; Active &rarr; Retire</div>
+        <div class="cell">Portfolio risk &amp; cost heatmaps</div>
+        <div class="cell">Owner self-service: fact-sheet subscriptions keep data fresh</div>
+      </div>
+    </div>
+
+    <div class="arrows" aria-hidden="true">
+      <div class="arrow">&rarr;</div>
+      <div class="arrow">&rarr;</div>
+      <div class="arrow">&rarr;</div>
+      <div class="arrow">&rarr;</div>
+      <div class="arrow">&rarr;</div>
+    </div>
+
+    <div class="col ai">
+      <div class="col-head ai mono">Applied to the AI estate</div>
+      <div class="rows">
+        <div class="cell">One inventory of AI <b>use cases, models &amp; agents</b></div>
+        <div class="cell">An accountable owner per AI system</div>
+        <div class="cell">Lifecycle: <b>PoC &rarr; Pilot &rarr; Production &rarr; Retire</b></div>
+        <div class="cell">AI risk classification &amp; spend visibility</div>
+        <div class="cell">AI owners self-certify their own systems</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" aria-label="Why now">
+    <h2 class="mono">Why this, why now</h2>
+    <div class="hook">
+      <span class="n mono">01</span>
+      <span class="t">Cheaper to inherit than invent</span>
+      <span class="d">AI governance is being stood up from scratch. Adopting a proven pattern beats running a second, disconnected AI registry.</span>
+    </div>
+    <div class="hook">
+      <span class="n mono">02</span>
+      <span class="t">A pre-IPO asset</span>
+      <span class="d">"We know every AI system, its owner and its risk posture" is a strong story for IPO-grade due diligence.</span>
+    </div>
+    <div class="hook">
+      <span class="n mono">03</span>
+      <span class="t">Dependencies stop hiding</span>
+      <span class="d">Registered as fact sheets, AI sits in the same landscape as the apps and integrations it actually touches.</span>
+    </div>
+  </section>
+
+  <section class="ask">
+    <span class="badge mono">The ask</span>
+    <p><strong>Pilot it small.</strong> <span>Register today's AI PoCs &mdash; starting with AI Damage Assessment &mdash; as LeanIX fact sheets. Guardrails that let you scale safely and pass scrutiny, not a gate that slows you down.</span></p>
+  </section>
+
+  <footer>
+    <span class="mono">One-slide pitch &middot; EA to AI Group</span>
+    <span class="mono">Draft for internal review &middot; 15 Jul 2026</span>
+  </footer>
+</div>
