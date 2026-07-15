@@ -128,6 +128,18 @@
     max-width: 20ch;
   }
   h1 em { font-style: normal; color: var(--accent); }
+  .principle {
+    margin: 0;
+    font-size: clamp(15px, 1.7vw, 21px);
+    line-height: 1.3;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--accent);
+    padding-left: 16px;
+    border-left: 3px solid var(--accent);
+    max-width: 40ch;
+    text-wrap: balance;
+  }
   .subhead {
     margin: 0;
     font-size: clamp(14px, 1.35vw, 17px);
@@ -255,6 +267,7 @@
       <span class="tag">Belron &middot; Draft</span>
     </div>
     <h1>Don't invent AI governance. <em>Inherit a model that already works.</em></h1>
+    <p class="principle">&ldquo;If you are working in LeanIX, then it makes sense to govern in LeanIX.&rdquo;</p>
     <p class="subhead">The LeanIX governance model &mdash; the discipline we already run over the application estate &mdash; maps cleanly onto AI. Same register, same ownership, same lifecycle. Applied to use cases, models and agents.</p>
   </header>
 
