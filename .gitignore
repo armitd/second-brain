@@ -35,6 +35,12 @@ Thumbs.db
 # 06-templates/*
 # !06-templates/.gitkeep
 
+# Dependencies / build artifacts
+node_modules/
+scripts/.venv/
+__pycache__/
+*.pyc
+
 # IDE
 .vscode/
 .idea/
