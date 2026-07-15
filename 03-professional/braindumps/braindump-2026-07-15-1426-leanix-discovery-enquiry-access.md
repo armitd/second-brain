@@ -18,6 +18,10 @@ LeanIX discovery. What else can we do with it? How do we give non-licenced users
 
 How do we sell the LeanIX governance model to the AI group?
 
+LeanIX as a governance tool — not just an EA inventory, but the platform of record for governing the estate.
+
+"If you are working in LeanIX, then it makes sense to govern in LeanIX."
+
 *(Context from daybook 2026-07-15: raised alongside "SAP / LeanIX" and "AI Governance" in the Front Office Meeting.)*
 
 ## Content Analysis
@@ -68,6 +72,29 @@ Beyond application inventory, SAP LeanIX supports:
 - **Embedded reports:** surface LeanIX reports inside an existing intranet/Confluence page.
 
 > ⚠️ Licensing specifics (viewer seat cost, caps, API usage rights) are contract-dependent. Treat the above as options to validate, not confirmed entitlements. Confirm with the SAP LeanIX account manager / Belron's licence owner before committing to an approach.
+
+### LeanIX as a governance tool (not just an inventory)
+
+Reframing LeanIX from "the EA team's application catalogue" to "Belron's platform of record for governing the technology estate."
+
+> **Guiding principle:** *"If you are working in LeanIX, then it makes sense to govern in LeanIX."* Govern where the work already lives — don't stand up a separate governance layer that duplicates the register and drifts out of sync.
+
+The governance capabilities already in the box:
+
+- **Data quality & completeness governance:** fact-sheet quality seals, mandatory fields, and completeness scoring keep the repository trustworthy enough to make decisions on.
+- **Ownership & accountability:** every asset has a named owner and subscription roles — governance starts with someone being accountable.
+- **Lifecycle governance:** lifecycle states (Plan → Phase-in → Active → Phase-out → End-of-life) turn the register into a controlled roadmap, not a static list.
+- **Technology risk & obsolescence governance:** end-of-life tracking flags unsupported tech before it becomes an audit or security finding.
+- **Portfolio decision governance:** TIME classification (Tolerate/Invest/Migrate/Eliminate) and heatmaps give a repeatable basis for rationalisation calls.
+- **Standards & compliance:** reference architectures and policy fact sheets let you define "the standard" and measure drift against it.
+- **Surveys as a control loop:** periodic owner surveys operationalise governance — data stays current because owners are prompted to re-certify.
+
+**Why this framing matters:**
+- Elevates LeanIX from a cost line to a control platform — strengthens the case for wider adoption and the enquiry-access question above.
+- Establishes the single governance pattern that the AI-group pitch then extends (see below) — one model, applied consistently across apps, integrations, and AI.
+- Directly supports the pre-IPO story: auditable governance over the technology estate.
+
+> Positioning note: "governance tool" must not read as "system of control that slows delivery." Frame it as the trusted source of truth that makes faster, safer decisions possible.
 
 ### Selling the LeanIX governance model to the AI group
 
