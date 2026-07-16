@@ -32,6 +32,7 @@ tags: ["#interests", "#daily-brief", "#config"]
 - BBQ
 - Cooking
 - Thermomix
+- Contact Centre Technology
 
 ## Preferred News Sources
 
