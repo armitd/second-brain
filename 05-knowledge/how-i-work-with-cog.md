@@ -88,6 +88,23 @@ Tasks land in the COG list in To Do. For anything needing project tracking (time
 
 ---
 
+## Working the Captures — Two Loops
+
+Capture is the easy half. These are the two loops I consciously run *after* capturing. Nothing here is automated — I choose when to run each step.
+
+### Execute Loop — capture → done
+1. `/process-daybook` (or `/braindump`) — turn raw capture into a structured braindump
+2. **Pull the actions** — ask COG to extract the action items; I approve which become tasks, tagged `#planner` in `00-inbox/TASKS.md`. *This is the bridge from insight to action — the step that was always missing.*
+3. `/sync-tasks` — push the `#planner` tasks to my To Do "COG" list
+4. `/plan-week` — when I want the week laid out across days
+
+### Review Loop — capture → revisited
+Stops captured knowledge rotting. Run when I feel like reviewing, not on a timer.
+- `/vault-review` — resurfaces notes from ~7 / 30 / 90 days ago with real questions (each unanswerable without having read the note); appends to today's daybook
+- `/knowledge-consolidation` — folds scattered braindumps and insights into frameworks in `05-knowledge/`
+
+---
+
 ## Model Selection
 
 | Task | Model |
@@ -120,6 +137,8 @@ Switch with `/model` or from the session menu.
 | `/sync-tasks pick` | Interactive task picker for one-off sends |
 | `/weekly-checkin` | Weekly reflection and pattern review |
 | `/plan-week` | Plans the week ahead from projects and tasks |
+| `/vault-review` | Resurfaces 7/30/90-day-old notes with spaced-repetition review questions |
+| `/knowledge-consolidation` | Folds scattered braindumps into frameworks |
 
 ---
 
@@ -147,4 +166,4 @@ Switch with `/model` or from the session menu.
 
 ---
 
-*Last updated: 2026-06-14*
+*Last updated: 2026-07-18*
