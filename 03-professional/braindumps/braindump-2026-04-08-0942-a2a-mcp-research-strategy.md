@@ -9,6 +9,8 @@ status: "researched"
 energy_level: "high"
 emotional_tone: "curious/strategic"
 confidence: "high"
+consolidated_in: "[[consolidation-2026-04-09]]"
+consolidated_date: "2026-04-09"
 ---
 
 # Braindump: A2A and MCP — Research Report + Enterprise Strategy

@@ -5,10 +5,12 @@ date: "2026-06-04"
 created: "2026-06-04 15:23"
 themes: ["salesforce", "customer data platform", "data strategy", "research"]
 tags: ["#braindump", "#raw-thoughts", "#professional", "#salesforce", "#data-platform", "#cdp"]
-status: "captured"
+status: "consolidated"
 energy_level: "low"
 emotional_tone: "curious"
 confidence: "medium"
+consolidated_in: "[[consolidation-2026-06-07]]"
+consolidated_date: "2026-06-07"
 ---
 
 # Braindump: Research Salesforce Data 360

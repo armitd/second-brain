@@ -10,6 +10,8 @@ status: "researched"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "medium"
+consolidated_in: "[[consolidation-2026-04-15]]"
+consolidated_date: "2026-04-15"
 ---
 
 # Braindump: Oracle Mobile Inventory vs Körber — Research Findings
