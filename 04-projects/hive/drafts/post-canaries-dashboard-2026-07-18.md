@@ -38,6 +38,20 @@ For a business like ours, that reframes the question. It is less "which jobs doe
 
 ---
 
+## Short variant (augmentation-forward, ~150 words)
+
+**Suggested title:** The choice that decides how AI and our jobs get on
+
+Stanford's new Canaries Dashboard is measuring AI's real effect on work, using payroll data from 4.6 million workers. The finding that matters most for us is an encouraging one: the outcome depends far less on the technology than on how we choose to use it.
+
+Where AI is set up simply to automate a task, employment softens. But where AI is used to *augment* people, helping them do their jobs better, that effect all but disappears. Same tool, very different results, and the choice is ours to make.
+
+That is the opportunity. The AI we are exploring at Belron is aimed squarely at the augmentation side: giving our technicians and contact-centre teams better information, faster, so they can focus on the work only people can do.
+
+**For discussion:** what would "AI that makes your job better" look like in your team?
+
+---
+
 ## Notes for Armo
 - Length ~330 words; trim the Belron-specific paragraph if you want it more cross-market/neutral.
 - Swap the two named examples (damage assessment, contact centre) for whatever lands best with the community, or drop them to keep it vendor/project-neutral.
