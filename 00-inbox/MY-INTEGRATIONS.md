@@ -20,9 +20,9 @@ tags: ["#integrations", "#config", "#cog"]
 **Readwise**
 - Location: `Readwise/` in vault with four subfolders:
   - `Readwise/Tweets/` — saved tweets organised by author (one file per person, all their saved tweets inside)
-  - `Readwise/Full Document Contents/Tweets/` — full thread captures, one file per thread, titled by topic (75 threads; use this when looking for a specific thread or topic)
-  - `Readwise/Articles/` — 20 saved articles including AI, EA, and productivity content
-  - `Readwise/Books/` — 66 books with highlights across EA, health, music, fiction, and food
+  - `Readwise/Full Document Contents/Tweets/` — full thread captures, one file per thread, titled by topic (190 threads; use this when looking for a specific thread or topic)
+  - `Readwise/Articles/` — 21 saved articles including AI, EA, and productivity content
+  - `Readwise/Books/` — 79 books with highlights across EA, health, music, fiction, and food
   - `Readwise/Full Document Contents/Articles/` — full-text article exports
   - `Readwise/Full Document Contents/Books/` — full-text book exports
 - Use for: reading tweet/article/book content and highlights directly from vault instead of fetching URLs

@@ -4,8 +4,15 @@ date: "2026-07-18"
 created: "2026-07-18 08:20"
 sweep_scope: "agent-memory (empty) + 05-knowledge (targeted: environment-heavy notes + structural scan)"
 tags: ["#memory-hygiene", "#trust-sweep", "#cog"]
-status: "waiting-on-user"
+status: "resolved"
 ---
+
+> **Resolution (2026-07-18): all four fixes applied + memory store seeded.**
+> 1. ✅ Restored `publish-to-sharepoint-pa-flow.md` to `05-knowledge/integrations/` — broken link now resolves.
+> 2. ✅ Corrected Readwise counts in `MY-INTEGRATIONS.md` (articles 21, books 79, threads 190).
+> 3. ✅ Archived 21 iCloud conflict files to `05-knowledge/archive/icloud-conflicts-2026-07-18/` (all verified identical or older-subset; none hard-deleted). The `integrations 2/sync-tasks` copy was an older subset of the canonical note — archived.
+> 4. ✅ Removed the empty `integrations 2/` folder. Zero conflict files/dirs remain.
+> 5. ✅ Seeded the previously-empty agent memory store with 4 entries (2 feedback, 1 project, 1 reference) + `MEMORY.md` index.
 
 # Memory Hygiene Sweep — 18 July 2026
 
