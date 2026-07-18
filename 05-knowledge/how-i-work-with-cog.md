@@ -34,7 +34,7 @@ A personal reference for my day-to-day COG workflows. Not a technical spec — j
 
 ### On the Move — Daybook
 When I'm away from my desk and want to capture thoughts quickly:
-1. Write into today's daybook file (`01-daily/daybook/YYYY-MM-DD.md`) — freeform, no structure needed
+1. Write into today's daybook file (`01-daily/daybooks/daybook-YYYY-MM-DD.md`) — freeform, no structure needed
 2. Later, run `/process-daybook` — COG reads it, classifies it, runs the full braindump pipeline, and saves a structured braindump to the right vault location
 3. The daybook entry gets marked `status: processed` with a link to the braindump
 
@@ -147,7 +147,7 @@ Switch with `/model` or from the session menu.
 | Content | Location |
 |---|---|
 | Daily briefs | `01-daily/briefs/daily-brief-YYYY-MM-DD.md` |
-| Daybooks | `01-daily/daybook/YYYY-MM-DD.md` |
+| Daybooks | `01-daily/daybooks/daybook-YYYY-MM-DD.md` |
 | Personal braindumps | `02-personal/braindumps/` |
 | Professional braindumps | `03-professional/braindumps/` |
 | Project braindumps | `04-projects/[project]/braindumps/` |
