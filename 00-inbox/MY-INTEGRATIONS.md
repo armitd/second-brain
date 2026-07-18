@@ -16,6 +16,7 @@ tags: ["#integrations", "#config", "#cog"]
 - Brand kit ID: kAGGs2XOG3E (your Canva brand kit)
 
 **GitHub**
+- Use for: repository operations — issues, pull requests, releases, and code hosted on GitHub
 
 **Readwise**
 - Location: `Readwise/` in vault with four subfolders:
