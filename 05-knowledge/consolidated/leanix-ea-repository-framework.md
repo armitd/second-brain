@@ -5,7 +5,7 @@ framework: "leanix-ea-repository"
 created: "2026-04-15"
 last_updated: "2026-07-18"
 consolidation_id: "consolidation-2026-07-18"
-source_documents: 4
+source_documents: 5
 status: "working"
 tags: ["#framework", "#consolidated", "#LeanIX", "#EA-tools", "#architecture-repository", "#APM", "#governance", "#AI-governance"]
 ---
@@ -302,7 +302,9 @@ Key insight: "LeanIX is the tooling layer for everything being built this week" 
 
 Also captured: the full SAP LeanIX capability landscape (APM, tech-risk, BCM, integration architecture, roadmaps, SMP, surveys, reporting, API) and the non-licensed enquiry-access options — the practical answer to "what else can we do with it?" and "how do we widen access without blowing the licence budget?"
 
-**Sources:** [[braindump-2026-06-23-2236-leanix-mcp-server]], [[braindump-2026-07-15-1426-leanix-discovery-enquiry-access]]
+A further angle recovered from the June EA-team-meeting notes (reconciled 18 July): **LeanIX as a market-facing tool** — giving opcos visibility into each other's landscapes as an EA competitive advantage, and the open question of whether LeanIX exposes an MCP server (now answered: yes, live since June 23). This dovetails with the enquiry-access options above — the "wider audience" is not only internal stakeholders but the opcos themselves.
+
+**Sources:** [[braindump-2026-06-23-2236-leanix-mcp-server]], [[braindump-2026-07-15-1426-leanix-discovery-enquiry-access]], [[braindump-2026-06-16-0900-ea-team-meeting-agenda-agentic-platforms]]
 
 ---
 

@@ -5,7 +5,7 @@ framework: "agentic-ai-governance"
 created: "2026-04-10"
 last_updated: "2026-07-18"
 consolidation_id: "consolidation-2026-07-18"
-source_documents: 45
+source_documents: 51
 status: "working"
 tags: ["#framework", "#consolidated", "#agentic-AI", "#MCP", "#A2A", "#EA-governance", "#protocols"]
 ---
@@ -631,4 +631,24 @@ CCOTF knowledge-base work surfaced "RAG-ready / machine-readable knowledge docum
 
 ---
 
-*Consolidated from 45 sources | First version: April 10, 2026 | Last updated: July 18, 2026 | Status: Working (Principles 1–9 solid; Principles 10–12 Emerging)*
+### Reconciliation: recovered June 9–18, 2026 captures (processed 2026-07-18)
+
+**What this is:** A batch of June 9–18 daybook-sourced braindumps was never folded into the 19 June cycle (a coverage gap found and reconciled on 18 July). The material reinforces existing principles rather than adding new ones:
+
+**1. "Agentify the existing integration estate" is the practical MCP implementation question (Principle 1).**
+The EA team meeting agenda framed the concrete problem: how do we make existing Mulesoft APIs agent-callable (via MCP servers / wrappers), and does SnapLogic displace Mulesoft in the Nordics on cost? Every existing API is a candidate agent tool — the agentification path is the on-the-ground work behind "which systems get an MCP server, in what order."
+
+**2. OKTA is the natural enterprise agent-identity layer (Principle 8, Identity/Auth).**
+OKTA MCP research reinforced the identity layer of the four-layer stack: OKTA is where Belron's fragmented opco directories converge, so agent identity governed through OKTA is the lowest-friction path. The Okta directory-search side-project is also a clean reference example of a *well-scoped, read-only MCP server over an existing enterprise system* — a low-risk pattern the MCP Governance work can point to (note: it carries HR/people-data, so needs privacy sign-off before any corporate rollout).
+
+**3. Data models locked in PDFs are not agent-ready (Principle 12).**
+The Enterprise Logical Data Model (ELDM) exists in ERWIN but is stored as a PDF in Confluence — unqueryable by agents. This is a concrete instance of the knowledge-readiness gate: foundational data governance (entity model, canonical models, PII categorisation) has to be machine-queryable before agents can reason over it. Reinforces the LeanIX-MCP / "make the estate queryable" thread.
+
+**4. EA must "earn the right to influence, not dictate" in the agentic world.**
+The EA team's identity conversation (architecture as shaping the organisation; be proactive; influence markets rather than mandate) is the positioning frame for how MCP Governance and the CCOTF RA should land — as frameworks markets choose to adopt, not top-down control. This connects to [[ea-effectiveness-framework]] and the [[pattern-govern-where-work-lives]] framing (guardrails that enable, not gates). Also recurring: **Hive** as the enterprise platform for capturing MCP/agentic use cases and hosting architecture communities across opcos (broader than CCOTF) — a candidate demand-signal layer, flagged for the communities-of-practice framework next cycle.
+
+**Sources:** [[braindump-2026-06-16-0900-ea-team-meeting-agenda-agentic-platforms]], [[braindump-2026-06-17-0900-adjustment-programme-rfi-copilot]], [[braindump-2026-06-18-0900-ea-operations-entity-model-guild]], [[braindump-2026-06-16-1357-okta-directory-search-side-project]], [[braindump-2026-06-15-0900-ccotf-community-project-mcp-team]], [[braindump-2026-06-09-0900-agentic-rfi-salesforce]]
+
+---
+
+*Consolidated from 51 sources | First version: April 10, 2026 | Last updated: July 18, 2026 | Status: Working (Principles 1–9 solid; Principles 10–12 Emerging)*
