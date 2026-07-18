@@ -176,7 +176,7 @@ The Andrade quote is directly applicable to any PoC vendor discussion: a vendor 
 ---
 
 ## Related Files
-- [[06-events/ai-summit-london-2026-06-10/AGENDA]] — Full personalised agenda
+- [[08-events/ai-summit-london-2026-06-10/AGENDA]] — Full personalised agenda
 - [[braindump-2026-06-12-1336-kekst-cnc-ltw-2026-sovereignty-capital]] — Kekst CNC London Tech Week report (complementary themes: sovereignty, capital)
 - [[04-projects/mcp-governance/PROJECT-OVERVIEW]]
 - [[04-projects/ai-damage-assessment-poc/PROJECT-OVERVIEW]]

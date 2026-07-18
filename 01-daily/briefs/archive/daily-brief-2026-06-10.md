@@ -76,7 +76,7 @@ You're at Tobacco Dock all day. Based on your agenda, these are the ones not to 
 - **15:00** — Operating models for autonomous workflows masterclass
 - **17:00** — Pandora AI agents (end-to-end CX — strong Belron parallel)
 
-**Full agenda:** [[06-events/ai-summit-london-2026-06-10/AGENDA]]
+**Full agenda:** [[08-events/ai-summit-london-2026-06-10/AGENDA]]
 
 ---
 
