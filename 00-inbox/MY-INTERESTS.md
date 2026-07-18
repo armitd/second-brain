@@ -18,7 +18,6 @@ tags: ["#interests", "#daily-brief", "#config"]
 - Automotive industry news
 - Enterprise architecture trends
 - Windscreen / auto glass industry
-- Enterprise Architecture
 - AI development agencies and consultancies
 - Computer vision and machine vision AI
 - Foundation models (OpenAI, Anthropic, Google DeepMind, Meta AI, Mistral)
@@ -33,8 +32,9 @@ tags: ["#interests", "#daily-brief", "#config"]
 - Cooking
 - Thermomix
 - Contact Centre Technology
-- Learning analgoue synths and how to make musc
-- 
+- Learning analogue synths and making music
+- Learning guitar
+
 
 ## Preferred News Sources
 
