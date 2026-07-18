@@ -38,6 +38,16 @@ When I'm away from my desk and want to capture thoughts quickly:
 2. Later, run `/process-daybook` — COG reads it, classifies it, runs the full braindump pipeline, and saves a structured braindump to the right vault location
 3. The daybook entry gets marked `status: processed` with a link to the braindump
 
+> **Daybook = actionable.** It's a staging layer: capture → process → tasks. It gets emptied of meaning once processed.
+
+### Musings & Reflections — Journal (`07-journal/`)
+For thoughts I want to **keep and refer back to**, with no action attached (usually dictated):
+1. Run `/create-journal` — optionally with a title, or just dictate the thought and COG titles it
+2. It saves a titled note to `07-journal/YYYY-MM-DD-title-slug.md` and stops there — **no processing, no action extraction**
+3. Refer back anytime via Obsidian; `/vault-review` may resurface old entries later (only if I schedule it)
+
+> **Journal = keep-only.** Deliberately outside the action pipeline — `/braindump`, `/process-daybook`, and `/sync-tasks` never touch `07-journal/`. See `07-journal/README.md`.
+
 ### Articles, Tweets, Books — Readwise
 **Readwise is the primary content layer.** Everything external should go through Readwise first.
 
@@ -139,6 +149,8 @@ Switch with `/model` or from the session menu.
 | `/plan-week` | Plans the week ahead from projects and tasks |
 | `/vault-review` | Resurfaces 7/30/90-day-old notes with spaced-repetition review questions |
 | `/knowledge-consolidation` | Folds scattered braindumps into frameworks |
+| `/daybook` | Creates/opens today's daybook for actionable capture |
+| `/create-journal` | Saves a titled, capture-only journal entry to `07-journal/` (never processed) |
 
 ---
 
@@ -147,7 +159,8 @@ Switch with `/model` or from the session menu.
 | Content | Location |
 |---|---|
 | Daily briefs | `01-daily/briefs/daily-brief-YYYY-MM-DD.md` |
-| Daybooks | `01-daily/daybooks/daybook-YYYY-MM-DD.md` |
+| Daybooks (actionable capture) | `01-daily/daybooks/daybook-YYYY-MM-DD.md` |
+| Journal (keep-only musings) | `07-journal/YYYY-MM-DD-title-slug.md` |
 | Personal braindumps | `02-personal/braindumps/` |
 | Professional braindumps | `03-professional/braindumps/` |
 | Project braindumps | `04-projects/[project]/braindumps/` |
