@@ -34,6 +34,7 @@ tags: ["#interests", "#daily-brief", "#config"]
 - Contact Centre Technology
 - Learning analogue synths and making music
 - Learning guitar
+- Guitar practice and fretboard learning
 
 
 ## Preferred News Sources
