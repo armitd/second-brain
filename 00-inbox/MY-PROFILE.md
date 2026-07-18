@@ -37,6 +37,7 @@ tags: ["#profile", "#config", "#cog"]
 
 ## Related
 - [[MY-INTERESTS|My Interests & News Sources]]
+- [[MY-PREFERENCES|My COG Working Preferences]]
 
 ## Notes
 *Feel free to add notes here about your COG usage, preferences, or anything else.*

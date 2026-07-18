@@ -1,0 +1,41 @@
+---
+type: preferences
+created: 2026-07-18
+tags: ["#preferences", "#config", "#cog"]
+---
+
+# My COG Working Preferences
+
+How I want COG (Claude) to work with me. This file lives in the synced vault, so
+these preferences follow me across all my Macs — unlike COG's per-machine auto-memory.
+
+Canonical source of truth for working preferences. When a durable preference emerges
+in a session, it belongs here (synced), not only in local auto-memory (per-machine).
+
+## Explain the concept before executing
+
+When a new mechanism, skill, or system concept comes up for the first time, explain
+what it is and how it works before acting on it. Not a wall of theory: a clear, short
+grounding, then act on my confirmation. For routine, already-understood operations,
+just proceed.
+
+**Origin:** In the 2026-07-18 session I paused a `memory-hygiene` run mid-flight to ask
+how the vault memory store actually worked before authorising it. I learn the model
+first, then approve the action.
+
+## Propose, don't auto-apply, anything out of scope
+
+Keep changes surgical and in-scope. Auto-apply only low-risk, in-scope corrections
+(e.g. stamping a date, fixing a verified-wrong count in the file being worked on).
+For anything else — file moves, archives, deletes, or edits to files outside the
+requested task — present a proposal with evidence and wait for confirmation. Flag
+adjacent issues rather than silently fixing them. Prefer scoped git commits over
+`git add -A`.
+
+**Origin:** Reinforced repeatedly on 2026-07-18 (flagging `MY-INTEGRATIONS.md` as out of
+a sweep's scope; flagging a garden-file title mismatch instead of restructuring;
+propose-only archives). Aligns with the vault `CLAUDE.md` scope-lock and hard-stop rules.
+
+## Related
+- [[MY-PROFILE|My COG Profile]]
+- [[MY-INTERESTS|My Interests & News Sources]]
