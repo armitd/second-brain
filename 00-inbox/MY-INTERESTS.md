@@ -33,6 +33,8 @@ tags: ["#interests", "#daily-brief", "#config"]
 - Cooking
 - Thermomix
 - Contact Centre Technology
+- Learning analgoue synths and how to make musc
+- 
 
 ## Preferred News Sources
 
