@@ -3,11 +3,11 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "leanix-ea-repository"
 created: "2026-04-15"
-last_updated: "2026-04-20"
-consolidation_id: "consolidation-2026-04-20"
-source_documents: 2
+last_updated: "2026-07-18"
+consolidation_id: "consolidation-2026-07-18"
+source_documents: 4
 status: "working"
-tags: ["#framework", "#consolidated", "#LeanIX", "#EA-tools", "#architecture-repository", "#APM"]
+tags: ["#framework", "#consolidated", "#LeanIX", "#EA-tools", "#architecture-repository", "#APM", "#governance", "#AI-governance"]
 ---
 
 # LeanIX EA Repository Framework
