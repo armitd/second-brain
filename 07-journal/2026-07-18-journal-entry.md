@@ -8,6 +8,8 @@ tags: ["#journal"]
 # Journal Entry
 
 <!-- Just talk. No structure, no action needed — this is a keep-and-reflect note. -->
-Guitar lessons - how do I learn to be more 
+Guitar lessons - how do I learn to be more focussed. How do I learn my way around the fretboard? 
+
+
 
 
