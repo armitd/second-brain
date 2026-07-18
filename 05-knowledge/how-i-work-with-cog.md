@@ -115,6 +115,43 @@ Stops captured knowledge rotting. Run when I feel like reviewing, not on a timer
 
 ---
 
+## Where Work Content Lives
+
+Three homes, chosen by **intent**, not by topic. The same topic can appear in all three at different stages of maturity.
+
+| Home | What lives here | Lifespan | How it gets there |
+|---|---|---|---|
+| `03-professional/braindumps/` | Raw thinking: half-formed strategy, reactions, competitive notes | Transient (an inbox, not a home) | `/braindump`, `/process-daybook` |
+| `04-projects/[project]/` | Anything with a deliverable, owner, or timeline | As long as the initiative runs | Created when I start an active initiative |
+| `05-knowledge/` | Distilled, durable, reusable insight | Permanent | Consolidation cycles plus ingestion skills |
+
+Decision rule:
+- Actively driving it toward an outcome? → **Project**
+- Capturing it to process later? → **Professional braindump**
+- A settled insight I'll reuse across projects? → **Knowledge**
+
+Example lifecycle: a braindump on agentic governance (03) becomes an active initiative (`04-projects/MCP-governance/`) whose durable thesis ends up as `05-knowledge/consolidated/agentic-ai-governance-framework.md`. 05 is where things go to become permanent, not where they start.
+
+> **Don't pre-create empty theme folders.** New folders earn their place when there's content to put in them. (Empty scaffold folders from setup were removed 2026-07-18.)
+
+---
+
+## How 05-knowledge Fills Up
+
+Mostly automated, from a few distinct feeders:
+
+| Subfolder | Fed by | Contents |
+|---|---|---|
+| `consolidated/` | `/knowledge-consolidation` (roughly weekly cycles) | Dated cycle logs plus the `*-framework.md` files each cycle produces |
+| `patterns/` | Consolidation cycles | Recurring structural insights, named as patterns |
+| `booklets/` | `/url-dump`, `/process-readwise` | Saved reading sorted into articles / books / tools / tweets / reference / inspiration |
+| `people/` | `brief-people-updater` agent | Profiles built from briefs, meetings, Slack |
+| `belron/`, `integrations/` | Hand-authored | Anchor docs and Power Automate flow how-tos |
+
+The bulk (`consolidated/` and `patterns/`) grows only when I run `/knowledge-consolidation`. If braindumps pile up without a cycle, 05 stops growing: check the newest dated file in `consolidated/` to see when the last cycle ran.
+
+---
+
 ## Model Selection
 
 | Task | Model |
