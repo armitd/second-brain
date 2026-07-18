@@ -46,7 +46,7 @@ Stanford's new Canaries Dashboard is measuring AI's real effect on work, using p
 
 Where AI is set up simply to automate a task, employment softens. But where AI is used to *augment* people, helping them do their jobs better, that effect all but disappears. Same tool, very different results, and the choice is ours to make.
 
-That is the opportunity. The AI we are exploring at Belron is aimed squarely at the augmentation side: giving our technicians and contact-centre teams better information, faster, so they can focus on the work only people can do.
+That is the opportunity. The AI we are exploring at Belron can be aimed squarely at the augmentation side: giving our technicians and contact-centre teams better information, faster, so they can focus on the work only people can do.
 
 **For discussion:** what would "AI that makes your job better" look like in your team?
 
