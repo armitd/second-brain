@@ -5,10 +5,12 @@ date: "2026-06-28"
 created: "2026-06-28 17:47"
 themes: ["api-key", "cog-automation", "corporate-vs-personal"]
 tags: ["#braindump", "#cog", "#action-required"]
-status: "captured"
+status: "consolidated"
 energy_level: "low"
 emotional_tone: "neutral"
 confidence: "high"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: Switch COG Scripts to Corporate API Key

@@ -5,13 +5,15 @@ date: "2026-06-21"
 created: "2026-06-21 12:09"
 themes: ["agentic-ai", "persistent-agents", "ai-tooling", "mcp-governance", "enterprise-ai"]
 tags: ["#braindump", "#agentic-ai", "#hermes", "#persistent-agents", "#ai-literacy"]
-status: "captured"
+status: "consolidated"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"
 source_readwise: "Readwise/Full Document Contents/Tweets/Hermes Agent pro tip.md"
 source_author: "Prajwal Tomar (@PrajwalTomar_)"
 source_url: "https://twitter.com/PrajwalTomar_/status/2066497450358272493/"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: Hermes Agent — The Persistent Agent Category Is Now Real

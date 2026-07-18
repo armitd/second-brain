@@ -5,10 +5,12 @@ date: "2026-07-15"
 created: "2026-07-15 14:26"
 themes: ["leanix", "enterprise-architecture", "sap", "tooling", "licensing"]
 tags: ["#braindump", "#raw-thoughts", "#professional", "#leanix", "#eam"]
-status: "captured"
+status: "consolidated"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "medium"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: LeanIX Discovery — Expanding Use & Non-Licensed Enquiry Access

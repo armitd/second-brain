@@ -6,10 +6,12 @@ date: "2026-06-23"
 created: "2026-06-23 22:36"
 themes: ["leanix", "mcp-integration", "enterprise-architecture-tooling"]
 tags: ["#braindump", "#raw-thoughts", "#professional", "#mcp-governance", "#leanix"]
-status: "captured"
+status: "consolidated"
 energy_level: "medium"
 emotional_tone: "neutral"
 confidence: "high"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: LeanIX MCP Server Now Active

@@ -5,10 +5,12 @@ date: "2026-06-24"
 created: "2026-06-24 07:44"
 themes: ["ipad-workflow", "remote-access", "terminal-tools"]
 tags: ["#braindump", "#raw-thoughts", "#personal", "#ipad", "#productivity", "#tools"]
-status: "captured"
+status: "consolidated"
 energy_level: "low"
 emotional_tone: "curious"
 confidence: "high"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: Running Commands Remotely on iPad

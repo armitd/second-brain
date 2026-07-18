@@ -116,6 +116,29 @@ These relationships enable impact analysis: "If we retire this application, whic
 
 ---
 
+### Principle 6: Govern Where the Work Already Lives
+
+**Statement:** LeanIX is not just the EA team's application inventory; it is Belron's platform of record for governing the technology estate. If a domain's assets already live in LeanIX (applications, integrations, tech components, initiatives), the governance for those assets should live there too. Standing up a separate governance layer that duplicates the register guarantees drift: two sources of truth that disagree within weeks.
+
+**Guiding tagline (Armo, coined 2026-07-15):** *"If you are working in LeanIX, then it makes sense to govern in LeanIX."*
+
+**The governance capabilities already in the box (no new tooling required):**
+- **Data-quality governance:** fact-sheet quality seals, mandatory fields, completeness scoring keep the register trustworthy enough to decide on.
+- **Ownership & accountability:** every asset has a named owner and subscription roles — governance starts with someone being accountable.
+- **Lifecycle governance:** lifecycle states (Plan → Phase-in → Active → Phase-out → End-of-life) turn the register into a controlled roadmap, not a static list.
+- **Technology-risk governance:** end-of-life tracking flags unsupported tech before it becomes an audit or security finding.
+- **Portfolio-decision governance:** TIME classification (Tolerate / Invest / Migrate / Eliminate) and heatmaps give a repeatable basis for rationalisation calls.
+- **Standards & compliance:** reference-architecture and policy fact sheets let you define "the standard" and measure drift.
+- **Surveys as a control loop:** periodic owner re-certification keeps the data current because owners are prompted to confirm it.
+
+**How to apply:** When any governance need arises for an asset class already modelled in LeanIX, ask first "can LeanIX govern this?" before proposing a new register or tool. Extend the fact-sheet model rather than duplicating it.
+
+**Positioning watch-out:** "governance tool" must not read as "a system of control that slows delivery." Frame it as the trusted source of truth that makes faster, safer decisions possible — guardrails that enable speed, not a gate.
+
+**Confidence:** High — this is the general [[pattern-govern-where-work-lives]] applied to EA tooling; the specific licensing/access mechanics below are contract-dependent and unconfirmed.
+
+---
+
 ## Key Use Cases for an EA at Belron
 
 ### Use Case 1: Application Portfolio Management (APM)
@@ -184,6 +207,46 @@ LeanIX's dashboards, reports, and Fact Sheet views are designed to be shared wit
 
 If Belron does not currently use LeanIX (or uses it poorly), proposing and implementing an EA repository is a high-visibility, lasting initiative. It creates a permanent, queryable record of EA work that leadership can see and use. The five use cases above constitute the business case — each answers a question that leadership currently cannot answer reliably.
 
+### Selling the Governance Model to the AI Group
+
+The pitch to Belron's AI group is not "use our tool" — it is "adopt our governance discipline for AI assets." The LeanIX governance model already solves the problems the AI group is about to hit.
+
+- **What the model gives them:** a single authoritative register of assets, clear ownership per asset, lifecycle states, defined review cycles, and portfolio-level risk/cost visibility. Map that onto AI: an inventory of AI use cases / models / agents, each with an accountable owner, a lifecycle (PoC → pilot → production → retire), and a risk classification.
+- **Why it lands now:** AI governance is being stood up from scratch. It is far cheaper to inherit a proven governance pattern than to invent a parallel one — and it avoids a second, disconnected AI registry.
+- **The integration angle:** register AI use cases and models as fact sheets (or a linked object type) in LeanIX so the AI portfolio sits inside the same landscape as the applications and integrations it touches — dependencies become visible, not hidden.
+- **Pre-IPO framing:** demonstrable, auditable governance over the AI estate is an asset in IPO due diligence. "We know every AI system, who owns it, and its risk posture" is a strong story.
+- **Ties to MCP Governance:** the same governed-source-of-truth principle underpins [[agentic-ai-governance-framework]] — the AI-group conversation and the MCP Governance work should reinforce, not duplicate, each other.
+
+**How to sell it (tactics):**
+1. Lead with their pain (shadow AI, no owner accountability, no risk view), not the tool.
+2. Show one worked example — a real AI use case modelled as a LeanIX fact sheet with owner, lifecycle, and dependencies.
+3. Offer a light-touch pilot: register the current AI PoCs (including AI Damage Assessment) rather than boiling the ocean.
+4. Frame governance as an enabler of speed and trust, not a gate — this matters for adoption with an AI audience.
+
+The pitch artefact exists as a one-slider: see [[reference-leanix-ai-governance-pitch-slide]].
+
+### Wider (Non-Licensed) Enquiry Access — Options to Validate
+
+Democratising access to LeanIX data without buying a full editor seat for every consumer. The right choice depends on demand shape and, critically, on Belron's specific SAP LeanIX contract.
+
+| Option | Best when | Note |
+|---|---|---|
+| **Viewer / read-only seats** | A handful of named stakeholders need to log in | Whether viewers are free, capped, or chargeable is contract-dependent — confirm with the account team |
+| **Shared report links / snapshots** | Occasional consumers who don't need live access | No login required |
+| **Exports (PDF / Excel / PPT)** | True zero-licence consumption via SharePoint / Teams / Confluence | Static; goes stale |
+| **API-fed dashboard (Power BI / portal)** | Broad, recurring demand | Most scalable and durable; consumers never touch LeanIX |
+| **Embedded reports** | Surfacing inside an existing intranet / Confluence page | Reuses existing channels |
+
+> ⚠️ Licensing specifics (viewer-seat cost, caps, API usage rights) are contract-dependent. Treat the above as options to validate, not confirmed entitlements. Confirm with the SAP LeanIX account manager / Belron licence owner before committing.
+
+**Decision rule:** small, named audience → viewer seats or shared reports; broad recurring demand → API-fed dashboard is cheaper and more durable than buying seats.
+
+### LeanIX Is Also a Live MCP Integration
+
+As of 2026-06-23, LeanIX is a configured, write-capable MCP server queryable from Claude Code sessions. This makes it a live specimen for the [[agentic-ai-governance-framework|MCP Governance]] work: a real Belron MCP server carrying non-public portfolio data (Belron Confidential). Two governance flags:
+- **Key scope:** the MCP toolset includes mutation operations (`create_architecture_decision`, `update_*`, etc.). Confirm whether the API key is read-only or full-access before enabling write tools.
+- **Data classification:** LeanIX content pulled into Claude sessions is enterprise-architecture data, likely Belron Confidential, and is in scope for the IPO security review.
+
 ---
 
 ## Applications & Decision Path
@@ -227,6 +290,20 @@ Key insight: "LeanIX is the tooling layer for everything being built this week" 
 
 **Source:** [[braindump-2026-04-09-1022-leanix-learning-use-cases]]
 
+### June 23 – July 18, 2026: From Repository to Governance Platform
+
+**What Changed:** The framing shifted from "LeanIX as the EA repository" to "LeanIX as Belron's platform of record for governing the technology estate — extended to AI assets." Three concrete developments:
+
+**1. LeanIX MCP integration went live (June 23).** LeanIX is now a write-capable MCP server queryable inside Claude sessions. It became the first live specimen for the MCP Governance work (see the new "LeanIX Is Also a Live MCP Integration" section). This also confirmed the answer to the framework's long-standing open question: **Belron has an active LeanIX instance** (now SAP LeanIX).
+
+**2. Govern-where-the-work-lives thesis crystallised (July 15, Front Office Meeting).** Armo coined the tagline "If you are working in LeanIX, then it makes sense to govern in LeanIX" and framed LeanIX as a governance platform, not just an inventory. Added as Principle 6. This is the EA-tooling instance of the general [[pattern-govern-where-work-lives]].
+
+**3. AI-group governance pitch developed (July 15).** A concrete play emerged: sell the LeanIX governance discipline to Belron's AI group by registering AI use cases / models / agents as fact sheets with owner, lifecycle, and risk class — piloting with the AI Damage Assessment PoC. Captured as a one-slider ([[reference-leanix-ai-governance-pitch-slide]]) and a new Strategic Positioning subsection. Ties directly to the pre-IPO due-diligence story.
+
+Also captured: the full SAP LeanIX capability landscape (APM, tech-risk, BCM, integration architecture, roadmaps, SMP, surveys, reporting, API) and the non-licensed enquiry-access options — the practical answer to "what else can we do with it?" and "how do we widen access without blowing the licence budget?"
+
+**Sources:** [[braindump-2026-06-23-2236-leanix-mcp-server]], [[braindump-2026-07-15-1426-leanix-discovery-enquiry-access]]
+
 ---
 
 ## Related Frameworks
@@ -253,4 +330,4 @@ Key insight: "LeanIX is the tooling layer for everything being built this week" 
 
 ---
 
-*Consolidated from 1 source | First version: April 15, 2026 | Status: Working*
+*Consolidated from 4 sources | First version: April 15, 2026 | Last updated: July 18, 2026 | Status: Working*

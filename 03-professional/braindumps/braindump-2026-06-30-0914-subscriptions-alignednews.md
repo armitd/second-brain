@@ -9,6 +9,8 @@ status: "resolved"
 energy_level: "low"
 emotional_tone: "curious"
 confidence: "high"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: Subscription Review — AlignedNews vs TBD

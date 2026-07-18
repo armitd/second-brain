@@ -5,10 +5,12 @@ date: "2026-06-30"
 created: "2026-06-30 00:21"
 themes: ["prompt-engineering", "executive-brief", "productivity"]
 tags: ["#braindump", "#raw-thoughts", "#professional", "#prompt-engineering"]
-status: "captured"
+status: "consolidated"
 energy_level: "medium"
 emotional_tone: "neutral"
 confidence: "high"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: Executive Brief Prompt Template

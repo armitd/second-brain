@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "agentic-ai-governance"
 created: "2026-04-10"
-last_updated: "2026-06-19"
-consolidation_id: "consolidation-2026-06-19"
-source_documents: 42
+last_updated: "2026-07-18"
+consolidation_id: "consolidation-2026-07-18"
+source_documents: 45
 status: "working"
 tags: ["#framework", "#consolidated", "#agentic-AI", "#MCP", "#A2A", "#EA-governance", "#protocols"]
 ---
@@ -524,6 +524,58 @@ The strategic implication: Belron should invest in building reusable skills (the
 
 ---
 
+### Principle 11: The Agent Paradigm Has Split — Governance Must Cover Persistent Agents, Not Just Session-Based Ones
+
+**Statement:** Enterprise agentic governance to date has been designed around the session-based model: request → tool call → response → audit log, with state discarded when the session ends. A second category is now production-grade: the **persistent agent** — one that lives on a server, remembers across sessions, writes its own skill files, runs autonomously overnight, and is reachable from any device. A persistent agent that accumulates memory and self-authored capability over months is a structurally different governance challenge. Any Belron governance framework, and any vendor evaluation (Noma, Microsoft Agent 365, Okta), must state explicitly whether it governs both categories or only the session model.
+
+**The split (June 2026):**
+
+| | Session-based agent | Persistent agent |
+|---|---|---|
+| **Examples** | Claude Code, Cursor, Codex | Hermes Agent (Nous Research) |
+| **State** | Discarded at session end | Retained across sessions / months |
+| **Capability growth** | Fixed per session | Self-accumulating (writes its own skill files) |
+| **Governance concern** | Per-call access + audit | All of that + memory retention, drift, undocumented capability expansion |
+| **Best for** | Focused work in a known context | Research, scheduling, long autonomous runs, cross-day memory |
+
+**Agent-identity documents are a governance artefact.** Both categories now define a durable identity file — CLAUDE.md for Claude Code, SOUL.md for Hermes — that persists across sessions and encodes the agent's character, constraints, and safety rules (e.g. "never send money without explicit confirmation"). These are converging on the same idea: **the agent identity document**. Governance is not just OAuth tokens and API keys; it must cover the identity files that define what an agent will and will not do. EA governance should require an approved, version-controlled identity document as a standard artefact for any governed agent — session or persistent.
+
+**Accumulated skill files cut both ways.** A persistent agent's self-written skill library (procedure, pitfalls, verification steps) is either a compliance *asset* (an auditable record of what the agent learned to do) or a compliance *risk* (undocumented capability expansion), depending entirely on whether the governance framework versions and reviews it. Treat the skill library as an auditable surface, not background state.
+
+**Memory retention is now a first-class harness dimension.** Principle 8's harness checklist already lists "Memory: what does the agent retain, how long, who can see it?" — for persistent agents this moves from a nice-to-have to the central control. Months of accumulated memory over Belron-confidential data is a data-retention and IPO-due-diligence question, not just a technical one.
+
+**Model-agnostic by design is now a risk-mitigation requirement.** Hermes's model-swappable architecture (and the "local models as insurance" practitioner response to the Fable 5 ban) validates the principle: the durable asset is the agent framework + accumulated skills, not the model. This reinforces the [[ai-sovereignty-framework]] and directly informs the [[ai-damage-assessment-strategy-framework|AIDA PoC]] — build the model-agnostic abstraction layer as a requirement, not just a benchmark convenience.
+
+**Evidence:**
+- [[braindump-2026-06-21-1209-hermes-agent-persistent-agentic-platform]] — the session vs persistent split; SOUL.md / CLAUDE.md convergence; skill-file accumulation as compound interest and as an audit surface; model-agnostic architecture as insurance
+- [[harness-design-standard-framework]] — memory as a harness dimension
+- [[ai-sovereignty-framework]] — model as commodity; framework + skills as the durable asset
+
+**How to apply:** When scoping MCP Governance vendor capability, add an explicit column: "governs persistent agents (memory, self-authored skills) — yes/no?" Require an approved agent-identity document (CLAUDE.md / SOUL.md-equivalent) for any governed agent. For persistent agents specifically, add memory-retention policy and skill-library review to the harness approval gate.
+
+**Confidence:** High on the category split and the identity-document point; Medium on Belron applicability (no confirmed persistent-agent deployment at Belron yet — this is a watch-and-prepare principle).
+
+---
+
+### Principle 12: Knowledge Quality Is the Upstream Gate on Agent Trust — "RAG-Ready" Is a Governance Standard
+
+**Statement:** An agent is only as trustworthy as the knowledge behind it. A machine-readable, "RAG-ready" knowledge base (consistent structure, chunking, metadata, provenance, freshness) is not content-ops housekeeping — it is a precondition for reliable agentic answers, and therefore a governance artefact. This is the same lesson as Principle 9 (semantic governance) viewed from the content side: Principle 9 governs what data *means*; this principle governs whether the knowledge is *structured well enough for an agent to consume at all*.
+
+**Why it is a governance concern, not just a KB concern:** if knowledge documents feed agentic AI (CCOTF contact-centre agents answering from a knowledge base, for example), then their structure, provenance, and freshness determine whether the agent gives a correct, auditable answer. That makes a "RAG-ready / machine-readable knowledge document standard" a shared dependency between CCOTF and MCP Governance, and a natural bridge between them.
+
+**Draft criteria for "RAG-ready" (to be firmed up with the AI team):** explicit structure and sensible chunk boundaries; rich metadata (owner, topic, audience, effective date); provenance (source of record, last-reviewed); freshness signals (review cadence, expiry); and unambiguous, self-contained passages that don't rely on surrounding page context.
+
+**Evidence:**
+- [[braindump-2026-07-08-1608-ccotf-knowledge-base-voc]] — "RAG-ready" and "machine-readable knowledge document standards for agentic AI" as the precondition for a knowledge-driven contact centre; "agents are only as good as the data and metadata behind them"
+- [[llm-wiki-knowledge-infrastructure-framework]] — maintained-knowledge vs RAG debate; the knowledge-infrastructure substrate
+- [[ccotf-technology-architecture-framework]] — the KB reference architecture as a CCOTF component
+
+**How to apply:** When any agentic use case depends on a knowledge base, require a knowledge-readiness assessment against the RAG-ready criteria as part of the harness approval — treat an un-assessed KB the same way you'd treat an un-scoped API key. Define the standard once (with the AI team) and reuse it across CCOTF, AIDA, and future agent use cases.
+
+**Confidence:** High on the principle; the specific RAG-ready criteria are a working draft pending AI-team input.
+
+---
+
 ## Related Frameworks
 
 - [[ea-effectiveness-framework]] — Principle 2: The MCP/A2A briefing is a dual-purpose artefact (governance tool + visibility instrument)
@@ -565,4 +617,18 @@ Kekst LTW 2026 confirmed AI sovereignty is entering IPO prospectuses as a risk f
 
 ---
 
-*Consolidated from 42 sources | First version: April 10, 2026 | Last updated: June 19, 2026 | Status: Working (Principles 1–9 solid; Principle 10 Emerging)*
+### June 21 – July 18, 2026: Persistent-Agent Category + Knowledge-Readiness Gate
+
+**What Changed:** Two additions that extend governance scope in new directions — one into a new agent category, one upstream into knowledge quality:
+
+**1. The persistent-agent category is now real (June 21, 2026).**
+Hermes Agent (Nous Research, MIT-licensed) crystallised a structural split: session-based agents (Claude Code, Cursor, Codex) vs persistent agents (server-resident, cross-session memory, self-authored skill files, autonomous overnight runs). Existing governance and vendor evaluations assume the session model. Principle 11 added to cover persistent agents, and to establish the agent-identity document (CLAUDE.md / SOUL.md) as a required governance artefact. Also reinforced model-agnostic-by-design as a risk-mitigation requirement for the AIDA PoC.
+
+**2. Knowledge quality identified as the upstream gate on agent trust (July 8, 2026).**
+CCOTF knowledge-base work surfaced "RAG-ready / machine-readable knowledge document standards for agentic AI" as the precondition for a knowledge-driven contact centre. Principle 12 added: knowledge readiness is a governance artefact and a shared CCOTF ↔ MCP Governance dependency. This is Principle 9 (semantic governance) viewed from the content side.
+
+**Sources:** [[braindump-2026-06-21-1209-hermes-agent-persistent-agentic-platform]], [[braindump-2026-07-08-1608-ccotf-knowledge-base-voc]]
+
+---
+
+*Consolidated from 45 sources | First version: April 10, 2026 | Last updated: July 18, 2026 | Status: Working (Principles 1–9 solid; Principles 10–12 Emerging)*

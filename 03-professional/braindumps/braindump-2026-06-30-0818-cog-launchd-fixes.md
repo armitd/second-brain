@@ -5,10 +5,12 @@ date: "2026-06-30"
 created: "2026-06-30 08:18"
 themes: ["cog-maintenance", "launchd", "api-key"]
 tags: ["#braindump", "#raw-thoughts", "#professional", "#cog-maintenance"]
-status: "captured"
+status: "consolidated"
 energy_level: "medium"
 emotional_tone: "neutral"
 confidence: "high"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: COG launchd fixes pending

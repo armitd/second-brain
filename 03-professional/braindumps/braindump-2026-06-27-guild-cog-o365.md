@@ -7,10 +7,12 @@ source: "daybook"
 source_file: "01-daily/daybooks/daybook-2026-06-27.md"
 themes: ["guild-governance", "cog-automation", "o365-integration"]
 tags: ["#braindump", "#from-daybook", "#guild", "#cog", "#o365"]
-status: "captured"
+status: "consolidated"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "medium"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: Guild Stakeholder Mapping + COG Loops + O365 Integration

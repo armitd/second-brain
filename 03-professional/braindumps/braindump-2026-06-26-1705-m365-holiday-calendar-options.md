@@ -7,10 +7,12 @@ source: "daybook"
 source_file: "01-daily/daybooks/daybook-2026-06-24.md"
 themes: ["m365", "calendar-management", "team-operations", "outlook", "microsoft-teams"]
 tags: ["#braindump", "#from-daybook", "#professional", "#m365", "#it-guidance"]
-status: "captured"
+status: "consolidated"
 energy_level: "medium"
 emotional_tone: "pragmatic"
 confidence: "high"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: M365 Holiday Calendar Options for Belron Teams

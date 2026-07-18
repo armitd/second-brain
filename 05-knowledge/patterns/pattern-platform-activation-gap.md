@@ -55,6 +55,17 @@ Belron (and large enterprises generally) consistently pay for enterprise platfor
 
 ---
 
+### July 2026 — SAP LeanIX (confirmed and re-examined)
+**Context:** LeanIX discovery — "what else can we do with it?"
+
+**Manifestation:** With LeanIX now confirmed as active (SAP LeanIX) and live via MCP, the value gap was reassessed as under-exploitation of licensed capability (capability maps, tech-risk, roadmaps, surveys, SMP) rather than a missing feature. Key insight captured verbatim: "the lever is usage maturity, not more tooling."
+
+**Outcome:** A "what are we not using?" module audit was set as a short-term action, and the governance-platform reframing (govern-where-the-work-lives) is itself an activation move — using capability already in the box. See [[leanix-ea-repository-framework]].
+
+**Source:** [[braindump-2026-07-15-1426-leanix-discovery-enquiry-access]]
+
+---
+
 ## Analysis
 
 **What Triggers This Pattern:**

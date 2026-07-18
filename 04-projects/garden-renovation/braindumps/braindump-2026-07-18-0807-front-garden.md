@@ -6,10 +6,12 @@ date: "2026-07-18"
 created: "2026-07-18 08:07"
 themes: ["front-garden", "home", "task-capture"]
 tags: ["#braindump", "#raw-thoughts", "#garden-renovation"]
-status: "captured"
+status: "consolidated"
 energy_level: "low"
 emotional_tone: "neutral"
 confidence: "high"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: Sort Out the Front Garden
