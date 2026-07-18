@@ -15,7 +15,7 @@ tags: ["#integrations", "#config", "#cog"]
 - Use for: generating presentations, posters, reports, social posts, and other branded collateral
 - Brand kit ID: kAGGs2XOG3E (your Canva brand kit)
 
-**GitHub**1
+**GitHub**
 
 **Readwise**
 - Location: `Readwise/` in vault with four subfolders:
