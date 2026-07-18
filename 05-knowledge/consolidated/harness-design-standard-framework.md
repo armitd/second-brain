@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "harness-design-standard"
 created: "2026-06-14"
-last_updated: "2026-06-19"
-consolidation_id: "consolidation-2026-06-19"
-source_documents: 9
+last_updated: "2026-07-18"
+consolidation_id: "consolidation-2026-07-18"
+source_documents: 10
 status: "emerging"
 tags: ["#framework", "#consolidated", "#agentic-ai", "#harness", "#governance", "#mcp", "#enterprise-architecture"]
 ---
@@ -51,8 +51,9 @@ A harness is the configured execution context that wraps an AI model and defines
 **Evidence:**
 - [[braindump-2026-06-11-0938-harnesses-agentic-ai]] — "Every agentic AI product is a harness with a model inside. The business decision is not 'which AI model?' but 'which harness pattern fits this use case?'"
 - [[braindump-2026-05-26-1018-aws-kiro-workshop]] — Kiro confirmed as Claude via Bedrock; Kiro = harness; the model is secondary to the harness design
+- [[braindump-2026-05-31-1501-boris-cherny-40-claude-features]] — Boris Cherny (creator of Claude Code): "the difference between power users and casual users is setup, not intelligence, experience, or secret prompting hacks." This is external validation of the harness thesis from the practitioner side: the durable differentiator is the configured context (setup), not the model or the prompt. Reinforces "skills are the asset; loops are plumbing" ([[agentic-ai-governance-framework]] Principle 10).
 
-**How to apply:** When evaluating any agentic AI vendor, lead with harness evaluation: what does it expose, what does it restrict, who can change it, is it auditable? The model choice is secondary.
+**How to apply:** When evaluating any agentic AI vendor, lead with harness evaluation: what does it expose, what does it restrict, who can change it, is it auditable? The model choice is secondary. The corollary for Belron's own AI adoption: capability comes from investing in the setup layer (harness templates, skills, config standards), not from chasing the latest model — the same "setup, not prompting" lesson applied at enterprise scale.
 
 **Confidence:** High
 
@@ -329,4 +330,4 @@ Okta's MCP server (GA April 30, 2026) integrates the MCP Elicitation API to enfo
 
 ---
 
-*Consolidated from 9 sources | Confidence: High | Status: Emerging — component model extended; enterprise standard document is the next deliverable*
+*Consolidated from 10 sources | Last updated: July 18, 2026 | Confidence: High | Status: Emerging — component model extended; enterprise standard document is the next deliverable*

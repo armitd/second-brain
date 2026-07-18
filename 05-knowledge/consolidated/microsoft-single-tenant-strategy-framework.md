@@ -3,9 +3,9 @@ type: "consolidated-knowledge"
 domain: "professional"
 framework: "microsoft-single-tenant-strategy"
 created: "2026-05-19"
-last_updated: "2026-05-24"
-consolidation_id: "consolidation-2026-05-24"
-source_documents: 4
+last_updated: "2026-07-18"
+consolidation_id: "consolidation-2026-07-18"
+source_documents: 5
 status: "emerging"
 tags: ["#framework", "#consolidated", "#microsoft", "#azure", "#tenant-strategy", "#enterprise-architecture", "#cloud-governance", "#belron-ipo"]
 ---
@@ -168,10 +168,26 @@ The Microsoft tenant question has existed for years. What changed in 2025–2026
 - One Azure DevOps organisation — shared CI/CD pipelines
 - One Defender for Cloud + Sentinel SIEM — correlated threat detection
 
+### Data & Analytics (Microsoft Fabric / OneLake)
+- **OneLake as one logical lake for the Group:** in a single tenant, data from all opcos lands in one place — Group Finance sees P&L from every country in one auto-refreshed Power BI report; data engineers write pipelines once, parameterised by opco, not duplicated per tenant.
+- **Power BI Copilot across the estate:** a Group semantic model covering all 35 opcos lets Copilot answer "which opcos have declining repair volumes this month?" as one Group-wide answer, not 35 assembled manually.
+- For Belron specifically: repair-volume, claims, technician-performance, and parts-inventory data could sit in one Fabric estate, enabling Group-level analytics currently blocked by cross-tenant ETL.
+
 ### IPO & M&A
 - Clean single-tenant architecture simplifies technology due diligence
 - Post-IPO acquisitions onboard into a defined structure
 - One Azure cost hierarchy maps to one financial entity
+
+### Licensing Economics — Frame E5 as Tool Consolidation, Not Upgrade
+The sharpest licensing argument is not "upgrade to E5" but "consolidate point tools into E5." At ~30,000 users the M365 E3→E5 delta (~€35 → ~€55/user/month) is ~€7.2M/year, but E5 absorbs tools Belron likely licenses separately at higher combined cost:
+- Defender for Endpoint P2 (replaces third-party EDR)
+- Microsoft Sentinel (replaces third-party SIEM — Splunk/QRadar cost more per GB ingested)
+- Purview E5 Compliance (advanced eDiscovery, insider risk, DLP)
+- Entra ID P2 (PIM, Identity Protection, risk-based Conditional Access)
+
+Making the case as a **tool-consolidation exercise** (net cost after retiring the replaced tools) is far stronger than a headline per-user increase. Single tenant also eliminates duplicate per-tenant licensing of the same tools (e.g. Sentinel/Defender deployed per-tenant).
+
+> **Full benefits detail:** the seven-benefit evidence base (AI infrastructure, collaboration, security/IPO-readiness, Fabric, M&A velocity, licensing, IPO narrative) lives in the companion analysis [[microsoft-single-tenant-benefits-case-2026-05-14]], with the "what would strengthen this to a business case" current-state audit questions.
 
 ---
 
@@ -233,4 +249,4 @@ The Microsoft tenant question has existed for years. What changed in 2025–2026
 
 ---
 
-*Consolidated from [[braindump-2026-05-14-0907-microsoft-single-tenant-strategy]] + [[braindump-2026-05-16-0041-contact-centre-uc-architecture-ebc]] | Confidence: High on framework; Medium on Belron-specific state | Status: Emerging*
+*Consolidated from [[braindump-2026-05-14-0907-microsoft-single-tenant-strategy]] + [[braindump-2026-05-16-0041-contact-centre-uc-architecture-ebc]] + [[microsoft-single-tenant-benefits-case-2026-05-14]] | Last updated: July 18, 2026 | Confidence: High on framework; Medium on Belron-specific state | Status: Emerging*

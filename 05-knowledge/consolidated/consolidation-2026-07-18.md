@@ -2,10 +2,10 @@
 type: "knowledge-consolidation"
 domain: "integrated"
 date: "2026-07-18"
-consolidation_period: "2026-06-09 to 2026-07-18 (incl. reconciled 5–19 June gap)"
+consolidation_period: "2026-05-14 to 2026-07-18 (incl. reconciled 5–19 June gap + May stragglers)"
 created: "2026-07-18 17:00"
-sources_analyzed: 24
-frameworks_updated: ["leanix-ea-repository", "agentic-ai-governance"]
+sources_analyzed: 26
+frameworks_updated: ["leanix-ea-repository", "agentic-ai-governance", "harness-design-standard", "microsoft-single-tenant-strategy"]
 frameworks_created: []
 patterns_identified: 1
 tags: ["#consolidation", "#knowledge", "#frameworks"]
@@ -216,6 +216,17 @@ Personal (marked, no framework value): ipad-remote-commands (06-24), garden fron
 
 **Process note for future cycles:** the 19 June cycle's source count did not match its actual folded-in set. Worth spot-checking `consolidated_in` coverage at the start of each cycle, not just trusting the prior report's `sources_analyzed`.
 
+### Stamp-only pass + May stragglers (same session)
+
+After the June reconciliation, a vault-wide `consolidated_in` sweep found the remaining unmarked braindumps and classified each by whether it was actually cited in a dated report:
+- **Stamped to their original cycle (already consolidated, just unmarked):** [[braindump-2026-04-08-0942-a2a-mcp-research-strategy]] → [[consolidation-2026-04-09]]; [[braindump-2026-04-15-1133-oracle-mobile-inventory-vs-korber]] → [[consolidation-2026-04-15]]; [[braindump-2026-06-04-1523-salesforce-data-360]] → [[consolidation-2026-06-07]].
+- **Genuinely unconsolidated, now folded in here:**
+  - [[braindump-2026-05-31-1501-boris-cherny-40-claude-features]] → [[harness-design-standard-framework]] Principle 1 ("setup > prompting" as practitioner validation that the harness, not the model, is the differentiator). Sources 9 → 10.
+  - [[microsoft-single-tenant-benefits-case-2026-05-14]] → [[microsoft-single-tenant-strategy-framework]] (E5-as-tool-consolidation economics; Microsoft Fabric / OneLake as a Group data-analytics benefit; referenced as the seven-benefit evidence base). Sources 4 → 5.
+- **Left unmarked (trivial personal, genuinely un-processed, no framework value):** `braindump-2026-06-04-gardening-slug-repellant`, `braindump-2026-06-04-katys-laptop-setup`.
+
+**End state:** every consolidated braindump now carries a `consolidated_in` backlink; the only unmarked braindumps are the two trivial personal captures above.
+
 ---
 
-*Consolidation completed: 2026-07-18 | Processed 24 documents (12 primary + 12 reconciled) | Updated 2 frameworks, created 1 pattern*
+*Consolidation completed: 2026-07-18 | Processed 26 documents (12 primary + 12 reconciled + 2 May stragglers) | Updated 4 frameworks, created 1 pattern | Stamp-only back-marked 3*

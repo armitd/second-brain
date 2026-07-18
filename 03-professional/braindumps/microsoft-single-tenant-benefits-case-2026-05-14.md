@@ -7,6 +7,8 @@ themes: ["microsoft-tenant", "enterprise-architecture", "ai-infrastructure", "be
 tags: ["#analysis", "#microsoft", "#tenant-strategy", "#enterprise-architecture", "#belron", "#ai-infrastructure"]
 status: "draft"
 related_braindump: "[[braindump-2026-05-14-0907-microsoft-single-tenant-strategy]]"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Single Microsoft Tenant — The Benefits Case for Belron

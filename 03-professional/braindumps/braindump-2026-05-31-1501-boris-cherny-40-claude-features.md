@@ -5,11 +5,13 @@ date: "2026-05-31"
 created: "2026-05-31 15:01"
 themes: ["claude-setup", "claude-code", "productivity", "cog-architecture", "second-brain"]
 tags: ["#braindump", "#claude", "#claude-code", "#setup", "#cog", "#productivity"]
-status: "captured"
+status: "consolidated"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"
 source_readwise: "Readwise/Full Document Contents/Tweets/Boris Cherny, the creator of Claude Code at Anthropic, just....md"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: Boris Cherny — 40 Claude Features Most Users Never Configure
