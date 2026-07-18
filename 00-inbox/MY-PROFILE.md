@@ -27,6 +27,7 @@ tags: ["#profile", "#config", "#cog"]
 - [[04-projects/ai-damage-assessment-poc/PROJECT-OVERVIEW|AI Damage Assessment PoC]]
 - [[04-projects/mcp-governance/PROJECT-OVERVIEW|MCP Governance]]
 - [[04-projects/contact-centre-future/PROJECT-OVERVIEW|Contact Centre of the Future]]
+- [[04-projects/hive/PROJECT-OVERVIEW|Hive (curation channel)]]
 - [[04-projects/60th-birthday-party/PROJECT-OVERVIEW|60th Birthday Party]]
 
 - [[04-projects/getting-fit/PROJECT-OVERVIEW|Getting Fit]]

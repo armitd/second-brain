@@ -39,6 +39,12 @@ tags: ["#interests", "#daily-brief", "#config"]
 *No specific sources set. COG will search broadly for your topics. Add preferred sources here anytime.*
 https://thepromptfactory.substack.com/ 
 
+## Hive Curation Lens
+When processing content (Readwise, URL dumps, daily briefs), also assess each item
+against the **Hive remit** — flag anything worth sharing to Belron's Hive innovation
+platform into the candidate queue. Remit + heuristic: [[04-projects/hive/PROJECT-OVERVIEW]].
+Queue: [[04-projects/hive/CANDIDATE-QUEUE]]. COG flags only; Armo posts manually.
+
 ## Notes
 *Add any additional context about your interests here.*
 
