@@ -7,10 +7,12 @@ source: "daybook"
 source_file: "01-daily/daybooks/daybook-2026-06-17.md"
 themes: ["adjustment-programme", "rfi-analysis", "copilot", "okta-mcp", "integration-costs", "ea-governance"]
 tags: ["#braindump", "#from-daybook", "#adjustment-programme", "#rfi", "#copilot", "#okta", "#mcp-governance"]
-status: "captured"
+status: "consolidated"
 energy_level: "medium"
 emotional_tone: "operational"
 confidence: "high"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: RFI Copilot Analysis, Adjustment Programme Governance, OKTA MCP

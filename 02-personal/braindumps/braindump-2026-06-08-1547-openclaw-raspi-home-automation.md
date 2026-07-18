@@ -5,10 +5,12 @@ date: "2026-06-08"
 created: "2026-06-08 15:47"
 themes: ["home-automation", "raspberry-pi", "openclaw", "hobby-project"]
 tags: ["#braindump", "#raw-thoughts", "#personal", "#home-automation", "#raspberry-pi", "#maker"]
-status: "captured"
+status: "consolidated"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "medium"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: OpenClaw on Raspberry Pi — Home Automation Project

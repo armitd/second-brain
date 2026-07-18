@@ -5,10 +5,12 @@ date: "2026-06-11"
 created: "2026-06-11 14:07"
 themes: ["football", "2026-world-cup", "england", "scotland"]
 tags: ["#braindump", "#raw-thoughts", "#football", "#world-cup-2026"]
-status: "captured"
+status: "consolidated"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "high"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: England and Scotland — 2026 FIFA World Cup Fixtures

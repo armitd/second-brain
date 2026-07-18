@@ -5,10 +5,12 @@ date: "2026-06-12"
 created: "2026-06-12 12:10"
 themes: ["TMD", "survey", "feedback", "collation"]
 tags: ["#braindump", "#todo", "#TMD", "#survey"]
-status: "captured"
+status: "consolidated"
 energy_level: "low"
 emotional_tone: "neutral"
 confidence: "high"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: Collate Survey Feedback from TMD

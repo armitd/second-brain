@@ -5,10 +5,12 @@ date: "2026-06-08"
 created: "2026-06-08 10:32"
 themes: ["signavio", "tool-access", "stakeholder"]
 tags: ["#braindump", "#raw-thoughts", "#professional", "#signavio", "#process-management"]
-status: "captured"
+status: "consolidated"
 energy_level: "low"
 emotional_tone: "neutral"
 confidence: "high"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: Signavio Access for Joakim Andersen

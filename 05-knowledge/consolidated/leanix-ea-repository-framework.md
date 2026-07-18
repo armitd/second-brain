@@ -332,4 +332,4 @@ A further angle recovered from the June EA-team-meeting notes (reconciled 18 Jul
 
 ---
 
-*Consolidated from 4 sources | First version: April 15, 2026 | Last updated: July 18, 2026 | Status: Working*
+*Consolidated from 5 sources | First version: April 15, 2026 | Last updated: July 18, 2026 | Status: Working*

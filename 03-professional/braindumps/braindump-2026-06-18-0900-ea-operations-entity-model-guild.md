@@ -7,10 +7,12 @@ source: "daybook"
 source_file: "01-daily/daybooks/daybook-2026-06-18.md"
 themes: ["data-architecture", "entity-model", "leanix", "ea-governance", "guild", "five-year-plan"]
 tags: ["#braindump", "#from-daybook", "#data-architecture", "#entity-model", "#leanix", "#ea-governance"]
-status: "captured"
+status: "consolidated"
 energy_level: "medium"
 emotional_tone: "operational"
 confidence: "high"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: Entity Model Review, Canonical Models, Guild Proposal, 5-Year Plans

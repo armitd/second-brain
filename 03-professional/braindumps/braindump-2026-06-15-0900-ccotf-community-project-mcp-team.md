@@ -7,10 +7,12 @@ source: "daybook"
 source_file: "01-daily/daybooks/daybook-2026-06-15.md"
 themes: ["ccotf-community", "hive-platform", "mcp-governance", "team-structure", "agentic-ai"]
 tags: ["#braindump", "#from-daybook", "#ccotf", "#hive", "#mcp-governance", "#team"]
-status: "captured"
+status: "consolidated"
 energy_level: "medium"
 emotional_tone: "purposeful"
 confidence: "high"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: CCOTF Community as a Formal Project, MCP Team Roles

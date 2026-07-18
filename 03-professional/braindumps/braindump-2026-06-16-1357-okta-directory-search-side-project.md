@@ -5,10 +5,12 @@ date: "2026-06-16"
 created: "2026-06-16 13:57"
 themes: ["okta", "side-project", "directory-search", "internal-tooling"]
 tags: ["#braindump", "#raw-thoughts", "#professional", "#side-project"]
-status: "captured"
+status: "consolidated"
 energy_level: "medium"
 emotional_tone: "curious"
 confidence: "medium"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: Okta Directory Search side-project

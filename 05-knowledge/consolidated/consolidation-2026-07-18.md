@@ -2,9 +2,9 @@
 type: "knowledge-consolidation"
 domain: "integrated"
 date: "2026-07-18"
-consolidation_period: "2026-06-19 to 2026-07-18"
+consolidation_period: "2026-06-09 to 2026-07-18 (incl. reconciled 5–19 June gap)"
 created: "2026-07-18 17:00"
-sources_analyzed: 12
+sources_analyzed: 24
 frameworks_updated: ["leanix-ea-repository", "agentic-ai-governance"]
 frameworks_created: []
 patterns_identified: 1
@@ -182,4 +182,40 @@ Personal (marked, no framework value): ipad-remote-commands (06-24), garden fron
 
 ---
 
-*Consolidation completed: 2026-07-18 | Processed 12 documents | Updated 2 frameworks, created 1 pattern*
+---
+
+## Reconciliation Addendum — Recovered 5–19 June Coverage Gap
+
+**What happened:** The 19 June cycle logged `sources_analyzed: 22` for the 5–19 June window, but a check on 18 July found **12 June braindumps that were never actually folded into any framework or that cycle's report** (none appeared as `[[links]]` in consolidated knowledge). This was a genuine coverage gap, not just missing stamps — so they were processed here rather than blind-marked. All 12 are now marked `consolidated_in: [[consolidation-2026-07-18]]`.
+
+**Framework-relevant material (folded in):**
+- Added a **Reconciliation evolution entry** to [[agentic-ai-governance-framework]] reinforcing Principle 1 (agentify the Mulesoft/SnapLogic estate), Principle 8 (OKTA as enterprise agent-identity layer; the Okta directory-search side-project as a read-only-MCP reference pattern), and Principle 12 (the ELDM locked in a Confluence PDF is not agent-queryable). Source count 45 → 51.
+- Added the **"LeanIX as a market-facing tool"** angle (opcos seeing each other's landscapes) to the [[leanix-ea-repository-framework]] evolution entry. Source count 4 → 5.
+
+**Recovered sources by value:**
+
+| Value | Source | Why |
+|---|---|---|
+| Framework | [[braindump-2026-06-16-0900-ea-team-meeting-agenda-agentic-platforms]] | EA role in agentic world; agentify Mulesoft/SnapLogic; LeanIX market-facing + MCP; Snowflake as AI platform |
+| Framework | [[braindump-2026-06-17-0900-adjustment-programme-rfi-copilot]] | OKTA MCP as agent identity; Copilot for RFI analysis; Adjustment programme governance gap; Hive for AI use-case capture |
+| Framework | [[braindump-2026-06-18-0900-ea-operations-entity-model-guild]] | ELDM-in-PDF risk; canonical models + PII; Guild proposal; 5-year plan |
+| Framework | [[braindump-2026-06-16-1357-okta-directory-search-side-project]] | Read-only MCP server over enterprise system (reference pattern); personal-origin/corporate-intent tool |
+| Framework | [[braindump-2026-06-15-0900-ccotf-community-project-mcp-team]] | CCOTF community as formal project; MCP team structure (RA/Semantic/Process-mining); Hive setup |
+| Operational | [[braindump-2026-06-09-0900-agentic-rfi-salesforce]] | Historical task note (agentic RA, RFI scoring, Salesforce research) |
+| Reference | [[braindump-2026-06-08-1032-signavio-access-joakim-andersen]] | Confirms Belron SAP Signavio footprint (Nordics); people-profile update pending (joakim → Joakim Andersen) |
+| Operational | [[braindump-2026-06-12-1152-find-out-about-dld]] | Thin task capture |
+| Operational | [[braindump-2026-06-12-1205-vaps-microsite-lee]] | Thin task capture |
+| Operational | [[braindump-2026-06-12-1210-tmd-survey-feedback-collation]] | Thin task capture |
+| Personal | [[braindump-2026-06-08-1547-openclaw-raspi-home-automation]] | Personal home-automation project |
+| Personal | [[braindump-2026-06-11-1407-world-cup-england-scotland]] | Personal |
+
+**Deliberately not folded (flagged for next cycle):**
+- **Hive as the enterprise architecture-community + AI-use-case-capture platform** — recurs across 4 June braindumps (15/16/17 + the already-consolidated 06-19 hive-ccotf). Belongs in [[communities-of-practice-framework]], which was not opened in this pass. Candidate for the next cycle.
+- **"EA earns the right to influence, not dictate"** — belongs in [[ea-effectiveness-framework]]; captured here and cross-referenced from the agentic framework's reconciliation entry, but not yet written into ea-effectiveness itself.
+- **People-profile update** (joakim → Joakim Andersen) — a `brief-people-updater` task, out of consolidation scope.
+
+**Process note for future cycles:** the 19 June cycle's source count did not match its actual folded-in set. Worth spot-checking `consolidated_in` coverage at the start of each cycle, not just trusting the prior report's `sources_analyzed`.
+
+---
+
+*Consolidation completed: 2026-07-18 | Processed 24 documents (12 primary + 12 reconciled) | Updated 2 frameworks, created 1 pattern*

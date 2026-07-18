@@ -5,10 +5,12 @@ date: "2026-06-12"
 created: "2026-06-12 11:52"
 themes: ["DLD", "Data Led Design", "research", "todo"]
 tags: ["#braindump", "#todo", "#DLD", "#belron-teams"]
-status: "captured"
+status: "consolidated"
 energy_level: "low"
 emotional_tone: "neutral"
 confidence: "high"
+consolidated_in: "[[consolidation-2026-07-18]]"
+consolidated_date: "2026-07-18"
 ---
 
 # Braindump: Find Out More About DLD (Data Led Design)
