@@ -26,6 +26,9 @@ tags: ["#project", "#garden", "#home-improvement"]
 - [x] Plan cable routes in conjunction with pergola and rockery groundwork 📅 2026-05-04 ✅ 2026-06-20
 - [x] Research garage light options (PIR floodlight, wall lantern, soffit downlights) 📅 2026-05-04 ✅ 2026-05-19
 
+### Garage
+- [ ] Fix the lock on the garage door
+
 ### Decking
 - [x] Pressure wash the decking ✅ 2026-06-20
 - [ ] Allow decking to dry fully (48-72 hours after pressure washing)
