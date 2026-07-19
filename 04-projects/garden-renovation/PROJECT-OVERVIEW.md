@@ -41,8 +41,8 @@ tags: ["#project", "#garden", "#home-improvement"]
 - [ ] Measure bottom of garden — width, depth, any slope 📅 2026-05-01
 - [ ] Decide primary pergola use case (seating, plants, dining) 📅 2026-05-01
 - [ ] Research pergola kit vs. build-from-scratch options 📅 2026-05-04
-- [ ] Look at rockery stone suppliers and costs 📅 2026-05-04
-- [ ] Check UK permitted development rules for intended structure size 📅 2026-05-04
+- [x] Look at rockery stone suppliers and costs 📅 2026-05-04 ✅ 2026-07-19
+- [x] Check UK permitted development rules for intended structure size 📅 2026-05-04 ✅ 2026-07-19
 - [ ] Sketch garden layout showing pergola and rockery together 📅 2026-05-04
 
 ### Front Garden
@@ -51,6 +51,7 @@ tags: ["#project", "#garden", "#home-improvement"]
 - [ ] Decide which plants to buy — consider what's already there and what needs filling
 - [ ] Purchase plants
 - [ ] Plant and water in
+- [ ] Buy terracotta pots for the step ladder display
 - [ ] Sort out the path
 
 ### Lawn
