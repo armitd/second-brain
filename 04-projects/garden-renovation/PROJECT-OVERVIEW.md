@@ -16,6 +16,7 @@ tags: ["#project", "#garden", "#home-improvement"]
 - [x] Apply weed killer to patio joints 📅 2026-05-04 ✅ 2026-06-20
 - [x] Buy brush-in jointing compound (EASYJoint or Rompox) 📅 2026-05-04 ✅ 2026-06-20
 - [x] Regrout patio in a dry weather window ✅ 2026-06-20
+- [ ] Buy terracotta pots for the step ladder display on the patio
 
 ### Lighting & Cabling
 - [ ] Rearrange garden lights
@@ -51,7 +52,6 @@ tags: ["#project", "#garden", "#home-improvement"]
 - [ ] Decide which plants to buy — consider what's already there and what needs filling
 - [ ] Purchase plants
 - [ ] Plant and water in
-- [ ] Buy terracotta pots for the step ladder display
 - [ ] Sort out the path
 
 ### Lawn
