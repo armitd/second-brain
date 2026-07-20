@@ -62,6 +62,14 @@ tags: ["#integrations", "#config", "#cog"]
 - Connected via HTTP MCP at `https://mcp.lucid.app/mcp`
 - Use for: creating diagrams from natural language descriptions, searching and retrieving Lucid documents, generating org charts, creating shareable diagram links
 
+**Day One (Journal)**
+- method: manual export → drop folder → COG files into `07-journal/`
+- No live sync/API: Day One stores entries in an encrypted database with no open read API. Import is export-and-drop.
+- how: in Day One, Settings → Import/Export → Export → **Markdown** (or JSON), then drop the unzipped export into `00-inbox/raw/dayone-import/`
+- COG action: on request ("process my Day One export"), COG creates one `07-journal/YYYY-MM-DD-<slug>.md` per entry, dated by the **entry's own date**, `source: "dayone"`, and dedupes against existing entries
+- intent: **store-only / capture-only** — filed into the journal layer, never processed into actions; only surfaced by `/vault-review` or if Armo explicitly asks
+- privacy note: journal content becomes part of the git-backed, synced, AI-readable vault — export only what you're comfortable having there
+
 ## Disabled
 - **AlignedNews**: Cancelled 2026-06-30. Contributed 0 stories in 3 of last 5 briefs; when used, surfaced X/Twitter signals only. WebSearch covers the gap. $25 pcm saving.
 - **Slack**: Not confirmed during onboarding. Enable anytime by moving to Active section.
