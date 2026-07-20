@@ -12,6 +12,6 @@ Guitar lessons - how do I learn to be more focussed. How do I learn my way aroun
 
 Feeling.  How do I enjoy the moment and not worry about what’s next. - coffee - beer, etc etc.  what’s next.  Live for now. It will all work out, 
 
-The countryside the cooking,  the fresh ingredients, farm shops, taste
+The countryside,  the cooking,  the fresh ingredients, farm shops, proper taste
 
 
