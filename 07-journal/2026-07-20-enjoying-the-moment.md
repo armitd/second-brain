@@ -6,7 +6,7 @@ type: "journal"
 source: "dayone"
 location: "Compton Pool Farm, Paignton, England, United Kingdom"
 weather: "20°C Clear"
-tags: ["#journal"]
+tags: ["#journal", "#dayone"]
 ---
 
 # Enjoying the moment, not worrying about what's next

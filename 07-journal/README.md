@@ -23,7 +23,7 @@ Capture-only musings, thoughts, and reflections. Titled notes I keep and refer b
 
 ## Sources feeding this folder
 - **`/create-journal`** — dictate/type a musing straight in
-- **Day One import** — export from Day One (Markdown/JSON) into `00-inbox/raw/dayone-import/`, then ask COG to "process my Day One export". Entries land here date-stamped by their **original entry date** with `source: "dayone"`. See [[00-inbox/raw/dayone-import/README]].
+- **Day One import** — export from Day One (Markdown/JSON) into `00-inbox/raw/dayone-import/`, then ask COG to "process my Day One export". Entries land here date-stamped by their **original entry date**, marked with `source: "dayone"` and a `#dayone` tag. See [[00-inbox/raw/dayone-import/README]].
 
 ## Later — optional, my choice
 - `/vault-review` can resurface old journal entries for reflection
