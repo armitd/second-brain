@@ -3,7 +3,7 @@ type: "braindump"
 domain: "personal"
 date: "2026-07-20"
 created: "2026-07-20 10:50"
-themes: ["mindfulness", "present-moment", "meditation", "anxiety-about-future", "wellbeing"]
+themes: ["mindfulness", "present-moment", "meditation", "anxiety-about-future", "wellbeing", "anticipatory-craving", "mindful-consumption"]
 tags: ["#braindump", "#raw-thoughts", "#personal", "#wellness", "#mindfulness"]
 status: "captured"
 energy_level: "medium"
@@ -42,6 +42,26 @@ Meditation methods to help enjoy the moment - and not keep thinking about what's
 - **Single-tasking:** Do one thing at a time and let it be the whole thing (eat without the phone, walk without a podcast sometimes). Present-moment training disguised as normal life.
 - **Habit anchors:** Attach a breath-and-notice to something you already do daily (kettle boiling, at a red light, before opening the laptop).
 
+### The "This One" Practice — for consumption (coffee, beer, etc.)
+
+*Targets **anticipatory craving**: the mind gets more pleasure from *wanting* the next one than *having* this one, so it reaches ahead before the current one is finished — and the drink in your hand barely gets tasted. The move is to shift attention from wanting to having.*
+
+1. **First sip, full attention.** Pause for one breath, then give the first sip everything — temperature, smell, how the taste changes. Just that sip. Bookends the experience with presence instead of autopilot.
+2. **Put it down between sips.** The reaching partly happens because the cup/glass never leaves your hand. Set it down after each sip; the gap breaks the conveyor-belt autopilot.
+3. **Name the reach.** The moment you notice "I could get another" / "what's next", silently label it *"reaching"* and drop back to the taste still in your mouth. Not fighting the thought — just seeing it.
+4. **Last sip, on purpose.** Give the final sip the same attention as the first. Consciously *ending* the experience is what stops the slide to the next one.
+
+**One line to hold:** *"This is the one."* The next one isn't real yet; this one is.
+
+### When the anticipation stretches into *obtaining* it (added 2026-07-20)
+
+The forward-planning also fires *before* the drink even exists — "is there a queue at the coffee shop?", "is the bar busy?" — pre-solving the logistics of getting the next one. This is **anticipatory control**: the mind tries to smooth the path to the reward, and in doing so lives one step ahead of where you are. You're managing a future that hasn't happened instead of being in the walk, the street, the company you're in *now*.
+
+- **Arrive and see.** Deliberately *don't* pre-check or pre-plan the getting. Walk to the coffee shop without deciding what you'll do if there's a queue. Let the situation reveal itself — it almost always sorts itself out, and the pre-planning bought you nothing.
+- **Make the queue part of it.** If there's a wait, treat the waiting *as* the experience, not an obstacle in front of the reward. The smell, the room, the people, standing still for a minute. The queue isn't in the way of the coffee — it's part of the coffee.
+- **"See what happens" as the mantra for the obtaining stage.** It swaps the planning reflex for curiosity. You lose nothing by not pre-solving; you gain the bit of life that happens on the way.
+- **Notice the tell.** The planning thoughts ("will it be busy?") are the *same* future-reaching move as "what's next", just aimed at logistics. Naming them the same way — *"planning"* — collapses them into one habit you can catch.
+
 ### Questions Raised
 - Do you want a **formal daily sit** (build the muscle), **in-the-moment micro-practices** (use it when it matters), or both? They reinforce each other.
 - Guided vs unguided? A guided app lowers the activation energy at the start.
@@ -53,6 +73,7 @@ Meditation methods to help enjoy the moment - and not keep thinking about what's
 1. **The goal isn't a quiet mind, it's a quick return.** The mind *will* run to what's coming — that's normal. The skill is noticing sooner and coming back gently. Every return is a rep; there's no failing at it.
 2. **Attention and savouring are separate skills.** You can be present and still not enjoy it. Build both: anchor practices for presence, savouring practices for enjoyment.
 3. **Micro beats marathon for this specific problem.** "What's coming" hijacks you in ordinary moments, so the fix that works is tiny practices *in* those moments (STOP, 5-4-3-2-1), not only a 20-minute morning sit.
+4. **The craving and the logistics-planning are one habit, not two.** "Wondering about the next one" (anticipatory craving) and "is there a queue / is the bar busy" (anticipatory control) are the same forward-reaching move — one aimed at the reward, one at the path to it. Catching them under a single label (*"planning" / "reaching"*) means one skill fixes both. "Arrive and see" is the antidote to the logistics half; "This is the one" is the antidote to the craving half.
 
 ### Pattern Recognition
 - **Directly connects to today's journal entry** [[2026-07-20-enjoying-the-moment]] — "How do I enjoy the moment and not worry about what's next" — this braindump is the practical answer to that reflection.
