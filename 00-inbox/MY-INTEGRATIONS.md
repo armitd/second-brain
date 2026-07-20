@@ -65,8 +65,8 @@ tags: ["#integrations", "#config", "#cog"]
 **Day One (Journal)**
 - method: manual export → drop folder → COG files into `07-journal/`
 - No live sync/API: Day One stores entries in an encrypted database with no open read API. Import is export-and-drop.
-- how: in Day One, Settings → Import/Export → Export → **Markdown** (or JSON), then drop the unzipped export into `00-inbox/raw/dayone-import/`
-- COG action: on request ("process my Day One export"), COG creates one `07-journal/YYYY-MM-DD-<slug>.md` per entry, dated by the **entry's own date**, marked with both `source: "dayone"` and a `#dayone` tag, and dedupes against existing entries
+- how: in Day One, Settings → Import/Export → Export → **JSON** (preferred — maps photos to entries and carries tags/location/weather; Markdown is a fallback for text-only). Unzip and drop the whole export (`Journal.json` + `photos/`) into `00-inbox/raw/dayone-import/`
+- COG action: on request ("process my Day One export"), COG parses `Journal.json` and creates one `07-journal/YYYY-MM-DD-<slug>.md` per entry, dated by the **entry's own creationDate** (local time), marked with both `source: "dayone"` and a `#dayone` tag, copies any attached photos into `07-journal/attachments/` (renamed to match the entry) and embeds them, carries over Day One tags/location/weather, and dedupes against existing entries
 - intent: **store-only / capture-only** — filed into the journal layer, never processed into actions; only surfaced by `/vault-review` or if Armo explicitly asks
 - privacy note: journal content becomes part of the git-backed, synced, AI-readable vault — export only what you're comfortable having there
 
