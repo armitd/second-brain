@@ -92,7 +92,7 @@ The forward-planning also fires *before* the drink even exists — "is there a q
 ### Short-term (1-2 weeks)
 - [ ] Decide: formal daily sit, micro-practices, or both — and pick a time/anchor for it 📅 2026-07-27
 - [ ] Trial a guided app for a week if unguided feels hard to start (Headspace / Calm / Waking Up / Insight Timer) 📅 2026-07-27
-- [ ] Find resources for this meditation — guided sessions/books on savouring, mindful consumption, and present-moment practice (e.g. a "mindful drinking/eating" session, a savouring exercise, something on anticipatory craving) 📅 2026-07-27
+- [x] Find resources for this meditation — guided sessions/books on savouring, mindful consumption, and present-moment practice ✅ 2026-07-20 → see [[mindful-consumption-resources]]
 - [ ] Notice and jot the trigger for "what's coming" thinking — when does it grab you most? 📅 2026-07-27
 
 ### Strategic Considerations
