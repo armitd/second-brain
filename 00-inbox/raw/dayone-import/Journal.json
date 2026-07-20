@@ -1,0 +1,83 @@
+{
+"metadata" : {
+  "version" : "1.0"
+},
+"entries" : [
+{
+  "timeZone" : "Europe\/London",
+  "text" : "# Ashburton \nLily riding\\.\\.\\.\\.\\.\n\n![](dayone-moment:\/\/CD9C53F8142A4B49B2C79626E4BA0AD6)\n\nPropagation Handbook \\- Hilton carter \nBotanical style \\- Selina lake \n",
+  "sourceString" : "visit-C3A71F4C-0399-4946-AD71-411C7001B8A5",
+  "weather" : {
+    "moonPhaseCode" : "waning-gibbous",
+    "weatherCode" : "cloudy",
+    "weatherServiceName" : "WeatherKit",
+    "temperatureCelsius" : 18.184640884399414,
+    "windBearing" : 274,
+    "sunriseDate" : "2025-07-16T04:21:46Z",
+    "conditionsDescription" : "Cloudy",
+    "pressureMB" : 1017.7398071289062,
+    "moonPhase" : 0.62,
+    "visibilityKM" : 15.005306243896484,
+    "relativeHumidity" : 84,
+    "windSpeedKPH" : 4.6845541000366211,
+    "sunsetDate" : "2025-07-16T20:20:14Z"
+  },
+  "creationDevice" : "iPhone",
+  "duration" : 0,
+  "creationDate" : "2025-07-16T09:54:01Z",
+  "photos" : [
+    {
+      "lensModel" : "iPhone 15 Pro back dual camera 6.765mm f\/1.78",
+      "location" : {
+        "timeZoneName" : "Europe\/London",
+        "longitude" : -3.7574200630187988,
+        "latitude" : 50.515838623046875
+      },
+      "creationDevice" : "iPhone",
+      "orderInEntry" : 0,
+      "duration" : 0,
+      "favorite" : false,
+      "cameraMake" : "Apple",
+      "type" : "jpeg",
+      "lensMake" : "Apple",
+      "date" : "2025-07-16T09:54:30Z",
+      "exposureBiasValue" : 0,
+      "identifier" : "CD9C53F8142A4B49B2C79626E4BA0AD6",
+      "height" : 3022,
+      "fnumber" : "1.779999971388065",
+      "width" : 3022,
+      "md5" : "0f16ba99023d97b2596ab1c35d71b0df",
+      "isSketch" : false,
+      "focalLength" : "6.764999865652793",
+      "cameraModel" : "iPhone 15 Pro"
+    }
+  ],
+  "modifiedDate" : "2025-07-16T10:48:35Z",
+  "creationDeviceType" : "iPhone",
+  "uuid" : "6F8DB2644BDD44389D3DA721AE2A1480",
+  "creationOSVersion" : "18.6",
+  "creationDeviceModel" : "iPhone16,1",
+  "creationOSName" : "iOS",
+  "richText" : "{\"contents\":[{\"attributes\":{\"line\":{\"header\":1,\"identifier\":\"915BBEA9-03AD-43BD-A0D8-A6D007DAAFA7\"}},\"text\":\"Ashburton \\n\"},{\"attributes\":{\"line\":{\"header\":0,\"identifier\":\"08A753CC-958C-42A8-BCD4-FBDF16583FE6\"}},\"text\":\"Lily riding.....\"},{\"embeddedObjects\":[{\"identifier\":\"CD9C53F8142A4B49B2C79626E4BA0AD6\",\"type\":\"photo\"}]},{\"text\":\"Propagation Handbook - Hilton carter \\nBotanical style - Selina lake \\n\\n\"}],\"meta\":{\"created\":{\"platform\":\"com.bloombuilt.dayone-ios\",\"version\":2627},\"small-lines-removed\":true,\"version\":1}}",
+  "starred" : false,
+  "isAllDay" : false,
+  "editingTime" : 37.704398989677429,
+  "isPinned" : false,
+  "location" : {
+    "region" : {
+      "center" : {
+        "longitude" : -3.7573108673095703,
+        "latitude" : 50.515827178955078
+      },
+      "radius" : 75
+    },
+    "localityName" : "Newton Abbot",
+    "country" : "United Kingdom",
+    "timeZoneName" : "Europe\/London",
+    "administrativeArea" : "England",
+    "longitude" : -3.7573108673095703,
+    "placeName" : "Ashburton Community Fridge",
+    "latitude" : 50.515827178955078
+  }
+}
+]}
