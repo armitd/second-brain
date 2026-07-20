@@ -41,6 +41,7 @@ tags: ["#interests", "#daily-brief", "#config"]
 
 *No specific sources set. COG will search broadly for your topics. Add preferred sources here anytime.*
 https://thepromptfactory.substack.com/ 
+Exponential View (Azeem Azhar) — https://www.exponentialview.co/ — AI + exponential tech; ingested into COG via Readwise (see MY-INTEGRATIONS)
 
 ## Hive Curation Lens
 When processing content (Readwise, URL dumps, daily briefs), also assess each item

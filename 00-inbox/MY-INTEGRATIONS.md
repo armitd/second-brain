@@ -28,6 +28,8 @@ tags: ["#integrations", "#config", "#cog"]
   - `Readwise/Full Document Contents/Books/` — full-text book exports
 - Use for: reading tweet/article/book content and highlights directly from vault instead of fetching URLs
 - No API needed — read directly from vault files
+- **Newsletter auto-ingestion:** paid newsletters are auto-saved via Readwise Reader's **feed email** (`…@feed.readwise.io`) — set a mail forward rule (sender → feed email), not RSS (RSS truncates paywalled posts). Ensure the Readwise→Obsidian sync pulls Reader documents (not highlights-only), then `/process-readwise` files them.
+  - **Exponential View** (Azeem Azhar, https://www.exponentialview.co/) — AI + exponential tech. Setup: [[03-professional/braindumps/braindump-2026-07-20-1600-exponential-view-readwise-pipeline]]. Also a strong Hive candidate source.
 
 
 **SharePoint — Document Publishing**
