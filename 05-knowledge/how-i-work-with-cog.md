@@ -206,6 +206,7 @@ Switch with `/model` or from the session menu.
 | Readwise content | `Readwise/` (read-only) |
 | Reading list | `02-personal/READING-LIST.md` |
 | Places to visit | `02-personal/PLACES-TO-VISIT.md` |
+| Exercise log | `02-personal/EXERCISE-LOG.md` |
 
 ---
 
@@ -215,6 +216,7 @@ Running personal lists I keep updated over time, distinct from dated captures. S
 
 - **Reading List** (`02-personal/READING-LIST.md`) — books to read. Sections: To Read → Reading Now → Read. Add via `/braindump` with an Amazon/Readwise URL.
 - **Places to Visit** (`02-personal/PLACES-TO-VISIT.md`) — days out / travel. Sections: Want to Visit → Visited. Add via `/braindump` with a URL; COG files the place with location, type, why, and source.
+- **Exercise Log** (`02-personal/EXERCISE-LOG.md`) — the *reflective* layer for training (Apple Health holds the numbers). Goals, weekly summaries, unrecorded sessions, patterns. Add a weekly summary via `/braindump` or during `/weekly-checkin`.
 
 > These are **capture-and-keep** lists, not task lists — they don't get `#planner` tags and never sync to To Do. Move an entry to the "done" section (Read / Visited) when appropriate.
 
