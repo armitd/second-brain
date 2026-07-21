@@ -9,6 +9,8 @@ tags: ["#fitness", "#exercise", "#personal", "#health"]
 
 *The reflective layer for training. **Apple Health holds the numbers** (Strava + Watch + ring feed it); this note holds the meaning: how it went, the sessions no app recorded, and what the data is telling me over time. Add a weekly summary via `/braindump` or during `/weekly-checkin`.*
 
+**Silo sources (captured manually):** some apps keep their data to themselves and don't feed Apple Health — e.g. **Airofit** (breathing trainer: lung capacity, respiratory strength, sessions). For these, the app holds the detail; log the headline metric + that you trained here.
+
 See the thinking behind this: [[braindump-2026-07-21-0805-exercise-data-aggregation]].
 
 ---
@@ -30,6 +32,7 @@ See the thinking behind this: [[braindump-2026-07-21-0805-exercise-data-aggregat
 ### Week of YYYY-MM-DD
 - **Sessions:** [count + types, e.g. 2 runs, 1 treadmill, 1 walk]
 - **Key numbers:** [weekly distance / active minutes / avg recovery — from Apple Health/Strava]
+- **Breath training (Airofit):** [sessions this week + headline metric, e.g. lung capacity / strength trend]
 - **How it felt:** [energy, niggles, motivation]
 - **Recovery/sleep:** [if wearing a ring/watch]
 - **Notes:** [anything worth remembering]
@@ -52,7 +55,7 @@ See the thinking behind this: [[braindump-2026-07-21-0805-exercise-data-aggregat
 
 *Observations over time — the cross-signal insights that only show up when training load and recovery sit side by side.*
 
-- *(e.g. "recovery drops when I train 3 days back-to-back", "sleep worse after evening sessions")*
+- *(e.g. "recovery drops when I train 3 days back-to-back", "sleep worse after evening sessions", "HRV / breathlessness on runs improves in weeks I keep up Airofit")*
 
 ---
 
