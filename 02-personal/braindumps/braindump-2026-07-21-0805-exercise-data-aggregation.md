@@ -77,9 +77,11 @@ COG's job is the narrative and synthesis, not the raw data:
 
 ## Action Items
 
+### Immediate (24-48 hours)
+- [ ] **Connect Strava to Apple Health** — in Strava: Settings → Applications, Services and Devices → Health → allow Strava to write workout data to Apple Health (makes Apple Health the complete hub) 📅 2026-07-22
+
 ### Short-term (1-2 weeks)
-- [ ] Confirm **Apple Health as the hub**: check Strava is set to write activities to Apple Health
-- [ ] Decide COG's structure: create an `02-personal/EXERCISE-LOG.md` maintained note (Want-to-log pattern) vs dated braindumps — I can set up the log if you want
+- [x] Decide COG's structure and create `02-personal/EXERCISE-LOG.md` ✅ 2026-07-21 → [[EXERCISE-LOG]]
 - [ ] Try one **weekly summary** (this week's sessions + how it felt) to test whether the reflective layer is worth keeping
 
 ### Strategic Considerations
