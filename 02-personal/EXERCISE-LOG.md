@@ -10,6 +10,7 @@ tags: ["#fitness", "#exercise", "#personal", "#health"]
 *The reflective layer for training. **Apple Health holds the numbers** (Strava + Watch + ring feed it); this note holds the meaning: how it went, the sessions no app recorded, and what the data is telling me over time. Add a weekly summary via `/braindump` or during `/weekly-checkin`.*
 
 **Silo sources (captured manually):** some apps keep their data to themselves and don't feed Apple Health — e.g. **Airofit** (breathing trainer: lung capacity, respiratory strength, sessions). For these, the app holds the detail; log the headline metric + that you trained here.
+> Airofit auto-bridge: **none found as of 2026-07-21** — no IFTTT service, no public API/webhooks, no confirmed Apple Health sync. Capture manually. Recheck the Airofit app for a native export or Apple Health/Shortcuts toggle if you want to automate later.
 
 See the thinking behind this: [[braindump-2026-07-21-0805-exercise-data-aggregation]].
 
