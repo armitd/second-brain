@@ -34,6 +34,17 @@ A running log of approaches that didn't work and what succeeded instead. Check b
 - **What works:** Cross-reference against the `date_processed` field in existing booklet frontmatter, or check the Readwise file's internal highlight dates, rather than relying solely on filesystem timestamps.
 - **First encountered:** 2026-05-21
 
+### Git errors — iCloud creates duplicate files inside .git/
+- **What failed:** Git throwing errors / clutter from files like `.git/index 26`, `.git/index 21`, `.git/ORIG_HEAD 2` — dozens of them (76 found on 2026-07-21).
+- **Why:** The vault lives in iCloud Drive **and** is a git repo, so iCloud syncs the `.git/` folder. When git rewrites `.git/index` (every commit) mid-sync, or two Macs touch it near-simultaneously, iCloud can't merge the binary file and makes conflict copies (a space + number suffix). They accumulate until git trips.
+- **What works:** Delete the conflict copies — git never uses spaces in internal filenames, so any space-named file in `.git/` is an iCloud artifact and safe to remove:
+  ```
+  find .git -name "* *" -type f -delete
+  ```
+  Then verify: `git status`, `git fsck --connectivity-only`, `git log --oneline -1`. The real `.git/index`, `.git/HEAD`, `.git/ORIG_HEAD` are untouched.
+- **Prevention:** Don't run git / Obsidian Git / Claude Code on two Macs at the same moment (concurrent `.git` writes are the trigger). Permanent fix would be moving `.git` out of iCloud (repo content stays synced, git internals live outside) — more involved, not yet done.
+- **First encountered:** 2026-07-21
+
 ---
 
 ## Format
