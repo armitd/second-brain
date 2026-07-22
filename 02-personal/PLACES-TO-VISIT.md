@@ -38,3 +38,10 @@ tags: ["#places", "#travel", "#personal", "#days-out"]
 ---
 
 *Add places as they come up. Move an entry to "Visited" once you've been, with the date and a quick note. Once the list grows, group "Want to Visit" by area (London / UK / Abroad) or by type (historic / food & drink / outdoors).*
+
+
+
+Noss Mayo
+
+Tuck and haye 
+
