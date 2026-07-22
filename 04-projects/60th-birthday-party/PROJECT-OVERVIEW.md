@@ -10,7 +10,7 @@ tags: ["#project", "#personal", "#party", "#birthday"]
 
 **Dates:** Friday 7 – Sunday 9 August 2026  
 **Location:** Field, Westbury-sub-Mendip, Somerset  
-**Days until party:** 81 (as of 18 May 2026)
+**Days until party:** 16 (as of 22 July 2026)
 
 ---
 
