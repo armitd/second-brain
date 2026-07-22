@@ -86,6 +86,7 @@ A weekend-long outdoor birthday celebration in a Somerset field. Two nights, pro
 
 ### Entertainment & Programme
 - [ ] Decide on music approach — playlist+speaker, live music, DJ, band?
+- [ ] Select a PA system (for music + speeches; consider battery/portable given limited field power) — candidate option: [Amazon PA system](https://amzn.eu/d/0agEiMqm) 📅 2026-07-29
 - [ ] If live music: book act (or reach out to musicians in network) 📅 2026-06-01
 - [ ] Plan Saturday evening programme — speeches, music, bonfire?
 - [ ] Consider activities for daytime Saturday (walks, games, swimming?)
