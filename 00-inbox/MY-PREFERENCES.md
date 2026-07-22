@@ -36,6 +36,20 @@ adjacent issues rather than silently fixing them. Prefer scoped git commits over
 a sweep's scope; flagging a garden-file title mismatch instead of restructuring;
 propose-only archives). Aligns with the vault `CLAUDE.md` scope-lock and hard-stop rules.
 
+## Personal capture lists — check when relevant
+
+I keep four personal capture lists in `02-personal/`: `READING-LIST.md`, `PLACES-TO-VISIT.md`,
+`LISTEN.md` (music), and `WATCH.md` (films/TV). These are **mobile capture** — I dump rough
+one-liners (e.g. just a name or a place) while out and about, then review and flesh them out
+when I'm back online. When I mention one of these lists, or drop a rough item into one, offer to
+expand it into the structured format (author/ISBN, location/type, director/year, plus a short
+"why"/notes), verifying details with web search rather than guessing. No automated schedule and
+no consumption tracking — I review them manually.
+
+**Origin:** 2026-07-22 session. Considered a monthly cloud routine to resurface the lists, but the
+vault's frequent Obsidian-Git auto-backup and unverified GitHub App access made cloud write-back
+fragile; chose manual review instead, matching the "review when online" workflow.
+
 ## Related
 - [[MY-PROFILE|My COG Profile]]
 - [[MY-INTERESTS|My Interests & News Sources]]
