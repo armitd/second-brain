@@ -32,7 +32,9 @@ tags: ["#reading", "#books", "#personal"]
 
 ## Read
 
-*(empty)*
+The Small Stuff Ian Bogost
+
+
 
 ---
 
