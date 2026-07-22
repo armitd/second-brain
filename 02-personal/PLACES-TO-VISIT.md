@@ -33,6 +33,7 @@ tags: ["#places", "#travel", "#personal", "#days-out"]
 - **Added:** 2026-07-22
 - **Visited:** 2026-07-21
 - **Notes:** Stannary and market town; birthplace of Sir Francis Drake. Known for the Victorian Pannier Market, Tavistock Abbey remains, and Bedford Square. Part of the Cornwall and West Devon Mining Landscape UNESCO World Heritage Site, and a good base for Dartmoor.
+- **Visit notes:** Bought a hat. Had a drink in the Cornish Arms. Town quaint, market quite interesting.
 
 ---
 
