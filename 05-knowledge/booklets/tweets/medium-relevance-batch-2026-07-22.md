@@ -46,5 +46,17 @@ Re-upload of a ~14-min internal-style video on how the Claude team uses Claude i
 **Source:** Readwise/Tweets/Tweets From Riley West.md (@rileywestreel)
 Cites Stanford's Monica Lam: AI writes shallow reports because you ask one question; their method interviews the model like a journalist (dozens of questions) and produces articles ~25% better organised. Directly relevant to the `auto-research` / `deep-research` skills.
 
+### Raw Claude Code is only ~20% of the product
+**Source:** Readwise/Tweets/Tweets From Gipp 🦅.md (@gippp69)
+A 41,000-star GitHub repo used to argue the biggest Claude Code upgrades aren't new features but community configs/skills/context — the base tool is ~20% of the real product. AI-literacy point aligned with the "set up your context once" theme above.
+
 ---
-*Processed from Readwise by COG — 6 sources logged*
+
+## Source collections covered elsewhere (dedup)
+These tweet-author collections are the origin of threads filed as their own booklets today — logged here so they aren't reprocessed:
+- Readwise/Tweets/Tweets From Chewa.md → [[contrarian-loop-second-brain-2026-07-22]]
+- Readwise/Tweets/Tweets From Gipp 🦅.md → [[mac-mini-portable-ai-loops-2026-07-22]] + [[obsidian-graph-llm-wiki-2026-07-22]] (+ the 41k-repo item above)
+- Readwise/Tweets/Tweets From Matthew LaBosco.md → [[sapolsky-chronic-stress-habits-2026-07-22]]
+
+---
+*Processed from Readwise by COG — 7 sources logged + 3 source collections cross-referenced*
