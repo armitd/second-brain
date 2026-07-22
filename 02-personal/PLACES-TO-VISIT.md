@@ -1,7 +1,7 @@
 ---
 type: "places-list"
 created: "2026-07-21"
-last_updated: "2026-07-21"
+last_updated: "2026-07-22"
 tags: ["#places", "#travel", "#personal", "#days-out"]
 ---
 
@@ -20,6 +20,14 @@ tags: ["#places", "#travel", "#personal", "#days-out"]
 - **Source:** https://www.bbc.co.uk/news/articles/c75glzzd630o
 - **Added:** 2026-07-21
 - **Notes:** BBC blocks auto-fetch, so details not captured. Possibly the Trent Park mansion in Enfield (associated with WWII "secret listeners" history and a restoration/museum) — confirm from the article before relying on it.
+
+### Tavistock — Devon
+- **Location:** West Devon, on the edge of Dartmoor
+- **Type:** Historic market town
+- **Why:** (add a line on what drew you to it)
+- **Source:**
+- **Added:** 2026-07-22
+- **Notes:** Stannary and market town; birthplace of Sir Francis Drake. Known for the Victorian Pannier Market, Tavistock Abbey remains, and Bedford Square. Part of the Cornwall and West Devon Mining Landscape UNESCO World Heritage Site, and a good base for Dartmoor.
 
 ---
 
