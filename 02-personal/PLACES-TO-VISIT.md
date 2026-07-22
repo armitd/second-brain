@@ -21,6 +21,22 @@ tags: ["#places", "#travel", "#personal", "#days-out"]
 - **Added:** 2026-07-21
 - **Notes:** BBC blocks auto-fetch, so details not captured. Possibly the Trent Park mansion in Enfield (associated with WWII "secret listeners" history and a restoration/museum) — confirm from the article before relying on it.
 
+### Noss Mayo — Devon
+- **Location:** South Hams, south side of the Yealm estuary, about 10 miles east of Plymouth
+- **Type:** Waterside village / coastal walk
+- **Why:** (add a line on what drew you to it)
+- **Source:**
+- **Added:** 2026-07-22
+- **Notes:** Picturesque conservation-area village on Newton Creek, opposite Newton Ferrers, on the tidal River Yealm. Popular sailing waters set among wooded hills. The waterside **Ship Inn** sits on the creek with its own terrace and moorings. The **Revelstoke Drive** carriage track offers a fine circular coastal walk above the estuary.
+
+### Tuckenhay — Devon
+- **Location:** South Hams, on Bow Creek (a River Dart tributary), near Ashprington and Totnes
+- **Type:** Riverside hamlet / pub
+- **Why:** (add a line on what drew you to it)
+- **Source:**
+- **Added:** 2026-07-22
+- **Notes:** Small, pretty hamlet on Bow Creek with waterside trails and an old mill. The 18th-century **Maltsters Arms** (once owned by TV chef Keith Floyd) is a riverside pub, restaurant and B&B; the quay was once a busy commercial wharf shipping lime, corn, paper, cider and malt. (Your note "Tuck and haye" = Tuckenhay.)
+
 ---
 
 ## Visited
@@ -38,10 +54,4 @@ tags: ["#places", "#travel", "#personal", "#days-out"]
 ---
 
 *Add places as they come up. Move an entry to "Visited" once you've been, with the date and a quick note. Once the list grows, group "Want to Visit" by area (London / UK / Abroad) or by type (historic / food & drink / outdoors).*
-
-
-
-Noss Mayo
-
-Tuck and haye 
 
