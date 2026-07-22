@@ -13,7 +13,15 @@ tags: ["#watch", "#films", "#tv", "#personal"]
 
 ## To Watch
 
-*(empty)*
+### The Magic of Mushrooms
+- **Type:** Documentary (single film)
+- **Presenter:** Prof. Richard Fortey
+- **Channel/Year:** BBC Four, 2014 (dir. Russell Leven)
+- **Runtime:** approx. 1 hour
+- **Link:** [IMDb](https://www.imdb.com/title/tt3689452/)
+- **Added:** 2026-07-22
+- **Why:** (add a line on what drew you to it)
+- **Notes:** Richard Fortey explores the kingdom of fungi — from spectacular birth through secretive underground life to explosive death — and their almost magical, world-changing potential across science, medicine and technology. Filmed partly in a purpose-built mushroom lab with mycologist Dr Patrick Hickey.
 
 ---
 
