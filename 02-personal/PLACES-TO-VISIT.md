@@ -27,7 +27,7 @@ tags: ["#places", "#travel", "#personal", "#days-out"]
 - **Why:** (add a line on what drew you to it)
 - **Source:**
 - **Added:** 2026-07-22
-- **Notes:** Picturesque conservation-area village on Newton Creek, opposite Newton Ferrers, on the tidal River Yealm. Popular sailing waters set among wooded hills. The waterside **Ship Inn** sits on the creek with its own terrace and moorings. The **Revelstoke Drive** carriage track offers a fine circular coastal walk above the estuary.
+- **Notes:** Picturesque conservation-area village on Newton Creek, opposite Newton Ferrers, on the tidal River Yealm. Popular sailing waters set among wooded hills. Head for the **Swan Inn** (Pillory Hill) — a small family-run Georgian pub with a waterside seating area, daily fresh fish/seafood, and Friday fish and chips. (Skip the Ship Inn — heard it isn't very good.) The **Revelstoke Drive** carriage track offers a fine circular coastal walk above the estuary.
 
 ### Tuckenhay — Devon
 - **Location:** South Hams, on Bow Creek (a River Dart tributary), near Ashprington and Totnes
