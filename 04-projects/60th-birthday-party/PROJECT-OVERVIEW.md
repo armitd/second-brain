@@ -96,8 +96,8 @@ A weekend-long outdoor birthday celebration in a Somerset field. Two nights, pro
 
 ### Permits, Licences & Insurance
 - [ ] **Music licence:** If amplified music outdoors, check if a temporary event notice (TEN) is needed 📅 2026-06-01
-- [ ] **Temporary Event Notice (TEN):** Required for events with 500+ people or selling alcohol — apply via local council at least 10 working days before event 📅 2026-07-15
-- [ ] **Public liability insurance:** Get a one-off event policy — typically £50-150 for a private event 📅 2026-07-01
+- [x] **Temporary Event Notice (TEN):** Required for events with 500+ people or selling alcohol — apply via local council at least 10 working days before event 📅 2026-07-15 ✅ 2026-07-22
+- [x] **Public liability insurance:** Get a one-off event policy — typically £50-150 for a private event 📅 2026-07-01 ✅ 2026-07-22
 - [ ] **Alcohol:** If selling (even nominal cost), need TEN. If free/BYO, generally no licence needed 📅 2026-06-01
 - [ ] Check if field owner has any restrictions on events/numbers
 
@@ -152,7 +152,7 @@ A weekend-long outdoor birthday celebration in a Somerset field. Two nights, pro
 - [ ] Confirm field access, water, and power situation 📅 2026-05-25
 - [ ] Decide catering approach (caterer vs self-catered) 📅 2026-05-25
 - [ ] Send invitations to all 59 parties 📅 2026-05-31
-- [ ] Get portable toilet and generator quotes 📅 2026-06-15
+- [x] Get portable toilet and generator quotes 📅 2026-06-15 ✅ 2026-07-22
 - [ ] Lock down catering numbers once RSVPs close 📅 2026-06-16
 
 ---
