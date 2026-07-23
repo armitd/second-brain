@@ -1,7 +1,7 @@
 ---
 type: "reading-list"
 created: "2026-05-08"
-last_updated: "2026-07-22"
+last_updated: "2026-07-23"
 tags: ["#reading", "#books", "#personal"]
 ---
 
@@ -20,6 +20,17 @@ tags: ["#reading", "#books", "#personal"]
 - **Link:** [Amazon UK](https://www.amazon.co.uk/dp/B0DJYMD161)
 - **Added:** 2026-05-08
 - **Why:** Flow state — performing better, experiencing life more fully
+- **Notes:**
+
+### The Lost Girls of Autism
+- **Author:** Gina Rippon (professor emeritus of cognitive neuroimaging, Aston University; author of *The Gendered Brain*)
+- **Full title:** *The Lost Girls of Autism: How Science Failed Autistic Women and the New Research that's Changing the Story* (US title: *Off the Spectrum*)
+- **ISBN:** 9781035011629 (Pan Macmillan)
+- **Published:** 3 April 2025
+- **Format:** Hardcover / ebook
+- **Link:** [Pan Macmillan](https://www.panmacmillan.com/authors/gina-rippon/the-lost-girls-of-autism/9781035011629) · [Waterstones](https://www.waterstones.com/book/the-lost-girls-of-autism/gina-rippon/9781035011629)
+- **Added:** 2026-07-23
+- **Why:** Argues that autism has been understood through a male stereotype ("socially awkward boys"), so the diagnostic system has failed women and girls, who learn to camouflage and are often misdiagnosed with anxiety, depression or personality disorders. Examines the methodological and sampling biases that skewed the research. Won the British Psychological Society Popular Science Award; a Telegraph and New Scientist Book of the Year.
 - **Notes:**
 
 ---
@@ -44,4 +55,3 @@ tags: ["#reading", "#books", "#personal"]
 ---
 
 *Add books here as they come up. Move to "Reading Now" when started, "Read" when finished.*
-The lost girls of autism 
