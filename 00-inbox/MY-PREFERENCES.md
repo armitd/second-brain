@@ -50,6 +50,25 @@ no consumption tracking — I review them manually.
 vault's frequent Obsidian-Git auto-backup and unverified GitHub App access made cloud write-back
 fragile; chose manual review instead, matching the "review when online" workflow.
 
+## Wellbeing: regular journalling practice
+
+I'm building a regular personal journalling habit for wellbeing, using **Day One** on mobile for
+the rich stuff (photos, audio, longer reflections). This is distinct from the vault journal
+(`07-journal/` via `/create-journal`), which stays for quick, typed, nebulous thoughts at the desk.
+
+- **Prod:** a recurring **Microsoft To Do** reminder, a few times a week (Mon/Wed/Fri) until it
+  becomes a habit. Seeded via the COG→To Do drop; recurrence set natively in To Do (the sync can't
+  set repeat/reminders). Dial the frequency down once it sticks.
+- **Export is ad-hoc and manual:** I run `/process-dayone` myself when I want something to move
+  from Day One into the vault. COG should NOT auto-run it or nag me to export.
+- **Audio caveat:** the Day One JSON export maps photos/tags/location/weather, not audio — voice
+  memos likely stay in Day One only.
+- **Privacy:** exported entries enter the git-backed, synced, AI-readable vault; I keep the most
+  private entries in Day One and never export them.
+
+**Origin:** 2026-07-23 session. Chose To Do (native notifications, already integrated) over a
+cloud routine, given the vault-sync fragility noted above.
+
 ## Related
 - [[MY-PROFILE|My COG Profile]]
 - [[MY-INTERESTS|My Interests & News Sources]]
