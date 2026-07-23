@@ -55,7 +55,7 @@ tags: ["#project", "#garden", "#home-improvement"]
 - [ ] Sort out the path
 
 ### Irrigation
-- [ ] Investigate a drip-feed irrigation system for the back garden
+- [x] Investigate a drip-feed irrigation system for the back garden ✅ 2026-07-23 → [[drip-irrigation-research-2026-07-23|Research note]]
 
 ### Lawn
 - [x] Trim the lawn edges 📅 2026-05-04 ✅ 2026-05-19
