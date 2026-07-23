@@ -108,6 +108,9 @@ A weekend-long outdoor birthday celebration in a Somerset field. Two nights, pro
 - [ ] Organise car parking area in or near the field
 - [ ] Get directions/what3words for the exact field — share with guests 📅 2026-07-15
 - [ ] Have a bad weather plan — when does the marquee go up?
+- [ ] Find keys for roof rack and roof box 📅 2026-08-04
+- [ ] Fit roof rack to car (needs keys above) 📅 2026-08-05
+- [ ] Clean camping BBQ 📅 2026-08-05
 
 ### On the Day (Weekend Programme)
 
