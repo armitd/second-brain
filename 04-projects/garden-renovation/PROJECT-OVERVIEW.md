@@ -54,6 +54,9 @@ tags: ["#project", "#garden", "#home-improvement"]
 - [ ] Plant and water in
 - [ ] Sort out the path
 
+### Irrigation
+- [ ] Investigate a drip-feed irrigation system for the back garden
+
 ### Lawn
 - [x] Trim the lawn edges 📅 2026-05-04 ✅ 2026-05-19
 
