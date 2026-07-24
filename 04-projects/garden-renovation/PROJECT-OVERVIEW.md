@@ -56,6 +56,12 @@ tags: ["#project", "#garden", "#home-improvement"]
 
 ### Irrigation
 - [x] Investigate a drip-feed irrigation system for the back garden ✅ 2026-07-23 → [[drip-irrigation-research-2026-07-23|Research note]]
+- [ ] Measure beds/borders (total run length) and count pots to size the system
+- [ ] Sketch the two zones onto the garden layout (ties in with the pergola/rockery sketch)
+- [ ] Decide brand (Hozelock vs Gardena vs Claber)
+- [ ] Order components incl. 2× pressure reducer + inline filter (one per timer outlet)
+- [ ] Install: fit reducers/filters downstream of each timer, lay 13mm supply + dripline/drippers
+- [ ] Test and tune run times on the existing timers; check for leaks/clogs
 
 ### Lawn
 - [x] Trim the lawn edges 📅 2026-05-04 ✅ 2026-05-19

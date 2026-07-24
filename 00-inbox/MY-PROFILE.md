@@ -35,6 +35,7 @@ tags: ["#profile", "#config", "#cog"]
 - [[04-projects/garden-renovation/PROJECT-OVERVIEW|Garden Renovation]]
 - [[04-projects/home-automation/PROJECT-OVERVIEW|Home Automation]]
 - [[04-projects/alps-holiday/PROJECT-OVERVIEW|Alps Holiday]]
+- [[04-projects/journalling-setup/PROJECT-OVERVIEW|Journalling Setup]] *(setup project — archive when habit is running)*
 
 ## Related
 - [[MY-INTERESTS|My Interests & News Sources]]
