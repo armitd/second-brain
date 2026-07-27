@@ -27,8 +27,9 @@ live — so treat anything date-specific as approximate.
 
 ## Family
 
-- Katy is close family — recent life-admin has included things like setting up her new
+- Katy is my wife — recent life-admin has included things like setting up her new
   laptop. Family logistics like this are a normal part of the texture of my weeks.
+- Lily is my daughter - she is 17
 
 ## Wellbeing & Mindfulness
 
@@ -51,9 +52,11 @@ live — so treat anything date-specific as approximate.
   repainted, planning a pergola and rockery for the bottom of the garden, sorting out
   irrigation, tidying the front beds.
 - Music — learning guitar and getting into analogue synths. Into Sparklehorse, World
-  Party, Pink Floyd.
+  Party, Pink Floyd, Nick Cave. 
 - Cooking and BBQ; a Thermomix regular.
 - Casual reading, watching, and listening lists I dip into rather than binge.
+- I love real things - I love nature.  I love cooking - I love BBQ.  I like doing things properly.  
+- 
 
 ## Other Things Going On (for context, not a to-do list)
 
