@@ -34,7 +34,7 @@ When that's true → archive this project. Ongoing practice needs no dashboard.
 
 - [x] Create a Claude Project "Journalling Buddy" on my **personal** Claude account (not Belron-managed) and paste in the custom instructions 📅 2026-07-26 ✅ 2026-07-27
 - [x] Ask COG to generate an "About Me" context doc from the vault (60th, garden, getting fit, wellbeing goal); decide light vs fuller version; save a copy in `02-personal/` to refresh 📅 2026-07-26 ✅ 2026-07-27 → [[02-personal/JOURNALLING-BUDDY-ABOUT-ME]] (fuller version)
-- [ ] Upload the context doc as Project knowledge 📅 2026-07-26
+- [x] Upload the context doc as Project knowledge 📅 2026-07-26 ✅ 2026-07-27
 - [ ] Trial ~2 weeks against the Mon/Wed/Fri prod; judge by whether I actually write more 📅 2026-08-09
 - [ ] Decide: habit sticking? If yes, confirm I don't need Day One Gold, then **archive this project** 📅 2026-08-11
 
