@@ -90,7 +90,7 @@ Two pieces matter directly for the MCP Governance framework:
 ### Strategic Implications
 - **MCP Governance:** add MuleSoft Agent Fabric to the vendor comparison table alongside Microsoft Agent 365 and Noma — but note it's the only one of the three sitting on top of a platform Belron already licenses.
 - **CCOTF:** flag MCP Bridge specifically to whoever owns the KB reference-architecture decision (John Prodger + AI team per the 8 July braindump) as a candidate for the "how do we make existing APIs MCP-ready" question.
-- **Commercial:** find out whether Agent Fabric is bundled into Belron's existing Salesforce/MuleSoft contract or requires a separate purchase — materially different conversation to a net-new Microsoft or Noma relationship.
+- **Commercial:** with the MuleSoft/Salesforce relationship confirmed, the open question narrows to licence tier — find out whether Agent Fabric is bundled into Belron's existing contract or requires a separate purchase. A materially easier conversation than a net-new Microsoft Agent 365 or Noma relationship would be.
 
 ## Action Items
 
