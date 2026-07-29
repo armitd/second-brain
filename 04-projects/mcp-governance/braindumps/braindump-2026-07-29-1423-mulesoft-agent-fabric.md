@@ -63,8 +63,7 @@ Two pieces matter directly for the MCP Governance framework:
 4. **Deterministic vs. probabilistic control** — Agent Broker's new "Agent Script" lets orchestration rules be hard-coded rather than left to LLM judgement, echoing a pattern worth watching across the whole agent-governance market (trust, but verify with rules).
 
 ### Questions Raised
-- Does Belron's existing Salesforce footprint (Service Cloud + Marketing Cloud, confirmed live per the June 2026 Front Office Guild context) already entitle any Agent Fabric capability, or is this a separate MuleSoft licence/purchase?
-- Is Belron currently a MuleSoft customer at all, or would this require a net-new platform relationship alongside the existing Salesforce one?
+- **Resolved (2026-07-29):** Belron has an existing MuleSoft *and* Salesforce relationship — confirmed by Armo. This is a licensing/commercial conversation with an existing vendor, not a cold evaluation. Still open: which MuleSoft/Anypoint licence tier, and whether Agent Fabric is bundled or a separate add-on.
 - How does Agent Fabric's MCP Bridge compare to Belron building bespoke MCP wrappers around legacy APIs — buy vs. build, same question already open for the CCOTF knowledge-base work?
 - Would Belron ever plausibly need cross-organisation agent trust (GoDaddy ANS-style) — e.g. agents talking to insurer or partner-side agents — or is this presently a solution looking for a Belron problem?
 - How does Agent Fabric relate to Microsoft Agent 365 if Belron ends up running both Microsoft and Salesforce agent estates? Complementary layers (per-vendor control planes) or a genuine either/or choice?
@@ -96,8 +95,8 @@ Two pieces matter directly for the MCP Governance framework:
 ## Action Items
 
 ### Immediate (24-48 hours)
-- [ ] Check whether Belron has an existing MuleSoft/Anypoint relationship, and if so, at what licence tier 📅 2026-07-31
-- [ ] Add MuleSoft Agent Fabric as a full entry in the Competitive Watchlist, expanding the existing Salesforce stub 📅 2026-07-31
+- [x] ~~Check whether Belron has an existing MuleSoft/Anypoint relationship~~ — confirmed 2026-07-29: Belron has an existing MuleSoft and Salesforce relationship. Still need the specific licence tier and whether Agent Fabric is bundled 📅 2026-07-31
+- [x] Add MuleSoft Agent Fabric as a full entry in the Competitive Watchlist, expanding the existing Salesforce stub ✅ 2026-07-29
 
 ### Short-term (1-2 weeks)
 - [ ] Request a MuleSoft Agent Fabric demo (via Belron's Salesforce/MuleSoft account team), specifically probing MCP Bridge against a real legacy-API example 📅 2026-08-05
