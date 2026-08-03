@@ -438,6 +438,283 @@ This document defines the available commands/skills for AI agents interacting wi
 
 ---
 
+### Verification Harness Skills
+
+The following 5 skills implement the V-model closed loop described in `WORKFLOW.md`. They are the enforcement layer that keeps every other skill honest: the worker never grades its own homework.
+
+---
+
+### /closed-loop
+
+**Description:** V-model execute pipeline: CP-2 plan → CP-3 build → CP-3v component verify → CP-4 integration verify → CP-5 acceptance. Every verify step emits evidence rows traced to acceptance criterion IDs (`AC-n`).
+
+**Triggers:**
+- `/execute <task>`
+- "run this through the closed loop"
+- Any `normal`-lane or higher build task
+- Automatically, whenever a task mutates external state
+
+**Purpose:** Prevent the **confident-but-unchecked** failure mode. A worker reports success, nothing downstream validates it, and a plausible-but-wrong result ships. The loop makes success a *verified observation*, not a claim.
+
+**What it does:**
+1. Classifies the task into a risk lane (`bash .claude/lib/lane-classify.sh classify "<task>"`)
+2. Runs the worker at CP-3, traced to `AC-n`
+3. Dispatches a fresh-context, read-only `task-verifier` at CP-3v that observes the *artifact* (curl the URL, re-read the file, screenshot the page), never the worker's summary
+4. On `FAIL:fixable`, dispatches `fix-agent` (max 2 retries), then re-verifies; on `FAIL:escalate`, stops
+5. Runs `integration-verifier` at CP-4 for multi-task / `full`-lane work
+6. Records checkpoints and evidence rows to the run's `evidence/ledger.md`
+
+**Output:** Evidence ledger with one `EVIDENCE <AC-id> | <CP> | PASS|FAIL | <observation> | <artifact>` row per criterion, plus `.claude/logs/loop-ledger.tsv`.
+
+---
+
+### /ultragoal
+
+**Description:** Run a goal too big to ship in one session: a chain of phases, each its own full closed-loop run, with cross-session state and a final north-star acceptance gate.
+
+**Triggers:**
+- `/ultragoal <goal>`
+- "this is a multi-week thing"
+- Resuming a long-running goal in a cold session
+- Any goal that can't finish in one run
+
+**Purpose:** Wrongness compounds across sessions. A goal spanning weeks accumulates unverified assumptions that no single run ever revisits. Ultragoals never downgrade the lane: every phase runs CP-1 → CP-6 with adversarial verification, and nothing is "done" until every `AC-n` has a PASS row.
+
+**What it does:**
+1. Interviews you for the **north-star** in one sentence, then writes falsifiable `AC-n` into `04-projects/<goal>/spec.md`
+2. Decomposes into phases `P0…Pn`, each traced to criteria
+3. Runs each phase as a complete closed-loop run with per-phase evidence in `04-projects/<goal>/evidence/P<n>/`
+4. Maintains `04-projects/<goal>/STATUS.md` so any cold session resumes without re-reading history
+5. Regenerates a self-contained `report.html` at every phase gate (north-star, phase timeline, `AC-n` traceability, evidence, next action)
+6. Runs a final **north-star acceptance verifier** before the goal is declared done
+
+**Output:** `04-projects/<goal>/` containing `spec.md`, `STATUS.md`, `evidence/`, and `report.html`.
+
+---
+
+### /harvest
+
+**Description:** Capture durable session learnings, stage them for human promotion into `05-knowledge/`, and propose skill/CLAUDE.md patches. Never writes durable knowledge without your approval.
+
+**Triggers:**
+- `/harvest`
+- SessionEnd hook (automatic staging)
+- After a correction, a rejected deliverable, or a surprising discovery
+- Nightly self-enhancement runs
+
+**Purpose:** Tacit knowledge dies in the transcript. Corrections you made, workarounds discovered, and patterns that worked are all lost when the session closes. Harvest catches them at the boundary, but stages rather than commits, because auto-promoting session noise into durable knowledge poisons the well.
+
+**What it does:**
+1. Scans the session for corrections, rejected outputs, non-obvious discoveries, and repeated friction
+2. Writes candidates to `04-projects/harness/harvest/staging-<date>.md` with the evidence that motivated each
+3. Optionally dispatches `harvest-curator` (Sonnet, propose-only) to shape candidates into adoption notes
+4. Presents them for approval; flags contradictions with existing knowledge rather than silently overwriting
+5. On `/harvest promote`, writes approved items into `05-knowledge/` and proposes skill/CLAUDE.md patches
+
+**Output:** `04-projects/harness/harvest/staging-<date>.md` (staged) → `05-knowledge/` (promoted, after approval).
+
+---
+
+### /retro
+
+**Description:** CP-7 retrospective: audit the run's checkpoints, evidence quality, action items, and harvest candidates. Closes the V-model cycle and feeds the next one.
+
+**Triggers:**
+- `/retro <run or spec>`
+- After any ship (CP-6) or escalation
+- After a significant session, whatever the outcome
+
+**Purpose:** A closed loop that never inspects itself stops improving. Retro asks the question the verifiers can't: *was the evidence any good?* A run can pass every checkpoint and still have shipped on weak observations.
+
+**What it does:**
+1. Reads the run's evidence ledger and checkpoint log
+2. Audits evidence *quality*. Did each row observe the artifact, or restate a tool return value?
+3. Identifies which checkpoints caught real problems and which were ceremony
+4. Extracts action items and harvest candidates
+5. Writes `04-projects/harness/retro/YYYY-MM-DD-<slug>.md`
+
+**Output:** A retro doc that feeds CP-0 of the next cycle. Advisory, but strongly expected.
+
+---
+
+### /review-cockpit
+
+**Description:** One living review document per multi-item session: a cockpit header (Progress checklist, Working folder, Context) plus per-item review cards you approve or request changes on directly in the doc.
+
+**Triggers:**
+- Any session with **≥2 deliverables you need to review or approve**
+- "process X, then plan/draft Y and Z"
+- Multi-ticket work, briefs with several drafts
+
+**Purpose:** Multi-file output makes review impossible. Instead of a meeting note here, a ticket there, and two drafts buried in chat, everything lands in one file you can open in a side panel and drive. The doc *is* the interaction surface, not a summary of it.
+
+**What it does:**
+1. Creates one doc: cockpit header (Progress / Working folder / Context) + one review card per item
+2. Each card carries status, deliverable (linked or inlined for in-place review), a **🗒 Your call** approval slot, and an append-only decision log
+3. Keeps the doc live as work progresses, using targeted edits so your inline approvals are never clobbered
+4. Distinguishes **draft** items (agent proposes, waits) from **auto** items (agent executes directly); when unsure, leaves it draft
+5. On approval, executes the item, marks it ✅, and logs the outcome with its external link
+
+**Output:** One markdown doc that is both the deliverable index and the approval surface.
+
+---
+
+### Craft Skills
+
+The following 7 skills raise output quality on writing and visual work. They encode taste as mechanical rules rather than vibes.
+
+---
+
+### /taste-skill
+
+**Description:** Anti-slop frontend skill for **landing pages, portfolios, and redesigns**. Reads the brief, infers the right design direction, and ships interfaces that do not look templated.
+
+**Triggers:**
+- Building or redesigning a landing page, portfolio, marketing site, or editorial page
+- "make this look less generic / less templated"
+- A brief that names a vibe ("Linear-style", "brutalist", "editorial", "premium consumer") or links a reference
+
+**Purpose:** Most LLM design output is bad because the model jumps to a default aesthetic instead of reading the room. This forces a **Design Read** first: page kind, audience, vibe signals, existing brand assets, and quiet constraints (accessibility-first, regulated, trust-first commerce) that override aesthetic preference.
+
+**What it does:**
+1. Infers the brief and states a one-line **Design Read** before writing any code
+2. Sets explicit dials (variance, motion, density) rather than defaulting
+3. Picks a real design system when one applies, instead of hand-rolling
+4. Audit-first on redesigns: existing brand assets are starting material, not optional input
+5. Runs a strict pre-flight check before shipping
+
+**Boundary:** Landing, portfolio, marketing, editorial. It hands off dashboards, data tables, and multi-step product UI to `/product-ui-taste`. Never run both on the same component.
+
+---
+
+### /product-ui-taste
+
+**Description:** Anti-slop skill for **dense product surfaces**: dashboards, data tables, forms, wizards, settings, list/detail, admin consoles, app shells. Budgets the frame first and ships interfaces that survive real data.
+
+**Triggers:**
+- Building a dashboard, index table, detail view, settings page, or multi-step flow
+- "the table breaks with real data"
+- Any admin console or internal tool
+
+**Purpose:** Marketing UI lives on first impression. Product UI lives on the **hundredth** use, under real data, by someone doing a job. The slop failure mode is different: not "templated aesthetic" but **a prototype that dies on contact with real data**. A table that scrolls the page sideways, a button that truncates its own label, one grey "no data" box reused for three different situations.
+
+**What it does:**
+1. States a one-line **Product Read** (surface type, user, density, data volume, consequence level, host system)
+2. Sets three dials: `DENSITY`, `DATA_COMPLEXITY`, `CONSEQUENCE`
+3. Resolves the host design system's **real** API before writing UI, never inventing component props
+4. Budgets the frame in pixels top-down before any content
+5. Enforces the anti-defaults: rows not card-soup, real empty/error/loading/permission-denied states, correct scroll ownership, sticky headers, frozen columns, z-index tiers
+6. Covers the states marketing UI never has: read-only, permission-denied, plan-locked
+
+**Boundary:** The counterpart to `/taste-skill`. Maps to Carbon, Polaris, Atlaskit, Fluent, Primer, Material 3, Radix/shadcn, and Ant.
+
+---
+
+### /no-ai-slop
+
+**Description:** Edit drafts into sharper, more human writing while preserving the writer's personal voice, or detect AI-slop patterns without rewriting.
+
+**Triggers:**
+- "make this less AI-sounding"
+- "sharpen this draft"
+- "does this read as AI?"
+- Final pass before publishing any blog post or social copy
+
+**Purpose:** Remove AI patterns without flattening distinctive writing into generic polished prose. The failure mode it guards against is the *other* direction too: an editor that strips voice along with slop.
+
+**What it does:**
+1. **Edit mode (default):** makes the minimum effective edit and returns the draft plus a "What changed" section
+2. **Detect mode:** flags slop patterns without rewriting
+3. Kills fake-profound kickers, summary-recap endings, hedge stacking, and formatting theater
+4. Enforces concreteness, named sources, and active voice
+
+**Attribution:** Vendored from [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop) (MIT). `LICENSE` and `SOURCE.md` ship alongside it.
+
+---
+
+### /editorial-illustrations
+
+**Description:** Generate meaning-carrying editorial data-illustrations in a near-black grayscale + single-accent aesthetic. A **generative guide**, not a template gallery. It teaches the "claim → geometry" method.
+
+**Triggers:**
+- "make a chart/diagram/illustration for this"
+- "visualize this argument"
+- Writing or illustrating a blog post, essay, spec, or slide
+
+**Purpose:** Most generated figures decorate; they don't argue. This teaches the session to derive the *right* geometry from what the text actually claims, then render it as a self-contained, theme-aware, reduced-motion-safe HTML/SVG figure.
+
+**What it does:**
+1. Extracts the claim, then asks "where is the point?", the one element that gets the accent
+2. Selects geometry from the claim's shape (a rail, a ramp, a bridge, a lane split), not from a chart-type menu
+3. Renders self-contained HTML/SVG with a grayscale ramp plus exactly one accent, AA-safe on both grounds
+4. Runs a pre-flight checklist: one accent on the point, no clipped mono text, no misaligned SVG, theme toggle honored
+
+**References:** `references/design-system.md`, `references/elements.md`, `references/worked-examples.md`, `assets/gallery.html`.
+
+---
+
+### /data-forms
+
+**Description:** Pick the right way to represent a dataset so a reader gets the finding in three seconds: a catalog of 20+ chart and diagram forms with when-to-use and failure modes, plus the encoding decisions that make any of them readable.
+
+**Triggers:**
+- Charting survey results, benchmark data, usage metrics, or research findings
+- "the default bar chart is burying the point"
+- Building a post, brief, deck, or report with data in it
+
+**Purpose:** A repertoire, not a style. What makes good data illustration work is not the palette. It is form selection and encoding discipline, both of which are portable to any visual language.
+
+**What it does:**
+1. Matches the dataset's question to a form from the catalog (with each form's failure modes stated)
+2. Applies the encoding rules that carry across all of them: takeaway headline, direct labels, kill the axis, highlight-and-mute, show the caveat
+3. Stays style-agnostic, handing off to `dataviz` (or your host design system) for palette and accessibility
+
+**References:** `references/forms.md`.
+
+---
+
+### /museum-art
+
+**Description:** Source authentic, high-res **public-domain** artwork from museum open-access APIs (Met, Cleveland, SMK, Rijksmuseum, NGA, Art Institute of Chicago, Getty, Smithsonian) instead of AI-generated or generic-stock imagery.
+
+**Triggers:**
+- Blog hero images, section breaks, mood imagery
+- Deck backgrounds, social cards, essay figures, spec cover art
+- Any visual that needs aesthetic weight and credibility
+
+**Purpose:** Curated, historically significant art reads as credible and sophisticated; AI-generated imagery reads as slop. Stacks with `/no-ai-slop`. Does **not** replace `/editorial-illustrations`, which owns claim-driven diagrams. Museum art is for photographic, hero, decorative, and mood imagery.
+
+**What it does:**
+1. Queries museum open-access APIs (verified keyless recipes per institution)
+2. Confirms public-domain status and records the licensing terms
+3. Returns high-res source URLs with attribution metadata
+4. Fetches fresh each time, so there is no reusable image pool, so visuals don't repeat across posts
+
+**References:** one file per institution under `references/`.
+
+---
+
+### /daily-journal
+
+**Description:** A passive daily work journal the agent keeps **for** you so you never have to write it. Appends short entries after meaningful work; runs a guided reflection on request.
+
+**Triggers:**
+- `/daily-journal` or `/daily-journal reflect [today|yesterday|YYYY-MM-DD]`
+- "log this to my journal"
+- Implicitly, after finishing a meaningful chunk of work in any session
+
+**Purpose:** Distinct from `/weekly-checkin`, where you supply the input. Here **the agent is the author** and the log accrues in the background, so the record exists even on days you'd never sit down to write one.
+
+**What it does:**
+1. **`log` (default, mostly implicit):** appends one entry after meaningful work: what was done, focus thread, artifacts touched, optional signal
+2. Skips trivia: one-line lookups, scratch work, its own writes, anything you asked to keep out
+3. **`reflect`:** reads the day's log plus recent days, summarizes the day back to you, asks 2-4 light questions adapted to what the log shows, then writes your answers plus a synthesis into the day's file
+4. On request, synthesizes the last 7 files into a week-in-review
+
+**Output location:** `01-daily/journal/YYYY-MM-DD.md`.
+
+---
+
 ### PM Workflow Skills
 
 The following 6 skills form a complete product management lifecycle:
@@ -585,7 +862,9 @@ The following 6 skills form a complete product management lifecycle:
 
 ## Worker Agents
 
-COG includes 6 specialized worker agents (`.claude/agents/`) that handle data-heavy tasks using Sonnet while the lead session (Opus) handles reasoning and synthesis. Inspired by [garrytan/gstack](https://github.com/garrytan/gstack) specialist sessions and [garrytan/gbrain](https://github.com/garrytan/gbrain) knowledge patterns.
+COG includes 10 specialized agents (`.claude/agents/`) that handle data-heavy and verification tasks using Sonnet while the lead session (Opus) handles reasoning and synthesis. Inspired by [garrytan/gstack](https://github.com/garrytan/gstack) specialist sessions and [garrytan/gbrain](https://github.com/garrytan/gbrain) knowledge patterns.
+
+**Workers** handle the gathering and the mutating:
 
 | Agent | What it does | When it's used |
 |---|---|---|
@@ -596,7 +875,18 @@ COG includes 6 specialized worker agents (`.claude/agents/`) that handle data-he
 | **worker-publisher** | Publishing to Slack, Confluence, Notion, webhooks | Brief publishing, wiki sync |
 | **brief-people-updater** | Batch-update people profiles from meetings/briefs | After team briefs, meeting processing |
 
-**Key rule:** Workers write results to `/tmp/{task-slug}.md` and return only a short status + file path. The lead session reads the file for synthesis.
+**Verifiers** are read-only and fresh-context, and they cannot edit files or mutate external state:
+
+| Agent | What it does | Checkpoint |
+|---|---|---|
+| **task-verifier** | Checks a worker's output against acceptance criteria by observing the artifact, not the worker's summary | CP-3v |
+| **integration-verifier** | Cross-task wiring and global acceptance for multi-task specs | CP-4 |
+| **fix-agent** | Targeted fixes after `task-verifier` returns `FAIL:fixable`; max 2 attempts | CP-3v retry |
+| **harvest-curator** | Shapes session learnings into adoption notes; propose-only, never writes durable knowledge | CP-7 |
+
+**Key rules:**
+- Workers write results to `/tmp/{task-slug}.md` and return only a short status + file path. The lead session reads the file for synthesis.
+- Verifiers receive **paths only**. Never paste a worker's output into a verifier's prompt. Pasted context induces narrativisation: the verifier classifies the framing instead of independently reading the source.
 
 ---
 
