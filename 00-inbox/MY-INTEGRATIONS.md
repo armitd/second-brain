@@ -59,6 +59,7 @@ tags: ["#integrations", "#config", "#cog"]
 - Use for: querying Belron's EA repository — applications, tech stacks, architecture decisions, initiatives, components, fact sheets
 - Note: includes write-capable tools (create/update architecture decisions, tech stacks) — use with care; mutations affect the live EA repository
 - Data classification: Belron Confidential — LeanIX contains non-public application portfolio data
+- **Also connected locally in Claude Code** (added 2026-08-05): SAP LeanIX built-in MCP server at `https://mcp.leanix.net/services/mcp-server/v1/mcp`, registered in `~/.claude.json` (local, scoped to this vault). Auth: OAuth (browser sign-in, ~24h session; run `/mcp` to authenticate). Toolset: **default only** — the write-capable `automations` toolset is NOT enabled (would require re-adding with `?toolsets=inventory,automations`). This is a separate client from the claude.ai custom connector above.
 
 **Lucid (Lucidchart)**
 - Connected via HTTP MCP at `https://mcp.lucid.app/mcp`
